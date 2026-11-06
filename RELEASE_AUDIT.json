@@ -7,7 +7,7 @@
   "api_calls": 0,
   "tests_executed": false,
   "full_text_index_kept_locally_and_gitignored": true,
-  "index_builder_available": false,
+  "index_builder_available": true,
   "removed": [
     "OFFLINE_VERIFICATION.log",
     "REGRESSION_TESTS.log",
@@ -19,5 +19,13 @@
     "conda": "environment.yml",
     "api_key_source": "process environment",
     "live_api_tested": false
-  }
+  },
+  "index_builder_test": {
+    "command": "python -m unittest discover -s tests -p test_build_library.py",
+    "scope": "synthetic PDF, exact-byte deduplication, FTS lookup, page grounding, existing-index refusal",
+    "api_calls": 0
+  },
+  "archived_preparation_scripts": 5,
+  "archived_scripts_executed": false,
+  "frozen_input_recheck_errors": []
 }

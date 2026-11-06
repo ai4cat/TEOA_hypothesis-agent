@@ -1,0 +1,41 @@
+{
+  "files": [
+    {
+      "path": "engine/build_library.py",
+      "source_basename": "build_library.py",
+      "sha256": "bd1aee0c6121f1ce1609f26485c2056fcabc4f2db72d77cc70cb45c17f74505c",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "provenance/scripts/align_existing_hypothesis_library.py",
+      "source_basename": "align_existing_hypothesis_library_20261103.py",
+      "sha256": "3695461aeb8b3d9a61affef6209d86bcdb9cae14d8860935624df90d0836b041",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "provenance/scripts/consensus_input_adapter.py",
+      "source_basename": "consensus_input_adapter_20261103.py",
+      "sha256": "dc70f4a6c6604c0b5783a11020dc0a4697446e78149e545e39ffe5ff3bb79084",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "provenance/scripts/finish_indexed_pdf_move.py",
+      "source_basename": "finish_indexed_pdf_move_20261103.py",
+      "sha256": "9577d3f15d8be5471d87585554c190bee369bf3fcafe5434a076833e960f6085",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "provenance/scripts/prepare_indexed_pdf_move.py",
+      "source_basename": "prepare_indexed_pdf_move_20261103.py",
+      "sha256": "9f382cd5330fb41371728f87fedd31038e9a06b33c70b1ff7bea57412d7c196c",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "provenance/scripts/setup_reviewed_triplicate.py",
+      "source_basename": "setup_reviewed_triplicate_20261105.py",
+      "sha256": "18521bbe97adc20af0ab986d67351d7af7a7aeb1f33b3a2c4a1768c850c7163d",
+      "byte_identical_to_source": true
+    }
+  ],
+  "filename_policy": "Date suffixes removed from packaged script names; source_basename retains the original historical source name."
+}

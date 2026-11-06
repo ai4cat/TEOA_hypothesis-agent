@@ -47,6 +47,7 @@ database/
   LIB2/doi_list_395_lib2.txt        Literature identifiers for the system collection
 engine/
   agent.py                        Command-line entry point
+  build_library.py                Offline PDF-to-SQLite index builder
   requirements.txt                Python dependencies
   statistics/
     verified_results/             Imported summary and three ranking tables
@@ -65,6 +66,8 @@ engine/
 OPEN_REPORT.cmd                   Windows shortcut to the saved HTML report
 VERIFY.cmd                        Windows shortcut to complete frozen verification
 LICENSE                           Existing Apache License 2.0
+provenance/                        Historical index preparation scripts and hashes
+tests/test_build_library.py        Isolated index-builder integration check
 environment.yml                   Alternative Conda environment definition
 ```
 
@@ -98,7 +101,7 @@ Then install the declared dependencies:
 python -m pip install -r engine/requirements.txt
 ```
 
-The requirements specify compatible ranges for `jsonschema` and `tiktoken`, not a complete lockfile. For a new study, record `python --version` and `python -m pip freeze` alongside the run. The `.cmd` shortcuts are Windows-only; all commands below assume the repository root and an activated environment.
+The requirements specify compatible ranges for `jsonschema`, `tiktoken` and `PyMuPDF`, not a complete lockfile. For a new study, record `python --version` and `python -m pip freeze` alongside the run. The `.cmd` shortcuts are Windows-only; all commands below assume the repository root and an activated environment.
 
 ### Alternative: Conda
 
@@ -155,7 +158,46 @@ There are three distinct activities:
 2. **Verify the original frozen run completely:** obtain the exact original local index and unchanged frozen records. Verification checks the index hash and quotation character offsets, so a different PDF edition or a newly extracted index will not satisfy the original manifest.
 3. **Generate a new analysis:** provide a compatible local index, statistical inputs, settings and your own API access. This is a new run, not a byte-for-byte replay of the archived result.
 
-**Current release limitation:** this package contains retrieval code but no production PDF-ingestion/index-building command. Downloading the DOI-listed PDFs does not, by itself, enable a fresh public clone to run the full pipeline. The original index is necessary for exact frozen verification; a compatible independently built index can support new analyses, but its construction is not implemented in this release. A complete public source-to-index reproduction workflow therefore remains a release prerequisite.
+The package now includes the original offline PDF ingestion tool, `engine/build_library.py`, and historical index-preparation scripts in `provenance/scripts/`. Use the ingestion tool below to build a compatible index for a **new analysis**. Exact verification of the archived run still requires its original index: its historical preparation reused earlier extracted chunks, aligned corpus membership and re-extracted changed PDF identities. A fresh build is not expected to reproduce that historical database byte for byte.
+
+### Build a local index from legally obtained PDFs
+
+Install the repository requirements first; they include PyMuPDF for native PDF text extraction. Download the literature independently using `database/` and place the PDFs in a local directory, optionally with one subdirectory per collection. The builder recursively reads files ending in `.pdf`; filenames need not match the original machine's filenames.
+
+From the repository root, create a separate build directory:
+
+```bash
+python engine/build_library.py --source-dir /absolute/path/to/downloaded_pdfs --output-dir /absolute/path/to/local_index_build
+```
+
+For example, in Windows PowerShell:
+
+```powershell
+python engine/build_library.py --source-dir 'D:\local_corpus' --output-dir 'D:\teoa_index_build'
+```
+
+This command makes no API requests. It creates `index.sqlite`, `build_report.json` and a `pdf/` directory of SHA-256-verified PDF copies. Allow disk space for the copied corpus and index. Exact-byte duplicate PDFs are indexed once and retained in provenance. Different PDF files of the same publication are not merged by DOI.
+
+The extraction procedure uses `page.get_text(sort=True)`, removes NUL characters, trims page text, and takes page-local windows of up to 2,000 characters at a 1,600-character stride (400-character overlap for full windows). Paper IDs are `P_<PDF_SHA256>`; chunk IDs encode paper ID, page and window number. FTS5 uses `unicode61`. Extraction uses native text, **not OCR**. Inspect `build_report.json` for parse errors and low-text/empty pages; scanned PDFs require a separately documented OCR workflow. DOI candidates in this build report/database are unverified extraction metadata.
+
+Build into a new output directory. The tool refuses to replace an existing `index.sqlite`. After reviewing the report, copy the new database to `engine/library/index.sqlite` **only in a separate working clone for new analyses**, not over the original local index used for frozen verification. Keep the build directory's `pdf/` folder: indexed PDF paths refer to those copies. The reader's index and copied PDFs must remain local and must not be added to GitHub without the necessary permissions.
+
+For example, in a separate Windows working clone:
+
+```powershell
+if (Test-Path -LiteralPath 'engine/library/index.sqlite') {
+    throw 'Existing index found. Preserve it and use a separate working clone.'
+}
+Copy-Item -LiteralPath 'D:\teoa_index_build\index.sqlite' -Destination 'engine/library/index.sqlite'
+```
+
+The original freeze's verification will reject a rebuilt index because the input hash is different; use it to generate and verify a new run instead. To check the builder on a small generated PDF without your research corpus or API access:
+
+```bash
+python -m unittest discover -s tests -p test_build_library.py
+```
+
+See [historical preparation documentation](provenance/README.md) for the original construction/alignment chain, dependencies and archived source hashes. The archival scripts preserve hard-coded historical paths and are not a portable one-command replay; some execute immediately on import or modify/move local files. Read them before any adaptation and work on isolated copies.
 
 The code expects the local database at:
 
@@ -281,7 +323,7 @@ The original delivery records 59 passing tests. That historical count is not a c
 
 Use [GitHub issues](https://github.com/ai4cat/TEOA_hypothesis-agent/issues) for reproducible problems or proposals, and pull requests for changes. Include your Python version, command, relevant settings and a redacted error trace. Never attach API keys or publications you are not permitted to redistribute.
 
-Keep changes to software separate from archived scientific records. Add an appropriate regression check when changing behavior; do not modify the frozen run to make tests pass. A production PDF-to-index ingestion workflow is an outstanding reproducibility contribution.
+Keep changes to software separate from archived scientific records. Add an appropriate regression check when changing behavior; do not modify the frozen run to make tests pass. Useful contributions include OCR support and portable replay of the historical corpus-alignment stages.
 
 ## Citation
 
