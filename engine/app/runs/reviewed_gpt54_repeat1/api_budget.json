@@ -1,0 +1,1018 @@
+{
+  "reservations": [
+    {
+      "name": "01_query_plan",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\01_query_plan",
+      "reserved_usd": 0.25853,
+      "started_at": "2026-11-05T02:36:24.535801+00:00",
+      "settled_estimated_usd": 0.02678
+    },
+    {
+      "name": "01_query_plan_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\01_query_plan_retry",
+      "reserved_usd": 0.258615,
+      "started_at": "2026-11-05T02:38:17.089387+00:00"
+    },
+    {
+      "name": "01_query_plan_retry2",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\01_query_plan_retry2",
+      "reserved_usd": 0.258615,
+      "started_at": "2026-11-05T02:38:21.098576+00:00",
+      "settled_estimated_usd": 0.0271
+    },
+    {
+      "name": "03_rerank_1",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\03_rerank_1",
+      "reserved_usd": 0.27267,
+      "started_at": "2026-11-05T02:38:40.845951+00:00",
+      "settled_estimated_usd": 0.04718
+    },
+    {
+      "name": "03_rerank_2",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\03_rerank_2",
+      "reserved_usd": 0.273085,
+      "started_at": "2026-11-05T02:39:04.440659+00:00",
+      "settled_estimated_usd": 0.045185
+    },
+    {
+      "name": "03_rerank_3",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\03_rerank_3",
+      "reserved_usd": 0.2713825,
+      "started_at": "2026-11-05T02:39:25.337924+00:00"
+    },
+    {
+      "name": "03_rerank_3_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\03_rerank_3_retry",
+      "reserved_usd": 0.2713825,
+      "started_at": "2026-11-05T02:39:44.408692+00:00"
+    },
+    {
+      "name": "03_rerank_3_retry2",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\03_rerank_3_retry2",
+      "reserved_usd": 0.2713825,
+      "started_at": "2026-11-05T02:39:50.661038+00:00",
+      "settled_estimated_usd": 0.0388665
+    },
+    {
+      "name": "03_rerank_4",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\03_rerank_4",
+      "reserved_usd": 0.273515,
+      "started_at": "2026-11-05T02:40:14.494338+00:00",
+      "settled_estimated_usd": 0.038834
+    },
+    {
+      "name": "03_rerank_5",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\03_rerank_5",
+      "reserved_usd": 0.2742875,
+      "started_at": "2026-11-05T02:40:32.519689+00:00"
+    },
+    {
+      "name": "03_rerank_5_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\03_rerank_5_retry",
+      "reserved_usd": 0.2742875,
+      "started_at": "2026-11-05T02:40:57.377278+00:00"
+    },
+    {
+      "name": "03_rerank_5_retry2",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\03_rerank_5_retry2",
+      "reserved_usd": 0.2742875,
+      "started_at": "2026-11-05T02:41:03.548359+00:00",
+      "settled_estimated_usd": 0.0452
+    },
+    {
+      "name": "03_rerank_6",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\03_rerank_6",
+      "reserved_usd": 0.271825,
+      "started_at": "2026-11-05T02:41:31.883165+00:00",
+      "settled_estimated_usd": 0.0476225
+    },
+    {
+      "name": "03_rerank_7",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\03_rerank_7",
+      "reserved_usd": 0.2709475,
+      "started_at": "2026-11-05T02:42:09.418067+00:00"
+    },
+    {
+      "name": "03_rerank_7_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\03_rerank_7_retry",
+      "reserved_usd": 0.2709475,
+      "started_at": "2026-11-05T02:42:14.378722+00:00"
+    },
+    {
+      "name": "03_rerank_7_retry2",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\03_rerank_7_retry2",
+      "reserved_usd": 0.2709475,
+      "started_at": "2026-11-05T02:42:20.663599+00:00",
+      "settled_estimated_usd": 0.0431725
+    },
+    {
+      "name": "03_rerank_8",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\03_rerank_8",
+      "reserved_usd": 0.27524,
+      "started_at": "2026-11-05T02:42:46.432436+00:00",
+      "settled_estimated_usd": 0.044229
+    },
+    {
+      "name": "03_rerank_9",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\03_rerank_9",
+      "reserved_usd": 0.2727575,
+      "started_at": "2026-11-05T02:43:08.668437+00:00",
+      "settled_estimated_usd": 0.0434715
+    },
+    {
+      "name": "03_rerank_10",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\03_rerank_10",
+      "reserved_usd": 0.2737325,
+      "started_at": "2026-11-05T02:43:32.616100+00:00"
+    },
+    {
+      "name": "03_rerank_10_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\03_rerank_10_retry",
+      "reserved_usd": 0.2737325,
+      "started_at": "2026-11-05T02:43:38.844446+00:00",
+      "settled_estimated_usd": 0.04476
+    },
+    {
+      "name": "03_rerank_11",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\03_rerank_11",
+      "reserved_usd": 0.2731625,
+      "started_at": "2026-11-05T02:44:03.442390+00:00",
+      "settled_estimated_usd": 0.0448475
+    },
+    {
+      "name": "03_rerank_12",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\03_rerank_12",
+      "reserved_usd": 0.273325,
+      "started_at": "2026-11-05T02:44:21.462361+00:00",
+      "settled_estimated_usd": 0.0393565
+    },
+    {
+      "name": "04a_question_evidence",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\04a_question_evidence",
+      "reserved_usd": 0.3497,
+      "started_at": "2026-11-05T02:44:42.397839+00:00"
+    },
+    {
+      "name": "04a_question_evidence_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\04a_question_evidence_retry",
+      "reserved_usd": 0.3497,
+      "started_at": "2026-11-05T02:44:57.772870+00:00",
+      "settled_estimated_usd": 0.1077275
+    },
+    {
+      "name": "supplement_03_rerank_1",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\supplement_03_rerank_1",
+      "reserved_usd": 0.270775,
+      "started_at": "2026-11-05T02:45:23.412974+00:00",
+      "settled_estimated_usd": 0.043225
+    },
+    {
+      "name": "supplement_03_rerank_2",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\supplement_03_rerank_2",
+      "reserved_usd": 0.27351,
+      "started_at": "2026-11-05T02:45:42.050968+00:00"
+    },
+    {
+      "name": "supplement_03_rerank_2_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\supplement_03_rerank_2_retry",
+      "reserved_usd": 0.27351,
+      "started_at": "2026-11-05T02:46:02.709254+00:00"
+    },
+    {
+      "name": "supplement_03_rerank_2_retry2",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\supplement_03_rerank_2_retry2",
+      "reserved_usd": 0.27351,
+      "started_at": "2026-11-05T02:46:09.066654+00:00",
+      "settled_estimated_usd": 0.0435015
+    },
+    {
+      "name": "supplement_03_rerank_3",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\supplement_03_rerank_3",
+      "reserved_usd": 0.273105,
+      "started_at": "2026-11-05T02:46:35.808711+00:00",
+      "settled_estimated_usd": 0.041384
+    },
+    {
+      "name": "supplement_03_rerank_4",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\supplement_03_rerank_4",
+      "reserved_usd": 0.25644,
+      "started_at": "2026-11-05T02:46:55.874606+00:00",
+      "settled_estimated_usd": 0.007524
+    },
+    {
+      "name": "04a_final_question_evidence",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\04a_final_question_evidence",
+      "reserved_usd": 0.381195,
+      "started_at": "2026-11-05T02:47:03.149442+00:00"
+    },
+    {
+      "name": "04a_final_question_evidence_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\04a_final_question_evidence_retry",
+      "reserved_usd": 0.381195,
+      "started_at": "2026-11-05T02:47:10.878403+00:00",
+      "settled_estimated_usd": 0.12536
+    },
+    {
+      "name": "04b_system_options",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\04b_system_options",
+      "reserved_usd": 0.379675,
+      "started_at": "2026-11-05T02:47:37.659325+00:00",
+      "settled_estimated_usd": 0.1371525
+    },
+    {
+      "name": "04c_platform_focus",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\04c_platform_focus",
+      "reserved_usd": 0.2617625,
+      "started_at": "2026-11-05T02:48:07.398468+00:00"
+    },
+    {
+      "name": "04c_platform_focus_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\04c_platform_focus_retry",
+      "reserved_usd": 0.2617625,
+      "started_at": "2026-11-05T02:48:16.652947+00:00",
+      "settled_estimated_usd": 0.036945
+    },
+    {
+      "name": "05_split_hypotheses",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\05_split_hypotheses",
+      "reserved_usd": 0.39506,
+      "started_at": "2026-11-05T02:48:50.987003+00:00",
+      "settled_estimated_usd": 0.14995
+    },
+    {
+      "name": "05_split_hypotheses_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\05_split_hypotheses_retry",
+      "reserved_usd": 0.39506,
+      "started_at": "2026-11-05T02:51:29.567656+00:00"
+    },
+    {
+      "name": "05_split_hypotheses_retry2",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\05_split_hypotheses_retry2",
+      "reserved_usd": 0.39506,
+      "started_at": "2026-11-05T02:52:03.752419+00:00"
+    },
+    {
+      "name": "05_split_hypotheses_retry3",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\05_split_hypotheses_retry3",
+      "reserved_usd": 0.39506,
+      "started_at": "2026-11-05T02:52:10.167126+00:00",
+      "settled_estimated_usd": 0.041842
+    },
+    {
+      "name": "05_split_menu_H01",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\05_split_menu_H01",
+      "reserved_usd": 0.305795,
+      "started_at": "2026-11-05T02:52:48.462971+00:00",
+      "settled_estimated_usd": 0.062417
+    },
+    {
+      "name": "05_split_menu_H02",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\05_split_menu_H02",
+      "reserved_usd": 0.31014,
+      "started_at": "2026-11-05T02:53:14.666516+00:00"
+    },
+    {
+      "name": "05_split_menu_H02_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\05_split_menu_H02_retry",
+      "reserved_usd": 0.31014,
+      "started_at": "2026-11-05T02:53:17.695108+00:00",
+      "settled_estimated_usd": 0.070905
+    },
+    {
+      "name": "05_split_menu_H03",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\05_split_menu_H03",
+      "reserved_usd": 0.3130375,
+      "started_at": "2026-11-05T02:53:59.714083+00:00"
+    },
+    {
+      "name": "05_split_menu_H03_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\05_split_menu_H03_retry",
+      "reserved_usd": 0.3130375,
+      "started_at": "2026-11-05T02:54:18.727729+00:00"
+    },
+    {
+      "name": "05_split_menu_H03_retry2",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\05_split_menu_H03_retry2",
+      "reserved_usd": 0.3130375,
+      "started_at": "2026-11-05T02:54:25.151005+00:00",
+      "settled_estimated_usd": 0.0791575
+    },
+    {
+      "name": "05_split_menu_H04",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\05_split_menu_H04",
+      "reserved_usd": 0.3277,
+      "started_at": "2026-11-05T02:55:02.599164+00:00",
+      "settled_estimated_usd": 0.0891625
+    },
+    {
+      "name": "05_split_menu_H05",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\05_split_menu_H05",
+      "reserved_usd": 0.3192325,
+      "started_at": "2026-11-05T02:55:25.581917+00:00",
+      "settled_estimated_usd": 0.082615
+    },
+    {
+      "name": "06_candidates_H01_1",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H01_1",
+      "reserved_usd": 0.282955,
+      "started_at": "2026-11-05T02:55:47.836157+00:00"
+    },
+    {
+      "name": "06_candidates_H01_1_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H01_1_retry",
+      "reserved_usd": 0.282955,
+      "started_at": "2026-11-05T02:56:05.585920+00:00",
+      "settled_estimated_usd": 0.081745
+    },
+    {
+      "name": "06_candidates_H01_2",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H01_2",
+      "reserved_usd": 0.2905775,
+      "started_at": "2026-11-05T02:56:58.539506+00:00"
+    },
+    {
+      "name": "06_candidates_H01_2_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H01_2_retry",
+      "reserved_usd": 0.2905775,
+      "started_at": "2026-11-05T02:57:28.663389+00:00"
+    },
+    {
+      "name": "06_candidates_H01_2_retry2",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H01_2_retry2",
+      "reserved_usd": 0.2905775,
+      "started_at": "2026-11-05T02:59:02.044376+00:00",
+      "settled_estimated_usd": 0.1016175
+    },
+    {
+      "name": "06_candidates_H02_1",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H02_1",
+      "reserved_usd": 0.29055,
+      "started_at": "2026-11-05T03:00:01.097352+00:00"
+    },
+    {
+      "name": "06_candidates_H02_1_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H02_1_retry",
+      "reserved_usd": 0.29055,
+      "started_at": "2026-11-05T03:00:11.660684+00:00"
+    },
+    {
+      "name": "06_candidates_H02_1_retry2",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H02_1_retry2",
+      "reserved_usd": 0.29055,
+      "started_at": "2026-11-05T03:00:18.073315+00:00",
+      "settled_estimated_usd": 0.102156
+    },
+    {
+      "name": "06_candidates_H02_2",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H02_2",
+      "reserved_usd": 0.2878025,
+      "started_at": "2026-11-05T03:01:14.628454+00:00"
+    },
+    {
+      "name": "06_candidates_H02_2_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H02_2_retry",
+      "reserved_usd": 0.2878025,
+      "started_at": "2026-11-05T03:01:33.548917+00:00"
+    },
+    {
+      "name": "06_candidates_H02_2_retry2",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H02_2_retry2",
+      "reserved_usd": 0.2878025,
+      "started_at": "2026-11-05T03:02:51.291429+00:00"
+    },
+    {
+      "name": "06_candidates_H02_2_retry3",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H02_2_retry3",
+      "reserved_usd": 0.2878025,
+      "started_at": "2026-11-05T03:04:06.290168+00:00"
+    },
+    {
+      "name": "06_candidates_H02_2_retry4",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H02_2_retry4",
+      "reserved_usd": 0.2878025,
+      "started_at": "2026-11-05T03:04:36.111038+00:00"
+    },
+    {
+      "name": "06_candidates_H02_2_retry5",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H02_2_retry5",
+      "reserved_usd": 0.2878025,
+      "started_at": "2026-11-05T03:05:44.754186+00:00"
+    },
+    {
+      "name": "06_candidates_H02_2_retry6",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H02_2_retry6",
+      "reserved_usd": 0.2878025,
+      "started_at": "2026-11-05T03:07:33.953934+00:00"
+    },
+    {
+      "name": "06_candidates_H02_2_retry7",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H02_2_retry7",
+      "reserved_usd": 0.2878025,
+      "started_at": "2026-11-05T03:08:48.193067+00:00"
+    },
+    {
+      "name": "06_candidates_H02_2_retry8",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H02_2_retry8",
+      "reserved_usd": 0.2878025,
+      "started_at": "2026-11-05T03:10:12.602936+00:00"
+    },
+    {
+      "name": "06_candidates_H02_2_retry9",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H02_2_retry9",
+      "reserved_usd": 0.2878175,
+      "started_at": "2026-11-05T03:11:32.198487+00:00"
+    },
+    {
+      "name": "06_candidates_H02_2_retry10",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H02_2_retry10",
+      "reserved_usd": 0.2878175,
+      "started_at": "2026-11-05T03:12:45.648336+00:00"
+    },
+    {
+      "name": "06_candidates_H02_2_retry11",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H02_2_retry11",
+      "reserved_usd": 0.2878175,
+      "started_at": "2026-11-05T03:14:03.621672+00:00"
+    },
+    {
+      "name": "06_candidates_H02_2_retry12",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H02_2_retry12",
+      "reserved_usd": 0.2878175,
+      "started_at": "2026-11-05T03:15:49.303714+00:00"
+    },
+    {
+      "name": "06_candidates_H02_2_retry13",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H02_2_retry13",
+      "reserved_usd": 0.2878175,
+      "started_at": "2026-11-05T03:17:09.151110+00:00"
+    },
+    {
+      "name": "06_candidates_H02_2_single_E10",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H02_2_single_E10",
+      "reserved_usd": 0.28706,
+      "started_at": "2026-11-05T03:18:47.919139+00:00"
+    },
+    {
+      "name": "06_candidates_H02_2_single_E10_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H02_2_single_E10_retry",
+      "reserved_usd": 0.28706,
+      "started_at": "2026-11-05T03:19:21.160525+00:00",
+      "settled_estimated_usd": 0.058001
+    },
+    {
+      "name": "06_candidates_H02_2_single_E11",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H02_2_single_E11",
+      "reserved_usd": 0.287085,
+      "started_at": "2026-11-05T03:19:51.582405+00:00"
+    },
+    {
+      "name": "06_candidates_H02_2_single_E11_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H02_2_single_E11_retry",
+      "reserved_usd": 0.287085,
+      "started_at": "2026-11-05T03:20:41.218276+00:00",
+      "settled_estimated_usd": 0.058066
+    },
+    {
+      "name": "06_candidates_H03_1_single_E13",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H03_1_single_E13",
+      "reserved_usd": 0.286785,
+      "started_at": "2026-11-05T03:21:09.357063+00:00",
+      "settled_estimated_usd": 0.056991
+    },
+    {
+      "name": "06_candidates_H03_1_single_E14",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H03_1_single_E14",
+      "reserved_usd": 0.2866525,
+      "started_at": "2026-11-05T03:21:32.092074+00:00"
+    },
+    {
+      "name": "06_candidates_H03_1_single_E14_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H03_1_single_E14_retry",
+      "reserved_usd": 0.2866525,
+      "started_at": "2026-11-05T03:21:58.532995+00:00",
+      "settled_estimated_usd": 0.031864
+    },
+    {
+      "name": "06_candidates_H03_1_single_E15",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H03_1_single_E15",
+      "reserved_usd": 0.286645,
+      "started_at": "2026-11-05T03:22:34.205909+00:00"
+    },
+    {
+      "name": "06_candidates_H03_1_single_E15_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H03_1_single_E15_retry",
+      "reserved_usd": 0.286645,
+      "started_at": "2026-11-05T03:23:08.699251+00:00",
+      "settled_estimated_usd": 0.0545575
+    },
+    {
+      "name": "06_candidates_H03_2_single_E16",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H03_2_single_E16",
+      "reserved_usd": 0.2862775,
+      "started_at": "2026-11-05T03:23:33.775128+00:00",
+      "settled_estimated_usd": 0.052431
+    },
+    {
+      "name": "06_candidates_H03_2_single_E17",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H03_2_single_E17",
+      "reserved_usd": 0.286215,
+      "started_at": "2026-11-05T03:23:56.043585+00:00",
+      "settled_estimated_usd": 0.0545325
+    },
+    {
+      "name": "06_candidates_H03_2_single_E18",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H03_2_single_E18",
+      "reserved_usd": 0.286225,
+      "started_at": "2026-11-05T03:24:22.791931+00:00"
+    },
+    {
+      "name": "06_candidates_H03_2_single_E18_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H03_2_single_E18_retry",
+      "reserved_usd": 0.286225,
+      "started_at": "2026-11-05T03:24:34.688017+00:00",
+      "settled_estimated_usd": 0.058425
+    },
+    {
+      "name": "06_candidates_H04_1_single_E19",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H04_1_single_E19",
+      "reserved_usd": 0.289815,
+      "started_at": "2026-11-05T03:25:07.226834+00:00",
+      "settled_estimated_usd": 0.061946
+    },
+    {
+      "name": "06_candidates_H04_1_single_E20",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H04_1_single_E20",
+      "reserved_usd": 0.289775,
+      "started_at": "2026-11-05T03:25:38.648000+00:00",
+      "settled_estimated_usd": 0.061565
+    },
+    {
+      "name": "06_candidates_H04_1_single_E21",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H04_1_single_E21",
+      "reserved_usd": 0.289775,
+      "started_at": "2026-11-05T03:26:12.252090+00:00"
+    },
+    {
+      "name": "06_candidates_H04_1_single_E21_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H04_1_single_E21_retry",
+      "reserved_usd": 0.289775,
+      "started_at": "2026-11-05T03:26:26.217266+00:00",
+      "settled_estimated_usd": 0.0587635
+    },
+    {
+      "name": "06_candidates_H04_2_single_E22",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H04_2_single_E22",
+      "reserved_usd": 0.298115,
+      "started_at": "2026-11-05T03:26:59.143145+00:00",
+      "settled_estimated_usd": 0.067411
+    },
+    {
+      "name": "06_candidates_H04_2_single_E23",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H04_2_single_E23",
+      "reserved_usd": 0.29815,
+      "started_at": "2026-11-05T03:27:28.113232+00:00",
+      "settled_estimated_usd": 0.0635385
+    },
+    {
+      "name": "06_candidates_H04_2_single_E24",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H04_2_single_E24",
+      "reserved_usd": 0.2981225,
+      "started_at": "2026-11-05T03:27:53.631192+00:00"
+    },
+    {
+      "name": "06_candidates_H04_2_single_E24_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H04_2_single_E24_retry",
+      "reserved_usd": 0.2981225,
+      "started_at": "2026-11-05T03:28:22.580141+00:00",
+      "settled_estimated_usd": 0.07341
+    },
+    {
+      "name": "06_candidates_H05_1_single_E25",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H05_1_single_E25",
+      "reserved_usd": 0.2830925,
+      "started_at": "2026-11-05T03:28:47.788334+00:00",
+      "settled_estimated_usd": 0.0528085
+    },
+    {
+      "name": "06_candidates_H05_1_single_E26",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H05_1_single_E26",
+      "reserved_usd": 0.28305,
+      "started_at": "2026-11-05T03:29:13.372707+00:00",
+      "settled_estimated_usd": 0.051001
+    },
+    {
+      "name": "06_candidates_H05_1_single_E27",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H05_1_single_E27",
+      "reserved_usd": 0.28306,
+      "started_at": "2026-11-05T03:29:35.180543+00:00"
+    },
+    {
+      "name": "06_candidates_H05_1_single_E27_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H05_1_single_E27_retry",
+      "reserved_usd": 0.28306,
+      "started_at": "2026-11-05T03:29:55.091165+00:00",
+      "settled_estimated_usd": 0.05087
+    },
+    {
+      "name": "06_candidates_H05_2_single_E28",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H05_2_single_E28",
+      "reserved_usd": 0.28486,
+      "started_at": "2026-11-05T03:30:27.594037+00:00"
+    },
+    {
+      "name": "06_candidates_H05_2_single_E28_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H05_2_single_E28_retry",
+      "reserved_usd": 0.28486,
+      "started_at": "2026-11-05T03:31:15.256188+00:00",
+      "settled_estimated_usd": 0.0514675
+    },
+    {
+      "name": "06_candidates_H05_2_single_E29",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H05_2_single_E29",
+      "reserved_usd": 0.284895,
+      "started_at": "2026-11-05T03:31:40.004739+00:00",
+      "settled_estimated_usd": 0.0538375
+    },
+    {
+      "name": "06_candidates_H05_2_single_E30",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H05_2_single_E30",
+      "reserved_usd": 0.2848775,
+      "started_at": "2026-11-05T03:32:15.632280+00:00"
+    },
+    {
+      "name": "06_candidates_H05_2_single_E30_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\06_candidates_H05_2_single_E30_retry",
+      "reserved_usd": 0.2848775,
+      "started_at": "2026-11-05T03:32:42.205767+00:00",
+      "settled_estimated_usd": 0.0312715
+    },
+    {
+      "name": "08_review_H01",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\08_review_H01",
+      "reserved_usd": 0.3076,
+      "started_at": "2026-11-05T03:33:12.486020+00:00",
+      "settled_estimated_usd": 0.0787625
+    },
+    {
+      "name": "09_revision_H01_1_1_single_E02",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H01_1_1_single_E02",
+      "reserved_usd": 0.2836675,
+      "started_at": "2026-11-05T03:33:36.516382+00:00",
+      "settled_estimated_usd": 0.0549585
+    },
+    {
+      "name": "09_revision_H01_1_1_single_E04",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H01_1_1_single_E04",
+      "reserved_usd": 0.2838,
+      "started_at": "2026-11-05T03:33:57.175749+00:00",
+      "settled_estimated_usd": 0.0490835
+    },
+    {
+      "name": "09_revision_H01_1_1_single_E05",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H01_1_1_single_E05",
+      "reserved_usd": 0.28399,
+      "started_at": "2026-11-05T03:34:17.764790+00:00"
+    },
+    {
+      "name": "09_revision_H01_1_1_single_E05_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H01_1_1_single_E05_retry",
+      "reserved_usd": 0.28399,
+      "started_at": "2026-11-05T03:34:24.205932+00:00",
+      "settled_estimated_usd": 0.0325605
+    },
+    {
+      "name": "09_revision_H01_1_2",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H01_1_2",
+      "reserved_usd": 0.2737075,
+      "started_at": "2026-11-05T03:34:58.570133+00:00",
+      "settled_estimated_usd": 0.0414885
+    },
+    {
+      "name": "10_rereview_H01_1",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\10_rereview_H01_1",
+      "reserved_usd": 0.319605,
+      "started_at": "2026-11-05T03:35:14.258633+00:00"
+    },
+    {
+      "name": "10_rereview_H01_1_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\10_rereview_H01_1_retry",
+      "reserved_usd": 0.319605,
+      "started_at": "2026-11-05T03:35:25.120085+00:00",
+      "settled_estimated_usd": 0.041431
+    },
+    {
+      "name": "08_review_H02",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\08_review_H02",
+      "reserved_usd": 0.307345,
+      "started_at": "2026-11-05T03:36:01.554625+00:00",
+      "settled_estimated_usd": 0.0718225
+    },
+    {
+      "name": "09_revision_H02_1_1_single_E08",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H02_1_1_single_E08",
+      "reserved_usd": 0.287495,
+      "started_at": "2026-11-05T03:36:27.214960+00:00",
+      "settled_estimated_usd": 0.062061
+    },
+    {
+      "name": "09_revision_H02_1_1_single_E10",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H02_1_1_single_E10",
+      "reserved_usd": 0.2888,
+      "started_at": "2026-11-05T03:36:54.827018+00:00",
+      "settled_estimated_usd": 0.062916
+    },
+    {
+      "name": "09_revision_H02_1_1_single_E11",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H02_1_1_single_E11",
+      "reserved_usd": 0.28893,
+      "started_at": "2026-11-05T03:37:16.212190+00:00"
+    },
+    {
+      "name": "09_revision_H02_1_1_single_E11_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H02_1_1_single_E11_retry",
+      "reserved_usd": 0.28893,
+      "started_at": "2026-11-05T03:37:28.823088+00:00",
+      "settled_estimated_usd": 0.035114
+    },
+    {
+      "name": "10_rereview_H02_1",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\10_rereview_H02_1",
+      "reserved_usd": 0.316045,
+      "started_at": "2026-11-05T03:37:54.055590+00:00",
+      "settled_estimated_usd": 0.0890975
+    },
+    {
+      "name": "09_revision_H02_2_1_single_E08",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H02_2_1_single_E08",
+      "reserved_usd": 0.29044,
+      "started_at": "2026-11-05T03:38:23.885620+00:00"
+    },
+    {
+      "name": "09_revision_H02_2_1_single_E08_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H02_2_1_single_E08_retry",
+      "reserved_usd": 0.29044,
+      "started_at": "2026-11-05T03:38:44.773638+00:00",
+      "settled_estimated_usd": 0.0641335
+    },
+    {
+      "name": "09_revision_H02_2_1_single_E10",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H02_2_1_single_E10",
+      "reserved_usd": 0.2903975,
+      "started_at": "2026-11-05T03:39:17.149983+00:00",
+      "settled_estimated_usd": 0.066616
+    },
+    {
+      "name": "09_revision_H02_2_1_single_E11",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H02_2_1_single_E11",
+      "reserved_usd": 0.2899225,
+      "started_at": "2026-11-05T03:39:42.343752+00:00",
+      "settled_estimated_usd": 0.062835
+    },
+    {
+      "name": "10_rereview_H02_2",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\10_rereview_H02_2",
+      "reserved_usd": 0.3178825,
+      "started_at": "2026-11-05T03:40:03.354331+00:00"
+    },
+    {
+      "name": "10_rereview_H02_2_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\10_rereview_H02_2_retry",
+      "reserved_usd": 0.3178825,
+      "started_at": "2026-11-05T03:40:10.984406+00:00",
+      "settled_estimated_usd": 0.083236
+    },
+    {
+      "name": "08_review_H03",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\08_review_H03",
+      "reserved_usd": 0.3081775,
+      "started_at": "2026-11-05T03:40:48.466343+00:00",
+      "settled_estimated_usd": 0.0791525
+    },
+    {
+      "name": "09_revision_H03_1_1_single_E13",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H03_1_1_single_E13",
+      "reserved_usd": 0.2870425,
+      "started_at": "2026-11-05T03:41:12.579881+00:00"
+    },
+    {
+      "name": "09_revision_H03_1_1_single_E13_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H03_1_1_single_E13_retry",
+      "reserved_usd": 0.2870425,
+      "started_at": "2026-11-05T03:41:17.961599+00:00"
+    },
+    {
+      "name": "09_revision_H03_1_1_single_E13_retry2",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H03_1_1_single_E13_retry2",
+      "reserved_usd": 0.2870425,
+      "started_at": "2026-11-05T03:41:49.780362+00:00"
+    },
+    {
+      "name": "09_revision_H03_1_1_single_E13_retry3",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H03_1_1_single_E13_retry3",
+      "reserved_usd": 0.2870425,
+      "started_at": "2026-11-05T03:42:05.147576+00:00",
+      "settled_estimated_usd": 0.0684785
+    },
+    {
+      "name": "09_revision_H03_1_1_single_E14",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H03_1_1_single_E14",
+      "reserved_usd": 0.286645,
+      "started_at": "2026-11-05T03:42:31.279757+00:00",
+      "settled_estimated_usd": 0.056206
+    },
+    {
+      "name": "09_revision_H03_1_1_single_E16",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H03_1_1_single_E16",
+      "reserved_usd": 0.28576,
+      "started_at": "2026-11-05T03:43:00.365451+00:00"
+    },
+    {
+      "name": "09_revision_H03_1_1_single_E16_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H03_1_1_single_E16_retry",
+      "reserved_usd": 0.28576,
+      "started_at": "2026-11-05T03:43:06.034392+00:00",
+      "settled_estimated_usd": 0.0498835
+    },
+    {
+      "name": "09_revision_H03_1_2",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H03_1_2",
+      "reserved_usd": 0.27631,
+      "started_at": "2026-11-05T03:43:34.624263+00:00",
+      "settled_estimated_usd": 0.045391
+    },
+    {
+      "name": "10_rereview_H03_1",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\10_rereview_H03_1",
+      "reserved_usd": 0.3170675,
+      "started_at": "2026-11-05T03:44:00.646323+00:00",
+      "settled_estimated_usd": 0.0900775
+    },
+    {
+      "name": "09_revision_H03_2_1_single_E14",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H03_2_1_single_E14",
+      "reserved_usd": 0.2807825,
+      "started_at": "2026-11-05T03:44:31.884578+00:00",
+      "settled_estimated_usd": 0.0517035
+    },
+    {
+      "name": "09_revision_H03_2_1_single_E16",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H03_2_1_single_E16",
+      "reserved_usd": 0.27955,
+      "started_at": "2026-11-05T03:44:49.364085+00:00"
+    },
+    {
+      "name": "09_revision_H03_2_1_single_E16_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H03_2_1_single_E16_retry",
+      "reserved_usd": 0.27955,
+      "started_at": "2026-11-05T03:44:56.686650+00:00",
+      "settled_estimated_usd": 0.0453635
+    },
+    {
+      "name": "10_rereview_H03_2",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\10_rereview_H03_2",
+      "reserved_usd": 0.31796,
+      "started_at": "2026-11-05T03:45:19.918053+00:00",
+      "settled_estimated_usd": 0.092285
+    },
+    {
+      "name": "08_review_H04",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\08_review_H04",
+      "reserved_usd": 0.3261875,
+      "started_at": "2026-11-05T03:45:45.875681+00:00"
+    },
+    {
+      "name": "08_review_H04_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\08_review_H04_retry",
+      "reserved_usd": 0.3261875,
+      "started_at": "2026-11-05T03:46:11.919987+00:00",
+      "settled_estimated_usd": 0.091355
+    },
+    {
+      "name": "09_revision_H04_1_1_single_E19",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H04_1_1_single_E19",
+      "reserved_usd": 0.2914825,
+      "started_at": "2026-11-05T03:46:42.289772+00:00",
+      "settled_estimated_usd": 0.0660735
+    },
+    {
+      "name": "09_revision_H04_1_1_single_E22",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H04_1_1_single_E22",
+      "reserved_usd": 0.29117,
+      "started_at": "2026-11-05T03:47:04.589803+00:00",
+      "settled_estimated_usd": 0.0735825
+    },
+    {
+      "name": "09_revision_H04_1_1_single_E24",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H04_1_1_single_E24",
+      "reserved_usd": 0.2913175,
+      "started_at": "2026-11-05T03:47:24.848382+00:00"
+    },
+    {
+      "name": "09_revision_H04_1_1_single_E24_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H04_1_1_single_E24_retry",
+      "reserved_usd": 0.2913175,
+      "started_at": "2026-11-05T03:47:41.406617+00:00",
+      "settled_estimated_usd": 0.036736
+    },
+    {
+      "name": "10_rereview_H04_1",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\10_rereview_H04_1",
+      "reserved_usd": 0.335135,
+      "started_at": "2026-11-05T03:48:11.023893+00:00"
+    },
+    {
+      "name": "10_rereview_H04_1_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\10_rereview_H04_1_retry",
+      "reserved_usd": 0.335135,
+      "started_at": "2026-11-05T03:48:32.052201+00:00",
+      "settled_estimated_usd": 0.1000325
+    },
+    {
+      "name": "08_review_H05",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\08_review_H05",
+      "reserved_usd": 0.3103675,
+      "started_at": "2026-11-05T03:48:51.495080+00:00"
+    },
+    {
+      "name": "08_review_H05_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\08_review_H05_retry",
+      "reserved_usd": 0.3103675,
+      "started_at": "2026-11-05T03:49:23.107988+00:00",
+      "settled_estimated_usd": 0.03142
+    },
+    {
+      "name": "09_revision_H05_1_1_single_E26",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H05_1_1_single_E26",
+      "reserved_usd": 0.28047,
+      "started_at": "2026-11-05T03:49:55.256504+00:00",
+      "settled_estimated_usd": 0.06232
+    },
+    {
+      "name": "09_revision_H05_1_1_single_E28",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H05_1_1_single_E28",
+      "reserved_usd": 0.28019,
+      "started_at": "2026-11-05T03:50:22.858551+00:00",
+      "settled_estimated_usd": 0.059735
+    },
+    {
+      "name": "09_revision_H05_1_1_single_E30",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H05_1_1_single_E30",
+      "reserved_usd": 0.280835,
+      "started_at": "2026-11-05T03:50:53.748710+00:00"
+    },
+    {
+      "name": "09_revision_H05_1_1_single_E30_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H05_1_1_single_E30_retry",
+      "reserved_usd": 0.280835,
+      "started_at": "2026-11-05T03:51:10.890662+00:00",
+      "settled_estimated_usd": 0.0536655
+    },
+    {
+      "name": "10_rereview_H05_1",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\10_rereview_H05_1",
+      "reserved_usd": 0.32043,
+      "started_at": "2026-11-05T03:52:37.183671+00:00"
+    },
+    {
+      "name": "10_rereview_H05_1_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\10_rereview_H05_1_retry",
+      "reserved_usd": 0.32043,
+      "started_at": "2026-11-05T03:52:53.019286+00:00",
+      "settled_estimated_usd": 0.0418625
+    },
+    {
+      "name": "09_revision_H05_2_1_single_E28",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H05_2_1_single_E28",
+      "reserved_usd": 0.28038,
+      "started_at": "2026-11-05T03:53:32.626721+00:00",
+      "settled_estimated_usd": 0.0662725
+    },
+    {
+      "name": "09_revision_H05_2_1_single_E30",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H05_2_1_single_E30",
+      "reserved_usd": 0.2799625,
+      "started_at": "2026-11-05T03:54:00.912179+00:00"
+    },
+    {
+      "name": "09_revision_H05_2_1_single_E30_retry",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\09_revision_H05_2_1_single_E30_retry",
+      "reserved_usd": 0.2799625,
+      "started_at": "2026-11-05T03:54:14.968297+00:00",
+      "settled_estimated_usd": 0.0386355
+    },
+    {
+      "name": "10_rereview_H05_2",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\10_rereview_H05_2",
+      "reserved_usd": 0.32554,
+      "started_at": "2026-11-05T03:54:44.668345+00:00",
+      "settled_estimated_usd": 0.0943625
+    },
+    {
+      "name": "10b_question_coverage",
+      "call_directory": "E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\runs\\reviewed_gpt54_repeat1\\calls\\10b_question_coverage",
+      "reserved_usd": 0.6224125,
+      "started_at": "2026-11-05T03:55:11.836743+00:00",
+      "settled_estimated_usd": 0.33674
+    }
+  ]
+}

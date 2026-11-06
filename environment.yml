@@ -1,0 +1,8 @@
+name: teoa-hypothesis-agent
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - pip
+  - pip:
+      - -r engine/requirements.txt

@@ -1,0 +1,114 @@
+{
+  "schema": "hypothesis_statistics_input.final_consensus.v1",
+  "body_paragraph_count": 73649,
+  "body_document_count": 1988,
+  "selected_entity_id": "entity:triethanolamine",
+  "candidate_count": 10,
+  "theme_count": 28,
+  "selected_theme_id": "C_4c53cf30b0f04969bffa2c1c367fc3dc",
+  "platform_category_count": 43,
+  "platform_document_count": 395,
+  "selected_platform_id": "center:Co",
+  "pi_top_to_second_ratio": 1.6166797738256646,
+  "entity_selection_method": "llm_candidates_merged_name_frequency",
+  "entity_selection_rule": "descending merged chunk_mentions; no role filter or weights; ties are not auto-selected",
+  "entity_statistics": [
+    {
+      "id": "entity:triethanolamine",
+      "name": "Triethanolamine",
+      "rank": 1,
+      "mentions": 2818,
+      "document_count": 288
+    },
+    {
+      "id": "entity:potassium_bicarbonate",
+      "name": "Potassium bicarbonate",
+      "rank": 2,
+      "mentions": 1215,
+      "document_count": 492
+    },
+    {
+      "id": "entity:triethylamine",
+      "name": "Triethylamine",
+      "rank": 3,
+      "mentions": 542,
+      "document_count": 125
+    },
+    {
+      "id": "entity:ethylenediaminetetraacetic_acid",
+      "name": "Ethylenediaminetetraacetic acid",
+      "rank": 4,
+      "mentions": 243,
+      "document_count": 54
+    },
+    {
+      "id": "entity:sodium_bicarbonate",
+      "name": "Sodium bicarbonate",
+      "rank": 5,
+      "mentions": 150,
+      "document_count": 86
+    },
+    {
+      "id": "entity:silver_nitrate",
+      "name": "Silver nitrate",
+      "rank": 6,
+      "mentions": 121,
+      "document_count": 78
+    },
+    {
+      "id": "entity:sodium_sulfide",
+      "name": "Sodium sulfide",
+      "rank": 7,
+      "mentions": 34,
+      "document_count": 20
+    },
+    {
+      "id": "entity:p_benzoquinone",
+      "name": "p-Benzoquinone",
+      "rank": 8,
+      "mentions": 28,
+      "document_count": 11
+    },
+    {
+      "id": "entity:sodium_sulfite",
+      "name": "Sodium sulfite",
+      "rank": 9,
+      "mentions": 25,
+      "document_count": 15
+    },
+    {
+      "id": "entity:iron_iii_chloride",
+      "name": "Iron(III) chloride",
+      "rank": 10,
+      "mentions": 23,
+      "document_count": 15
+    }
+  ],
+  "selected_claim": {
+    "claim_id": "C_4c53cf30b0f04969bffa2c1c367fc3dc",
+    "text": "Triethanolamine (TEOA) was used as a sacrificial electron donor, reductant, or hole scavenger in photocatalytic and related photoinduced systems.",
+    "document_count": 190,
+    "member_count": 338,
+    "mean_evidence": 1.1715976331360947,
+    "mean_evidence_exact": "198/169",
+    "top_impact_mean": 1.7352941176470589,
+    "priority_index": 50.23625130525583,
+    "formula": "df * (1 - mean_evidence/3) * top_k_mean_impact/4"
+  },
+  "raw_claim_count": 2726,
+  "total_theme_memberships": 1218,
+  "system_statistics": {
+    "corpus_documents": 395,
+    "model": "gpt-5.4-mini",
+    "ranking_scope": "photocatalytic CO2 subset",
+    "cobalt_photo_co2_documents": 37,
+    "cobalt_all_documents": 39,
+    "cobalt_authors_experiment_documents": 29
+  },
+  "platform_scope": "Element-center ranking, not ligand-defined or molecular-platform ranking. Co does not independently select Co-bpy. The published center table includes non-metal element labels.",
+  "corpus_relationship": "Entity nomination and claim extraction share the 1988-document base; the systems corpus is a separate 395-document collection.",
+  "evidence_score_scope": "Claim-specific evidence in the retained source context; the selected claim assigns an electron-donor/hole-scavenger function and does not assert that it is the only role.",
+  "numeric_results": "Mapped from the final consensus release outputs; all theme priority indices independently checked using exact fractions.",
+  "upstream_status": "Memberships and scores from the final consensus release, normalized for the hypothesis-generation reader.",
+  "comparator_status": "Research brief supplies the Co-bpy context and preliminary TEA/TEOA comparison; statistics do not establish a mechanism."
+}

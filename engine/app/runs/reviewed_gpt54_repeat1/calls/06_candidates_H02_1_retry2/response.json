@@ -1,0 +1,661 @@
+{
+  "candidates": [
+    {
+      "id": "E07",
+      "hypothesis_id": "H02",
+      "title": "Matched donor quenching in P01",
+      "purpose": "Test whether replacing TEOA with TEA changes absorber-side quenching or bleaching behavior in the primary Co-bpy/g-C3N4 platform while other formulation elements are held fixed.",
+      "evidence_ids": [
+        "EV053",
+        "EV011",
+        "GX007",
+        "EV059",
+        "GX008"
+      ],
+      "source_to_proposal": "EV059 anchors a TEOA-based CoCl2/bpy/g-C3N4 CO2-reduction formulation as P01. EV053 and GX007 show fluorescence or UV-vis can discriminate donor-dependent quenching behavior and that TEA substitution can change photochemical fading rates in another cobalt-containing photochemical system. EV011 supports TEA and TEOA as reductive quenchers that form distinct donor-derived radicals. GX008 supports inclusion of omission controls and bounded interpretation. Proposed transfer: apply these observables within P01 only as characterization of upstream photophysics, not proof of the full catalytic mechanism.",
+      "groups": [
+        {
+          "id": "E07G01",
+          "description": "P01 baseline with TEOA and cobalt present",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 formulation"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "light_condition",
+              "value": "matched illumination or excitation program"
+            },
+            {
+              "name": "sample_state",
+              "value": "same suspension or matched filtrate preparation"
+            },
+            {
+              "name": "atmosphere",
+              "value": "matched CO2-relevant preparation"
+            }
+          ]
+        },
+        {
+          "id": "E07G02",
+          "description": "P01 comparator with TEA and cobalt present",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 formulation"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "light_condition",
+              "value": "matched illumination or excitation program"
+            },
+            {
+              "name": "sample_state",
+              "value": "same suspension or matched filtrate preparation"
+            },
+            {
+              "name": "atmosphere",
+              "value": "matched CO2-relevant preparation"
+            }
+          ]
+        },
+        {
+          "id": "E07G03",
+          "description": "No-donor reference with cobalt present",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 formulation"
+            },
+            {
+              "name": "donor",
+              "value": "none"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "light_condition",
+              "value": "matched illumination or excitation program"
+            },
+            {
+              "name": "sample_state",
+              "value": "same suspension or matched filtrate preparation"
+            },
+            {
+              "name": "atmosphere",
+              "value": "matched CO2-relevant preparation"
+            }
+          ]
+        },
+        {
+          "id": "E07G04",
+          "description": "TEOA without cobalt to separate donor quenching from cobalt-associated effects",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 formulation"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "absent"
+            },
+            {
+              "name": "light_condition",
+              "value": "matched illumination or excitation program"
+            },
+            {
+              "name": "sample_state",
+              "value": "same suspension or matched filtrate preparation"
+            },
+            {
+              "name": "atmosphere",
+              "value": "matched CO2-relevant preparation"
+            }
+          ]
+        },
+        {
+          "id": "E07G05",
+          "description": "TEA without cobalt to separate donor quenching from cobalt-associated effects",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 formulation"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "absent"
+            },
+            {
+              "name": "light_condition",
+              "value": "matched illumination or excitation program"
+            },
+            {
+              "name": "sample_state",
+              "value": "same suspension or matched filtrate preparation"
+            },
+            {
+              "name": "atmosphere",
+              "value": "matched CO2-relevant preparation"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E07G01",
+          "group_b": "E07G02",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Primary donor-identity contrast within P01. A reproducible difference in fluorescence quenching, emission loss, or UV-vis bleaching supports donor-dependent upstream photophysics but does not establish why CO/H2 would shift."
+        },
+        {
+          "group_a": "E07G01",
+          "group_b": "E07G03",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Tests whether TEOA produces measurable donor-linked optical changes beyond the no-donor background."
+        },
+        {
+          "group_a": "E07G02",
+          "group_b": "E07G03",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Tests whether TEA produces measurable donor-linked optical changes beyond the no-donor background."
+        },
+        {
+          "group_a": "E07G04",
+          "group_b": "E07G05",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Assesses donor-specific optical behavior without cobalt present; agreement or disagreement with the cobalt-containing contrast helps bound cobalt-associated contributions."
+        }
+      ],
+      "procedure": [
+        "Prepare matched P01 samples for TEOA, TEA, no-donor, and corresponding no-cobalt references using the same batch logic for absorber, ligand, solvent family, and atmosphere handling.",
+        "Run steady-state fluorescence and/or UV-vis under identical optical settings, including pre-illumination baselines and short controlled illumination intervals if bleaching is tracked.",
+        "Record spectra for each group with replicate preparations and matched blanks for solvent and g-C3N4 scattering/background subtraction.",
+        "Compare donor-dependent quenching or bleaching trends first within cobalt-containing groups, then against no-cobalt references to separate donor-only from cobalt-associated effects."
+      ],
+      "measurements": [
+        "Steady-state emission intensity or Stern-Volmer-type response of the absorber-containing sample",
+        "UV-vis absorbance changes or bleaching trajectories under matched illumination",
+        "Background absorbance and scattering from donor-containing blanks and no-cobalt references",
+        "Replicate-to-replicate variance sufficient to judge whether TEA and TEOA differences exceed optical background drift",
+        "If filtrates are used, note that filtrate signals cannot establish the dominant operating state of suspended g-C3N4-bound species"
+      ],
+      "supports": "Support for H02 would be a reproducible TEA-versus-TEOA difference in quenching or bleaching direction within cobalt-containing P01, with the donor contrast larger than instrumental/background variation and directionally consistent with any independently observed catalytic selectivity change. Similar donor differences in no-cobalt references would indicate an absorber-side donor effect; stronger differences only when cobalt is present would suggest donor-sensitive cobalt-associated pathways.",
+      "refutes": "Evidence against a mainly upstream donor-quenching explanation would be indistinguishable TEA and TEOA optical responses in the matched cobalt-containing P01 samples after background correction and calibration, especially if catalytic CO/H2 still differs under the same formulation. That outcome would shift weight toward downstream proton-transfer, substrate-binding, or catalyst-state explanations.",
+      "inconclusive": "Inconclusive if scattering, inner-filter effects, donor absorbance, suspension instability, or uncontrolled pH/ionic-strength changes prevent reliable comparison; also inconclusive if donor differences appear only in multi-factor unmatched sample states or if optical changes cannot be separated from irreversible decomposition.",
+      "parameter_selection": "Use the literature-defined P01 composition family as the chemical starting point but verify exact loadings and optical density from source or pilot rather than inventing values. Pilot by scanning sample dilution and path length until baseline absorbance and emission are within the linear detector range and g-C3N4 scattering does not saturate the signal. Use identical preparation age, mixing, and illumination dose across groups. If suspension measurements are unstable, pilot matched filtrate and suspension modes as separate sample states rather than mixing them in one contrast.",
+      "limitations": "Steady-state optical changes can indicate donor-dependent quenching or bleaching but cannot by themselves assign the reduced cobalt species, quantify electron flux into catalysis, or prove causation for CO/H2 selectivity. Support effects in P01 may make absorber and cobalt contributions overlap. No-cobalt references do not recreate the full catalytic manifold. If multiple factors such as donor identity and pH drift co-vary, causal attribution remains limited.",
+      "feasibility": "low_cost"
+    },
+    {
+      "id": "E08",
+      "hypothesis_id": "H02",
+      "title": "Transient reduced-state comparison",
+      "purpose": "Determine whether TEA and TEOA produce different transient reduced-state amplitudes or lifetimes in the primary P01 system, indicating altered electron-delivery dynamics into the cobalt-containing catalytic manifold.",
+      "evidence_ids": [
+        "EV007",
+        "EV018",
+        "EV005",
+        "EV041",
+        "GX008"
+      ],
+      "source_to_proposal": "EV007, EV041, and EV018 show that TEOA can alter reduced-state formation or lifetime and that CO2 can change transient decay behavior in photocatalytic systems. EV005 supports transient absorption as a way to monitor electron-side kinetics while cautioning that some carriers are inferred indirectly. GX008 supports TAS and related in situ methods for photocatalytic systems. Proposed transfer: use transient spectroscopy in P01 to compare donor-dependent kinetic observables, with assignments kept provisional unless cross-checked by catalyst-free references.",
+      "groups": [
+        {
+          "id": "E08G01",
+          "description": "P01 transient measurement with TEOA and cobalt present",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 formulation"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "light_condition",
+              "value": "matched pump-probe excitation"
+            },
+            {
+              "name": "sample_state",
+              "value": "operando-relevant suspension or matched optical cell preparation"
+            },
+            {
+              "name": "atmosphere",
+              "value": "matched CO2-relevant preparation"
+            }
+          ]
+        },
+        {
+          "id": "E08G02",
+          "description": "P01 transient measurement with TEA and cobalt present",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 formulation"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "light_condition",
+              "value": "matched pump-probe excitation"
+            },
+            {
+              "name": "sample_state",
+              "value": "operando-relevant suspension or matched optical cell preparation"
+            },
+            {
+              "name": "atmosphere",
+              "value": "matched CO2-relevant preparation"
+            }
+          ]
+        },
+        {
+          "id": "E08G03",
+          "description": "No-donor background with cobalt present",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 formulation"
+            },
+            {
+              "name": "donor",
+              "value": "none"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "light_condition",
+              "value": "matched pump-probe excitation"
+            },
+            {
+              "name": "sample_state",
+              "value": "operando-relevant suspension or matched optical cell preparation"
+            },
+            {
+              "name": "atmosphere",
+              "value": "matched CO2-relevant preparation"
+            }
+          ]
+        },
+        {
+          "id": "E08G04",
+          "description": "TEOA without cobalt reference",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 formulation"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "absent"
+            },
+            {
+              "name": "light_condition",
+              "value": "matched pump-probe excitation"
+            },
+            {
+              "name": "sample_state",
+              "value": "operando-relevant suspension or matched optical cell preparation"
+            },
+            {
+              "name": "atmosphere",
+              "value": "matched CO2-relevant preparation"
+            }
+          ]
+        },
+        {
+          "id": "E08G05",
+          "description": "TEA without cobalt reference",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 formulation"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "absent"
+            },
+            {
+              "name": "light_condition",
+              "value": "matched pump-probe excitation"
+            },
+            {
+              "name": "sample_state",
+              "value": "operando-relevant suspension or matched optical cell preparation"
+            },
+            {
+              "name": "atmosphere",
+              "value": "matched CO2-relevant preparation"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E08G01",
+          "group_b": "E08G02",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Primary contrast for donor-dependent transient amplitudes or lifetimes in the full P01 formulation. A directional difference supports changed upstream electron delivery but not the exact identity of the active cobalt intermediate."
+        },
+        {
+          "group_a": "E08G01",
+          "group_b": "E08G03",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Tests whether TEOA creates donor-enabled transient populations above the no-donor background."
+        },
+        {
+          "group_a": "E08G02",
+          "group_b": "E08G03",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Tests whether TEA creates donor-enabled transient populations above the no-donor background."
+        },
+        {
+          "group_a": "E08G04",
+          "group_b": "E08G05",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Compares donor-dependent carrier dynamics without cobalt; agreement with the cobalt-containing contrast suggests absorber-side origin, whereas divergence suggests cobalt-associated kinetic effects."
+        }
+      ],
+      "procedure": [
+        "Use the E07 optical pilots to choose a sample state and spectral window with stable baseline and measurable transient signal in P01.",
+        "Acquire transient absorption or analogous charge-carrier traces for all groups under matched pump fluence, optical path, and atmosphere handling, including dark/background subtraction.",
+        "Fit donor-dependent amplitudes and lifetimes only within time windows where signal assignment is reproducible, and compare with no-donor and no-cobalt references.",
+        "If a candidate reduced-state band is identified, test whether the signal tracks donor identity consistently across independent preparations rather than relying on a single trace."
+      ],
+      "measurements": [
+        "Transient absorption amplitude at selected probe wavelengths",
+        "Decay kinetics or characteristic lifetimes of donor-enabled transient species",
+        "Ground-state bleach recovery if observable",
+        "Dark and no-donor background traces for subtraction and artifact detection",
+        "Reference traces from no-cobalt samples to separate absorber/carrier signals from cobalt-associated signals",
+        "Statement that any transient band assignment cannot by itself prove the catalytically dominant cobalt species or complete pathway"
+      ],
+      "supports": "Support for H02 would be a reproducible donor-dependent difference in transient reduced-state amplitude, persistence, or formation kinetics under otherwise matched P01 conditions, especially if the direction matches E07 quenching trends and any catalytic selectivity trend. Larger or longer-lived donor-enabled reduced populations for one amine would support altered upstream electron delivery into the catalytic manifold.",
+      "refutes": "Refutation of a strongly upstream donor-kinetics account would be essentially matched transient amplitudes and lifetimes for TEA and TEOA in the full P01 formulation, with reliable controls showing the method is sensitive enough to detect donor-enabled signals at all. If catalytic selectivity still differs under matched conditions, the weight shifts toward downstream chemistry.",
+      "inconclusive": "Inconclusive if transient signals are too weak, dominated by scattering or photothermal artifacts, or cannot be assigned beyond generic carrier dynamics; also inconclusive if donor substitution changes multiple uncontrolled properties such as pH or viscosity enough to confound kinetic interpretation, or if sample degradation during measurement alters successive traces.",
+      "parameter_selection": "Choose probe wavelengths and time windows by pilot spectra on the TEOA baseline and no-donor control, selecting regions with clear signal-to-noise and minimal lamp/scattering artifacts. Calibrate pump fluence below the regime where signal scales nonlinearly or sample damage appears. Keep preparation age, suspension density, and optical path identical across groups. If assignment is uncertain, report donor-dependent kinetic differences descriptively and avoid species-specific labels unless corroborated by no-cobalt or absorber-only references.",
+      "limitations": "This experiment requires specialist instrumentation and may still yield ambiguous assignments in a supported heterogeneous system. TAS can reveal kinetic differences but not full mechanism, product origin, or exact cobalt structure. No-cobalt controls help but do not reconstruct the same interfacial environment. If donor identity also changes proton activity or medium properties, a single transient contrast cannot isolate pure electron-transfer causality.",
+      "feasibility": "specialist"
+    },
+    {
+      "id": "E09",
+      "hypothesis_id": "H02",
+      "title": "Supplementary P02 quenching transfer",
+      "purpose": "Use the more chemically defined homogeneous cobalt/Ru platform P02 as a supplementary test of whether TEA versus TEOA changes donor-side quenching behavior when support effects are minimized.",
+      "evidence_ids": [
+        "EV065",
+        "EV053",
+        "EV077",
+        "EV011"
+      ],
+      "source_to_proposal": "EV065 provides a cobalt photocatalytic CO2-reduction platform with Ru photosensitizer and TEOA plus quenching evidence, making P02 suitable for a supplementary donor-substitution test. EV053 and EV077 support luminescence or UV-vis quenching as mechanistic probes in donor-containing cobalt-related photochemical systems. EV011 supports TEA and TEOA as reductive quenchers that form donor-derived radicals. Proposed transfer: hold the P02 catalyst and photosensitizer constant, substitute TEA for TEOA, and compare quenching directionality without claiming that absolute kinetics or mechanism are identical to P01.",
+      "groups": [
+        {
+          "id": "E09G01",
+          "description": "P02 baseline homogeneous cobalt/Ru system with TEOA",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P02 homogeneous cobalt plus Ru photosensitizer formulation"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "photosensitizer",
+              "value": "present"
+            },
+            {
+              "name": "light_condition",
+              "value": "matched excitation program"
+            },
+            {
+              "name": "atmosphere",
+              "value": "CO2-saturated matched preparation"
+            }
+          ]
+        },
+        {
+          "id": "E09G02",
+          "description": "P02 comparator with TEA replacing TEOA",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P02 homogeneous cobalt plus Ru photosensitizer formulation"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "photosensitizer",
+              "value": "present"
+            },
+            {
+              "name": "light_condition",
+              "value": "matched excitation program"
+            },
+            {
+              "name": "atmosphere",
+              "value": "CO2-saturated matched preparation"
+            }
+          ]
+        },
+        {
+          "id": "E09G03",
+          "description": "P02 no-donor reference",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P02 homogeneous cobalt plus Ru photosensitizer formulation"
+            },
+            {
+              "name": "donor",
+              "value": "none"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "photosensitizer",
+              "value": "present"
+            },
+            {
+              "name": "light_condition",
+              "value": "matched excitation program"
+            },
+            {
+              "name": "atmosphere",
+              "value": "CO2-saturated matched preparation"
+            }
+          ]
+        },
+        {
+          "id": "E09G04",
+          "description": "P02 donor-only optical reference with TEOA and no cobalt",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P02 homogeneous cobalt plus Ru photosensitizer formulation"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "absent"
+            },
+            {
+              "name": "photosensitizer",
+              "value": "present"
+            },
+            {
+              "name": "light_condition",
+              "value": "matched excitation program"
+            },
+            {
+              "name": "atmosphere",
+              "value": "CO2-saturated matched preparation"
+            }
+          ]
+        },
+        {
+          "id": "E09G05",
+          "description": "P02 donor-only optical reference with TEA and no cobalt",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P02 homogeneous cobalt plus Ru photosensitizer formulation"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "absent"
+            },
+            {
+              "name": "photosensitizer",
+              "value": "present"
+            },
+            {
+              "name": "light_condition",
+              "value": "matched excitation program"
+            },
+            {
+              "name": "atmosphere",
+              "value": "CO2-saturated matched preparation"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E09G01",
+          "group_b": "E09G02",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Primary donor-substitution contrast in the supplementary homogeneous platform. A measurable difference supports a transferable donor-side quenching effect under cleaner optical conditions, but not direct equivalence to P01."
+        },
+        {
+          "group_a": "E09G01",
+          "group_b": "E09G03",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Tests whether TEOA measurably quenches or alters the excited-state signal relative to no donor."
+        },
+        {
+          "group_a": "E09G02",
+          "group_b": "E09G03",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Tests whether TEA measurably quenches or alters the excited-state signal relative to no donor."
+        },
+        {
+          "group_a": "E09G04",
+          "group_b": "E09G05",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Compares donor-specific optical effects without cobalt in P02 to help distinguish donor-to-photosensitizer quenching from cobalt-involved pathways."
+        }
+      ],
+      "procedure": [
+        "Prepare the literature-anchored P02 baseline with cobalt catalyst, Ru photosensitizer, solvent family, and CO2 handling matched across donor conditions, then generate TEA, no-donor, and no-cobalt variants.",
+        "Measure fluorescence quenching, Stern-Volmer response, or equivalent UV-vis/luminescence observables for each group under identical optical settings.",
+        "Use donor-only no-cobalt references to identify direct donor-to-photosensitizer quenching behavior before attributing changes to cobalt-involved pathways.",
+        "Compare the direction of the TEA-versus-TEOA effect in P02 with the direction seen in P01, while keeping conclusions limited to transferable donor-side behavior."
+      ],
+      "measurements": [
+        "Photosensitizer emission intensity and quenching response versus donor condition",
+        "Stern-Volmer-type slopes or other relative quenching metrics if the response is linear enough in the chosen range",
+        "UV-vis changes indicating donor- or cobalt-associated spectral perturbations",
+        "Blank and no-donor signals for baseline correction",
+        "Explicit note that quenching metrics in P02 cannot establish matched active chemistry or absolute electron flux in P01"
+      ],
+      "supports": "Support for H02 would be a reproducible TEA-versus-TEOA quenching difference in P02, particularly if the effect direction agrees with P01 characterization and any P01 catalytic selectivity trend. Agreement across platforms would strengthen the idea that donor identity can alter upstream photoredox delivery rather than acting only through P01-specific support effects.",
+      "refutes": "If TEA and TEOA behave indistinguishably in P02 despite clear method sensitivity and P01 still shows large CO/H2 differences, that weakens a general donor-side quenching explanation and points toward platform-specific downstream causes. It would not alone falsify a P01-specific upstream effect because the platforms differ.",
+      "inconclusive": "Inconclusive if donor substitution changes solubility, excited-state background, or acid-base conditions enough to obscure clean Stern-Volmer behavior; also inconclusive if P02 quenching differs but P01 does not, because that could reflect real platform dependence rather than a universal donor effect.",
+      "parameter_selection": "Use the P02 formulation family exactly as anchored by EV065 for component identity, but verify concentrations and optical range from the source or pilot. Select donor and photosensitizer ranges where the baseline emission is measurable and quenching analysis remains within the detector's linear regime. If Stern-Volmer plots curve or deviate strongly, report relative quenching descriptively rather than forcing a single rate interpretation. Keep solvent family, deoxygenation, CO2 saturation, and illumination history matched across groups.",
+      "limitations": "This is a supplementary system, not the main inference target. Even a clean donor effect in P02 cannot prove that P01 shares the same mechanistic route because catalyst architecture, absorber identity, and support effects differ. Conversely, lack of a P02 effect does not eliminate a P01-specific donor influence. The experiment is best used for directional transfer, not quantitative mechanistic equivalence.",
+      "feasibility": "moderate"
+    }
+  ]
+}

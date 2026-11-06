@@ -1,0 +1,481 @@
+{
+  "candidates": [
+    {
+      "id": "E10",
+      "hypothesis_id": "H02",
+      "title": "Matched TEA/TEOA photophysics-to-products correlation in the Co-bpy baseline, with optional homogeneous bridge",
+      "purpose": "Test whether TEA-versus-TEOA substitution changes donor-side quenching or transient reduced-state observables in the same direction as any CO/H2 shift under otherwise matched conditions, while bounding conclusions if photophysical and catalytic changes decouple.",
+      "evidence_ids": [
+        "EV053",
+        "EV065",
+        "EV007",
+        "EV081",
+        "GX007"
+      ],
+      "source_to_proposal": "Sources support donor-dependent quenching measurements and show that donor identity can change irradiation-time photochemical behavior, while catalytic systems require CO and H2 to be quantified together with catalyst-free background controls. The proposal transfers these observations into a matched TEA-versus-TEOA comparison in the recommended Co-bpy platform, and optionally into the supplementary homogeneous cobalt/Ru platform for a cleaner donor-side bridge. This is a proposed correlation test, not proof that any observed photophysical change is the sole cause of selectivity.",
+      "groups": [
+        {
+          "id": "E10G01",
+          "description": "Primary-platform TEOA baseline under CO2 with full catalytic and photophysical readout",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 primary CoCl2 + 2,2'-bipyridine + g-C3N4 formulation"
+            },
+            {
+              "name": "donor_additive",
+              "value": "TEOA"
+            },
+            {
+              "name": "atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "matched on"
+            },
+            {
+              "name": "measurement_block",
+              "value": "catalysis plus donor-side photophysics"
+            },
+            {
+              "name": "reactor_analytics",
+              "value": "same vessel geometry and same gas-analysis workflow"
+            }
+          ]
+        },
+        {
+          "id": "E10G02",
+          "description": "Primary-platform TEA comparator under CO2 with all non-donor components fixed",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 primary CoCl2 + 2,2'-bipyridine + g-C3N4 formulation"
+            },
+            {
+              "name": "donor_additive",
+              "value": "TEA"
+            },
+            {
+              "name": "atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "matched on"
+            },
+            {
+              "name": "measurement_block",
+              "value": "catalysis plus donor-side photophysics"
+            },
+            {
+              "name": "reactor_analytics",
+              "value": "same vessel geometry and same gas-analysis workflow"
+            }
+          ]
+        },
+        {
+          "id": "E10G03",
+          "description": "Primary-platform no-cobalt background control with TEOA",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 primary CoCl2 + 2,2'-bipyridine + g-C3N4 formulation with cobalt omitted"
+            },
+            {
+              "name": "donor_additive",
+              "value": "TEOA"
+            },
+            {
+              "name": "atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "matched on"
+            },
+            {
+              "name": "measurement_block",
+              "value": "catalysis plus donor-side photophysics"
+            },
+            {
+              "name": "reactor_analytics",
+              "value": "same vessel geometry and same gas-analysis workflow"
+            }
+          ]
+        },
+        {
+          "id": "E10G04",
+          "description": "Primary-platform no-cobalt background control with TEA",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 primary CoCl2 + 2,2'-bipyridine + g-C3N4 formulation with cobalt omitted"
+            },
+            {
+              "name": "donor_additive",
+              "value": "TEA"
+            },
+            {
+              "name": "atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "matched on"
+            },
+            {
+              "name": "measurement_block",
+              "value": "catalysis plus donor-side photophysics"
+            },
+            {
+              "name": "reactor_analytics",
+              "value": "same vessel geometry and same gas-analysis workflow"
+            }
+          ]
+        },
+        {
+          "id": "E10G05",
+          "description": "Optional supplementary homogeneous bridge using the literature-supported cobalt/Ru/TEOA platform logic, swapping only donor identity",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P02 supplementary homogeneous cobalt plus Ru photosensitizer formulation"
+            },
+            {
+              "name": "donor_additive",
+              "value": "TEA and TEOA run as a paired bridge set with all non-donor components fixed"
+            },
+            {
+              "name": "atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "matched on"
+            },
+            {
+              "name": "measurement_block",
+              "value": "photophysics first and catalysis if stable"
+            },
+            {
+              "name": "reactor_analytics",
+              "value": "same vessel geometry and same gas-analysis workflow"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E10G01",
+          "group_b": "E10G02",
+          "changed_factors": [
+            "donor_additive"
+          ],
+          "inference": "Primary single-factor test of whether donor identity shifts both donor-side observables and catalytic CO/H2 outputs under matched P01 conditions."
+        },
+        {
+          "group_a": "E10G03",
+          "group_b": "E10G04",
+          "changed_factors": [
+            "donor_additive"
+          ],
+          "inference": "Checks whether donor substitution changes background photochemistry or H2 formation without cobalt, bounding catalyst-specific interpretation."
+        },
+        {
+          "group_a": "E10G01",
+          "group_b": "E10G03",
+          "changed_factors": [
+            "platform"
+          ],
+          "inference": "Assesses cobalt-dependent contribution under TEOA, but because cobalt omission changes the catalytic manifold this is a necessity/background contrast rather than a donor-side causal test."
+        },
+        {
+          "group_a": "E10G02",
+          "group_b": "E10G04",
+          "changed_factors": [
+            "platform"
+          ],
+          "inference": "Assesses cobalt-dependent contribution under TEA, again as a necessity/background contrast rather than a donor-side causal test."
+        }
+      ],
+      "procedure": [
+        "Verify a chemically matched P01 baseline from the supplied recommendation, then prepare paired TEA and TEOA formulations with all non-donor components, reactor geometry, gas handling, and analytical workflow held fixed; include cobalt-omission controls and add the optional P02 bridge only after P01 matching is demonstrated.",
+        "For each group, collect donor-side photophysical data on the actual reaction mixture or the closest justified sub-mixture: steady-state emission or absorbance changes suitable for quenching analysis, and a transient optical readout assigned only as a reduced-state or charge-carrier proxy after background subtraction and reference checks.",
+        "Run matched photocatalysis on the same formulations and quantify both CO and H2 with time-resolved sampling if signal is above detection limits; analyze no-cobalt groups in parallel to estimate donor/photosensitizer/support background contributions.",
+        "Compare the direction, reproducibility, and qualitative magnitude ordering of donor-dependent photophysical changes against donor-dependent CO/H2 changes across replicate runs; if used, test whether the same direction holds in the P02 bridge without assuming mechanistic identity across platforms."
+      ],
+      "measurements": [
+        "CO amount and H2 amount from the same gas-analysis workflow; derived selectivity reported only as a transformation of measured products, not as a sole readout.",
+        "Emission intensity or lifetime changes of the light-absorbing component versus donor identity for matched sub-mixtures; this reports quenching behavior but cannot alone identify the exact quencher or catalytic intermediate.",
+        "Transient absorbance or equivalent time-resolved optical signal assigned to a reduced-state or charge-carrier proxy using references/backgrounds; this can indicate donor-dependent formation or persistence of a transient species but cannot by itself establish the active cobalt state.",
+        "Background product formation in cobalt-omission groups to bound donor/photosensitizer/support contributions.",
+        "If the optional bridge is used, the same classes of photophysical readouts and product measurements in P02 to test directionality transfer only."
+      ],
+      "supports": "H02 is supported if, across matched TEA and TEOA runs in P01, donor substitution produces a reproducible shift in at least one donor-side quenching or transient reduced-state observable and the catalytic CO/H2 output changes in the same directional sense, while cobalt-omission controls do not fully account for the product shift. Agreement in direction in the optional P02 bridge would strengthen but not prove transfer.",
+      "refutes": "H02 is weakened if TEA and TEOA give similar donor-side quenching and transient observables within experimental resolution in P01, yet CO/H2 differs reproducibly beyond the bounded background seen in cobalt-omission controls. That outcome would favor downstream explanations such as proton-management, catalyst-state, or substrate-binding differences.",
+      "inconclusive": "The result is inconclusive if P01 TEA and TEOA cannot be matched reproducibly, if photophysical signals are below assignment confidence or dominated by scattering/support artifacts, if background product formation is too large to isolate cobalt-dependent behavior, or if multiple observables shift in inconsistent directions so that no clear photophysics-to-products correspondence can be established.",
+      "parameter_selection": "Do not invent donor concentration, catalyst loading, light intensity, or sampling times. Start from the literature-anchored P01 baseline formulation and verify exact values from the supplied system recommendation. Before the full comparison, run a pilot to choose a dilution window that keeps optical signals measurable without changing component identities, confirms linear detector response, and avoids complete inner-filter saturation. Choose catalytic sampling times by first bracketing an early, mid, and later illumination interval where both CO and H2 remain above detection and the no-cobalt control stays interpretable. For the optional P02 bridge, first confirm that the TEOA formulation reproduces the expected quenching observability before introducing TEA as the single-variable comparator.",
+      "limitations": "P01 support effects may decouple measured optical observables from the chemically active manifold. A correlation, even if reproducible, does not exclude coupled proton-transfer or cobalt-speciation changes. A lack of correlation may reflect insensitive observables rather than true absence of donor-side differences. Cobalt-omission contrasts are inherently multi-effect necessity tests because omitting cobalt changes the catalytic manifold and may alter background charge recombination. The P02 bridge improves photophysical interpretability but is not chemically identical to the Co-bpy/g-C3N4 target, so only directionality transfer is justified.",
+      "feasibility": "moderate"
+    },
+    {
+      "id": "E11",
+      "hypothesis_id": "H02",
+      "title": "Donor-radical detection under TEA versus TEOA substitution",
+      "purpose": "Test whether replacing TEOA with TEA changes detectable donor-derived radical signatures under illumination in the TEOA-focused cobalt comparison program. This probes donor-side reactive intermediates, not catalytic products, and asks whether any spectroscopic difference tracks the proposed upstream photoredox-route change.",
+      "evidence_ids": [
+        "EV016",
+        "EV011",
+        "GX018"
+      ],
+      "source_to_proposal": "EV016 reports EPR spin-trapping detection of TEOA-derived radicals and notes TEA/TEOA adduct similarity with TEOA line broadening attributed to viscosity; EV011 supports that both TEA and TEOA can form alpha-aminoalkyl radical reductants after excited-state quenching; GX018 provides the transferable framework that sacrificial-donor radical cation/radical species can arise in photochemical quenching but their exact mechanistic role is uncertain. Proposed transfer: adapt radical-detection comparison to matched donor-substitution formulations anchored to the main Co context, while treating any assignment as provisional and separating radical observation from catalytic causation.",
+      "groups": [
+        {
+          "id": "E11G01",
+          "description": "Illuminated baseline donor formulation with TEOA in the selected cobalt-platform matrix",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 or P02 matched donor-comparison matrix selected by feasibility review"
+            },
+            {
+              "name": "cobalt-containing component",
+              "value": "present"
+            },
+            {
+              "name": "light-absorbing component",
+              "value": "present"
+            },
+            {
+              "name": "donor_identity",
+              "value": "TEOA"
+            },
+            {
+              "name": "spin_trap_or_radical_probe",
+              "value": "present"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "atmosphere",
+              "value": "matched inert or CO2 condition chosen for the full set"
+            },
+            {
+              "name": "solvent_matrix",
+              "value": "matched within experiment"
+            }
+          ]
+        },
+        {
+          "id": "E11G02",
+          "description": "Illuminated comparator donor formulation with TEA substituted as the only intended chemical change",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 or P02 matched donor-comparison matrix selected by feasibility review"
+            },
+            {
+              "name": "cobalt-containing component",
+              "value": "present"
+            },
+            {
+              "name": "light-absorbing component",
+              "value": "present"
+            },
+            {
+              "name": "donor_identity",
+              "value": "TEA"
+            },
+            {
+              "name": "spin_trap_or_radical_probe",
+              "value": "present"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "atmosphere",
+              "value": "matched inert or CO2 condition chosen for the full set"
+            },
+            {
+              "name": "solvent_matrix",
+              "value": "matched within experiment"
+            }
+          ]
+        },
+        {
+          "id": "E11G03",
+          "description": "Dark control for the TEOA formulation",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 or P02 matched donor-comparison matrix selected by feasibility review"
+            },
+            {
+              "name": "cobalt-containing component",
+              "value": "present"
+            },
+            {
+              "name": "light-absorbing component",
+              "value": "present"
+            },
+            {
+              "name": "donor_identity",
+              "value": "TEOA"
+            },
+            {
+              "name": "spin_trap_or_radical_probe",
+              "value": "present"
+            },
+            {
+              "name": "illumination",
+              "value": "off"
+            },
+            {
+              "name": "atmosphere",
+              "value": "matched inert or CO2 condition chosen for the full set"
+            },
+            {
+              "name": "solvent_matrix",
+              "value": "matched within experiment"
+            }
+          ]
+        },
+        {
+          "id": "E11G04",
+          "description": "Dark control for the TEA formulation",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 or P02 matched donor-comparison matrix selected by feasibility review"
+            },
+            {
+              "name": "cobalt-containing component",
+              "value": "present"
+            },
+            {
+              "name": "light-absorbing component",
+              "value": "present"
+            },
+            {
+              "name": "donor_identity",
+              "value": "TEA"
+            },
+            {
+              "name": "spin_trap_or_radical_probe",
+              "value": "present"
+            },
+            {
+              "name": "illumination",
+              "value": "off"
+            },
+            {
+              "name": "atmosphere",
+              "value": "matched inert or CO2 condition chosen for the full set"
+            },
+            {
+              "name": "solvent_matrix",
+              "value": "matched within experiment"
+            }
+          ]
+        },
+        {
+          "id": "E11G05",
+          "description": "No-absorber illuminated control to bound background donor or trap reactions",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 or P02 matched donor-comparison matrix selected by feasibility review"
+            },
+            {
+              "name": "cobalt-containing component",
+              "value": "present"
+            },
+            {
+              "name": "light-absorbing component",
+              "value": "absent"
+            },
+            {
+              "name": "donor_identity",
+              "value": "TEOA or TEA matched in paired repeat"
+            },
+            {
+              "name": "spin_trap_or_radical_probe",
+              "value": "present"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "atmosphere",
+              "value": "matched inert or CO2 condition chosen for the full set"
+            },
+            {
+              "name": "solvent_matrix",
+              "value": "matched within experiment"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E11G01",
+          "group_b": "E11G02",
+          "changed_factors": [
+            "donor_identity"
+          ],
+          "inference": "Primary substitution contrast. A reproducible difference in radical signal appearance, identity assignment, growth profile, or decay behavior supports donor-dependent upstream photoredox-route differences; similar signatures weaken but do not by themselves exclude H02."
+        },
+        {
+          "group_a": "E11G01",
+          "group_b": "E11G03",
+          "changed_factors": [
+            "illumination"
+          ],
+          "inference": "Tests whether the TEOA radical-associated signal is light-dependent rather than an artifact of mixing, donor oxidation during handling, or trap background chemistry."
+        },
+        {
+          "group_a": "E11G02",
+          "group_b": "E11G04",
+          "changed_factors": [
+            "illumination"
+          ],
+          "inference": "Tests whether the TEA radical-associated signal is light-dependent under the same matrix."
+        },
+        {
+          "group_a": "E11G01",
+          "group_b": "E11G05",
+          "changed_factors": [
+            "light-absorbing component",
+            "donor_identity"
+          ],
+          "inference": "Descriptive background check only. Because donor identity is not strictly matched in this compressed control slot, any difference is confounded; use it only to bound absorber-free background radical formation and trigger a paired no-absorber repeat if background is non-negligible."
+        }
+      ],
+      "procedure": [
+        "Select P02 if homogeneous donor-side readout is workable; otherwise retain P01 and document added support/heterogeneity limits, then prepare TEA and TEOA formulations with all non-donor components matched.",
+        "Run a pilot to confirm the radical probe gives a stable baseline and that donor-containing illuminated samples produce a resolvable signal above dark and no-absorber backgrounds before collecting comparative data.",
+        "Acquire time-matched radical-detection spectra for illuminated and dark groups using identical sample handling, irradiation history, and acquisition settings; repeat TEA and TEOA runs in interleaved order to reduce drift bias.",
+        "Compare signal presence, line shape, intensity evolution, and persistence across donor substitution while recording viscosity- or broadening-related differences and avoiding overassignment from one spectral feature alone."
+      ],
+      "measurements": [
+        "EPR or equivalent radical-detection spectra of illuminated and dark samples with donor substitution held as the primary variable",
+        "Signal presence/absence relative to dark and no-absorber backgrounds",
+        "Line shape and linewidth, noting that broader features can reflect viscosity or motion effects rather than a different radical identity",
+        "Time-dependent growth and decay of the trapped-radical-associated signal under matched irradiation and acquisition windows",
+        "If feasible, parallel optical absorbance or emission checks confirming the absorber remains present; these do not identify the radical"
+      ],
+      "supports": "Support for H02 would be a reproducible donor-substitution effect under matched conditions in which TEA and TEOA differ in radical-associated signal emergence, spectral pattern, or time profile, with both illuminated samples exceeding their dark controls. Stronger support occurs if the direction of this donor-side difference also matches independent quenching or transient-state trends from linked experiments. Such observations would indicate different upstream donor reactivity routes are plausible contributors to the TEA/TEOA catalytic difference, not proof of the full catalytic mechanism.",
+      "refutes": "Evidence against H02 as the dominant explanation would be closely similar TEA and TEOA radical-detection behavior across repeated matched runs, combined with clean light dependence and adequate sensitivity, especially if linked quenching measurements are also similar while catalysis still diverges. That pattern would shift emphasis toward downstream proton-transfer, substrate-binding, catalyst-state, or medium effects rather than donor-radical route differences.",
+      "inconclusive": "Inconclusive outcomes include no resolved signal for either donor, signals dominated by trap or background chemistry, severe line broadening or overlap preventing assignment, absorber instability during measurement, or donor differences that can be explained equally by viscosity, solubility, or probe-response artifacts. Observation of a radical-associated signal alone cannot establish that it is the productive reductant, that it controls CO versus H2, or that the same species dominates under catalytic turnover.",
+      "parameter_selection": "Do not invent donor loading, irradiation time, or trap concentration from unrelated sources. Calibrate by a short pilot series that seeks the lowest probe level giving a stable baseline and the shortest illumination/acquisition window that resolves a light-dependent signal without obvious absorber bleaching or runaway background. Keep the same solvent matrix, nominal donor role, atmosphere, irradiation geometry, and acquisition settings for TEA and TEOA once the pilot is fixed. If P01 gives unresolved spectra because of support scattering or broad backgrounds, switch this candidate to P02 as the cleaner supplementary platform and explicitly treat transfer back to P01 as provisional.",
+      "limitations": "Method transfer is indirect for the target Co-bpy/g-C3N4 context. Radical trapping can perturb chemistry, and spectra may reflect secondary trapped products rather than the immediate quenching intermediate. TEA and TEOA can differ in viscosity and line broadening, so spectral differences are not automatically chemical-identity differences. In P01, heterogeneity and support interactions may obscure donor-radical detection. This characterization does not measure CO or H2 and cannot by itself establish catalytic causation or equal effective excitation.",
+      "feasibility": "specialist"
+    }
+  ]
+}

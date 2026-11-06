@@ -1,0 +1,148 @@
+{
+  "candidates": [
+    {
+      "id": "E19",
+      "hypothesis_id": "H04",
+      "question_ids": [
+        "Q2",
+        "Q5"
+      ],
+      "candidate_type": "characterization",
+      "title": "Operando cobalt-state comparison",
+      "purpose": "Test whether TEA and TEOA give different cobalt oxidation-state or coordination signatures under matched P01 turnover conditions. A reproducible donor-dependent difference would support cobalt-manifold involvement, whereas indistinguishable signatures would weaken but not fully exclude H04.",
+      "method": "Apply operando or near-operando Co-focused XAS and/or complementary UV-vis on the same baseline and TEA-substituted P01 formulations before illumination and during reaction, using no-cobalt, no-donor, and dark references to bound assignment and avoid relying only on recovered samples.",
+      "evidence_ids": [
+        "EV052",
+        "EV076",
+        "EV088",
+        "GX008",
+        "EV059"
+      ],
+      "distinct_information": "Provides the closest direct test of the H04 prediction by asking whether donor substitution changes observable cobalt state during operation rather than only products. It remains descriptive if multiple cobalt species coexist or signals are too weak for unique assignment.",
+      "dependencies": [
+        "E01",
+        "E02"
+      ]
+    },
+    {
+      "id": "E20",
+      "hypothesis_id": "H04",
+      "question_ids": [
+        "Q2",
+        "Q1"
+      ],
+      "candidate_type": "characterization",
+      "title": "Donor binding and preassembly test",
+      "purpose": "Ask whether TEA and TEOA differ in their direct interaction with the cobalt-bpy formulation before irradiation, which could predispose different catalytic states. This distinguishes possible donor coordination/preassociation from later photochemical divergence.",
+      "method": "Measure matched P01 precursor mixtures and simplified cobalt-bpy solution analogues with incremental TEA or TEOA addition using spectrophotometric titration and, where feasible, 1H NMR-style comparison to look for donor-dependent shifts or association signatures against donor-free references.",
+      "evidence_ids": [
+        "GX001",
+        "GX005",
+        "EV048",
+        "EV059"
+      ],
+      "distinct_information": "This addresses pre-turnover specificity of donor identity rather than necessity, and it can reveal whether the two amines are chemically nonequivalent toward cobalt even before catalysis begins. Positive association would not prove that the bound form is active under irradiation.",
+      "dependencies": []
+    },
+    {
+      "id": "E21",
+      "hypothesis_id": "H04",
+      "question_ids": [
+        "Q2",
+        "Q5"
+      ],
+      "candidate_type": "combined",
+      "title": "Deactivation and catalyst persistence map",
+      "purpose": "Determine whether TEA and TEOA produce different cobalt deactivation or persistence trends that parallel CO/H2 behavior. Divergent time-dependent loss of activity or cobalt-state drift would support H04 over a purely upstream donor-photophysics explanation.",
+      "method": "Run matched time-course photocatalysis in P01 with intermittent product analysis and paired pre/during/post reaction cobalt-state measurements on the same donor conditions, comparing donor-dependent decay profiles rather than only endpoint selectivity.",
+      "evidence_ids": [
+        "EV051",
+        "EV085",
+        "EV004",
+        "GX008",
+        "EV059"
+      ],
+      "distinct_information": "Integrates stability and product readouts to ask whether donor identity changes catalyst survival or conversion to another active/inactive form. It can discriminate donor-linked deactivation trends, but not by itself identify the exact decomposition product.",
+      "dependencies": [
+        "E01",
+        "E02",
+        "E19"
+      ]
+    },
+    {
+      "id": "E22",
+      "hypothesis_id": "H04",
+      "question_ids": [
+        "Q2",
+        "Q4"
+      ],
+      "candidate_type": "characterization",
+      "title": "Operando IR/EPR donor-adduct screen",
+      "purpose": "Probe whether TEA and TEOA generate different donor-associated cobalt or substrate-bound intermediates under reaction conditions, including possibilities that TEOA forms adduct-like species absent with TEA. Donor-specific signatures would support a speciation-based contribution to the product shift.",
+      "method": "Use in situ IR and/or EPR on matched P01 donor conditions under CO2 and illumination, with donor-free, dark, and no-cobalt controls and cautious assignment criteria because transferred precedent comes from non-cobalt or nonidentical systems.",
+      "evidence_ids": [
+        "GX011",
+        "EV068",
+        "EV016",
+        "EV085"
+      ],
+      "distinct_information": "Adds orthogonal observables for donor-linked intermediate or adduct chemistry that XAS alone may miss. It is especially useful if TEA and TEOA differ without a large bulk cobalt oxidation-state contrast.",
+      "dependencies": [
+        "E01",
+        "E02"
+      ]
+    },
+    {
+      "id": "E23",
+      "hypothesis_id": "H04",
+      "question_ids": [
+        "Q2",
+        "Q3"
+      ],
+      "candidate_type": "combined",
+      "title": "P02 state-readout bridge",
+      "purpose": "Use the supplementary homogeneous cobalt platform to test whether TEA-for-TEOA substitution changes cobalt-state or donor-coupled spectroscopic behavior in a cleaner medium where support effects are reduced. Agreement in donor-dependent state trends with P01 would strengthen transfer; disagreement would suggest platform-specific speciation.",
+      "method": "Within P02, substitute TEA for TEOA while holding cobalt catalyst, Ru photosensitizer, solvent family, CO2 saturation, and illumination fixed, then collect quenching plus cobalt-state-sensitive spectra with matched blanks and compare only qualitative directionality to P01.",
+      "evidence_ids": [
+        "EV065",
+        "EV053",
+        "EV052",
+        "GX008"
+      ],
+      "distinct_information": "This does not replace the primary system; it asks whether donor-linked cobalt-state differences are intrinsic enough to survive in a more chemically defined assay. Its inferential value is bounded because catalyst architecture differs from the Co-bpy/g-C3N4 target.",
+      "dependencies": [
+        "E19"
+      ]
+    },
+    {
+      "id": "E24",
+      "hypothesis_id": "H04",
+      "question_ids": [
+        "Q2",
+        "Q1"
+      ],
+      "candidate_type": "intervention",
+      "title": "Ligand and support omission around donor effect",
+      "purpose": "Test whether any donor-dependent cobalt-state signature requires the full Co-bpy/support assembly or appears already in partial formulations. This separates dependence on bpy or g-C3N4 from donor identity itself and helps localize where speciation divergence emerges.",
+      "method": "Compare TEA and TEOA in matched cobalt-containing formulations that omit bpy or omit g-C3N4 one factor at a time, measuring cobalt-state observables and bounded product/background outputs under the same analytical workflow rather than interpreting joint omissions mechanistically.",
+      "evidence_ids": [
+        "EV059",
+        "GX016",
+        "GX008",
+        "EV081"
+      ],
+      "distinct_information": "These are omission experiments, not donor substitutions, and they answer whether donor-linked state differences are contingent on ligand or support context. They can block overassignment of a donor effect to cobalt speciation when the observed change actually depends on another component.",
+      "dependencies": [
+        "E02",
+        "E19"
+      ]
+    }
+  ],
+  "gaps": [
+    "No supplied evidence provides a strict TEA-versus-TEOA head-to-head cobalt-state characterization in the exact P01 Co-bpy/g-C3N4 formulation, so all H04 experiments remain confirmatory or transferable rather than directly precedent-matched.",
+    "The active cobalt species in P01 is unresolved even before donor substitution, so operando signatures may remain ambiguous if multiple cobalt states or support-associated species coexist.",
+    "Direct evidence that TEA or TEOA binds the target Co-bpy complex specifically is not supplied; binding/adduct experiments are justified by transfer from other cobalt or bipyridyl systems and require pilot validation.",
+    "Sensitivity limits for operando XAS, IR, or EPR in dilute photocatalytic suspensions are not established in the supplied record, so feasibility and assignment confidence may constrain interpretation.",
+    "No source establishes whether donor-dependent product differences, if observed, are caused by cobalt-state change versus merely correlated with it; causal discrimination still depends on combining state measurements with matched catalytic comparisons already proposed."
+  ]
+}

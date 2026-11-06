@@ -1,0 +1,77 @@
+{
+  "decisions": [
+    {
+      "candidate_id": "E25",
+      "decision": "shortlist",
+      "major_issues": [],
+      "rationale": "E25 remains a defensible descriptive characterization candidate. It directly tests the stated H05 prediction that TEA versus TEOA may alter pre-illumination CO2-associated speciation under otherwise matched P01 conditions, and it uses appropriate bounding controls: CO2 versus inert gas plus a no-amine condition. The proposal is explicit that any observed difference would remain descriptive and could reflect bulk amine-CO2 speciation, catalyst-linked adducts, support-associated species, or mixtures. That limited claim matches the supplied evidence, which is transferred from other systems rather than direct Co-bpy proof. Because the experiment does not overclaim catalytic relevance or exact structure, the inference is adequate for the narrower observational question.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "adequate_for_stated_question",
+      "candidate_value": "retain",
+      "implementation_readiness": "ready_for_researcher_planning",
+      "resource_level": "moderate",
+      "prior_issue_resolution": "Prior shortlist status remains appropriate. No prior issue required correction. On re-review, the card still keeps conclusions descriptive, retains CO2 and no-amine controls, and does not overinterpret donor-dependent spectral differences as catalyst-linked mechanism proof."
+    },
+    {
+      "candidate_id": "E26",
+      "decision": "shortlist",
+      "major_issues": [],
+      "rationale": "E26 remains defensible for researcher consideration because the revised design preserves the key strengths identified previously: matched TEA and TEOA operando runs, paired 13CO2 controls on both donor sides, paired D2O substitutions where feasible on both donor sides, and cobalt-absent references for both donors. This symmetric control structure materially improves assignment logic relative to a one-sided screen. The card also correctly limits interpretation: donor-dependent IR differences can indicate a donor-linked change in the reacting ensemble, but they do not uniquely prove CO2 adduct chemistry or exclude altered cobalt state or broader medium effects. The evidence base is still transferred method support rather than direct Co-bpy mechanistic evidence, but for a specialist operando screen with bounded conclusions, the inferential scope is appropriate.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "adequate_for_stated_question",
+      "candidate_value": "retain",
+      "implementation_readiness": "ready_for_researcher_planning",
+      "resource_level": "specialist",
+      "prior_issue_resolution": "Prior issues remain resolved. The TEA-side isotope controls and TEA cobalt-absent control are explicitly present, so the earlier asymmetry problem is corrected. No new substantive flaw overturns the prior move from revise to shortlist."
+    },
+    {
+      "candidate_id": "E27",
+      "decision": "shortlist",
+      "major_issues": [],
+      "rationale": "E27 remains a good bounded candidate because it asks a narrower, important question: whether any apparent TEA/TEOA difference in CO/H2 selectivity persists when counted CO is explicitly confirmed as CO2-derived and donor-dependent background gas formation is checked. The 13CO2 head-to-head comparison is aligned with the stated hypothesis as an origin-bounding product test, and the inert-gas plus dark controls appropriately bound non-CO2 and non-photochemical gas formation. The card correctly avoids claiming that isotope-bounded product origin identifies adducts or operating cobalt states. The supporting evidence is transferred and cautionary rather than direct for P01, but that is sufficient for this limited product-origin question.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "adequate_for_stated_question",
+      "candidate_value": "retain",
+      "implementation_readiness": "ready_for_researcher_planning",
+      "resource_level": "moderate",
+      "prior_issue_resolution": "No prior issue required correction. On re-review, the design still appropriately treats isotope analysis as product-origin bounding rather than mechanistic proof, and the limited role of the dark control is still stated clearly."
+    },
+    {
+      "candidate_id": "E28",
+      "decision": "shortlist",
+      "major_issues": [],
+      "rationale": "E28 improves enough to move from revise to shortlist. The prior concern about missing inert-gas background bounding is now addressed by explicit inert-gas controls for both TEOA and TEA via G05 and G06, in addition to the no-cobalt and dark controls already added in the prior revision. This materially strengthens the core catalytic comparison by bounding donor-dependent non-CO2 gas background on both donor sides. The card also remains appropriately staged: it does not claim that the optional substrate-associated spectroscopic module is already established, and it limits conclusions if that module is not pilot-qualified. The quenching comparator is still pilot-defined rather than numerically preset, but the card operationalizes it through an empirically determined repeatability bound from replicate baseline measurements, which is adequate for researcher planning in an optional candidate. With the stronger control structure and bounded claims, shortlist status is now defensible.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "adequate_for_stated_question",
+      "candidate_value": "retain",
+      "implementation_readiness": "ready_for_researcher_planning",
+      "resource_level": "moderate",
+      "prior_issue_resolution": "Prior issues are now resolved sufficiently for shortlist. (1) The earlier lack of inert-gas counterpart in the core design is corrected by adding TEA and TEOA inert-gas controls. (2) No-cobalt and dark controls were already added and remain appropriate. (3) The optional substrate-associated module is still contingent on pilot qualification, but the card now clearly limits inference if that module is unavailable rather than overclaiming H05-specific discrimination. (4) Quenching comparability remains pilot-based, but the criterion is now tied to an empirically measured repeatability bound, which is acceptable for this staged comparison. Decision changes from revise to shortlist because the main control deficiency has been fixed and remaining flexibility is openly bounded rather than hidden."
+    },
+    {
+      "candidate_id": "E29",
+      "decision": "shortlist",
+      "major_issues": [],
+      "rationale": "E29 remains a useful and appropriately bounded discrimination test. It compares TEOA, TEA, and no-amine conditions under matched P01 CO2 exposure, which directly addresses whether observed behavior is a generic amine effect, a donor-identity-specific effect, or absent without amine. The proposal explicitly documents bulk covariates rather than assuming TEA and TEOA are chemically equivalent, which is important because the substitution bundles multiple chemical changes. Optional 13CO2 use is framed correctly as an origin-bounding aid rather than mechanism proof. The evidence is transferred rather than direct for the target Co-bpy system, but that is acceptable because the candidate is framed as a discrimination screen rather than confirmation of a specific mechanistic species.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "adequate_for_stated_question",
+      "candidate_value": "retain",
+      "implementation_readiness": "ready_for_researcher_planning",
+      "resource_level": "moderate",
+      "prior_issue_resolution": "No prior issue required correction. On re-review, the candidate still avoids pretending nominally matched TEA and TEOA create identical chemistry, and the no-amine arm is still used appropriately as a necessity/generic-amine comparator rather than a false equivalence control."
+    },
+    {
+      "candidate_id": "E30",
+      "decision": "shortlist",
+      "major_issues": [],
+      "rationale": "E30 now merits shortlist because the prior asymmetry concern has been explicitly corrected: the card includes isotope assignment controls on both donor sides via G06 for TEOA and G08 for TEA, alongside no-cobalt and dark controls for both donor conditions. That makes donor-specific CO2-derived assignment symmetrically bounded at the design level. The spectroscopy package remains pilot-dependent, but the card now clearly states that if a cobalt-sensitive method is not reproducibly viable under the same operando configuration, the study should proceed as an IR-only descriptive screen with narrowed inference. This is acceptable for an optional specialist candidate because the intended conclusions are explicitly limited to donor dependence, cobalt dependence, light dependence, and isotope sensitivity rather than unique intermediate identity. Evidence support remains transferred from other systems and methods, not direct Co-bpy proof, but the control logic is adequate for the stated descriptive screening question.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "adequate_for_stated_question",
+      "candidate_value": "retain",
+      "implementation_readiness": "ready_for_researcher_planning",
+      "resource_level": "specialist",
+      "prior_issue_resolution": "Prior issues are resolved sufficiently to change decision. (1) The earlier concern that isotope assignment was only bounded on the TEOA side is corrected by the explicit TEA isotope arm G08. (2) The card now clearly commits to descriptive conclusions if orthogonal cobalt-sensitive assignment does not succeed, reducing overinterpretation risk. (3) The method menu is still flexible, but that flexibility is now handled transparently through an IR-only fallback rather than implicit stronger claims. Decision changes from revise to shortlist because the key asymmetry in donor-side assignment control has been fixed and remaining uncertainty is explicitly bounded."
+    }
+  ],
+  "overall": "Using only the supplied record, all six candidates are defensible transfer-based research options for H05 rather than direct demonstrations in the Co-bpy target system. E25, E26, E27, and E29 remain shortlist-worthy because their questions are bounded and their controls are adequate for the conclusions they actually claim. E28 improves from revise to shortlist because the previously identified missing inert-gas background bounding is now explicitly addressed on both donor sides, making the catalytic comparison better controlled while keeping inference staged and limited. E30 also improves from revise to shortlist because the prior asymmetry in isotope assignment control is now corrected on the TEA side as well as the TEOA side, and the card clearly narrows conclusions if orthogonal cobalt-sensitive characterization is not reproducibly viable. Across all cards, the main preserved caution is unchanged: TEA versus TEOA is a bundled chemical substitution, so donor-dependent product or spectroscopic differences can support donor-linked chemistry without uniquely proving catalyst-linked CO2 adduct formation or excluding cobalt-state, proton-management, solvation, or other medium effects."
+}

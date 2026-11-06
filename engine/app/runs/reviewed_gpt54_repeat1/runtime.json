@@ -1,0 +1,20 @@
+{
+  "model": "gpt-5.4",
+  "base_url": "https://superai05.com/v1",
+  "service_name": "superai05",
+  "timeout_seconds": 600,
+  "max_output_tokens": 5500,
+  "max_calls_per_run": null,
+  "run_budget_usd": null,
+  "billing_group_multiplier": 1,
+  "allow_unreported_model": false,
+  "live_generation_enabled": true,
+  "stream": true,
+  "pricing_status": "Provider prices unverified; GPT-5.4 reference estimates only; not an invoice.",
+  "budget_authorization": "User authorized three independent parallel end-to-end runs to frozen results on 2026-11-05; same provider and settings.",
+  "unlimited_budget_authorized": true,
+  "minimum_output_tokens": 16000,
+  "auto_reconnect": true,
+  "connect_timeout_seconds": 30,
+  "pricing_reference_model": "gpt-5.4"
+}

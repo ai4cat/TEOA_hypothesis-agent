@@ -1,0 +1,75 @@
+{
+  "decisions": [
+    {
+      "candidate_id": "E07",
+      "decision": "shortlist",
+      "major_issues": [],
+      "rationale": "This candidate remains a well-bounded characterization experiment in the main P01 formulation family. EV059 directly anchors the target formulation family, while EV053, GX007, and EV011 support donor-sensitive optical observables and the plausibility that TEA versus TEOA can alter upstream quenching-related behavior. The comparison structure is disciplined: the primary contrast changes donor identity only within P01, and the no-donor plus no-cobalt references appropriately bound background and cobalt-associated contributions. The card also keeps inference limited to upstream photophysical characterization rather than claiming catalytic causation or specific intermediate identity. Known confounders such as scattering, inner-filter effects, decomposition, filtrate-versus-suspension ambiguity, and donor-driven medium changes are explicitly acknowledged as limits rather than ignored. For the stated descriptive question, no substantive unresolved flaw requires downgrading.",
+      "evidence_support": "direct",
+      "inference_validity": "adequate_for_stated_question",
+      "candidate_value": "retain",
+      "implementation_readiness": "ready_for_researcher_planning",
+      "resource_level": "low_cost",
+      "prior_issue_resolution": "Prior review found no major issues, and that remains justified. The current card still preserves the necessary cautions about optical artifacts, sample-state ambiguity, and limited mechanistic scope, so there is no unresolved prior concern requiring a decision change."
+    },
+    {
+      "candidate_id": "E08",
+      "decision": "revise",
+      "major_issues": [
+        "Transient signal assignment in heterogeneous P01 remains provisional, so TEA/TEOA-dependent traces cannot be confidently attributed to a specific cobalt-manifold intermediate without independent corroboration.",
+        "Donor substitution can still co-vary bulk and interfacial properties such as pH/basicity, scattering, adsorption, and suspension behavior; even with medium-adjustment pilots, a transient difference may reflect mixed medium effects rather than cleaner upstream electron-delivery change."
+      ],
+      "rationale": "This is still a valuable candidate, but its interpretive scope must remain narrow. The evidence base is transferable rather than direct: EV007 and EV041 support donor-enabled reduced-state formation or lifetime changes in other photocatalytic systems, while EV018 and EV005 support transient methods for donor-sensitive carrier dynamics but also emphasize platform dependence and incomplete assignment. Compared with the prior review, the design is improved by explicit no-donor and no-cobalt references, measurement of bulk covariates, and a medium-adjustment pilot. Those additions materially strengthen the experiment as a descriptive kinetic comparison. However, they do not fully resolve the core inferential limits in supported P01: species assignment remains insecure, and medium adjustment cannot guarantee isolation of donor-side photoredox effects from coupled bulk/interfacial changes. The candidate should therefore be retained only with revised claims that any donor difference is descriptive evidence for donor-associated kinetic differences under these conditions, not a secure readout of electron flux into a defined cobalt state.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "needs_revision",
+      "candidate_value": "conditional",
+      "implementation_readiness": "pilot_needed",
+      "resource_level": "specialist",
+      "prior_issue_resolution": "The prior review raised two issues: provisional signal assignment and medium confounding. The current card partially resolves both by adding assignment-confidence language, no-donor/no-cobalt references, bulk-covariate measurement, and a medium-adjusted comparison. These are meaningful improvements. The issues remain only partially resolved because heterogeneous P01 still prevents secure species assignment, and medium adjustment cannot ensure that donor-side photoredox effects are isolated from other donor-induced environmental changes. The decision therefore remains revise, but on narrower and better-specified grounds."
+    },
+    {
+      "candidate_id": "E09",
+      "decision": "shortlist",
+      "major_issues": [],
+      "rationale": "This remains a sound supplementary candidate. EV065 anchors a homogeneous cobalt/Ru/TEOA platform with quenching observability, and EV053, EV077, and EV011 support using luminescence or UV-vis quenching to probe donor-side behavior and justify TEA-for-TEOA substitution as a meaningful comparison. The design is appropriately bounded: it does not claim that P02 is mechanistically equivalent to P01, but instead uses P02 as a cleaner supplementary system for directional transfer of donor-side effects when support complications are minimized. The no-donor and no-cobalt references strengthen interpretation by separating donor-to-photosensitizer effects from cobalt-involved contributions. Because the stated role is supplementary and transfer limits are preserved, there is no major unresolved flaw for the stated question.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "adequate_for_stated_question",
+      "candidate_value": "retain",
+      "implementation_readiness": "ready_for_researcher_planning",
+      "resource_level": "moderate",
+      "prior_issue_resolution": "Prior review found no major issues, and that remains appropriate. The card still clearly limits P02 to supplementary directional transfer rather than direct equivalence to P01, so there is no new overreach requiring a decision change."
+    },
+    {
+      "candidate_id": "E10",
+      "decision": "revise",
+      "major_issues": [
+        "Matched movement of donor-side photophysical observables and CO/H2 outputs would provide correlation only; the design cannot by itself distinguish upstream donor-side causation from parallel donor-induced changes in proton management, catalyst speciation, substrate binding, or other downstream chemistry.",
+        "The integrated design still leaves sample-state linkage across photophysics and catalysis underdefined; without clearly matched composition, aging, illumination history, and justified sub-mixture equivalence, the intended photophysics-to-products comparison can be difficult to interpret.",
+        "The optional P02 bridge remains supportive only for bounded directionality transfer; agreement or disagreement across platforms stays mechanistically ambiguous and must not be overread."
+      ],
+      "rationale": "This is a high-value integrative candidate, but it still needs tighter framing and implementation detail. The evidence supports the concept: EV053, EV007, EV065, and GX007 justify donor-sensitive photophysical characterization, and EV081 supports measuring both CO and H2 with catalyst-omission controls. The current card improves on the previous version by explicitly stating that the goal is correlation versus discordance, not proof of causation, and by limiting the optional P02 bridge to directionality transfer. Those are real improvements. Still, the central limitation remains inherent: concordance between photophysical and catalytic shifts does not isolate donor-side photoredox delivery as the driver. In addition, because the design links multiple readout types across possibly different measurement blocks, interpretation depends on stronger researcher-level planning for matched sample state and pre-measurement history than is currently specified. The experiment should therefore be retained in revised form, with conclusions explicitly bounded to concordance testing and with clearer planning for how sample comparability will be demonstrated.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "needs_revision",
+      "candidate_value": "conditional",
+      "implementation_readiness": "details_needed",
+      "resource_level": "moderate",
+      "prior_issue_resolution": "The prior review identified overreading correlation as causation and overinterpreting the optional P02 bridge. The current card substantially improves both points by repeatedly limiting agreement to supportive correlation and the bridge to directionality transfer only. Those prior issues are partially resolved. However, correlation-versus-causation remains an inherent unsolved limitation, and on re-review the need for clearer matched-state planning across photophysical and catalytic measurements remains a substantive unresolved issue. The decision therefore stays revise, but the rationale changes because some earlier concerns were mitigated while implementation linkage remains insufficiently specified."
+    },
+    {
+      "candidate_id": "E11",
+      "decision": "revise",
+      "major_issues": [
+        "Radical-trap signals may reflect secondary trapped products, probe-induced perturbation, or donor-dependent linewidth and viscosity effects rather than differences in the immediate productive donor-radical route.",
+        "If the only spectroscopically readable implementation is moved to a supplementary platform rather than the main target context, transfer back to P01 remains limited."
+      ],
+      "rationale": "This specialist candidate remains plausible and potentially useful, but only as a bounded donor-side characterization study. EV016 and EV011 support that TEA and TEOA can generate detectable donor-derived radical species and that EPR spin trapping can reveal donor-dependent observables, while GX018 appropriately cautions that the mechanistic role of these radicals remains uncertain. Relative to the prior review, the control structure is improved: donor-matched dark controls and donor-matched no-absorber controls are now explicit, and the card also warns that linewidth differences may arise from viscosity rather than radical identity. That materially fixes a prior confounding problem. The remaining concerns are interpretive rather than purely structural: even a clean donor-dependent radical signal difference cannot be taken as evidence for the productive catalytic pathway, and if readability requires shifting to a different platform, relevance to the main target is only transferable with limits. The candidate is therefore worth retaining conditionally, but only with conservative claims and pilot-dependent platform choice.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "needs_revision",
+      "candidate_value": "conditional",
+      "implementation_readiness": "pilot_needed",
+      "resource_level": "specialist",
+      "prior_issue_resolution": "The prior review raised two issues: a confounded no-absorber control and risk of overassigning radical-trap signals. The first issue is substantially resolved because the current card now includes donor-matched no-absorber controls for both TEOA and TEA, removing the earlier donor-identity confounding. The second is only partially resolved: the card now explicitly warns about viscosity, linewidth, and secondary trapped-product ambiguity, but these remain inherent interpretive limits of the method. The decision therefore stays revise, though on improved grounds because one substantive prior flaw was fixed."
+    }
+  ],
+  "overall": "E07 and E09 remain the strongest candidates for researcher consideration because they ask bounded questions aligned with the supplied evidence and preserve transfer limits without major unresolved flaws. E08, E10, and E11 remain retainable but should stay in revise status because their conclusions can still outrun what the supplied evidence and controls justify: E08 due to provisional transient assignment and persistent medium/interfacial confounding, E10 because photophysics-to-products concordance is correlation rather than causation and still needs clearer matched-state planning, and E11 because radical detection remains mechanistically ambiguous even after improved controls. Relative to the previous review, E08 and E11 show meaningful improvement through better control logic, and E10 improves its stated interpretive boundaries, but none of those improvements fully remove the remaining substantive concerns. None of the five candidates should be deferred or rejected on the supplied record."
+}

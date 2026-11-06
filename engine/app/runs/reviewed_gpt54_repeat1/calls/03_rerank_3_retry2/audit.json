@@ -1,0 +1,34 @@
+{
+  "provider": "superai05",
+  "endpoint": "https://superai05.com/v1/responses",
+  "tool_events": 0,
+  "model_requested": "gpt-5.4",
+  "model_observed": "gpt-5.4",
+  "request_id": null,
+  "response_id": "resp_0c05320940d46e67016aebec7f2ae881979dc368f5fb3a8690",
+  "usage": [
+    {
+      "input_tokens": 8241,
+      "output_tokens": 1544,
+      "cached_input_tokens": 2176,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "api_usage": {
+    "total_tokens": 9785,
+    "input_tokens": 8241,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 2176
+    },
+    "output_tokens": 1544,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "estimated_usd": 0.0388665,
+  "official_rate_reference_usd": 0.0388665,
+  "billing_group_multiplier": 1,
+  "cost_note": "Estimated platform dollar credits using configured group multiplier; not invoice; cache writes/tax may differ.",
+  "model_identity_status": "provider_reported_match"
+}

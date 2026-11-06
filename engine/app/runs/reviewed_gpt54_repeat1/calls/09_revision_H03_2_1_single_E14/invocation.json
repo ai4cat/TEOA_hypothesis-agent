@@ -1,0 +1,12 @@
+{
+  "started_at": "2026-11-05T03:44:31.905129+00:00",
+  "provider": "superai05",
+  "endpoint": "https://superai05.com/v1/responses",
+  "model_requested": "gpt-5.4",
+  "reasoning_effort": null,
+  "authentication": "OPENAI_API_KEY from process or Windows user environment; never saved",
+  "input_sha256": "0d5f47ccb3cd850d3f42603f8d353e24b60d37ff53980c8d7bdc8c0eb0441a78",
+  "prompt_sha256": "a37815bd5f6db292abc554fbd7ac4a6d79c3d05c97f0ead94e97728ef6787401",
+  "reserved_usd": 0.2807825,
+  "automatic_retries": 0
+}

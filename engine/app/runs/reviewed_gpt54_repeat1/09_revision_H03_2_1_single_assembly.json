@@ -1,0 +1,14 @@
+{
+  "operation": "Concatenate complete single-card API outputs without rewriting scientific content.",
+  "sources": [
+    {
+      "path": "09_revision_H03_2_1_single_E14.json",
+      "sha256": "16e69570aec59f03ca9c611c5b0338974810028d5b7d13b0c48755c88642033f"
+    },
+    {
+      "path": "09_revision_H03_2_1_single_E16.json",
+      "sha256": "03126407768f33476d75a9a0b22674dc2a554562e5a78dc08b5e5a7fde4c3e89"
+    }
+  ],
+  "output_sha256": "fa2d9370edf8c15d8c37e803b1c468f5864dbc79e78f582b896751f597af8510"
+}

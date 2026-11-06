@@ -1,0 +1,139 @@
+{
+  "candidates": [
+    {
+      "id": "E25",
+      "hypothesis_id": "H05",
+      "question_ids": [
+        "Q4"
+      ],
+      "candidate_type": "characterization",
+      "title": "CO2-adduct speciation by donor",
+      "purpose": "Test whether TEOA and TEA give different CO2-associated solution or catalyst-linked signatures under the matched P01 medium before illumination, which is the core transferable prediction of H05. A donor-specific signal would support substrate-associated chemistry but remain associational until linked to catalysis.",
+      "method": "Compare TEA-, TEOA-, and no-amine P01 media with and without CO2 using transferable IR and/or NMR-style speciation readouts under fixed solvent composition and matched cobalt/bpy presence, using assignment controls that distinguish bulk amine-CO2 species from possible catalyst-associated adducts where resolution permits.",
+      "evidence_ids": [
+        "EV029",
+        "GX011",
+        "EV031",
+        "EV061"
+      ],
+      "distinct_information": "This is the most direct descriptive test of the proposed non-innocent donor role because it asks whether the donor changes observable CO2-associated states even before invoking different quenching. It cannot by itself prove that any detected adduct is on-pathway for CO formation.",
+      "dependencies": []
+    },
+    {
+      "id": "E26",
+      "hypothesis_id": "H05",
+      "question_ids": [
+        "Q4",
+        "Q6"
+      ],
+      "candidate_type": "characterization",
+      "title": "Operando isotope-sensitive IR",
+      "purpose": "Ask whether TEA and TEOA differ in intermediate-associated operando vibrational features under CO2 reduction conditions, and whether isotope substitution supports assignment of hydrogen-containing or CO2-derived species. This targets the prediction that donor identity changes substrate/intermediate stabilization rather than only electron delivery.",
+      "method": "Acquire near-operando or operando IR on matched P01 TEA and TEOA runs under CO2, adding 13CO2 and/or H2O-to-D2O substitution where feasible with dark, no-cobalt, and no-donor references to bound assignments and avoid overcalling overlapping bands.",
+      "evidence_ids": [
+        "EV080",
+        "EV031",
+        "EV029",
+        "GX008"
+      ],
+      "distinct_information": "Compared with bulk pre-equilibrium speciation, this probes reaction-state signatures and uses isotopic shifts to discriminate assignments. It remains descriptive if multiple overlapping intermediates respond together or signal intensity is insufficient.",
+      "dependencies": [
+        "E25"
+      ]
+    },
+    {
+      "id": "E27",
+      "hypothesis_id": "H05",
+      "question_ids": [
+        "Q4",
+        "Q5"
+      ],
+      "candidate_type": "combined",
+      "title": "Origin-bounded donor comparison",
+      "purpose": "Determine whether any TEA/TEOA difference in CO output persists when CO origin is explicitly bounded as CO2-derived, reducing the risk that donor-specific side chemistry is misread as altered CO2-reduction selectivity. This is especially relevant because TEOA-related side chemistry is reported in other systems.",
+      "method": "Repeat the matched TEA versus TEOA P01 benchmark under 13CO2 with isotopic CO analysis while recording CO and H2 together and retaining the usual no-CO2 and dark controls, then compare donor-dependent selectivity only within the CO2-origin-confirmed fraction.",
+      "evidence_ids": [
+        "EV021",
+        "EV085",
+        "GX008",
+        "EV063"
+      ],
+      "distinct_information": "This does not test adduct identity directly, but it bounds a key alternative that donor decomposition or background carbon could explain apparent donor effects. A confirmed CO2 origin still leaves adduct stabilization, cobalt-state, and quenching explanations open.",
+      "dependencies": []
+    },
+    {
+      "id": "E28",
+      "hypothesis_id": "H05",
+      "question_ids": [
+        "Q4",
+        "Q3"
+      ],
+      "candidate_type": "combined",
+      "title": "Adduct signal versus quenching",
+      "purpose": "Discriminate H05 from a purely upstream quenching explanation by asking whether donor-dependent substrate-associated signatures appear even when donor-side electron-supply observables are similar. This is the central causal contrast stated in the hypothesis.",
+      "method": "On the same matched TEA and TEOA formulations, pair the substrate/intermediate readouts from E25 or E26 with donor-side quenching observables already established for the platform, comparing whether a donor-specific adduct/intermediate contrast survives despite similar quenching behavior.",
+      "evidence_ids": [
+        "EV029",
+        "GX011",
+        "EV011",
+        "GX008"
+      ],
+      "distinct_information": "This experiment is comparative integration rather than a new standalone assay, and its value is in separating downstream substrate-associated differences from upstream photophysical similarity. If both adduct-like and quenching observables shift together, discrimination remains limited.",
+      "dependencies": [
+        "E25",
+        "E26"
+      ]
+    },
+    {
+      "id": "E29",
+      "hypothesis_id": "H05",
+      "question_ids": [
+        "Q4",
+        "Q1"
+      ],
+      "candidate_type": "intervention",
+      "title": "Amine omission and inert-donor contrast",
+      "purpose": "Separate necessity of the multifunctional amine from specificity of TEOA versus TEA for substrate-associated chemistry. Omission asks whether the amine-linked signatures require donor presence at all, while substitution asks whether TEOA produces a qualitatively different CO2-associated state than TEA.",
+      "method": "Measure the same speciation or operando signatures in full TEOA, full TEA, and no-amine P01 formulations under matched CO2 exposure, and where feasible include a bounded non-TEOA amine condition only as a descriptive contrast without claiming functional equivalence in electron donation.",
+      "evidence_ids": [
+        "EV029",
+        "EV061",
+        "GX011",
+        "GX008"
+      ],
+      "distinct_information": "This explicitly distinguishes omission from substitution, which answer different questions for H05. It can show whether TEOA-specific signatures are genuinely donor-identity dependent rather than generic consequences of having any amine present.",
+      "dependencies": [
+        "E25"
+      ]
+    },
+    {
+      "id": "E30",
+      "hypothesis_id": "H05",
+      "question_ids": [
+        "Q4",
+        "Q2"
+      ],
+      "candidate_type": "characterization",
+      "title": "Cobalt-linked adduct screen",
+      "purpose": "Test whether any donor-specific substrate-associated signal is accompanied by donor-specific cobalt-state or coordination changes, helping distinguish amine-only CO2 capture from catalyst-linked adduct or intermediate stabilization. This narrows where the hypothesized non-innocent chemistry resides.",
+      "method": "Use matched P01 TEA and TEOA samples under CO2 for paired cobalt-sensitive spectroscopy and intermediate-sensitive IR/EPR-style monitoring, with no-cobalt and dark references to determine whether the donor-dependent signal requires cobalt and whether cobalt observables shift in parallel.",
+      "evidence_ids": [
+        "GX011",
+        "EV004",
+        "EV068",
+        "EV085"
+      ],
+      "distinct_information": "This cross-check is important because H05 allows either amine-linked or catalyst-linked substrate chemistry, and the inference differs between them. Null cobalt dependence would weaken a catalyst-adduct interpretation without excluding bulk donor-CO2 interactions.",
+      "dependencies": [
+        "E25",
+        "E26"
+      ]
+    }
+  ],
+  "gaps": [
+    "No supplied source directly observes TEA-versus-TEOA CO2 adducts or stabilized intermediates in the target Co(II)-bipyridine P01 system; H05 remains a transferable, falsifiable hypothesis.",
+    "The supplied evidence does not establish which exact spectral bands or chemical shifts would uniquely identify TEA- or TEOA-linked CO2 adducts in the P01 solvent/catalyst mixture, so assignments will need pilot validation and orthogonal controls.",
+    "Evidence for catalyst-linked TEOA adducts comes from non-cobalt bipyridyl systems and may not transfer to supported Co-bpy/g-C3N4 without substantial ambiguity.",
+    "No direct source here compares TEA and TEOA under identical electron-supply observables in P01, so the key discrimination against an upstream-quenching explanation depends on integrating H05 experiments with prior H02 characterization rather than on standalone direct evidence."
+  ]
+}

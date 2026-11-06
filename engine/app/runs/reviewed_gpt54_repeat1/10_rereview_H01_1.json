@@ -1,0 +1,85 @@
+{
+  "decisions": [
+    {
+      "candidate_id": "E01",
+      "decision": "reject",
+      "major_issues": [
+        "The card still intentionally preserves unmatched donor environments and then interprets any TEA/TEOA difference as additive-specific, so donor identity remains confounded with donor-driven changes in medium behavior, proton management, and CO2 interactions.",
+        "Its main inference still treats copied nominal settings as a single-variable donor test even though the supplied evidence explicitly limits that transfer and warns that medium composition can strongly affect CO/H2 output.",
+        "Background and assay-artifact concerns remain insufficiently bounded for the strong causal claim, especially because related systems show catalyst-free or donor/background gas formation that can distort apparent selectivity."
+      ],
+      "rationale": "The prior concerns are not resolved: the card explicitly says conditions are 'intentionally unmatched' and that any observed difference is interpreted as mainly caused by amine identity. EV059 gives the closest platform family and GX012 supports feasibility of comparing amine donors in cobalt photocatalysis, but neither provides a strict head-to-head in one unchanged P01 formulation. EV063 directly warns that reaction-medium differences can strongly shift CO/H2 in a CoCl2/bpy-related system, so preserving donor-driven medium differences invalidates the stated inference for H01. EV081, EV045, and EV022 support measuring CO and H2 and using controls, but they do not rescue a design that overassigns causality from an intentionally confounded comparison. As an exploratory screen it could generate observations, but as framed against H01 it remains not defensible.",
+      "evidence_support": "direct",
+      "inference_validity": "invalid",
+      "candidate_value": "exclude",
+      "implementation_readiness": "details_needed",
+      "resource_level": "low_cost",
+      "prior_issue_resolution": "Not resolved. The prior review objected that donor identity was confounded with medium/composition effects, that equal nominal settings do not chemically match TEA and TEOA, and that causal interpretation was overstated in light of documented backgrounds. The current card keeps the same intentional unmatched logic and the same strong interpretation, so those prior issues persist without substantive correction."
+    },
+    {
+      "candidate_id": "E02",
+      "decision": "shortlist",
+      "major_issues": [],
+      "rationale": "This revised card is defensible for researcher consideration because it now implements symmetric donor-matched controls for both TEOA and TEA: full system, dark, inert-gas, and no-cobalt conditions are all present for each donor. That directly addresses the central uncertainty in H01, namely whether any TEA/TEOA difference survives strict matching and full controls. EV046, EV081, EV045, and GX008 support the transfer of light/no-CO2-or-inert/key-component omission logic and careful assay validation. The card also appropriately limits interpretation: it does not claim these controls identify mechanism, and it states that equal nominal conditions do not guarantee equal pH, donor consumption, or active-species populations. Because the comparison is now balanced and the conclusions are bounded to whether a donor-dependent output difference persists above donor-matched backgrounds, the inferential standard is adequate for the stated question.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "adequate_for_stated_question",
+      "candidate_value": "retain",
+      "implementation_readiness": "ready_for_researcher_planning",
+      "resource_level": "low_cost",
+      "prior_issue_resolution": "Resolved. The prior review flagged asymmetric controls across donors and overclaiming from an unbalanced control matrix. The current version includes matched dark, inert-gas, and no-cobalt controls for both donors and explicitly requires comparing each control to its donor-matched full system before donor-vs-donor interpretation. The earlier sufficiency problem is substantially corrected, and no new major inferential flaw is introduced."
+    },
+    {
+      "candidate_id": "E03",
+      "decision": "reject",
+      "major_issues": [
+        "The card still does not isolate donor identity under otherwise matched conditions because it deliberately combines donor identity with donor-amount variation and applies low/high levels chosen from a TEOA pilot directly to TEA.",
+        "Its interpretation still overreads identical nominal additions as fair cross-donor comparison despite explicit limits in the supplied evidence that donor amount and medium composition can each alter output.",
+        "The support/refute logic remains invalid for H01: overlap at one or both loadings cannot refute donor identity effects, and separation at both loadings would still not establish an intrinsic donor effect when amount-dependent and medium-dependent confounding remain."
+      ],
+      "rationale": "EV061 and EV063 support that donor concentration and medium composition can materially change photocatalytic output, but that makes this card a condition-mapping screen rather than a valid test of H01's donor-identity claim. The design chooses low/high settings by a TEOA pilot, then copies them to TEA without compensating for different chemical properties; that is not a chemically matched identity test. EV059 keeps the work in the relevant formulation family, but it does not justify merging amount and identity into one causal factor. A descriptive donor-amount landscape could still be interesting, yet this specific card states stronger support/refute claims than the design can bear. For the hypothesis as posed, the inference remains invalid.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "invalid",
+      "candidate_value": "exclude",
+      "implementation_readiness": "pilot_needed",
+      "resource_level": "low_cost",
+      "prior_issue_resolution": "Not resolved. The prior review objected that the card conflated donor identity with donor amount, biased the comparison by choosing levels from TEOA only, and used unsound support/refute logic. The current version still does all three. No meaningful revision was made to convert it into a valid identity test; it remains at best an exploratory screen with overclaimed conclusions."
+    },
+    {
+      "candidate_id": "E04",
+      "decision": "shortlist",
+      "major_issues": [],
+      "rationale": "This is a bounded characterization candidate rather than a catalytic proof card, and in that narrower role it is defensible. EV053 and EV065 support transferable fluorescence/UV-vis quenching logic in donor-containing cobalt photocatalytic contexts; GX007 directly supports that TEA substitution for TEOA can change upstream photochemical behavior; EV011 supports donor-specific radical/reactivity differences after quenching. The present design now explicitly uses a verified P01 baseline matrix, includes cobalt-containing and cobalt-free matched references, requires pilot checks for scattering and inner-filter distortion, and limits interpretation to descriptive donor-dependent upstream photoredox behavior rather than catalytic causation. Those restrictions directly address the main assignment concerns. It still cannot explain CO/H2 selectivity by itself, but as a descriptive covariate study tied to the verified matrix it is suitable for consideration.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "adequate_for_stated_question",
+      "candidate_value": "retain",
+      "implementation_readiness": "pilot_needed",
+      "resource_level": "moderate",
+      "prior_issue_resolution": "Resolved. The prior review noted three main concerns: indirect linkage to H01, optical-artifact risks in a scattering matrix, and uncertainty from using a P01-like rather than verified baseline. The current card now explicitly frames itself as descriptive rather than causal, includes background subtraction and pilot checks for scattering/inner-filter effects, and states that it starts from the verified P01 baseline with documented equal adaptations for optical work. Those prior issues are therefore sufficiently addressed for shortlist status."
+    },
+    {
+      "candidate_id": "E05",
+      "decision": "shortlist",
+      "major_issues": [],
+      "rationale": "As written, this is a descriptive near-operando characterization option with properly limited claims, not a mechanism proof. EV059 anchors the closest formulation family, while GX008 and EV046 support operando-capable spectroscopy, matched controls, and caution against overinterpreting before/after or recovered-state data. The revised card now includes donor-matched cobalt-free references for both donors at both sampling states, which materially improves signal assignment against donor/support backgrounds. It also states that conclusions are descriptive correlations unless donor-linked differences survive donor-matched backgrounds and matched timing, and it recommends one cobalt-sensitive readout plus an independent cross-check where feasible. Assignment uncertainty in a mixed matrix remains a practical limitation, but the card now treats that as a bounded characterization problem rather than as a basis for strong mechanistic claims. That makes it defensible for researcher planning despite specialist resources.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "adequate_for_stated_question",
+      "candidate_value": "retain",
+      "implementation_readiness": "pilot_needed",
+      "resource_level": "specialist",
+      "prior_issue_resolution": "Resolved. The prior review raised three issues: uncertain cobalt-state assignment in a mixed matrix, time-coupled before/after comparisons, and an underspecified donor-matched cobalt-free background set. The current version explicitly includes donor-matched cobalt-free references for both donors before and at the illuminated-state sampling, keeps conclusions correlation-based, and recommends an independent second readout if feasible. The time-coupled nature remains acknowledged as a limitation, but it is no longer misused for causal claims. That is sufficient resolution for a shortlist as a descriptive characterization candidate."
+    },
+    {
+      "candidate_id": "E06",
+      "decision": "shortlist",
+      "major_issues": [],
+      "rationale": "This is a strong supportive assay-validation candidate. EV021 directly supports the relevance of isotope checks because TEOA can be non-innocent while CO still derives from CO2. EV046, EV022, EV082, and GX008 support transferable use of 13CO2, GC-MS, and negative controls for product-origin verification. The revised card now includes donor-matched labeled and unlabeled catalyst-present runs plus donor-matched labeled no-cobalt negatives for both TEOA and TEA, which addresses the prior asymmetry concern. It also cleanly separates origin verification from mechanistic interpretation of donor effects and explicitly requires instrument-specific GC-MS discrimination checks and caution near detection limits. This does not explain why TEA and TEOA differ, but it directly protects the donor comparison from carbon-origin artifacts and is therefore valuable and inferentially sound for its stated purpose.",
+      "evidence_support": "direct",
+      "inference_validity": "adequate_for_stated_question",
+      "candidate_value": "retain",
+      "implementation_readiness": "ready_for_researcher_planning",
+      "resource_level": "moderate",
+      "prior_issue_resolution": "Resolved. The prior review objected that the labeled negative control was not donor-matched, that mechanistic interpretation needed to remain separated from origin verification, and that GC-MS validation was necessary at low signal. The current card includes donor-matched no-cobalt labeled controls for both donors, explicitly limits conclusions to carbon origin and catalyst dependence of labeled CO detection, and requires instrument validation with labeled/unlabeled references. Those prior issues are adequately corrected."
+    }
+  ],
+  "overall": "E02, E04, E05, and E06 merit shortlist because they are now framed with bounded claims and controls adequate to their stated questions. E02 is the strongest direct matched donor-comparison assay card because it symmetrically controls light, gas feed, and cobalt necessity for both donors. E04 and E05 are valuable descriptive characterization candidates: they do not prove catalytic causation, but they can reveal donor-dependent upstream photoredox or cobalt-associated state differences under matched conditions if interpreted carefully. E06 is a strong origin-validation card that protects the TEA/TEOA comparison against donor-specific carbon artifacts. E01 and E03 should still be rejected because both preserve substantive confounding and overclaim donor-identity inference from chemically unmatched or conflated comparisons. Overall, the supplied evidence supports strict matching, donor-symmetric controls, descriptive characterization with assignment safeguards, and isotope-based origin checks; it does not support strong donor-specific mechanistic claims from nominally matched substitutions alone."
+}

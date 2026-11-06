@@ -1,0 +1,106 @@
+{
+  "type": "object",
+  "properties": {
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "candidate_id": {
+            "type": "string",
+            "enum": [
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E29",
+              "E30"
+            ]
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "shortlist",
+              "revise",
+              "defer",
+              "reject"
+            ]
+          },
+          "major_issues": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "rationale": {
+            "type": "string"
+          },
+          "evidence_support": {
+            "type": "string",
+            "enum": [
+              "direct",
+              "transfer_with_limits",
+              "insufficient"
+            ]
+          },
+          "inference_validity": {
+            "type": "string",
+            "enum": [
+              "adequate_for_stated_question",
+              "needs_revision",
+              "invalid"
+            ]
+          },
+          "candidate_value": {
+            "type": "string",
+            "enum": [
+              "retain",
+              "conditional",
+              "exclude"
+            ]
+          },
+          "implementation_readiness": {
+            "type": "string",
+            "enum": [
+              "pilot_needed",
+              "details_needed",
+              "ready_for_researcher_planning"
+            ]
+          },
+          "resource_level": {
+            "type": "string",
+            "enum": [
+              "low_cost",
+              "moderate",
+              "specialist"
+            ]
+          },
+          "prior_issue_resolution": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "candidate_id",
+          "decision",
+          "major_issues",
+          "rationale",
+          "evidence_support",
+          "inference_validity",
+          "candidate_value",
+          "implementation_readiness",
+          "resource_level",
+          "prior_issue_resolution"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "overall": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "decisions",
+    "overall"
+  ],
+  "additionalProperties": false
+}

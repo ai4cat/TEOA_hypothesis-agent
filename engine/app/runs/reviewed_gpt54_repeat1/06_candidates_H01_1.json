@@ -1,0 +1,655 @@
+{
+  "candidates": [
+    {
+      "id": "E01",
+      "hypothesis_id": "H01",
+      "title": "Matched TEA/TEOA benchmark",
+      "purpose": "Test whether changing the amine from TEOA to TEA alone alters CO/H2 distribution in the P01 Co-bpy/g-C3N4 platform under intentionally unmatched conditions to maximize donor contrast.",
+      "evidence_ids": [
+        "EV059",
+        "EV063",
+        "EV081",
+        "EV045",
+        "GX012",
+        "EV022"
+      ],
+      "source_to_proposal": "EV059 and GX012 motivate a cobalt-containing photocatalytic CO2-reduction comparison using TEOA and TEA. EV063 suggests medium can matter, so the proposal transfers this by changing donor identity while also allowing donor-driven medium differences to remain, treating any resulting product shift as additive-specific. EV081, EV045, and EV022 support measuring CO and H2 together and including simple catalytic context controls.",
+      "groups": [
+        {
+          "id": "E01G01",
+          "description": "TEOA benchmark in the primary formulation family.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 photocatalysis"
+            },
+            {
+              "name": "amine_identity",
+              "value": "TEOA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "bpy_component",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4_component",
+              "value": "present"
+            },
+            {
+              "name": "gas_feed",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "analysis_workflow",
+              "value": "same GC workflow"
+            }
+          ]
+        },
+        {
+          "id": "E01G02",
+          "description": "TEA comparator with all nominal settings copied from the TEOA case.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 photocatalysis"
+            },
+            {
+              "name": "amine_identity",
+              "value": "TEA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "bpy_component",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4_component",
+              "value": "present"
+            },
+            {
+              "name": "gas_feed",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "analysis_workflow",
+              "value": "same GC workflow"
+            }
+          ]
+        },
+        {
+          "id": "E01G03",
+          "description": "No-amine comparator to show the donor effect size against a minimal background.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 photocatalysis"
+            },
+            {
+              "name": "amine_identity",
+              "value": "none"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "bpy_component",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4_component",
+              "value": "present"
+            },
+            {
+              "name": "gas_feed",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "analysis_workflow",
+              "value": "same GC workflow"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E01G01",
+          "group_b": "E01G02",
+          "changed_factors": [
+            "amine_identity"
+          ],
+          "inference": "Any CO/H2 difference is taken as direct evidence that donor identity controls selectivity, even if donor substitution also changes medium behavior."
+        },
+        {
+          "group_a": "E01G01",
+          "group_b": "E01G03",
+          "changed_factors": [
+            "amine_identity"
+          ],
+          "inference": "Shows whether TEOA is catalytically active relative to no amine and provides context for the benchmark."
+        },
+        {
+          "group_a": "E01G02",
+          "group_b": "E01G03",
+          "changed_factors": [
+            "amine_identity"
+          ],
+          "inference": "Shows whether TEA is catalytically active relative to no amine and provides context for the comparator."
+        }
+      ],
+      "procedure": [
+        "Assemble the P01 TEOA formulation from the supplied system description and prepare TEA and no-amine variants by copying the same nominal setup.",
+        "Run illuminated CO2 photocatalysis for all groups in parallel reactors without additional matching adjustments so the donor environments remain naturally distinct.",
+        "Analyze headspace by the same GC workflow for CO and H2, preferably at one endpoint and one interim sample.",
+        "Compare product amounts and CO/H2 ratios across groups and rank donor effects by absolute difference."
+      ],
+      "measurements": [
+        "GC-detected CO amount",
+        "GC-detected H2 amount",
+        "CO/H2 ratio or selectivity descriptor",
+        "Qualitative note of visible instability or precipitation after reaction"
+      ],
+      "supports": "A reproducible difference between E01G01 and E01G02 in either CO/H2 ratio or both product amounts supports H01 and is interpreted as mainly caused by amine identity.",
+      "refutes": "Near-identical CO and H2 outcomes for E01G01 and E01G02 refute a meaningful donor effect in this platform.",
+      "inconclusive": "Large run-to-run scatter, strong signals in E01G03, or obvious formulation instability make the comparison inconclusive.",
+      "parameter_selection": "Use the literature-grounded P01 TEOA formulation as the starting benchmark. If exact numeric settings are missing, select them by a short pilot that maximizes total gas production in the TEOA case, then copy the same nominal settings to TEA and no-amine without further correction.",
+      "limitations": "This design wrongly treats donor substitution as a single-variable test even though amine identity can alter medium composition, proton behavior, and CO2 interactions. It does not isolate mechanism and weakly controls background artifacts.",
+      "feasibility": "low_cost"
+    },
+    {
+      "id": "E02",
+      "hypothesis_id": "H01",
+      "title": "Necessity controls and backgrounds",
+      "purpose": "Check whether observed CO/H2 comes from the intended photocatalytic system and whether donor-specific backgrounds distort the TEA/TEOA comparison, using a compact control set.",
+      "evidence_ids": [
+        "EV046",
+        "EV081",
+        "EV045",
+        "GX008",
+        "GX012"
+      ],
+      "source_to_proposal": "EV046, EV081, EV045, and GX008 support negative controls such as dark, Ar/no-CO2, and component omissions. The proposal transfers this logic to the P01 donor comparison and assumes that if the full system exceeds a small control set, remaining background pathways are negligible.",
+      "groups": [
+        {
+          "id": "E02G01",
+          "description": "Full TEOA system under light and CO2.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 photocatalysis"
+            },
+            {
+              "name": "amine_identity",
+              "value": "TEOA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "bpy_component",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4_component",
+              "value": "present"
+            },
+            {
+              "name": "gas_feed",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "atmosphere_mode",
+              "value": "sealed photocatalysis"
+            }
+          ]
+        },
+        {
+          "id": "E02G02",
+          "description": "Full TEA system under light and CO2.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 photocatalysis"
+            },
+            {
+              "name": "amine_identity",
+              "value": "TEA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "bpy_component",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4_component",
+              "value": "present"
+            },
+            {
+              "name": "gas_feed",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "atmosphere_mode",
+              "value": "sealed photocatalysis"
+            }
+          ]
+        },
+        {
+          "id": "E02G03",
+          "description": "Dark TEOA control.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 photocatalysis"
+            },
+            {
+              "name": "amine_identity",
+              "value": "TEOA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "bpy_component",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4_component",
+              "value": "present"
+            },
+            {
+              "name": "gas_feed",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "off"
+            },
+            {
+              "name": "atmosphere_mode",
+              "value": "sealed photocatalysis"
+            }
+          ]
+        },
+        {
+          "id": "E02G04",
+          "description": "Ar TEA control.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 photocatalysis"
+            },
+            {
+              "name": "amine_identity",
+              "value": "TEA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "bpy_component",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4_component",
+              "value": "present"
+            },
+            {
+              "name": "gas_feed",
+              "value": "Ar"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "atmosphere_mode",
+              "value": "sealed photocatalysis"
+            }
+          ]
+        },
+        {
+          "id": "E02G05",
+          "description": "No-cobalt TEOA control.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 photocatalysis"
+            },
+            {
+              "name": "amine_identity",
+              "value": "TEOA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "absent"
+            },
+            {
+              "name": "bpy_component",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4_component",
+              "value": "present"
+            },
+            {
+              "name": "gas_feed",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "atmosphere_mode",
+              "value": "sealed photocatalysis"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E02G01",
+          "group_b": "E02G03",
+          "changed_factors": [
+            "illumination"
+          ],
+          "inference": "If gas production requires light in TEOA, the benchmark is considered photocatalytic."
+        },
+        {
+          "group_a": "E02G02",
+          "group_b": "E02G04",
+          "changed_factors": [
+            "gas_feed"
+          ],
+          "inference": "If CO falls under Ar in TEA, CO is attributed to CO2 and donor background is dismissed."
+        },
+        {
+          "group_a": "E02G01",
+          "group_b": "E02G05",
+          "changed_factors": [
+            "cobalt_component"
+          ],
+          "inference": "If gas production drops without cobalt in TEOA, the Co-containing formulation is treated as necessary."
+        },
+        {
+          "group_a": "E02G01",
+          "group_b": "E02G02",
+          "changed_factors": [
+            "amine_identity"
+          ],
+          "inference": "The donor comparison is interpreted after the limited controls above establish acceptable assay validity."
+        }
+      ],
+      "procedure": [
+        "Prepare the full TEOA and TEA systems plus one dark, one Ar, and one no-cobalt control.",
+        "Run all groups with the same reactor format and analyze CO and H2 by the same GC method.",
+        "Compare control outputs to their corresponding full system and then compare the two full systems.",
+        "If controls are lower than the full systems, proceed to interpret the TEA/TEOA difference as intrinsic."
+      ],
+      "measurements": [
+        "GC-detected CO amount",
+        "GC-detected H2 amount",
+        "Presence or absence of gas signals in controls",
+        "Optional post-reaction visual changes"
+      ],
+      "supports": "Full systems that exceed controls, combined with a remaining TEA/TEOA difference between E02G01 and E02G02, support H01 and rule out most artifacts.",
+      "refutes": "Controls close to the full systems refute the benchmark and imply donor comparison is not meaningful.",
+      "inconclusive": "Mixed outcomes across controls or large donor-specific background signals make donor conclusions inconclusive.",
+      "parameter_selection": "Use the same nominal settings as E01. If a control gives no detectable gas, no further optimization is needed. If all groups are near detection limits, increase irradiation time by pilot equally for every group until at least one full system exceeds blank noise.",
+      "limitations": "Controls are incomplete because they do not cover all omissions for both amines, yet the design still treats them as sufficient. Multi-factor contrasts are present across some groups, but the card interprets them as decisive artifact checks anyway.",
+      "feasibility": "low_cost"
+    },
+    {
+      "id": "E03",
+      "hypothesis_id": "H01",
+      "title": "Donor amount series",
+      "purpose": "Test whether any TEA/TEOA difference persists across donor loadings by sweeping donor amount and reading selectivity trends, assuming amount and identity can be merged into one practical causal factor.",
+      "evidence_ids": [
+        "EV061",
+        "EV063",
+        "EV059"
+      ],
+      "source_to_proposal": "EV061 links TEOA proportion to CO2-reduction output and suggests donor concentration can alter performance. EV063 indicates medium composition affects CO/H2 in a CoCl2/bpy-related system. EV059 motivates applying such amount variation within the P01 TEOA/TEA comparison and interpreting the combined landscape as donor behavior.",
+      "groups": [
+        {
+          "id": "E03G01",
+          "description": "Lower-amount TEOA condition.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 photocatalysis"
+            },
+            {
+              "name": "amine_identity",
+              "value": "TEOA"
+            },
+            {
+              "name": "amine_amount",
+              "value": "low pilot level"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "bpy_component",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4_component",
+              "value": "present"
+            },
+            {
+              "name": "gas_feed",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            }
+          ]
+        },
+        {
+          "id": "E03G02",
+          "description": "Higher-amount TEOA condition.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 photocatalysis"
+            },
+            {
+              "name": "amine_identity",
+              "value": "TEOA"
+            },
+            {
+              "name": "amine_amount",
+              "value": "high pilot level"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "bpy_component",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4_component",
+              "value": "present"
+            },
+            {
+              "name": "gas_feed",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            }
+          ]
+        },
+        {
+          "id": "E03G03",
+          "description": "Lower-amount TEA condition.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 photocatalysis"
+            },
+            {
+              "name": "amine_identity",
+              "value": "TEA"
+            },
+            {
+              "name": "amine_amount",
+              "value": "low pilot level"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "bpy_component",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4_component",
+              "value": "present"
+            },
+            {
+              "name": "gas_feed",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            }
+          ]
+        },
+        {
+          "id": "E03G04",
+          "description": "Higher-amount TEA condition.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 photocatalysis"
+            },
+            {
+              "name": "amine_identity",
+              "value": "TEA"
+            },
+            {
+              "name": "amine_amount",
+              "value": "high pilot level"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "bpy_component",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4_component",
+              "value": "present"
+            },
+            {
+              "name": "gas_feed",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E03G01",
+          "group_b": "E03G02",
+          "changed_factors": [
+            "amine_amount"
+          ],
+          "inference": "Shows how TEOA amount changes CO and H2 within one donor identity."
+        },
+        {
+          "group_a": "E03G03",
+          "group_b": "E03G04",
+          "changed_factors": [
+            "amine_amount"
+          ],
+          "inference": "Shows how TEA amount changes CO and H2 within one donor identity."
+        },
+        {
+          "group_a": "E03G01",
+          "group_b": "E03G03",
+          "changed_factors": [
+            "amine_identity"
+          ],
+          "inference": "At low donor amount, identity is treated as directly comparable even without matching effective basicity or medium effects."
+        },
+        {
+          "group_a": "E03G02",
+          "group_b": "E03G04",
+          "changed_factors": [
+            "amine_identity"
+          ],
+          "inference": "At high donor amount, identity is treated as directly comparable and any difference is assigned to donor chemistry."
+        }
+      ],
+      "procedure": [
+        "Choose two donor loadings spanning a visible performance range by brief pilot in the TEOA system, then reuse the same nominal low and high levels for TEA.",
+        "Run the four illuminated CO2 photocatalysis groups with all other nominal settings unchanged.",
+        "Measure CO and H2 by the same GC workflow and compare both within-donor amount trends and cross-donor differences at each amount.",
+        "Use the resulting pattern to decide whether donor identity or donor amount is the stronger determinant."
+      ],
+      "measurements": [
+        "GC-detected CO amount",
+        "GC-detected H2 amount",
+        "CO/H2 ratio across the four groups",
+        "Simple trend direction with donor amount"
+      ],
+      "supports": "If TEA and TEOA remain separated at both low and high donor amounts, H01 is supported and the donor effect is treated as intrinsic rather than condition-dependent.",
+      "refutes": "If changing donor amount dominates while TEA and TEOA overlap at one or both levels, H01 is refuted.",
+      "inconclusive": "Crossing trends, strong instability, or poor signal at one loading make the identity conclusion inconclusive.",
+      "parameter_selection": "Define low and high donor amounts by a short pilot that finds one underperforming and one stronger TEOA condition. Apply the same nominal low and high amounts to TEA without compensating for compositional differences, because identical nominal addition is assumed to create the fairest comparison.",
+      "limitations": "This combines donor identity and medium perturbation issues and overinterprets nominally matched additions as chemically matched conditions. Two-point amount sampling can miss nonmonotonic behavior and cannot isolate mechanism.",
+      "feasibility": "low_cost"
+    }
+  ]
+}

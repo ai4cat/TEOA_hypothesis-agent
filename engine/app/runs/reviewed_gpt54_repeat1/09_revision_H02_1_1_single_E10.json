@@ -1,0 +1,262 @@
+{
+  "candidates": [
+    {
+      "id": "E10",
+      "hypothesis_id": "H02",
+      "title": "Matched TEA/TEOA photophysics-to-products correlation in the Co-bpy baseline, with optional homogeneous bridge",
+      "purpose": "Test whether TEA-versus-TEOA substitution changes donor-side quenching or transient reduced-state observables in the same direction as any CO/H2 shift under otherwise matched conditions, while explicitly limiting inference to correlation-versus-discordance rather than causation.",
+      "evidence_ids": [
+        "EV053",
+        "EV065",
+        "EV007",
+        "EV081",
+        "GX007"
+      ],
+      "source_to_proposal": "Sources support donor-dependent quenching measurements and show that donor identity can change irradiation-time photochemical behavior, while catalytic systems require CO and H2 to be quantified together with catalyst-free background controls. This proposal transfers those observations into a matched TEA-versus-TEOA comparison in the recommended Co-bpy platform, and optionally into a supplementary homogeneous cobalt/Ru bridge only to test directionality transfer. Any agreement would be supportive correlation, not proof that donor-side photophysics is the sole or shared cause of selectivity.",
+      "groups": [
+        {
+          "id": "E10G01",
+          "description": "Primary-platform TEOA baseline under CO2 with full catalytic and photophysical readout",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 primary CoCl2 + 2,2'-bipyridine + g-C3N4 formulation"
+            },
+            {
+              "name": "donor_additive",
+              "value": "TEOA"
+            },
+            {
+              "name": "atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "matched on"
+            },
+            {
+              "name": "measurement_block",
+              "value": "catalysis plus donor-side photophysics"
+            },
+            {
+              "name": "reactor_analytics",
+              "value": "same vessel geometry and same gas-analysis workflow"
+            }
+          ]
+        },
+        {
+          "id": "E10G02",
+          "description": "Primary-platform TEA comparator under CO2 with all non-donor components fixed",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 primary CoCl2 + 2,2'-bipyridine + g-C3N4 formulation"
+            },
+            {
+              "name": "donor_additive",
+              "value": "TEA"
+            },
+            {
+              "name": "atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "matched on"
+            },
+            {
+              "name": "measurement_block",
+              "value": "catalysis plus donor-side photophysics"
+            },
+            {
+              "name": "reactor_analytics",
+              "value": "same vessel geometry and same gas-analysis workflow"
+            }
+          ]
+        },
+        {
+          "id": "E10G03",
+          "description": "Primary-platform no-cobalt background control with TEOA",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 primary CoCl2 + 2,2'-bipyridine + g-C3N4 formulation with cobalt omitted"
+            },
+            {
+              "name": "donor_additive",
+              "value": "TEOA"
+            },
+            {
+              "name": "atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "matched on"
+            },
+            {
+              "name": "measurement_block",
+              "value": "catalysis plus donor-side photophysics"
+            },
+            {
+              "name": "reactor_analytics",
+              "value": "same vessel geometry and same gas-analysis workflow"
+            }
+          ]
+        },
+        {
+          "id": "E10G04",
+          "description": "Primary-platform no-cobalt background control with TEA",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 primary CoCl2 + 2,2'-bipyridine + g-C3N4 formulation with cobalt omitted"
+            },
+            {
+              "name": "donor_additive",
+              "value": "TEA"
+            },
+            {
+              "name": "atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "matched on"
+            },
+            {
+              "name": "measurement_block",
+              "value": "catalysis plus donor-side photophysics"
+            },
+            {
+              "name": "reactor_analytics",
+              "value": "same vessel geometry and same gas-analysis workflow"
+            }
+          ]
+        },
+        {
+          "id": "E10G05",
+          "description": "Optional supplementary homogeneous bridge with cobalt plus Ru photosensitizer using TEOA",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P02 supplementary homogeneous cobalt plus Ru photosensitizer formulation"
+            },
+            {
+              "name": "donor_additive",
+              "value": "TEOA"
+            },
+            {
+              "name": "atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "matched on"
+            },
+            {
+              "name": "measurement_block",
+              "value": "photophysics first and catalysis if stable"
+            },
+            {
+              "name": "reactor_analytics",
+              "value": "same vessel geometry and same gas-analysis workflow"
+            }
+          ]
+        },
+        {
+          "id": "E10G06",
+          "description": "Optional supplementary homogeneous bridge with cobalt plus Ru photosensitizer using TEA",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P02 supplementary homogeneous cobalt plus Ru photosensitizer formulation"
+            },
+            {
+              "name": "donor_additive",
+              "value": "TEA"
+            },
+            {
+              "name": "atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "matched on"
+            },
+            {
+              "name": "measurement_block",
+              "value": "photophysics first and catalysis if stable"
+            },
+            {
+              "name": "reactor_analytics",
+              "value": "same vessel geometry and same gas-analysis workflow"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E10G01",
+          "group_b": "E10G02",
+          "changed_factors": [
+            "donor_additive"
+          ],
+          "inference": "Primary single-factor test of whether donor identity shifts both donor-side observables and catalytic CO/H2 outputs under matched P01 conditions."
+        },
+        {
+          "group_a": "E10G03",
+          "group_b": "E10G04",
+          "changed_factors": [
+            "donor_additive"
+          ],
+          "inference": "Checks whether donor substitution changes background photochemistry or H2 formation without cobalt, bounding catalyst-specific interpretation."
+        },
+        {
+          "group_a": "E10G01",
+          "group_b": "E10G03",
+          "changed_factors": [
+            "platform"
+          ],
+          "inference": "Assesses cobalt-dependent contribution under TEOA, but because cobalt omission changes the catalytic manifold this is a necessity/background contrast rather than a donor-side causal test."
+        },
+        {
+          "group_a": "E10G02",
+          "group_b": "E10G04",
+          "changed_factors": [
+            "platform"
+          ],
+          "inference": "Assesses cobalt-dependent contribution under TEA, again as a necessity/background contrast rather than a donor-side causal test."
+        },
+        {
+          "group_a": "E10G05",
+          "group_b": "E10G06",
+          "changed_factors": [
+            "donor_additive"
+          ],
+          "inference": "Optional single-factor donor comparison in the supplementary bridge to test only whether photophysical and product directionality is transferable across platforms, not whether mechanism is shared."
+        }
+      ],
+      "procedure": [
+        "Verify a chemically matched P01 baseline from the supplied recommendation, then prepare paired TEA and TEOA formulations with all non-donor components, reactor geometry, gas handling, and analytical workflow held fixed; include cobalt-omission controls and add the optional P02 bridge only after P01 matching is demonstrated.",
+        "For each group, collect donor-side photophysical data on the actual reaction mixture or the closest justified sub-mixture: steady-state emission or absorbance changes suitable for quenching analysis, and a transient optical readout assigned only as a reduced-state or charge-carrier proxy after background subtraction and reference checks.",
+        "Run matched photocatalysis on the same formulations and quantify both CO and H2 with time-resolved sampling if signal is above detection limits; analyze no-cobalt groups in parallel to estimate donor/photosensitizer/support background contributions.",
+        "Compare the direction and reproducibility of donor-dependent photophysical changes against donor-dependent CO/H2 changes across replicate runs, and treat agreement as correlation evidence and disagreement as evidence favoring downstream or parallel explanations rather than a direct causal verdict.",
+        "If the optional bridge is used, evaluate whether donor substitution gives the same qualitative direction of photophysical and catalytic change in P02, while explicitly not treating cross-platform agreement or disagreement as decisive for shared mechanism."
+      ],
+      "measurements": [
+        "CO amount and H2 amount from the same gas-analysis workflow; derived selectivity reported only as a transformation of measured products, not as a sole readout.",
+        "Emission intensity or lifetime changes of the light-absorbing component versus donor identity for matched sub-mixtures; this reports quenching behavior but cannot alone identify the exact quencher or catalytic intermediate.",
+        "Transient absorbance or equivalent time-resolved optical signal assigned to a reduced-state or charge-carrier proxy using references and backgrounds; this can indicate donor-dependent formation or persistence of a transient species but cannot by itself establish the active cobalt state.",
+        "Background product formation in cobalt-omission groups to bound donor, photosensitizer, or support contributions.",
+        "If the optional bridge is used, the same classes of photophysical readouts and product measurements in P02 to test directionality transfer only."
+      ],
+      "supports": "H02 is supported if, across matched TEA and TEOA runs in P01, donor substitution produces a reproducible shift in at least one donor-side quenching or transient reduced-state observable and the catalytic CO/H2 output changes in the same directional sense, while cobalt-omission controls do not fully account for the product shift. Similar directionality in the optional P02 bridge would strengthen the case that donor-side behavior is a plausible contributor, but not establish causation or a shared mechanism.",
+      "refutes": "H02 is weakened if TEA and TEOA give similar donor-side quenching and transient observables within experimental resolution in P01, yet CO/H2 differs reproducibly beyond the bounded background seen in cobalt-omission controls. That outcome would favor downstream explanations such as proton-management, catalyst-state, substrate-binding, or other donor-induced changes not captured by the selected photophysical observables.",
+      "inconclusive": "The result is inconclusive if P01 TEA and TEOA cannot be matched reproducibly, if photophysical signals are below assignment confidence or dominated by scattering or support artifacts, if background product formation is too large to isolate cobalt-dependent behavior, if multiple observables shift in inconsistent directions, or if the optional bridge behaves differently in ways that can equally reflect platform mismatch rather than mechanism.",
+      "parameter_selection": "Do not invent donor concentration, catalyst loading, light intensity, or sampling times. Start from the literature-anchored P01 baseline formulation and verify exact values from the supplied system recommendation. Before the full comparison, run a pilot to choose a dilution window that keeps optical signals measurable without changing component identities, confirms linear detector response, and avoids complete inner-filter saturation. Choose catalytic sampling times by first bracketing an early, mid, and later illumination interval where both CO and H2 remain above detection and the no-cobalt control stays interpretable. For the optional P02 bridge, first confirm that the TEOA formulation reproduces observable quenching before introducing TEA as the single-variable comparator.",
+      "limitations": "This design tests correlation versus discordance, not causation. P01 support effects may decouple measured optical observables from the chemically active manifold. A reproducible correlation does not exclude coupled proton-transfer or cobalt-speciation changes, and a lack of correlation may reflect insensitive observables rather than true absence of donor-side differences. Cobalt-omission contrasts are inherently necessity/background tests because omitting cobalt changes the catalytic manifold and may alter charge recombination. The P02 bridge improves photophysical interpretability but is not chemically identical to the Co-bpy/g-C3N4 target, so only bounded directionality transfer is justified.",
+      "feasibility": "moderate"
+    }
+  ]
+}

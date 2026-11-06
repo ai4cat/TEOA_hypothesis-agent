@@ -1,0 +1,63 @@
+{
+  "source_release": "C:\\Users\\dell\\Nutstore\\1\\1.Paper\\11-12_AI_photocatalyst\\2.Paper2\\5.agent\\0.for submit\\reviewed_11_5",
+  "inputs": [
+    {
+      "role": "entity_selection",
+      "path": "outputs/03_entity/entity_selection.json",
+      "sha256": "5530e10da1a18747eee8904c2ab6de4015cc4446627eb2cf5ba5e3d07826db94"
+    },
+    {
+      "role": "entity_ranking",
+      "path": "outputs/03_entity/entity_ranking.csv",
+      "sha256": "acb71a7140b3b74ae05a8f1d918b4b182ce5c79b15aeb51edc7f1ca535d9e0a8"
+    },
+    {
+      "role": "selected_claim",
+      "path": "outputs/11_ranking/selected_claim.json",
+      "sha256": "c3b579a7368234860f707aa790a1ccab0b24d5da46b3c6f17b3ac8e170340107"
+    },
+    {
+      "role": "themes_ranking",
+      "path": "outputs/11_ranking/themes_ranking.csv",
+      "sha256": "d6f9ec274286ba71e12011bc9ce3581f7c2ec7c616cfbba807ab6ddc927e5fa2"
+    },
+    {
+      "role": "system_summary",
+      "path": "outputs/12_systems/statistics/summary.json",
+      "sha256": "fc81272296eacad2ff4fd0e235bca27c5ad371a7e2d908f1635a2220716a6b8e"
+    },
+    {
+      "role": "photo_centers",
+      "path": "outputs/12_systems/statistics/photocatalytic_co2_center_ranking.csv",
+      "sha256": "cafa8aef0c03000788c43fd4a959c3dbb19b3fa09af61d197f56f5957b742346"
+    },
+    {
+      "role": "all_metal_centers",
+      "path": "outputs/12_systems/statistics/metal_center_ranking.csv",
+      "sha256": "8734294d153e6335080baf4eb5e5e5acc2f2143aada5c19a6518f80da4722914"
+    },
+    {
+      "role": "raw_claims",
+      "path": "outputs/04_claims/01_raw_claim_candidates.csv",
+      "sha256": "ef4172e218918cf73dcf97db891361be3109cf91f77b9649c538b8b90389f53a"
+    }
+  ],
+  "normalized_files": [
+    {
+      "path": "statistics/verified_results/entity_ranking.csv",
+      "sha256": "7d3df4ba07f5ca8287b41c44b1e1b0529c379c239f73afffe81a290c46f3baf3"
+    },
+    {
+      "path": "statistics/verified_results/platform_ranking.csv",
+      "sha256": "54ae632635be2d97bffbb22ce5a61a434e2fd381b0e915b23bb665d44ce369b4"
+    },
+    {
+      "path": "statistics/verified_results/summary.json",
+      "sha256": "7453ed47711b69936e8d9ea488aa0f132e36fbc034d9e62cc023c14f035fe853"
+    },
+    {
+      "path": "statistics/verified_results/theme_ranking.csv",
+      "sha256": "0a80514cbd89b8f51a419f71e5753893fed7bd66eaa38327c909ae1fad71b859"
+    }
+  ]
+}

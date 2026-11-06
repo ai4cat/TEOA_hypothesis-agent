@@ -1,0 +1,150 @@
+{
+  "hypotheses": [
+    {
+      "id": "H01",
+      "question_id": "Q5",
+      "claim": "In P01, replacing TEOA with TEA under otherwise matched CoCl2+bpy/g-C3N4, MeCN/H2O, CO2, and light conditions changes the CO/H2 distribution; if the difference is real, it should persist across repeats with the same controls and quantify both gases together. A falsifying outcome is that the apparent selectivity shift collapses when gas handling, illumination, and omission controls are tightened.",
+      "alternative": "The reported TEA/TEOA difference is mainly a comparability artifact or background donor/photosensitizer/support chemistry rather than a donor-specific effect in the Co-bpy manifold. Another alternative is that TEA changes rate but not selectivity, as seen in a different system.",
+      "evidence_ids": [
+        "EV059",
+        "EV027",
+        "EV063",
+        "EV081",
+        "EV046",
+        "EV022",
+        "GX012"
+      ],
+      "method_evidence_ids": [
+        "EV046",
+        "EV081",
+        "EV082",
+        "GX008"
+      ],
+      "platform_ids": [
+        "P01",
+        "P02"
+      ],
+      "platform_and_comparator_choice": "Primary test in P01 because it is the closest direct Co-bpy match with TEOA baseline evidence and a literature-grounded TEA comparator; P02 is only a supplementary check for catalyst/background contributions in a more defined homogeneous assay.",
+      "uncertainty": "No supplied source gives a strict head-to-head TEA-versus-TEOA comparison in one unchanged P01 recipe, so reproducibility and single-variable matching remain unverified. Exact loadings and operating settings for a fair comparator need source verification or pilot matching."
+    },
+    {
+      "id": "H02",
+      "question_id": "Q3",
+      "claim": "If donor identity acts upstream, TEA and TEOA will give measurably different quenching or reduced-intermediate behavior before product selectivity diverges, with one donor changing excited-state quenching efficiency, transient persistence, or donor-radical formation in P01 and directionally similarly in P02. A falsifying pattern is similar quenching/transient behavior for TEA and TEOA despite different CO/H2 outputs.",
+      "alternative": "The main TEA/TEOA effect is downstream of primary photoredox steps, such as proton delivery, CO2 adduct chemistry, or catalyst-state evolution, so upstream quenching observables do not differ enough to explain selectivity. Another alternative is that donor-derived radicals form differently but are spectators rather than causative for CO/H2 partitioning.",
+      "evidence_ids": [
+        "EV011",
+        "EV065",
+        "EV053",
+        "GX007",
+        "EV007",
+        "EV071",
+        "GX018"
+      ],
+      "method_evidence_ids": [
+        "EV053",
+        "EV018",
+        "EV005",
+        "EV077",
+        "EV016"
+      ],
+      "platform_ids": [
+        "P01",
+        "P02"
+      ],
+      "platform_and_comparator_choice": "P01 remains primary for linking kinetics to the target Co-bpy formulation, while P02 is the best supplementary platform because direct quenching methodology is supplied there. The comparator is TEA-for-TEOA substitution only, with all other components held fixed within each platform.",
+      "uncertainty": "Most quenching and radical evidence is transferable rather than direct for the target Co-bpy system, and the active absorber/quenching route in P01 may be support-dependent. Radical detectability can differ because TEOA-related signals may broaden with viscosity, complicating direct amplitude comparisons."
+    },
+    {
+      "id": "H03",
+      "question_id": "Q1",
+      "claim": "The TEA/TEOA selectivity difference mainly reflects additive-controlled proton management, CO2 interaction, and medium properties rather than intrinsic cobalt redox chemistry; therefore the magnitude or direction of the CO/H2 shift should track solvent/additive composition and may diminish when effective medium conditions are better matched. A falsifying outcome is a robust TEA/TEOA selectivity difference that remains despite medium and additive-composition matching.",
+      "alternative": "Donor identity primarily changes electron-delivery chemistry to the cobalt catalytic manifold, and medium/proton effects are secondary covariates. Another alternative is that both donors create different cobalt species directly, so medium matching alone will not erase the difference.",
+      "evidence_ids": [
+        "EV061",
+        "EV029",
+        "EV031",
+        "EV013",
+        "EV024",
+        "EV063",
+        "GX009",
+        "GX014",
+        "GX019"
+      ],
+      "method_evidence_ids": [
+        "EV018",
+        "EV080",
+        "GX010"
+      ],
+      "platform_ids": [
+        "P01",
+        "P03"
+      ],
+      "platform_and_comparator_choice": "Use P01 for the core TEA-versus-TEOA comparison and P03 only as an alternative stress test because it directly shows strong CO/H2 sensitivity to medium around CoCl2/bpy. Comparator logic is still single-variable TEA-for-TEOA within a fixed platform, not cross-platform substitution.",
+      "uncertainty": "Current evidence for proton, CO2-adduct, and viscosity effects is cross-system and partly interpretive, not direct proof in Co-bpy photocatalysis. TEA and TEOA cannot be perfectly matched for all base, viscosity, coordination, and CO2-solvation properties simultaneously, so residual confounding will remain bounded rather than eliminated."
+    },
+    {
+      "id": "H04",
+      "question_id": "Q2",
+      "claim": "TEA and TEOA drive different cobalt speciation, coordination environment, support association, or deactivation pathways during turnover in P01, and this donor-dependent state change is associated with different CO/H2 outcomes. A falsifying result is indistinguishable cobalt-state observables for TEA and TEOA under reaction conditions while catalysis still diverges reproducibly.",
+      "alternative": "The catalytically relevant cobalt state is similar with both donors, and product differences arise from donor-side quenching or proton/CO2 handling instead of cobalt speciation. Another alternative is that any observed before/after cobalt changes reflect decomposition after turnover rather than the operating state.",
+      "evidence_ids": [
+        "EV059",
+        "EV048",
+        "EV085",
+        "GX001",
+        "GX005",
+        "GX011",
+        "GX016",
+        "EV051"
+      ],
+      "method_evidence_ids": [
+        "EV004",
+        "EV052",
+        "EV076",
+        "EV088",
+        "GX008"
+      ],
+      "platform_ids": [
+        "P01"
+      ],
+      "platform_and_comparator_choice": "P01 is favored because it preserves the target CoCl2+bpy context and allows donor substitution without changing catalyst architecture. TEA is compared to the TEOA baseline within the same supported Co-bpy formulation so any cobalt-state differences are interpretable against the original question.",
+      "uncertainty": "The active cobalt species in P01 is not fully defined and may be in situ assembled or support-modified, limiting assignment confidence. Available state-characterization evidence is method-transfer guidance rather than direct TEA/TEOA cobalt-state data in this exact system."
+    },
+    {
+      "id": "H05",
+      "question_id": "Q6",
+      "claim": "TEOA has additional non-electron-donor roles in P01, such as CO2 adduct formation or specific proton-relay behavior, that TEA does not reproduce to the same extent; if so, donor substitution can change selectivity even when gross quenching ability appears similar. A falsifying pattern is that independent observables tied to hydrogen-containing or CO2-associated states do not differ between donors while selectivity changes remain large.",
+      "alternative": "Electron donation alone explains the TEA/TEOA effect, and any extra CO2-adduct or proton-relay chemistry is negligible under the matched Co-bpy conditions. Another alternative is that TEOA-specific side chemistry exists but does not materially control catalytic products.",
+      "evidence_ids": [
+        "EV029",
+        "EV021",
+        "EV011",
+        "EV041",
+        "GX011",
+        "GX019",
+        "EV024"
+      ],
+      "method_evidence_ids": [
+        "EV080",
+        "GX010",
+        "EV053",
+        "GX008"
+      ],
+      "platform_ids": [
+        "P01",
+        "P02"
+      ],
+      "platform_and_comparator_choice": "Primary inference stays in P01 because the researcher’s question is about a Co-bpy TEA/TEOA comparison; P02 can only test whether donor-side electron transfer differences are sufficient or insufficient in a cleaner homogeneous setting. The key comparator is identical except for replacing TEOA with TEA.",
+      "uncertainty": "The strongest evidence for TEOA-specific adduct chemistry comes from non-cobalt systems, so transfer is speculative until bounded in the target formulation. Even with isotope or operando controls, separating electron-donor and proton/CO2-adduct roles may remain only partially resolved."
+    }
+  ],
+  "gaps": [
+    "No supplied paper gives a direct, same-formulation TEA-versus-TEOA head-to-head in the selected Co(II)-bipyridine platform, so the core observation still requires confirmation before mechanism claims are weighted strongly.",
+    "Exact baseline numerical conditions for P01 and a validated TEA comparator recipe are incomplete in the supplied spans, especially catalyst speciation, loadings, and irradiation details needed for a fair single-variable substitution.",
+    "The active cobalt species in P01 is unresolved and may differ from the nominal in situ CoCl2+bpy formulation because of support effects, so cobalt-state hypotheses remain underconstrained without operando verification.",
+    "Most mechanistic evidence for donor-radical formation, CO2 adducts, proton-relay effects, and quenching-route changes is transferable from non-target systems rather than direct in Co-bpy CO2 photoreduction.",
+    "The dataset does not establish whether TEA and TEOA can be matched on effective base strength, proton availability, viscosity, and CO2 solvation simultaneously, leaving residual confounding in additive-identity comparisons.",
+    "Product-origin and background-contribution controls are supported in related systems, but no supplied TEA/TEOA-specific origin-control result is given for the target Co-bpy comparison."
+  ]
+}

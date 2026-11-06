@@ -1,0 +1,34 @@
+{
+  "created_at": "2026-11-05T02:36:23.492257+00:00",
+  "sources": [
+    {
+      "path": "statistics/verified_results/summary.json",
+      "sha256": "7453ed47711b69936e8d9ea488aa0f132e36fbc034d9e62cc023c14f035fe853"
+    },
+    {
+      "path": "statistics/verified_results/entity_ranking.csv",
+      "sha256": "7d3df4ba07f5ca8287b41c44b1e1b0529c379c239f73afffe81a290c46f3baf3"
+    },
+    {
+      "path": "statistics/verified_results/theme_ranking.csv",
+      "sha256": "0a80514cbd89b8f51a419f71e5753893fed7bd66eaa38327c909ae1fad71b859"
+    },
+    {
+      "path": "statistics/verified_results/platform_ranking.csv",
+      "sha256": "54ae632635be2d97bffbb22ce5a61a434e2fd381b0e915b23bb665d44ce369b4"
+    },
+    {
+      "path": "library/index.sqlite",
+      "sha256": "d5f729adbeea22528fbf3d0f5faff5fa4a1c66a34f86775f947c8a9460173179"
+    },
+    {
+      "path": "app/runs/reviewed_gpt54_repeat1/retrieval_settings.snapshot.json",
+      "sha256": "b5c9859794e2901f6fb10d4b2b5f80ece3280b63a7d703c1d8d8a316476dff88"
+    },
+    {
+      "path": "app/runs/reviewed_gpt54_repeat1/research_prompt.snapshot.txt",
+      "sha256": "2cdc4359f21f535457d0dc1bf44b13aa001835331d31cbf860d555a763cd41f9"
+    }
+  ],
+  "input_boundary": "Frozen statistics, indexed literature, current research brief and explicit resource constraints; TEOA remains focal."
+}

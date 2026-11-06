@@ -1,0 +1,89 @@
+{
+  "decisions": [
+    {
+      "candidate_id": "E25",
+      "decision": "shortlist",
+      "major_issues": [],
+      "rationale": "This is a defensible descriptive characterization candidate for H05 because it directly tests the hypothesis prediction that TEA versus TEOA can change CO2-associated speciation under matched P01 conditions before illumination. The proposal appropriately limits inference: it does not claim catalytic relevance or exact structure, and it includes CO2 versus inert and no-amine controls to bound background donor and gas effects. Support from the supplied record is transferred rather than direct, mainly from cross-system TEOA adduct/speciation observations and method logic for assignment controls, but the transfer is used conservatively. The main comparison is well aligned to the stated question, and the candidate remains valuable even if results are only descriptive.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "adequate_for_stated_question",
+      "candidate_value": "retain",
+      "implementation_readiness": "ready_for_researcher_planning",
+      "resource_level": "moderate",
+      "prior_issue_resolution": "No prior review provided."
+    },
+    {
+      "candidate_id": "E26",
+      "decision": "revise",
+      "major_issues": [
+        "No TEA-side isotope controls are included, so CO2-derived or H-involving assignment is bounded mainly for TEOA and not symmetrically for the TEA versus TEOA comparison.",
+        "The cobalt-absent control is only specified for TEOA, leaving donor-specific background separation incomplete for TEA.",
+        "The proposal mixes donor comparison with assignment logic but does not fully ensure that any donor-difference claim is equally well bounded in both donor conditions."
+      ],
+      "rationale": "This candidate has clear scientific value because operando IR with isotope controls is a strong way to test whether TEA and TEOA produce different reaction-state signatures in P01. The supplied evidence supports the control logic well at the methodological level, and the candidate explicitly avoids overclaiming unique structures or pathways. However, the current design bounds assignments asymmetrically: 13CO2, D2O, and cobalt-absent controls are centered on TEOA, while the central hypothesis requires comparing TEA and TEOA. That does not invalidate the screen, but it weakens the inferential strength of a donor-specific conclusion. Revision should add symmetric TEA-side assignment or background controls, or narrow the claim to a TEOA-focused descriptive assignment study plus a less strongly assigned TEA comparison.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "needs_revision",
+      "candidate_value": "conditional",
+      "implementation_readiness": "details_needed",
+      "resource_level": "specialist",
+      "prior_issue_resolution": "No prior review provided."
+    },
+    {
+      "candidate_id": "E27",
+      "decision": "shortlist",
+      "major_issues": [],
+      "rationale": "This is a defensible candidate because it asks a narrower, well-bounded question: whether any TEA/TEOA product difference in P01 survives when CO is explicitly confirmed as CO2-derived and donor-dependent background gas formation is checked. The design includes matched 13CO2 donor substitution plus inert-gas and dark controls, and the card correctly limits interpretation by noting that isotopic product origin does not identify adducts or cobalt states. Evidence support is partly direct for the value of CO2-origin controls and partly transferable for medium sensitivity and donor-confounding concerns. The dark control is explicitly recognized as descriptive if only one donor is selected, which is an appropriate limitation rather than a fatal flaw.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "adequate_for_stated_question",
+      "candidate_value": "retain",
+      "implementation_readiness": "ready_for_researcher_planning",
+      "resource_level": "moderate",
+      "prior_issue_resolution": "No prior review provided."
+    },
+    {
+      "candidate_id": "E28",
+      "decision": "revise",
+      "major_issues": [
+        "The proposal depends on a quenching assay and an adduct-sensitive spectral method that are not actually established within the supplied P01 evidence, so the central discriminator may not yet be implementation-ready.",
+        "The inference target is strong—showing donor-specific downstream chemistry despite similar quenching observables—but similarity thresholds and comparability criteria for quenching are left undefined and pilot-dependent.",
+        "Without explicit negative controls such as no-cobalt, inert-gas, or dark references in the core group set, donor-dependent spectral differences may remain hard to assign against background or bulk-medium changes."
+      ],
+      "rationale": "This is conceptually valuable because it tries to discriminate H05 from the competing pure-quenching explanation by integrating quenching observables with donor-dependent spectroscopy. The supplied evidence supports the competing-quenching rationale and gives transferable support for donor-linked adduct/speciation possibilities. However, compared with E25 and E26, this card assumes more unproven infrastructure: a usable P01 quenching assay and a validated adduct-sensitive spectroscopic readout. It also asks for stronger causal interpretation than the present control structure fully supports. Revision should either narrow the claim to an integrated exploratory correlation study or add clearer control logic and pre-specified comparability criteria for quenching versus downstream signals.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "needs_revision",
+      "candidate_value": "conditional",
+      "implementation_readiness": "details_needed",
+      "resource_level": "moderate",
+      "prior_issue_resolution": "No prior review provided."
+    },
+    {
+      "candidate_id": "E29",
+      "decision": "shortlist",
+      "major_issues": [],
+      "rationale": "This is a useful and appropriately bounded discrimination test. It asks whether donor presence is necessary for any CO2-associated signature and whether TEOA shows something beyond a generic amine effect, using TEA, TEOA, and no-amine matched P01 groups plus optional 13CO2 bounding. The design does not pretend that TEA and TEOA are chemically equivalent aside from concentration, and it explicitly records bulk covariates instead of assuming equality. The candidate remains descriptive if assignments are partial, but that is acceptable for shortlist status because the stated conclusions are limited and the controls are relevant to H05.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "adequate_for_stated_question",
+      "candidate_value": "retain",
+      "implementation_readiness": "ready_for_researcher_planning",
+      "resource_level": "moderate",
+      "prior_issue_resolution": "No prior review provided."
+    },
+    {
+      "candidate_id": "E30",
+      "decision": "revise",
+      "major_issues": [
+        "Signal assignment risk is high because the candidate combines multiple observables and possible species classes, yet no isotopic control is included in the core design to help distinguish CO2-derived substrate-associated features from donor/background bands.",
+        "The proposal seeks to relate donor-specific substrate-associated signals to cobalt-state or coordination changes, but the paired spectroscopy package is left too open-ended for strong inference at the current stage.",
+        "No-cobalt controls help, but absence in no-cobalt samples would still not cleanly prove catalyst-linked adducts; the candidate acknowledges this, so the remaining issue is that the intended conclusion may outrun the specified controls unless narrowed."
+      ],
+      "rationale": "This candidate has value as a specialist screen because it explicitly tries to separate cobalt-linked effects from bulk donor/CO2 chemistry and includes TEA/TEOA plus no-cobalt and dark references. The methodological support from the supplied evidence is mainly transferable and suitable for proposing operando state-sensitive work. However, the current version risks overbroad interpretation from complex, potentially overlapping spectroscopies without sufficiently bounded assignment logic. A revision that narrows the goal to descriptive cobalt-dependence screening, or that adds isotope or orthogonal assignment controls, would improve inferential strength without needing to reject the concept.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "needs_revision",
+      "candidate_value": "conditional",
+      "implementation_readiness": "details_needed",
+      "resource_level": "specialist",
+      "prior_issue_resolution": "No prior review provided."
+    }
+  ],
+  "overall": "Using only the supplied record, all six candidates are scientifically plausible transfer tests for H05 rather than directly evidenced Co-bpy results. E25, E27, and E29 are the strongest shortlist options because their questions are narrower, their controls are better matched to the stated inferences, and they keep conclusions descriptive where assignment certainty is limited. E26, E28, and E30 should be retained but revised because their intended mechanistic discrimination presently exceeds their symmetric controls, assignment-bounding strategy, or implementation specificity. None of the candidates warrants rejection on feasibility alone, but the review should preserve caution that TEA versus TEOA is a bundled chemical substitution, not a single microscopic variable, and that product or spectral differences alone do not prove catalyst-linked adduct formation."
+}

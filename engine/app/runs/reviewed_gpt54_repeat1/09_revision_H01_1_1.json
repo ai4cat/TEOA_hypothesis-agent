@@ -1,0 +1,945 @@
+{
+  "candidates": [
+    {
+      "id": "E02",
+      "hypothesis_id": "H01",
+      "title": "Matched donor-specific necessity and background controls",
+      "purpose": "Test whether any TEA versus TEOA CO/H2 difference persists only in the complete photocatalytic formulation after symmetric light, gas-feed, and cobalt-necessity controls for both donors.",
+      "evidence_ids": [
+        "EV046",
+        "EV081",
+        "EV045",
+        "GX008",
+        "GX012"
+      ],
+      "source_to_proposal": "EV046, EV081, EV045, and GX008 support negative controls for light, CO2 versus inert gas, and key component omission, while EV081 and GX012 show that catalyst-free or altered-component backgrounds can still produce some gas. The proposal narrows transfer to assay-validation logic in the P01 donor comparison and does not assume these controls alone identify mechanism.",
+      "groups": [
+        {
+          "id": "E02G01",
+          "description": "Full TEOA system under light and CO2.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 photocatalysis"
+            },
+            {
+              "name": "amine_identity",
+              "value": "TEOA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "bpy_component",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4_component",
+              "value": "present"
+            },
+            {
+              "name": "gas_feed",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "atmosphere_mode",
+              "value": "sealed photocatalysis"
+            }
+          ]
+        },
+        {
+          "id": "E02G02",
+          "description": "Full TEA system under light and CO2.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 photocatalysis"
+            },
+            {
+              "name": "amine_identity",
+              "value": "TEA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "bpy_component",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4_component",
+              "value": "present"
+            },
+            {
+              "name": "gas_feed",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "atmosphere_mode",
+              "value": "sealed photocatalysis"
+            }
+          ]
+        },
+        {
+          "id": "E02G03",
+          "description": "TEOA dark control.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 photocatalysis"
+            },
+            {
+              "name": "amine_identity",
+              "value": "TEOA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "bpy_component",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4_component",
+              "value": "present"
+            },
+            {
+              "name": "gas_feed",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "off"
+            },
+            {
+              "name": "atmosphere_mode",
+              "value": "sealed photocatalysis"
+            }
+          ]
+        },
+        {
+          "id": "E02G04",
+          "description": "TEA dark control.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 photocatalysis"
+            },
+            {
+              "name": "amine_identity",
+              "value": "TEA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "bpy_component",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4_component",
+              "value": "present"
+            },
+            {
+              "name": "gas_feed",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "off"
+            },
+            {
+              "name": "atmosphere_mode",
+              "value": "sealed photocatalysis"
+            }
+          ]
+        },
+        {
+          "id": "E02G05",
+          "description": "TEOA inert-gas control.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 photocatalysis"
+            },
+            {
+              "name": "amine_identity",
+              "value": "TEOA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "bpy_component",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4_component",
+              "value": "present"
+            },
+            {
+              "name": "gas_feed",
+              "value": "Ar"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "atmosphere_mode",
+              "value": "sealed photocatalysis"
+            }
+          ]
+        },
+        {
+          "id": "E02G06",
+          "description": "TEA inert-gas control.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 photocatalysis"
+            },
+            {
+              "name": "amine_identity",
+              "value": "TEA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "bpy_component",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4_component",
+              "value": "present"
+            },
+            {
+              "name": "gas_feed",
+              "value": "Ar"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "atmosphere_mode",
+              "value": "sealed photocatalysis"
+            }
+          ]
+        },
+        {
+          "id": "E02G07",
+          "description": "TEOA no-cobalt control.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 photocatalysis"
+            },
+            {
+              "name": "amine_identity",
+              "value": "TEOA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "absent"
+            },
+            {
+              "name": "bpy_component",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4_component",
+              "value": "present"
+            },
+            {
+              "name": "gas_feed",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "atmosphere_mode",
+              "value": "sealed photocatalysis"
+            }
+          ]
+        },
+        {
+          "id": "E02G08",
+          "description": "TEA no-cobalt control.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 photocatalysis"
+            },
+            {
+              "name": "amine_identity",
+              "value": "TEA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "absent"
+            },
+            {
+              "name": "bpy_component",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4_component",
+              "value": "present"
+            },
+            {
+              "name": "gas_feed",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "atmosphere_mode",
+              "value": "sealed photocatalysis"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E02G01",
+          "group_b": "E02G03",
+          "changed_factors": [
+            "illumination"
+          ],
+          "inference": "Tests whether TEOA-system gas formation requires light."
+        },
+        {
+          "group_a": "E02G02",
+          "group_b": "E02G04",
+          "changed_factors": [
+            "illumination"
+          ],
+          "inference": "Tests whether TEA-system gas formation requires light."
+        },
+        {
+          "group_a": "E02G01",
+          "group_b": "E02G05",
+          "changed_factors": [
+            "gas_feed"
+          ],
+          "inference": "Tests whether CO in the TEOA system depends on CO2 rather than donor or background decomposition under otherwise matched conditions."
+        },
+        {
+          "group_a": "E02G02",
+          "group_b": "E02G06",
+          "changed_factors": [
+            "gas_feed"
+          ],
+          "inference": "Tests whether CO in the TEA system depends on CO2 rather than donor or background decomposition under otherwise matched conditions."
+        },
+        {
+          "group_a": "E02G01",
+          "group_b": "E02G07",
+          "changed_factors": [
+            "cobalt_component"
+          ],
+          "inference": "Tests whether cobalt is necessary for the TEOA system under the chosen assay conditions."
+        },
+        {
+          "group_a": "E02G02",
+          "group_b": "E02G08",
+          "changed_factors": [
+            "cobalt_component"
+          ],
+          "inference": "Tests whether cobalt is necessary for the TEA system under the chosen assay conditions."
+        },
+        {
+          "group_a": "E02G01",
+          "group_b": "E02G02",
+          "changed_factors": [
+            "amine_identity"
+          ],
+          "inference": "If the full systems differ while matched controls for both donors remain low relative to their paired full systems, the TEA versus TEOA difference is more credibly assigned to donor identity under this formulation; if donor-specific backgrounds are substantial, interpretation remains bounded."
+        }
+      ],
+      "procedure": [
+        "Prepare one matched reaction matrix for both donors, changing only amine identity within each donor pair and holding reactor format, nominal loadings, solvent composition, gas handling, and GC method constant.",
+        "Run full, dark, inert-gas, and no-cobalt groups for both donors in the same campaign with randomized position/order if possible.",
+        "Quantify CO and H2 for every group by the same calibrated GC workflow and compare each control only to its donor-matched full system before comparing donors.",
+        "Interpret donor effects only after symmetric controls show that full-system signals exceed donor-matched backgrounds by a practically meaningful margin under the same assay window."
+      ],
+      "measurements": [
+        "GC-detected CO amount",
+        "GC-detected H2 amount",
+        "CO/H2 product ratio or selectivity metric calculated from the same GC dataset",
+        "Whether each donor-matched control is above, near, or below blank/detection background",
+        "Optional note of visible precipitation or color change as a non-decisive covariate"
+      ],
+      "supports": "H01 is supported if TEA and TEOA full systems reproducibly differ in CO and/or H2 distribution while both donors show low dark, inert-gas, and no-cobalt outputs relative to their own full systems.",
+      "refutes": "H01 is weakened or refuted for this platform if the TEA and TEOA full systems converge within experimental uncertainty after strict matching, or if one or both donors show control outputs comparable to the corresponding full system so that the apparent donor effect is explained by backgrounds.",
+      "inconclusive": "The result is inconclusive if full-system signals are near detection limits, if donor-specific controls are non-negligible and differ between donors, or if instability prevents fair comparison across the reaction window.",
+      "parameter_selection": "Use the same nominal baseline formulation for all eight groups. If all groups are near detection limits, extend irradiation time equally for the entire matrix in a pilot until at least one full system is quantifiable above blank noise. Do not optimize TEA and TEOA separately inside this control card; keep any later donor-specific optimization outside the matched assay-validation test.",
+      "limitations": "This card tests assay validity and donor dependence under one matched formulation but does not isolate why donors differ. No-cobalt omission does not separately test ligand or absorber necessity. Equal nominal conditions do not guarantee equal pH, donor consumption, or active-species population, so mechanistic interpretation remains bounded.",
+      "feasibility": "low_cost"
+    },
+    {
+      "id": "E04",
+      "hypothesis_id": "H01",
+      "title": "TEA versus TEOA donor-side quenching comparison in the verified P01 baseline matrix",
+      "purpose": "Test whether replacing TEOA with TEA changes upstream photoredox observables in a verified P01 baseline formulation under strictly matched nonreactive measurement conditions, as a descriptive covariate for any donor-dependent CO/H2 shift without claiming catalytic causation.",
+      "evidence_ids": [
+        "EV053",
+        "EV065",
+        "GX007",
+        "EV011"
+      ],
+      "source_to_proposal": "EV053 and EV065 support transferable fluorescence/UV-vis quenching logic in donor-containing cobalt photocatalytic systems; GX007 indicates TEA-for-TEOA substitution can alter photochemical behavior; EV011 supports that TEA and TEOA form different donor-derived radical intermediates after quenching. Proposed transfer: use the verified P01 catalytic formulation as the starting matrix, then adapt it only as needed for optical measurement with matched cobalt-containing and cobalt-free references to separate donor-side from cobalt-associated effects. This is proposed characterization, not proof that the same observable controls catalysis.",
+      "groups": [
+        {
+          "id": "E04G01",
+          "description": "Verified P01 baseline optical sample with TEOA and cobalt components",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "verified P01 baseline matrix for optical measurement"
+            },
+            {
+              "name": "donor_identity",
+              "value": "TEOA"
+            },
+            {
+              "name": "cobalt_components",
+              "value": "present"
+            },
+            {
+              "name": "absorber",
+              "value": "same as verified baseline"
+            },
+            {
+              "name": "solvent_matrix",
+              "value": "same as verified baseline"
+            },
+            {
+              "name": "gas_condition",
+              "value": "same nonreactive measurement condition"
+            },
+            {
+              "name": "illumination_state",
+              "value": "matched quenching measurement"
+            }
+          ]
+        },
+        {
+          "id": "E04G02",
+          "description": "Verified P01 baseline optical sample with TEA and cobalt components",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "verified P01 baseline matrix for optical measurement"
+            },
+            {
+              "name": "donor_identity",
+              "value": "TEA"
+            },
+            {
+              "name": "cobalt_components",
+              "value": "present"
+            },
+            {
+              "name": "absorber",
+              "value": "same as verified baseline"
+            },
+            {
+              "name": "solvent_matrix",
+              "value": "same as verified baseline"
+            },
+            {
+              "name": "gas_condition",
+              "value": "same nonreactive measurement condition"
+            },
+            {
+              "name": "illumination_state",
+              "value": "matched quenching measurement"
+            }
+          ]
+        },
+        {
+          "id": "E04G03",
+          "description": "Verified P01 baseline optical sample with TEOA and no cobalt components",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "verified P01 baseline matrix for optical measurement"
+            },
+            {
+              "name": "donor_identity",
+              "value": "TEOA"
+            },
+            {
+              "name": "cobalt_components",
+              "value": "absent"
+            },
+            {
+              "name": "absorber",
+              "value": "same as verified baseline"
+            },
+            {
+              "name": "solvent_matrix",
+              "value": "same as verified baseline"
+            },
+            {
+              "name": "gas_condition",
+              "value": "same nonreactive measurement condition"
+            },
+            {
+              "name": "illumination_state",
+              "value": "matched quenching measurement"
+            }
+          ]
+        },
+        {
+          "id": "E04G04",
+          "description": "Verified P01 baseline optical sample with TEA and no cobalt components",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "verified P01 baseline matrix for optical measurement"
+            },
+            {
+              "name": "donor_identity",
+              "value": "TEA"
+            },
+            {
+              "name": "cobalt_components",
+              "value": "absent"
+            },
+            {
+              "name": "absorber",
+              "value": "same as verified baseline"
+            },
+            {
+              "name": "solvent_matrix",
+              "value": "same as verified baseline"
+            },
+            {
+              "name": "gas_condition",
+              "value": "same nonreactive measurement condition"
+            },
+            {
+              "name": "illumination_state",
+              "value": "matched quenching measurement"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E04G01",
+          "group_b": "E04G02",
+          "changed_factors": [
+            "donor_identity"
+          ],
+          "inference": "Single-factor donor comparison in the full verified matrix. A reproducible difference in quenching observable supports donor-dependent upstream photoredox behavior under matched conditions, but not by itself the cause of CO/H2 changes."
+        },
+        {
+          "group_a": "E04G03",
+          "group_b": "E04G04",
+          "changed_factors": [
+            "donor_identity"
+          ],
+          "inference": "Single-factor donor comparison without cobalt components. Similar donor ordering here would support an absorber-donor effect that does not require cobalt."
+        },
+        {
+          "group_a": "E04G01",
+          "group_b": "E04G03",
+          "changed_factors": [
+            "cobalt_components"
+          ],
+          "inference": "Tests whether cobalt presence alters the optical response in the TEOA matrix, helping bound whether the measured signal includes cobalt-associated pathways."
+        },
+        {
+          "group_a": "E04G02",
+          "group_b": "E04G04",
+          "changed_factors": [
+            "cobalt_components"
+          ],
+          "inference": "Tests whether cobalt presence alters the optical response in the TEA matrix, helping bound whether donor dependence changes when cobalt-associated pathways are available."
+        }
+      ],
+      "procedure": [
+        "First verify the actual P01 baseline composition and prepare matched optical samples that differ only in donor identity or cobalt-component presence across groups.",
+        "Record absorber-centered fluorescence and/or UV-vis spectra under identical cuvette geometry, excitation settings, and background subtraction rules, including solvent-only and absorber-free backgrounds when needed.",
+        "Use a pilot to adjust optical density into the instrument-linear range and to check whether scattering, adsorption, or donor addition causes unacceptable inner-filter distortion; if so, restrict interpretation to corrected descriptive comparisons or dilute all groups equally.",
+        "Compare TEA and TEOA trends first in cobalt-free samples and then in cobalt-containing samples, retaining raw spectra and using Stern-Volmer-style summaries only where empirical linearity is demonstrated."
+      ],
+      "measurements": [
+        "Steady-state fluorescence intensity of the absorber-containing sample under matched excitation",
+        "Optional fluorescence lifetime proxy only if available and if scattering permits meaningful extraction",
+        "UV-vis absorbance or difference spectra before and after donor addition or short irradiation exposure",
+        "Background absorbance and scattering from donor, solvent matrix, and cobalt-containing mixtures",
+        "Empirical quenching trend summaries for cobalt-free and cobalt-containing matrices"
+      ],
+      "supports": "A reproducible TEA-versus-TEOA difference in optical quenching or spectral response under otherwise matched conditions, especially if the donor ordering is observed in repeated preparations and survives background correction, supports H01 only in the narrowed sense that donor identity changes upstream photoredox behavior in the verified matrix. If the difference appears only when cobalt components are present, that further supports involvement of cobalt-associated interactions but still does not establish the catalytic mechanism.",
+      "refutes": "If TEA and TEOA show no reproducible difference within calibrated detection limits in both cobalt-free and cobalt-containing matched matrices, a large donor-specific upstream optical difference is disfavored as the main explanation for any CO/H2 shift, while leaving downstream proton management, catalyst speciation, and assay artifacts unresolved.",
+      "inconclusive": "Results are inconclusive if scattering, adsorption, unstable baselines, donor-dependent decomposition, or noncomparable optical densities prevent reliable matched comparison. A measured optical difference is also inconclusive for catalytic causation unless linked separately to catalytic data.",
+      "parameter_selection": "Use the verified P01 baseline identities and nominal component levels as the starting point. Any dilution or path-length adjustment needed for optical work must be applied equally across all groups and documented as an adaptation from the catalytic matrix. Pilot criteria: keep absorbance in an empirically linear instrumental range, avoid complete signal extinction, and accept Stern-Volmer analysis only over the observed linear region; otherwise report matched-point descriptive differences only.",
+      "limitations": "This is characterization, not a catalytic readout. In a g-C3N4-containing or otherwise scattering matrix, fluorescence and UV-vis assignments can be compromised by adsorption, inner-filter effects, and turbidity. Even with cobalt-free controls, the experiment cannot identify the turnover-relevant intermediate or prove that a donor-dependent optical change causes a donor-dependent CO/H2 shift. Transfer from EV053, EV065, GX007, and EV011 is methodological and donor-chemistry based, not direct proof for the exact P01 catalytic manifold.",
+      "feasibility": "moderate"
+    },
+    {
+      "id": "E05",
+      "hypothesis_id": "H01",
+      "title": "Near-operando cobalt-state comparison under TEOA and TEA",
+      "purpose": "Assess whether TEA and TEOA correlate with different cobalt-associated oxidation or coordination signatures in the P01-like system under matched conditions, while keeping inference descriptive unless donor-linked differences survive donor-matched backgrounds and matched timing.",
+      "evidence_ids": [
+        "GX008",
+        "EV046",
+        "EV059"
+      ],
+      "source_to_proposal": "EV059 anchors the closest supplied formulation family: CoCl2 plus bpy with g-C3N4 in MeCN/H2O using TEOA, with triethylamine noted among related donor variants. GX008 supports operando-capable spectroscopy and strict controls for photocatalytic CO2 reduction. EV046 supports catalyst-free/background references and warns that before/after or recovered-state characterization alone cannot identify the operating catalyst. Proposed transfer: compare TEA and TEOA only within a matched P01-like matrix, add donor-matched cobalt-free references for both donors, and interpret donor effects as correlation with cobalt-state signatures rather than proof of mechanism.",
+      "groups": [
+        {
+          "id": "E05G01",
+          "description": "Matched P01-like formulation with TEOA before illumination",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01-like matched formulation"
+            },
+            {
+              "name": "donor_identity",
+              "value": "TEOA"
+            },
+            {
+              "name": "cobalt_components",
+              "value": "present"
+            },
+            {
+              "name": "illumination_state",
+              "value": "before illumination"
+            },
+            {
+              "name": "gas_condition",
+              "value": "same reaction gas handling"
+            },
+            {
+              "name": "sample_timing",
+              "value": "initial"
+            }
+          ]
+        },
+        {
+          "id": "E05G02",
+          "description": "Matched P01-like formulation with TEOA during or immediately after a fixed illumination window",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01-like matched formulation"
+            },
+            {
+              "name": "donor_identity",
+              "value": "TEOA"
+            },
+            {
+              "name": "cobalt_components",
+              "value": "present"
+            },
+            {
+              "name": "illumination_state",
+              "value": "during or immediate quench after illumination"
+            },
+            {
+              "name": "gas_condition",
+              "value": "same reaction gas handling"
+            },
+            {
+              "name": "sample_timing",
+              "value": "matched illuminated"
+            }
+          ]
+        },
+        {
+          "id": "E05G03",
+          "description": "Matched P01-like formulation with TEA before illumination",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01-like matched formulation"
+            },
+            {
+              "name": "donor_identity",
+              "value": "TEA"
+            },
+            {
+              "name": "cobalt_components",
+              "value": "present"
+            },
+            {
+              "name": "illumination_state",
+              "value": "before illumination"
+            },
+            {
+              "name": "gas_condition",
+              "value": "same reaction gas handling"
+            },
+            {
+              "name": "sample_timing",
+              "value": "initial"
+            }
+          ]
+        },
+        {
+          "id": "E05G04",
+          "description": "Matched P01-like formulation with TEA during or immediately after a fixed illumination window",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01-like matched formulation"
+            },
+            {
+              "name": "donor_identity",
+              "value": "TEA"
+            },
+            {
+              "name": "cobalt_components",
+              "value": "present"
+            },
+            {
+              "name": "illumination_state",
+              "value": "during or immediate quench after illumination"
+            },
+            {
+              "name": "gas_condition",
+              "value": "same reaction gas handling"
+            },
+            {
+              "name": "sample_timing",
+              "value": "matched illuminated"
+            }
+          ]
+        },
+        {
+          "id": "E05G05",
+          "description": "TEOA matrix without cobalt components matched to the pre-illumination state",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01-like matched formulation"
+            },
+            {
+              "name": "donor_identity",
+              "value": "TEOA"
+            },
+            {
+              "name": "cobalt_components",
+              "value": "absent"
+            },
+            {
+              "name": "illumination_state",
+              "value": "before illumination"
+            },
+            {
+              "name": "gas_condition",
+              "value": "same reaction gas handling"
+            },
+            {
+              "name": "sample_timing",
+              "value": "initial"
+            }
+          ]
+        },
+        {
+          "id": "E05G06",
+          "description": "TEOA matrix without cobalt components matched to the illuminated-state sampling",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01-like matched formulation"
+            },
+            {
+              "name": "donor_identity",
+              "value": "TEOA"
+            },
+            {
+              "name": "cobalt_components",
+              "value": "absent"
+            },
+            {
+              "name": "illumination_state",
+              "value": "during or immediate quench after illumination"
+            },
+            {
+              "name": "gas_condition",
+              "value": "same reaction gas handling"
+            },
+            {
+              "name": "sample_timing",
+              "value": "matched illuminated"
+            }
+          ]
+        },
+        {
+          "id": "E05G07",
+          "description": "TEA matrix without cobalt components matched to the pre-illumination state",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01-like matched formulation"
+            },
+            {
+              "name": "donor_identity",
+              "value": "TEA"
+            },
+            {
+              "name": "cobalt_components",
+              "value": "absent"
+            },
+            {
+              "name": "illumination_state",
+              "value": "before illumination"
+            },
+            {
+              "name": "gas_condition",
+              "value": "same reaction gas handling"
+            },
+            {
+              "name": "sample_timing",
+              "value": "initial"
+            }
+          ]
+        },
+        {
+          "id": "E05G08",
+          "description": "TEA matrix without cobalt components matched to the illuminated-state sampling",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01-like matched formulation"
+            },
+            {
+              "name": "donor_identity",
+              "value": "TEA"
+            },
+            {
+              "name": "cobalt_components",
+              "value": "absent"
+            },
+            {
+              "name": "illumination_state",
+              "value": "during or immediate quench after illumination"
+            },
+            {
+              "name": "gas_condition",
+              "value": "same reaction gas handling"
+            },
+            {
+              "name": "sample_timing",
+              "value": "matched illuminated"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E05G01",
+          "group_b": "E05G02",
+          "changed_factors": [
+            "illumination_state",
+            "sample_timing"
+          ],
+          "inference": "Within TEOA, descriptive comparison for cobalt-associated state evolution under illumination. This remains time-coupled and does not by itself isolate a causal donor effect."
+        },
+        {
+          "group_a": "E05G03",
+          "group_b": "E05G04",
+          "changed_factors": [
+            "illumination_state",
+            "sample_timing"
+          ],
+          "inference": "Within TEA, descriptive comparison for cobalt-associated state evolution under illumination. Compare with the TEOA pair only as a matched descriptive trend."
+        },
+        {
+          "group_a": "E05G01",
+          "group_b": "E05G03",
+          "changed_factors": [
+            "donor_identity"
+          ],
+          "inference": "Single-factor donor comparison before illumination. Any reproducible difference suggests donor-dependent pre-equilibrium or coordination differences prior to turnover."
+        },
+        {
+          "group_a": "E05G02",
+          "group_b": "E05G04",
+          "changed_factors": [
+            "donor_identity"
+          ],
+          "inference": "Single-factor donor comparison at the matched illuminated state. A donor-dependent cobalt-associated signature supports correlation between donor identity and the cobalt-containing manifold under operating conditions."
+        },
+        {
+          "group_a": "E05G01",
+          "group_b": "E05G05",
+          "changed_factors": [
+            "cobalt_components"
+          ],
+          "inference": "TEOA donor-matched background comparison before illumination for assigning cobalt-associated features against matrix contributions."
+        },
+        {
+          "group_a": "E05G02",
+          "group_b": "E05G06",
+          "changed_factors": [
+            "cobalt_components"
+          ],
+          "inference": "TEOA donor-matched background comparison at the illuminated-state sampling for separating cobalt-associated changes from donor or support photochemistry."
+        },
+        {
+          "group_a": "E05G03",
+          "group_b": "E05G07",
+          "changed_factors": [
+            "cobalt_components"
+          ],
+          "inference": "TEA donor-matched background comparison before illumination for assigning cobalt-associated features against matrix contributions."
+        },
+        {
+          "group_a": "E05G04",
+          "group_b": "E05G08",
+          "changed_factors": [
+            "cobalt_components"
+          ],
+          "inference": "TEA donor-matched background comparison at the illuminated-state sampling for separating cobalt-associated changes from donor or support photochemistry."
+        }
+      ],
+      "procedure": [
+        "Choose one cobalt-sensitive spectroscopic readout available for the actual sample state and add one independent cross-check if feasible.",
+        "Acquire donor-matched cobalt-containing and cobalt-free reference data before illumination, then repeat at a fixed illuminated-state sampling point using identical handling and timing for both donors.",
+        "Use a pilot to set concentration, path length, acquisition time, and illumination window so cobalt-associated signal is measurable without saturating the detector or fully degrading the sample.",
+        "Interpret only reproducible donor-dependent features that remain after donor-matched background subtraction or comparison and, if possible, agree with the second readout."
+      ],
+      "measurements": [
+        "Cobalt-associated spectral signatures consistent with oxidation-state or coordination-environment change",
+        "Donor-matched difference spectra between pre-illumination and illuminated-state samples",
+        "Donor-matched cobalt-free background spectra before and after the same illumination protocol",
+        "If feasible, a second independent spectral readout on the same matched sample set"
+      ],
+      "supports": "A reproducible TEA-versus-TEOA difference in cobalt-associated signatures under matched illuminated conditions, especially when smaller or absent before illumination and absent in donor-matched cobalt-free backgrounds, supports a donor-linked change in the cobalt-containing manifold.",
+      "refutes": "If TEA and TEOA show no reproducible difference in cobalt-associated signatures before or at the matched illuminated state within method resolution, a large donor-specific cobalt-state difference is disfavored as the main explanation for CO/H2 changes.",
+      "inconclusive": "Signals dominated by support or donor background, assignments visible equally in cobalt-free references, or differences seen only in recovered samples are inconclusive. Even a clear donor-dependent cobalt signature does not alone prove the active species or the cause of product selectivity.",
+      "parameter_selection": "No exact spectroscopic settings are supplied. Use pilot scans to determine a measurable cobalt signal range, unsaturated acquisition settings, and the shortest illumination interval that produces a detectable state change without complete decomposition. Hold reactor geometry, gas handling, optical flux, and quench timing constant across donor conditions.",
+      "limitations": "Assignments in a mixed support-plus-molecular matrix remain uncertain, and before-versus-illuminated comparisons are time-coupled rather than isolated causal tests. This card addresses state correlation under matched donors, not full active-species identification or causal pathway separation.",
+      "feasibility": "specialist"
+    }
+  ]
+}

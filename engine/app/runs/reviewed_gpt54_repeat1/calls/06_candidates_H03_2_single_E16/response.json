@@ -1,0 +1,179 @@
+{
+  "candidates": [
+    {
+      "id": "E16",
+      "hypothesis_id": "H03",
+      "title": "Amine omission and inert-base replacement",
+      "purpose": "Test whether the TEOA-focused CO/H2 behavior requires an amine donor at all and whether part of the TEA/TEOA difference can be mimicked by non-donor proton-management adjustment rather than donor identity itself.",
+      "evidence_ids": [
+        "EV013",
+        "EV024",
+        "GX010",
+        "GX015",
+        "GX008"
+      ],
+      "source_to_proposal": "EV013 frames TEA and TEOA as multifunctional co-solvents that can supply H+ and scavenge holes, motivating separation of amine necessity from proton-management effects. EV024, GX010, and GX015 support the competing idea that proton delivery or relay environment can control CO2-reduction behavior, so a bounded inert-base substitution is informative even if it cannot replace sacrificial electron donation. GX008 supports including matched negative controls and broad product analysis. Proposed transfer is limited: no supplied source shows that a non-sacrificial base reproduces the target Co-bpy photocatalysis, so any rescue is interpreted only as partial descriptive evidence for mixed-function amine effects.",
+      "groups": [
+        {
+          "id": "E16G01",
+          "description": "Primary TEOA baseline in the P01 Co-bpy/g-C3N4 CO2 photoreduction assay.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2 + 2,2'-bipyridine + g-C3N4 in MeCN/H2O under CO2 and light"
+            },
+            {
+              "name": "amine_condition",
+              "value": "TEOA present"
+            },
+            {
+              "name": "proton_management_adjustment",
+              "value": "none"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            }
+          ]
+        },
+        {
+          "id": "E16G02",
+          "description": "No-amine omission control with all other baseline components retained.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2 + 2,2'-bipyridine + g-C3N4 in MeCN/H2O under CO2 and light"
+            },
+            {
+              "name": "amine_condition",
+              "value": "none"
+            },
+            {
+              "name": "proton_management_adjustment",
+              "value": "none"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            }
+          ]
+        },
+        {
+          "id": "E16G03",
+          "description": "No-amine plus non-sacrificial proton-management adjustment or inert base, chosen to alter bulk acid-base environment without acting as the intended donor comparator.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2 + 2,2'-bipyridine + g-C3N4 in MeCN/H2O under CO2 and light"
+            },
+            {
+              "name": "amine_condition",
+              "value": "none"
+            },
+            {
+              "name": "proton_management_adjustment",
+              "value": "non-sacrificial base or equivalent bulk proton-balance adjustment present"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            }
+          ]
+        },
+        {
+          "id": "E16G04",
+          "description": "TEA comparator under the same baseline platform.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2 + 2,2'-bipyridine + g-C3N4 in MeCN/H2O under CO2 and light"
+            },
+            {
+              "name": "amine_condition",
+              "value": "TEA present"
+            },
+            {
+              "name": "proton_management_adjustment",
+              "value": "none"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E16G01",
+          "group_b": "E16G02",
+          "changed_factors": [
+            "amine_condition"
+          ],
+          "inference": "Omission test for amine necessity in the TEOA baseline; does not distinguish donor redox from proton-management roles."
+        },
+        {
+          "group_a": "E16G02",
+          "group_b": "E16G03",
+          "changed_factors": [
+            "proton_management_adjustment"
+          ],
+          "inference": "Tests whether changing bulk proton-management/base environment without restoring the donor role yields any bounded rescue; positive rescue would support mixed-function explanations, not full equivalence to TEOA."
+        },
+        {
+          "group_a": "E16G01",
+          "group_b": "E16G04",
+          "changed_factors": [
+            "amine_condition"
+          ],
+          "inference": "Direct TEOA-versus-TEA comparator for donor/additive identity within one platform; any difference remains multi-role and not a single-mechanism proof."
+        },
+        {
+          "group_a": "E16G03",
+          "group_b": "E16G04",
+          "changed_factors": [
+            "amine_condition",
+            "proton_management_adjustment"
+          ],
+          "inference": "Descriptive comparison of TEA against a non-donor proton-management condition; this is a confounded multi-factor contrast and cannot be labeled a single-factor causal test."
+        }
+      ],
+      "procedure": [
+        "Verify the P01 baseline formulation from the supplied system scope, then run a short pilot to choose a practical proton-management adjustment that measurably changes bulk acid-base conditions while showing no independent photoreductant signal in blank tests.",
+        "Prepare the four groups with identical catalyst, ligand, g-C3N4, solvent mixture, reactor geometry, CO2 handling, illumination program, and analytical workflow; vary only the listed factors.",
+        "Irradiate matched suspensions under CO2 and quantify gas products with the same calibrated method for all groups, including CO and H2 together and documenting any induction or deactivation trend over time if sampling is feasible.",
+        "Include matched negative checks from the common workflow as needed to confirm that observed products are not due to missing key components or non-CO2 background, but interpret this card only through the specified group contrasts.",
+        "Compare product amount and CO/H2 distribution across groups and treat any apparent rescue by the inert adjustment as partial and bounded unless catalytic activity approaches the amine-containing baseline reproducibly under matched controls."
+      ],
+      "measurements": [
+        "CO amount or rate by the common gas-analysis workflow",
+        "H2 amount or rate by the same workflow",
+        "CO/H2 product ratio or selectivity metric derived from the paired measurements",
+        "Bulk pH or equivalent acid-base descriptor before and after reaction if measurable in the chosen medium",
+        "Qualitative observation of precipitation, color change, or obvious instability to flag unmatched chemistry rather than prove mechanism"
+      ],
+      "supports": "H03 is supported if removing amine strongly suppresses or shifts activity relative to TEOA, and a non-sacrificial proton-management adjustment partially restores total activity or CO/H2 distribution toward the TEOA case without recreating full performance; additional support comes if TEA and TEOA differ, yet the difference narrows when bulk proton-management is better matched.",
+      "refutes": "H03 is weakened if the inert proton-management adjustment gives no meaningful movement toward the TEOA behavior while TEA and TEOA remain strongly different under otherwise matched conditions, or if omission mainly abolishes activity in a way consistent only with loss of donor redox function.",
+      "inconclusive": "Results are inconclusive if the chosen inert adjustment introduces new instability, background reactivity, or phase changes; if acid-base conditions cannot be compared meaningfully across groups; or if signals are near detection limits so that apparent rescue or collapse cannot be distinguished from noise.",
+      "parameter_selection": "Do not invent additive amounts. Use the verified P01 baseline for TEOA and TEA conditions. For the proton-management adjustment, perform a calibration pilot in the same solvent matrix to select the mildest condition that measurably changes a bulk acid-base readout yet shows negligible CO and H2 in catalyst-free or no-light blanks and no obvious decomposition of the Co-bpy/g-C3N4 mixture before irradiation. If multiple candidates satisfy this, choose the chemically simplest and retain the others for later sensitivity checks.",
+      "limitations": "A non-sacrificial base cannot replicate reductive quenching, so failure to rescue does not exclude proton-management contributions. TEA and TEOA also change coordination, viscosity, CO2 association, and possibly catalyst state, so the direct TEA-versus-TEOA contrast remains multi-role. Bulk pH in mixed MeCN/H2O may not capture local proton-delivery conditions. This card is therefore a bounded intervention study, not a full mechanistic separation.",
+      "feasibility": "low_cost"
+    }
+  ]
+}

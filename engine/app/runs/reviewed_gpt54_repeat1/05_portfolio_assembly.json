@@ -1,0 +1,31 @@
+{
+  "operation": "Deterministic concatenation of validated API substage arrays; no scientific prose rewritten.",
+  "sources": [
+    {
+      "path": "05_split_hypotheses.json",
+      "sha256": "016a74de480b9aa11882a652e81042c4aac649477814d2c7ff68db7fb9f11b09"
+    },
+    {
+      "path": "05_split_menu_H01.json",
+      "sha256": "01b54476d8aaaaa9989e2a3aa69574a66b533380d1840e389bb8fe2d475222f7"
+    },
+    {
+      "path": "05_split_menu_H02.json",
+      "sha256": "86f6c4161a14510572541d83ab670d97e947494569de04ad87662814821f03d2"
+    },
+    {
+      "path": "05_split_menu_H03.json",
+      "sha256": "c8fe2273c63b4497e474cfd032b985784ed990e74903ab0155f5549aa00cb7fc"
+    },
+    {
+      "path": "05_split_menu_H04.json",
+      "sha256": "e68a4e3f7c423806ebc9f2634f592eb3ebb54eee45d4d9370a35669f44a9c2ae"
+    },
+    {
+      "path": "05_split_menu_H05.json",
+      "sha256": "7a100eef3c134213a48b0baf4fd1e37f7561f13a2f830348f087b8f40bd13685"
+    }
+  ],
+  "output_sha256": "5d400c99b0ef72487bc94b9033b1763d2de6ae45e37a20d47a8d6bf6eb99e562",
+  "failed_monolithic_responses_preserved": true
+}

@@ -1,0 +1,11 @@
+﻿id,name,doc_count,rank,mentions,aliases
+entity:triethanolamine,Triethanolamine,288,1,2818,Triethanolamine; TEOA
+entity:potassium_bicarbonate,Potassium bicarbonate,492,2,1215,Potassium bicarbonate; KHCO3
+entity:triethylamine,Triethylamine,125,3,542,Triethylamine; TEA
+entity:ethylenediaminetetraacetic_acid,Ethylenediaminetetraacetic acid,54,4,243,Ethylenediaminetetraacetic acid; EDTA
+entity:sodium_bicarbonate,Sodium bicarbonate,86,5,150,Sodium bicarbonate; NaHCO3
+entity:silver_nitrate,Silver nitrate,78,6,121,Silver nitrate; AgNO3
+entity:sodium_sulfide,Sodium sulfide,20,7,34,Sodium sulfide; Na2S
+entity:p_benzoquinone,p-Benzoquinone,11,8,28,p-Benzoquinone; BQ
+entity:sodium_sulfite,Sodium sulfite,15,9,25,Sodium sulfite; Na2SO3
+entity:iron_iii_chloride,Iron(III) chloride,15,10,23,Iron(III) chloride; FeCl3

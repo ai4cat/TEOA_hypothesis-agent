@@ -1,0 +1,23 @@
+{
+  "frozen_records_checked": 5348,
+  "frozen_inputs_checked": 7,
+  "hash_errors": [],
+  "python_files_syntax_checked": 24,
+  "credential_pattern_matches_files": [],
+  "api_calls": 0,
+  "tests_executed": false,
+  "full_text_index_kept_locally_and_gitignored": true,
+  "index_builder_available": false,
+  "removed": [
+    "OFFLINE_VERIFICATION.log",
+    "REGRESSION_TESTS.log",
+    "README.txt",
+    "PACKAGE_SHA256.json",
+    "DELIVERY_VERIFICATION.json"
+  ],
+  "environment_documentation": {
+    "conda": "environment.yml",
+    "api_key_source": "process environment",
+    "live_api_tested": false
+  }
+}

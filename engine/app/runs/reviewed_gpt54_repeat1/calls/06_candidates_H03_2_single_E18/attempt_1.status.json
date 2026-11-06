@@ -1,0 +1,8 @@
+{
+  "started_at": "2026-11-05T03:24:22.832650+00:00",
+  "completed_at": "2026-11-05T03:24:33.292137+00:00",
+  "exit_code": 1,
+  "error_type": "ValueError",
+  "error_category": "request_or_validation_error",
+  "error": "Request or validation failed; no retry; inspect saved response if present."
+}

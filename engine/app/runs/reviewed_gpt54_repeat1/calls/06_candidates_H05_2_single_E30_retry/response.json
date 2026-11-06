@@ -1,0 +1,242 @@
+{
+  "candidates": [
+    {
+      "id": "E30",
+      "hypothesis_id": "H05",
+      "title": "Cobalt-linked adduct screen",
+      "purpose": "Test whether TEA versus TEOA under matched P01 conditions produces donor-specific substrate-associated signals that depend on cobalt and whether any such signals track donor-specific cobalt-state or coordination changes.",
+      "evidence_ids": [
+        "GX011",
+        "EV004",
+        "EV068",
+        "EV085"
+      ],
+      "source_to_proposal": "GX011 motivates the transfer hypothesis that TEOA can form catalyst-associated adduct chemistry in a bipyridine CO2-reduction setting, but only in a Re system. EV004 and EV068 support proposing operando/in situ state-sensitive spectroscopy to separate catalyst stability/state from intermediate-related signals. EV085 cautions that donor chemistry and decomposition-derived active species can confound assignments, so no-cobalt and dark references are required. The proposal transfers method logic, not a proven Co mechanism.",
+      "groups": [
+        {
+          "id": "E30G01",
+          "description": "Matched P01 baseline with TEOA under CO2 and illumination for donor-specific operando characterization.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy/g-C3N4 baseline"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "cobalt_presence",
+              "value": "present"
+            },
+            {
+              "name": "sample_timing",
+              "value": "during reaction"
+            },
+            {
+              "name": "measurement_set",
+              "value": "paired cobalt-sensitive spectroscopy plus intermediate-sensitive IR/EPR-style monitoring"
+            }
+          ]
+        },
+        {
+          "id": "E30G02",
+          "description": "Matched P01 comparator with TEA substituted only in the donor role.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy/g-C3N4 baseline"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "cobalt_presence",
+              "value": "present"
+            },
+            {
+              "name": "sample_timing",
+              "value": "during reaction"
+            },
+            {
+              "name": "measurement_set",
+              "value": "paired cobalt-sensitive spectroscopy plus intermediate-sensitive IR/EPR-style monitoring"
+            }
+          ]
+        },
+        {
+          "id": "E30G03",
+          "description": "No-cobalt reference with TEOA to test whether any donor-specific substrate-associated signal requires cobalt.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy/g-C3N4 baseline"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "cobalt_presence",
+              "value": "absent"
+            },
+            {
+              "name": "sample_timing",
+              "value": "during reaction"
+            },
+            {
+              "name": "measurement_set",
+              "value": "paired cobalt-sensitive spectroscopy plus intermediate-sensitive IR/EPR-style monitoring"
+            }
+          ]
+        },
+        {
+          "id": "E30G04",
+          "description": "No-cobalt reference with TEA under otherwise matched conditions.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy/g-C3N4 baseline"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "cobalt_presence",
+              "value": "absent"
+            },
+            {
+              "name": "sample_timing",
+              "value": "during reaction"
+            },
+            {
+              "name": "measurement_set",
+              "value": "paired cobalt-sensitive spectroscopy plus intermediate-sensitive IR/EPR-style monitoring"
+            }
+          ]
+        },
+        {
+          "id": "E30G05",
+          "description": "Dark TEOA control with cobalt present to distinguish light-driven signals from pre-equilibrium donor/CO2 coordination features.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy/g-C3N4 baseline"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "dark"
+            },
+            {
+              "name": "cobalt_presence",
+              "value": "present"
+            },
+            {
+              "name": "sample_timing",
+              "value": "during reaction"
+            },
+            {
+              "name": "measurement_set",
+              "value": "paired cobalt-sensitive spectroscopy plus intermediate-sensitive IR/EPR-style monitoring"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E30G01",
+          "group_b": "E30G02",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Primary donor comparison: if substrate-associated bands or EPR features differ while cobalt-sensitive observables are similar, that favors donor-specific substrate/intermediate chemistry without requiring a different cobalt state; if cobalt observables also differ, donor effects may include cobalt coordination/speciation changes."
+        },
+        {
+          "group_a": "E30G01",
+          "group_b": "E30G03",
+          "changed_factors": [
+            "cobalt_presence"
+          ],
+          "inference": "Tests whether TEOA-associated signals require cobalt. A signal present only with cobalt supports catalyst-linked rather than bulk amine/CO2 chemistry; persistence without cobalt weakens a catalyst-linked adduct interpretation."
+        },
+        {
+          "group_a": "E30G02",
+          "group_b": "E30G04",
+          "changed_factors": [
+            "cobalt_presence"
+          ],
+          "inference": "TEA analogue of the cobalt-dependence test. Comparing this with the TEOA pair helps localize whether any cobalt requirement is donor-specific rather than a general background feature."
+        },
+        {
+          "group_a": "E30G01",
+          "group_b": "E30G05",
+          "changed_factors": [
+            "illumination"
+          ],
+          "inference": "Tests whether observed TEOA signals are light-dependent operating-state features or dark pre-equilibrium species. This does not isolate donor identity and should not be treated as a direct TEA/TEOA causal comparison."
+        }
+      ],
+      "procedure": [
+        "Prepare matched P01 baseline and control samples using source-verified formulation identity; vary only the listed factors and record the exact reactor, gas handling, and sample state used for spectroscopy.",
+        "Run a pilot to identify artifact-free acquisition windows, concentration/path-length settings, and whether IR, EPR, and any cobalt-sensitive optical or X-ray measurement have sufficient signal above solvent/g-C3N4 backgrounds; retain only observables with reproducible baselines.",
+        "Acquire paired during-reaction measurements under CO2 for all groups, including matched backgrounds and no-cobalt references; where possible collect pre-illumination and illuminated traces on the same sample to track emergence or loss of features.",
+        "Cross-check any donor-specific substrate-associated feature against cobalt-sensitive observables and against the no-cobalt and dark references; only assign a catalyst-linked interpretation if cobalt dependence is demonstrated.",
+        "If critical assignments remain ambiguous, add isotopic or orthogonal validation only as a follow-up calibration step rather than claiming identity from a single band or recovered sample."
+      ],
+      "measurements": [
+        "Cobalt-sensitive spectroscopic observables during reaction, such as changes in oxidation-state- or coordination-sensitive signatures; these indicate donor-correlated cobalt-state differences but cannot by themselves prove the catalytic intermediate identity.",
+        "IR-region features consistent with CO2-derived, carbonate-like, bicarbonate-like, or metal-bound carbonyl/carboxylate species under matched backgrounds; such signals can reveal donor-dependent substrate association but cannot alone distinguish amine-linked from cobalt-linked structures without controls.",
+        "EPR-detectable paramagnetic signals or donor-dependent radical signatures during illumination; these can indicate changed electronic states or radical populations but cannot alone assign a full mechanistic pathway.",
+        "Dark and no-cobalt reference spectra to determine whether a donor-specific feature is operating-state-dependent and cobalt-dependent rather than a bulk donor/CO2 equilibrium or instrument artifact."
+      ],
+      "supports": "Support for H05 would be a reproducible donor-specific substrate-associated signal under CO2 where TEOA and TEA differ, combined with evidence that the key feature requires cobalt or is accompanied by donor-specific cobalt coordination/state changes under otherwise matched conditions. Stronger support would come from agreement across at least two independent observables.",
+      "refutes": "Evidence against H05 would be no reproducible donor-specific substrate-associated difference after matched controls, or donor-specific signals that are fully reproduced in no-cobalt references with no parallel cobalt-state change, making catalyst-linked adduct or intermediate stabilization unnecessary for explaining the TEA/TEOA difference.",
+      "inconclusive": "Inconclusive outcomes include weak or overlapping signals, donor-dependent bulk medium effects that obscure cobalt features, multi-feature changes that cannot be assigned uniquely, or differences seen only in recovered or dark samples. Such outcomes may still justify bounded descriptive conclusions but not a catalyst-linked adduct claim.",
+      "parameter_selection": "Do not invent concentrations, irradiation settings, or spectral windows. Use the source-verified P01 recipe where available; otherwise run a small pilot to match absorbance/scattering baselines, confirm spectrometer dynamic range, and choose acquisition timing around the earliest reproducible catalytic window identified in prerequisite experiments. Accept a method only if the donor comparison can be collected with identical cell geometry, gas handling, and background subtraction for all groups.",
+      "limitations": "Direct Co-bpy TEA/TEOA adduct evidence is absent from the supplied record, so this is a transfer test. g-C3N4 and mixed medium can create background bands and heterogeneous broadening. A donor effect on cobalt-sensitive observables may reflect coordination, aggregation, decomposition, or support association rather than a discrete CO2 adduct. No-cobalt controls do not fully reproduce the chemical environment of cobalt-containing samples, so absence of a feature there is supportive but not definitive.",
+      "feasibility": "specialist"
+    }
+  ]
+}

@@ -1,0 +1,1137 @@
+Starting real API inference. Statistics and corpus index remain frozen.
+REAL_API_CALL_COMPLETED 01_query_plan
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 106, in main
+    validate_plan(plan,True)
+    ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 56, in validate_plan
+    if any(not re.fullmatch(r'[A-Za-z0-9]+',t) for g in q['term_groups'] for t in g):raise ValueError('FTS terms must be lexical tokens')
+                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: FTS terms must be lexical tokens
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 105, in main
+    plan=stage(run,'01_query_plan','Generate exactly 12 complementary queries: one teoa_system and one method query for each Q1-Q6. TEOA remains the research subject. Every teoa_system query MUST require a group containing only TEOA and/or triethanolamine. Method queries may omit TEOA and should retrieve experimental characterization/discrimination approaches applicable by justified transfer. Derive method terms from the question and the properties to be measured. Do not prescribe a ligand or comparator. Do not force negative/null lexical words. Use 1-3 AND groups, each with 2-4 single lexical English token alternatives. No phrases or punctuation in terms.',dict(inputs=inputs,families=FAMILIES),QP,5000)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API URLError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\01_query_plan_retry
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+REAL_API_CALL_COMPLETED 01_query_plan_retry2
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 03_rerank_1
+REAL_API_CALL_COMPLETED 03_rerank_2
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 111, in main
+    selected,assessed=api_rerank(run,pool,BRIEF,stage,config)
+                      ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\retrieval_upgrade.py", line 107, in api_rerank
+    response=stage(run,f'03_rerank_{start//config["api_batch_size"]+1}',INSTRUCTION,dict(research_brief=brief,rubric=RUBRIC,snippets=snippets),SCHEMA,4000)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\03_rerank_3
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 111, in main
+    selected,assessed=api_rerank(run,pool,BRIEF,stage,config)
+                      ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\retrieval_upgrade.py", line 107, in api_rerank
+    response=stage(run,f'03_rerank_{start//config["api_batch_size"]+1}',INSTRUCTION,dict(research_brief=brief,rubric=RUBRIC,snippets=snippets),SCHEMA,4000)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API URLError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\03_rerank_3_retry
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 03_rerank_3_retry2
+REAL_API_CALL_COMPLETED 03_rerank_4
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 111, in main
+    selected,assessed=api_rerank(run,pool,BRIEF,stage,config)
+                      ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\retrieval_upgrade.py", line 107, in api_rerank
+    response=stage(run,f'03_rerank_{start//config["api_batch_size"]+1}',INSTRUCTION,dict(research_brief=brief,rubric=RUBRIC,snippets=snippets),SCHEMA,4000)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\03_rerank_5
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 111, in main
+    selected,assessed=api_rerank(run,pool,BRIEF,stage,config)
+                      ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\retrieval_upgrade.py", line 107, in api_rerank
+    response=stage(run,f'03_rerank_{start//config["api_batch_size"]+1}',INSTRUCTION,dict(research_brief=brief,rubric=RUBRIC,snippets=snippets),SCHEMA,4000)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API URLError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\03_rerank_5_retry
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 03_rerank_5_retry2
+REAL_API_CALL_COMPLETED 03_rerank_6
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 111, in main
+    selected,assessed=api_rerank(run,pool,BRIEF,stage,config)
+                      ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\retrieval_upgrade.py", line 107, in api_rerank
+    response=stage(run,f'03_rerank_{start//config["api_batch_size"]+1}',INSTRUCTION,dict(research_brief=brief,rubric=RUBRIC,snippets=snippets),SCHEMA,4000)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\03_rerank_7
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 111, in main
+    selected,assessed=api_rerank(run,pool,BRIEF,stage,config)
+                      ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\retrieval_upgrade.py", line 107, in api_rerank
+    response=stage(run,f'03_rerank_{start//config["api_batch_size"]+1}',INSTRUCTION,dict(research_brief=brief,rubric=RUBRIC,snippets=snippets),SCHEMA,4000)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API URLError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\03_rerank_7_retry
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 03_rerank_7_retry2
+REAL_API_CALL_COMPLETED 03_rerank_8
+REAL_API_CALL_COMPLETED 03_rerank_9
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 111, in main
+    selected,assessed=api_rerank(run,pool,BRIEF,stage,config)
+                      ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\retrieval_upgrade.py", line 107, in api_rerank
+    response=stage(run,f'03_rerank_{start//config["api_batch_size"]+1}',INSTRUCTION,dict(research_brief=brief,rubric=RUBRIC,snippets=snippets),SCHEMA,4000)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\03_rerank_10
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 03_rerank_10_retry
+REAL_API_CALL_COMPLETED 03_rerank_11
+REAL_API_CALL_COMPLETED 03_rerank_12
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 113, in main
+    mapping=evidence_map(run,'04a_question_evidence',evidence,plan['queries'])
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 64, in evidence_map
+    result=stage(run,name,'Assess the six researcher-specified question families against the actual evidence. Separate mechanism/system evidence from evidence supporting a usable characterization or discrimination method. A method must have an actual observable and transfer limits, not just a named instrument. Mark supported only when both question support and a plausible discriminating method are available. Otherwise partial/gap. '+('Propose at most six targeted supplemental queries for the weakest families; use method queries without requiring TEOA when useful. ' if allow_search else 'No more searches: return an empty supplement_queries array. ')+ 'Use single lexical English terms, 1-3 AND groups with OR alternatives. System-channel queries must require TEOA/triethanolamine as their own group. Return all six questions exactly once.',dict(brief=BRIEF,families=FAMILIES,evidence=evidence,previous_queries=queries),MAP,5000)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\04a_question_evidence
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 04a_question_evidence_retry
+REAL_API_CALL_COMPLETED supplement_03_rerank_1
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 126, in main
+    sp,sa=api_rerank(supplement_dir,extra,BRIEF,extra_stage,small)
+          ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\retrieval_upgrade.py", line 107, in api_rerank
+    response=stage(run,f'03_rerank_{start//config["api_batch_size"]+1}',INSTRUCTION,dict(research_brief=brief,rubric=RUBRIC,snippets=snippets),SCHEMA,4000)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 125, in extra_stage
+    def extra_stage(_run,name,*args):return stage(run,'supplement_'+name,*args)
+                                            ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\supplement_03_rerank_2
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 126, in main
+    sp,sa=api_rerank(supplement_dir,extra,BRIEF,extra_stage,small)
+          ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\retrieval_upgrade.py", line 107, in api_rerank
+    response=stage(run,f'03_rerank_{start//config["api_batch_size"]+1}',INSTRUCTION,dict(research_brief=brief,rubric=RUBRIC,snippets=snippets),SCHEMA,4000)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 125, in extra_stage
+    def extra_stage(_run,name,*args):return stage(run,'supplement_'+name,*args)
+                                            ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API URLError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\supplement_03_rerank_2_retry
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED supplement_03_rerank_2_retry2
+REAL_API_CALL_COMPLETED supplement_03_rerank_3
+REAL_API_CALL_COMPLETED supplement_03_rerank_4
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 128, in main
+    mapping=evidence_map(run,'04a_final_question_evidence',evidence,plan['queries']+supplements,False)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 64, in evidence_map
+    result=stage(run,name,'Assess the six researcher-specified question families against the actual evidence. Separate mechanism/system evidence from evidence supporting a usable characterization or discrimination method. A method must have an actual observable and transfer limits, not just a named instrument. Mark supported only when both question support and a plausible discriminating method are available. Otherwise partial/gap. '+('Propose at most six targeted supplemental queries for the weakest families; use method queries without requiring TEOA when useful. ' if allow_search else 'No more searches: return an empty supplement_queries array. ')+ 'Use single lexical English terms, 1-3 AND groups with OR alternatives. System-channel queries must require TEOA/triethanolamine as their own group. Return all six questions exactly once.',dict(brief=BRIEF,families=FAMILIES,evidence=evidence,previous_queries=queries),MAP,5000)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\04a_final_question_evidence
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 04a_final_question_evidence_retry
+REAL_API_CALL_COMPLETED 04b_system_options
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 131, in main
+    focus=stage(run,'04c_platform_focus','Recommend one primary platform and at most one supplementary platform from the supplied options. Put the primary platform first in selected_platform_ids and identify the roles explicitly in rationale. Justify baseline and comparator conditions, evidence support, interpretable characterization, omission and identity-substitution feasibility, catalytic readouts and major limitations. Develop most experiments on the primary platform. Keep other options as alternatives. State how TEOA remains focal.',dict(brief=BRIEF,options=options,question_evidence=mapping),FOCUS,2500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\04c_platform_focus
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 04c_platform_focus_retry
+REAL_API_CALL_COMPLETED 05_split_hypotheses
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 134, in main
+    blueprint=build_portfolio(run,inputs,options,focus,mapping,evidence,stage)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\portfolio_chunks.py", line 20, in build_portfolio
+    if not set(h['platform_ids'])<=set(focus['selected_platform_ids']):raise ValueError('Hypothesis escaped focused platforms')
+                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Hypothesis escaped focused platforms
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 134, in main
+    blueprint=build_portfolio(run,inputs,options,focus,mapping,evidence,stage)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\portfolio_chunks.py", line 14, in build_portfolio
+    plan=step('05_split_hypotheses',
+        'Generate ONLY 4-6 falsifiable Hxx hypotheses and evidence gaps, not experiment cards or a full portfolio. Organize by scientific questions, not one hypothesis per platform. Use the selected platforms and supplied evidence only. Derive discriminating predictions from the supplied evidence and research brief. Cite mechanism and method evidence, and state alternatives and uncertainty. Keep each prose field to 1-2 concise sentences. Later separate requests will generate E experiments.',
+        dict(inputs=inputs,families=FAMILIES,system_options=options,focus=focus,question_evidence=mapping,evidence=evidence),hypotheses_schema)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\portfolio_chunks.py", line 9, in step
+    result=stage(run,name,instruction,payload,schema,10000)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\05_split_hypotheses_retry
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 134, in main
+    blueprint=build_portfolio(run,inputs,options,focus,mapping,evidence,stage)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\portfolio_chunks.py", line 14, in build_portfolio
+    plan=step('05_split_hypotheses',
+        'Generate ONLY 4-6 falsifiable Hxx hypotheses and evidence gaps, not experiment cards or a full portfolio. Organize by scientific questions, not one hypothesis per platform. Use the selected platforms and supplied evidence only. Derive discriminating predictions from the supplied evidence and research brief. Cite mechanism and method evidence, and state alternatives and uncertainty. Keep each prose field to 1-2 concise sentences. Later separate requests will generate E experiments.',
+        dict(inputs=inputs,families=FAMILIES,system_options=options,focus=focus,question_evidence=mapping,evidence=evidence),hypotheses_schema)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\portfolio_chunks.py", line 9, in step
+    result=stage(run,name,instruction,payload,schema,10000)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API URLError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\05_split_hypotheses_retry2
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 05_split_hypotheses_retry3
+REAL_API_CALL_COMPLETED 05_split_menu_H01
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 134, in main
+    blueprint=build_portfolio(run,inputs,options,focus,mapping,evidence,stage)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\portfolio_chunks.py", line 32, in build_portfolio
+    part=step('05_split_menu_'+h['id'],
+        'Generate ONLY the concise experiment menu for the supplied hypothesis. Aim for 4-6 genuinely distinct E ideas, at most 6; fewer are allowed when evidence is insufficient. Use only reserved_experiment_ids and supplied evidence. Keep title short and each purpose/method/distinct_information to 1-2 sentences; do not write sample recipes or detailed SOPs yet. Cover characterization and interventions where justified. Assess characterization, component omission, identity substitution and comparative readouts relevant to this hypothesis; record gaps without inventing evidence. Distinguish omission from substitution and retain useful descriptive measurements. Avoid duplicating previous ideas. Dependencies may refer only to previous experiment IDs or IDs actually emitted in this response, never to self. Preserve uncertainty and distinguish measured association from causal discrimination.',
+        dict(inputs=inputs,hypothesis=h,all_hypotheses=hypotheses,previous_ideas=ideas,reserved_experiment_ids=reserved,focus=focus,evidence=scoped(evidence,ev_ids)),schema)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\portfolio_chunks.py", line 9, in step
+    result=stage(run,name,instruction,payload,schema,10000)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API URLError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\05_split_menu_H02
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 05_split_menu_H02_retry
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 134, in main
+    blueprint=build_portfolio(run,inputs,options,focus,mapping,evidence,stage)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\portfolio_chunks.py", line 32, in build_portfolio
+    part=step('05_split_menu_'+h['id'],
+        'Generate ONLY the concise experiment menu for the supplied hypothesis. Aim for 4-6 genuinely distinct E ideas, at most 6; fewer are allowed when evidence is insufficient. Use only reserved_experiment_ids and supplied evidence. Keep title short and each purpose/method/distinct_information to 1-2 sentences; do not write sample recipes or detailed SOPs yet. Cover characterization and interventions where justified. Assess characterization, component omission, identity substitution and comparative readouts relevant to this hypothesis; record gaps without inventing evidence. Distinguish omission from substitution and retain useful descriptive measurements. Avoid duplicating previous ideas. Dependencies may refer only to previous experiment IDs or IDs actually emitted in this response, never to self. Preserve uncertainty and distinguish measured association from causal discrimination.',
+        dict(inputs=inputs,hypothesis=h,all_hypotheses=hypotheses,previous_ideas=ideas,reserved_experiment_ids=reserved,focus=focus,evidence=scoped(evidence,ev_ids)),schema)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\portfolio_chunks.py", line 9, in step
+    result=stage(run,name,instruction,payload,schema,10000)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\05_split_menu_H03
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 134, in main
+    blueprint=build_portfolio(run,inputs,options,focus,mapping,evidence,stage)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\portfolio_chunks.py", line 32, in build_portfolio
+    part=step('05_split_menu_'+h['id'],
+        'Generate ONLY the concise experiment menu for the supplied hypothesis. Aim for 4-6 genuinely distinct E ideas, at most 6; fewer are allowed when evidence is insufficient. Use only reserved_experiment_ids and supplied evidence. Keep title short and each purpose/method/distinct_information to 1-2 sentences; do not write sample recipes or detailed SOPs yet. Cover characterization and interventions where justified. Assess characterization, component omission, identity substitution and comparative readouts relevant to this hypothesis; record gaps without inventing evidence. Distinguish omission from substitution and retain useful descriptive measurements. Avoid duplicating previous ideas. Dependencies may refer only to previous experiment IDs or IDs actually emitted in this response, never to self. Preserve uncertainty and distinguish measured association from causal discrimination.',
+        dict(inputs=inputs,hypothesis=h,all_hypotheses=hypotheses,previous_ideas=ideas,reserved_experiment_ids=reserved,focus=focus,evidence=scoped(evidence,ev_ids)),schema)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\portfolio_chunks.py", line 9, in step
+    result=stage(run,name,instruction,payload,schema,10000)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API URLError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\05_split_menu_H03_retry
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 05_split_menu_H03_retry2
+REAL_API_CALL_COMPLETED 05_split_menu_H04
+REAL_API_CALL_COMPLETED 05_split_menu_H05
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 152, in main
+    result=stage(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H01_1
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 06_candidates_H01_1_retry
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 152, in main
+    result=stage(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H01_2
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 152, in main
+    result=stage(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H01_2_retry
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 06_candidates_H01_2_retry2
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 152, in main
+    result=stage(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H02_1
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 152, in main
+    result=stage(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API URLError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H02_1_retry
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 06_candidates_H02_1_retry2
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 152, in main
+    result=stage(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H02_2
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 152, in main
+    result=stage(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H02_2_retry
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 152, in main
+    result=stage(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H02_2_retry2
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 152, in main
+    result=stage(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API URLError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H02_2_retry3
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 152, in main
+    result=stage(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H02_2_retry4
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 152, in main
+    result=stage(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H02_2_retry5
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 152, in main
+    result=stage(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H02_2_retry6
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 152, in main
+    result=stage(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H02_2_retry7
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 152, in main
+    result=stage(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H02_2_retry8
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 152, in main
+    result=stage(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API ValueError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H02_2_retry9
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 152, in main
+    result=stage(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API ValueError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H02_2_retry10
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 152, in main
+    result=stage(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API ValueError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H02_2_retry11
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 152, in main
+    result=stage(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API ValueError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H02_2_retry12
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in <module>
+    result=candidate_batch(run,name,w.CARD_PROMPT+' Repair each stated substantive issue, preserving candidate IDs and purposes. Narrow inference if full causal separation is not feasible. Return full cards, not patches. Do not silently claim unidentified species or unmeasured conditions have been matched.',dict(brief=BRIEF,candidates=old,review=batch,hypotheses=[h],evidence=scoped(evidence,needed)),CARDS,8500)
+            ^^^^^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 152, in main
+    save(run/'04_evidence.json',evidence)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API ValueError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H02_2_retry13
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 175, in main
+    result=candidate_batch(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 60, in candidate_batch
+    result=stage(run,child,instruction,small,schema,cap)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API ValueError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H02_2_single_E10
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 06_candidates_H02_2_single_E10_retry
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 175, in main
+    result=candidate_batch(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 60, in candidate_batch
+    result=stage(run,child,instruction,small,schema,cap)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API ValueError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H02_2_single_E11
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 06_candidates_H02_2_single_E11_retry
+REAL_API_CALL_COMPLETED 06_candidates_H03_1_single_E13
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 175, in main
+    result=candidate_batch(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 60, in candidate_batch
+    result=stage(run,child,instruction,small,schema,cap)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API ValueError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H03_1_single_E14
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 06_candidates_H03_1_single_E14_retry
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 175, in main
+    result=candidate_batch(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 60, in candidate_batch
+    result=stage(run,child,instruction,small,schema,cap)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API ValueError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H03_1_single_E15
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 06_candidates_H03_1_single_E15_retry
+REAL_API_CALL_COMPLETED 06_candidates_H03_2_single_E16
+REAL_API_CALL_COMPLETED 06_candidates_H03_2_single_E17
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 175, in main
+    result=candidate_batch(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 60, in candidate_batch
+    result=stage(run,child,instruction,small,schema,cap)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API ValueError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H03_2_single_E18
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 06_candidates_H03_2_single_E18_retry
+REAL_API_CALL_COMPLETED 06_candidates_H04_1_single_E19
+REAL_API_CALL_COMPLETED 06_candidates_H04_1_single_E20
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 175, in main
+    result=candidate_batch(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 60, in candidate_batch
+    result=stage(run,child,instruction,small,schema,cap)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API ValueError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H04_1_single_E21
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 06_candidates_H04_1_single_E21_retry
+REAL_API_CALL_COMPLETED 06_candidates_H04_2_single_E22
+REAL_API_CALL_COMPLETED 06_candidates_H04_2_single_E23
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 175, in main
+    result=candidate_batch(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 60, in candidate_batch
+    result=stage(run,child,instruction,small,schema,cap)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API ValueError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H04_2_single_E24
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 06_candidates_H04_2_single_E24_retry
+REAL_API_CALL_COMPLETED 06_candidates_H05_1_single_E25
+REAL_API_CALL_COMPLETED 06_candidates_H05_1_single_E26
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 175, in main
+    result=candidate_batch(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 60, in candidate_batch
+    result=stage(run,child,instruction,small,schema,cap)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API ValueError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H05_1_single_E27
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 06_candidates_H05_1_single_E27_retry
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 175, in main
+    result=candidate_batch(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 60, in candidate_batch
+    result=stage(run,child,instruction,small,schema,cap)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API ValueError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H05_2_single_E28
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 06_candidates_H05_2_single_E28_retry
+REAL_API_CALL_COMPLETED 06_candidates_H05_2_single_E29
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 175, in main
+    result=candidate_batch(run,f'06_candidates_{h["id"]}_{start//3+1}',w.CARD_PROMPT+' Follow the supplied distinct candidate ideas. Every experiment concerns the TEOA-focused question, directly or as a control. In characterization experiments specify what is measured and what the signal cannot establish. Do not claim fully matched chemistry from generic labels. Do not manufacture numerical conditions; supply executable calibration logic and limit conclusions. Include no more than 5 groups and 4 essential contrasts per card.',dict(brief=BRIEF,hypothesis=h,candidate_ids=[c['id'] for c in batch],candidate_ideas=batch,focus=focus,evidence=scoped(evidence,ev_ids)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 60, in candidate_batch
+    result=stage(run,child,instruction,small,schema,cap)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API ValueError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\06_candidates_H05_2_single_E30
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 06_candidates_H05_2_single_E30_retry
+REAL_API_CALL_COMPLETED 08_review_H01
+REAL_API_CALL_COMPLETED 09_revision_H01_1_1_single_E02
+REAL_API_CALL_COMPLETED 09_revision_H01_1_1_single_E04
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in main
+    result=candidate_batch(run,name,w.CARD_PROMPT+' Repair each stated substantive issue, preserving candidate IDs and purposes. Narrow inference if full causal separation is not feasible. Return full cards, not patches. Do not silently claim unidentified species or unmeasured conditions have been matched.',dict(brief=BRIEF,candidates=old,review=batch,hypotheses=[h],evidence=scoped(evidence,needed)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 60, in candidate_batch
+    result=stage(run,child,instruction,small,schema,cap)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\09_revision_H01_1_1_single_E05
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 09_revision_H01_1_1_single_E05_retry
+REAL_API_CALL_COMPLETED 09_revision_H01_1_2
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 199, in main
+    review=review_batch(run,f'10_rereview_{h["id"]}_{round_no}',[h],group,scoped(evidence,needed),review)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 93, in review_batch
+    result=stage(run,name,instruction,dict(experimental_candidate_ids=ids,required_response_schema=schema,hypotheses=hyp,candidates=cards,evidence=evidence,previous_review=previous),schema,6500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\10_rereview_H01_1
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 10_rereview_H01_1_retry
+REAL_API_CALL_COMPLETED 08_review_H02
+REAL_API_CALL_COMPLETED 09_revision_H02_1_1_single_E08
+REAL_API_CALL_COMPLETED 09_revision_H02_1_1_single_E10
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in main
+    result=candidate_batch(run,name,w.CARD_PROMPT+' Repair each stated substantive issue, preserving candidate IDs and purposes. Narrow inference if full causal separation is not feasible. Return full cards, not patches. Do not silently claim unidentified species or unmeasured conditions have been matched.',dict(brief=BRIEF,candidates=old,review=batch,hypotheses=[h],evidence=scoped(evidence,needed)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 60, in candidate_batch
+    result=stage(run,child,instruction,small,schema,cap)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API ValueError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\09_revision_H02_1_1_single_E11
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 09_revision_H02_1_1_single_E11_retry
+REAL_API_CALL_COMPLETED 10_rereview_H02_1
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in main
+    result=candidate_batch(run,name,w.CARD_PROMPT+' Repair each stated substantive issue, preserving candidate IDs and purposes. Narrow inference if full causal separation is not feasible. Return full cards, not patches. Do not silently claim unidentified species or unmeasured conditions have been matched.',dict(brief=BRIEF,candidates=old,review=batch,hypotheses=[h],evidence=scoped(evidence,needed)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 60, in candidate_batch
+    result=stage(run,child,instruction,small,schema,cap)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API ValueError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\09_revision_H02_2_1_single_E08
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 09_revision_H02_2_1_single_E08_retry
+REAL_API_CALL_COMPLETED 09_revision_H02_2_1_single_E10
+REAL_API_CALL_COMPLETED 09_revision_H02_2_1_single_E11
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 199, in main
+    review=review_batch(run,f'10_rereview_{h["id"]}_{round_no}',[h],group,scoped(evidence,needed),review)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 93, in review_batch
+    result=stage(run,name,instruction,dict(experimental_candidate_ids=ids,required_response_schema=schema,hypotheses=hyp,candidates=cards,evidence=evidence,previous_review=previous),schema,6500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\10_rereview_H02_2
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 10_rereview_H02_2_retry
+REAL_API_CALL_COMPLETED 08_review_H03
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in main
+    result=candidate_batch(run,name,w.CARD_PROMPT+' Repair each stated substantive issue, preserving candidate IDs and purposes. Narrow inference if full causal separation is not feasible. Return full cards, not patches. Do not silently claim unidentified species or unmeasured conditions have been matched.',dict(brief=BRIEF,candidates=old,review=batch,hypotheses=[h],evidence=scoped(evidence,needed)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 60, in candidate_batch
+    result=stage(run,child,instruction,small,schema,cap)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API URLError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\09_revision_H03_1_1_single_E13
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in main
+    result=candidate_batch(run,name,w.CARD_PROMPT+' Repair each stated substantive issue, preserving candidate IDs and purposes. Narrow inference if full causal separation is not feasible. Return full cards, not patches. Do not silently claim unidentified species or unmeasured conditions have been matched.',dict(brief=BRIEF,candidates=old,review=batch,hypotheses=[h],evidence=scoped(evidence,needed)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 60, in candidate_batch
+    result=stage(run,child,instruction,small,schema,cap)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API ValueError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\09_revision_H03_1_1_single_E13_retry
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in main
+    result=candidate_batch(run,name,w.CARD_PROMPT+' Repair each stated substantive issue, preserving candidate IDs and purposes. Narrow inference if full causal separation is not feasible. Return full cards, not patches. Do not silently claim unidentified species or unmeasured conditions have been matched.',dict(brief=BRIEF,candidates=old,review=batch,hypotheses=[h],evidence=scoped(evidence,needed)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 60, in candidate_batch
+    result=stage(run,child,instruction,small,schema,cap)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API URLError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\09_revision_H03_1_1_single_E13_retry2
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 09_revision_H03_1_1_single_E13_retry3
+REAL_API_CALL_COMPLETED 09_revision_H03_1_1_single_E14
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in main
+    result=candidate_batch(run,name,w.CARD_PROMPT+' Repair each stated substantive issue, preserving candidate IDs and purposes. Narrow inference if full causal separation is not feasible. Return full cards, not patches. Do not silently claim unidentified species or unmeasured conditions have been matched.',dict(brief=BRIEF,candidates=old,review=batch,hypotheses=[h],evidence=scoped(evidence,needed)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 60, in candidate_batch
+    result=stage(run,child,instruction,small,schema,cap)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\09_revision_H03_1_1_single_E16
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 09_revision_H03_1_1_single_E16_retry
+REAL_API_CALL_COMPLETED 09_revision_H03_1_2
+REAL_API_CALL_COMPLETED 10_rereview_H03_1
+REAL_API_CALL_COMPLETED 09_revision_H03_2_1_single_E14
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in main
+    result=candidate_batch(run,name,w.CARD_PROMPT+' Repair each stated substantive issue, preserving candidate IDs and purposes. Narrow inference if full causal separation is not feasible. Return full cards, not patches. Do not silently claim unidentified species or unmeasured conditions have been matched.',dict(brief=BRIEF,candidates=old,review=batch,hypotheses=[h],evidence=scoped(evidence,needed)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 60, in candidate_batch
+    result=stage(run,child,instruction,small,schema,cap)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API RemoteDisconnected; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\09_revision_H03_2_1_single_E16
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 09_revision_H03_2_1_single_E16_retry
+REAL_API_CALL_COMPLETED 10_rereview_H03_2
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 186, in main
+    review=review_batch(run,'08_review_'+h['id'],[h],group,scoped(evidence,needed));initial.extend(review['decisions'])
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 93, in review_batch
+    result=stage(run,name,instruction,dict(experimental_candidate_ids=ids,required_response_schema=schema,hypotheses=hyp,candidates=cards,evidence=evidence,previous_review=previous),schema,6500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API ValueError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\08_review_H04
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 08_review_H04_retry
+REAL_API_CALL_COMPLETED 09_revision_H04_1_1_single_E19
+REAL_API_CALL_COMPLETED 09_revision_H04_1_1_single_E22
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in main
+    result=candidate_batch(run,name,w.CARD_PROMPT+' Repair each stated substantive issue, preserving candidate IDs and purposes. Narrow inference if full causal separation is not feasible. Return full cards, not patches. Do not silently claim unidentified species or unmeasured conditions have been matched.',dict(brief=BRIEF,candidates=old,review=batch,hypotheses=[h],evidence=scoped(evidence,needed)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 60, in candidate_batch
+    result=stage(run,child,instruction,small,schema,cap)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API ValueError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\09_revision_H04_1_1_single_E24
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 09_revision_H04_1_1_single_E24_retry
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 199, in main
+    review=review_batch(run,f'10_rereview_{h["id"]}_{round_no}',[h],group,scoped(evidence,needed),review)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 93, in review_batch
+    result=stage(run,name,instruction,dict(experimental_candidate_ids=ids,required_response_schema=schema,hypotheses=hyp,candidates=cards,evidence=evidence,previous_review=previous),schema,6500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API PermissionError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\10_rereview_H04_1
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 10_rereview_H04_1_retry
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 186, in main
+    review=review_batch(run,'08_review_'+h['id'],[h],group,scoped(evidence,needed));initial.extend(review['decisions'])
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 93, in review_batch
+    result=stage(run,name,instruction,dict(experimental_candidate_ids=ids,required_response_schema=schema,hypotheses=hyp,candidates=cards,evidence=evidence,previous_review=previous),schema,6500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API ValueError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\08_review_H05
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 08_review_H05_retry
+REAL_API_CALL_COMPLETED 09_revision_H05_1_1_single_E26
+REAL_API_CALL_COMPLETED 09_revision_H05_1_1_single_E28
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in main
+    result=candidate_batch(run,name,w.CARD_PROMPT+' Repair each stated substantive issue, preserving candidate IDs and purposes. Narrow inference if full causal separation is not feasible. Return full cards, not patches. Do not silently claim unidentified species or unmeasured conditions have been matched.',dict(brief=BRIEF,candidates=old,review=batch,hypotheses=[h],evidence=scoped(evidence,needed)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 60, in candidate_batch
+    result=stage(run,child,instruction,small,schema,cap)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API ValueError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\09_revision_H05_1_1_single_E30
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 09_revision_H05_1_1_single_E30_retry
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 199, in main
+    review=review_batch(run,f'10_rereview_{h["id"]}_{round_no}',[h],group,scoped(evidence,needed),review)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 93, in review_batch
+    result=stage(run,name,instruction,dict(experimental_candidate_ids=ids,required_response_schema=schema,hypotheses=hyp,candidates=cards,evidence=evidence,previous_review=previous),schema,6500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API ValueError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\10_rereview_H05_1
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 10_rereview_H05_1_retry
+REAL_API_CALL_COMPLETED 09_revision_H05_2_1_single_E28
+Traceback (most recent call last):
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 217, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 194, in main
+    result=candidate_batch(run,name,w.CARD_PROMPT+' Repair each stated substantive issue, preserving candidate IDs and purposes. Narrow inference if full causal separation is not feasible. Return full cards, not patches. Do not silently claim unidentified species or unmeasured conditions have been matched.',dict(brief=BRIEF,candidates=old,review=batch,hypotheses=[h],evidence=scoped(evidence,needed)),CARDS,8500)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\research_workflow.py", line 60, in candidate_batch
+    result=stage(run,child,instruction,small,schema,cap)
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\workflow.py", line 159, in stage
+    result=call_api(run,attempt_name,instruction,payload,schema,dict(max_output_tokens=cap))
+  File "E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\api_transport.py", line 308, in call_api
+    raise RuntimeError('API '+type(error).__name__+'; no automatic retry; logs at '+str(base)) from None
+RuntimeError: API ValueError; no automatic retry; logs at E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\calls\09_revision_H05_2_1_single_E30
+ERROR: Command '['E:\\Paper\\4.TEOA\\agent_teoa_prompt_v2\\.venv\\Scripts\\python.exe', '-X', 'utf8', '-u', 'E:\\Paper\\4.TEOA\\reviewed_gpt54_triplicate_20261105\\test1\\engine\\app\\research_workflow.py', 'reviewed_gpt54_repeat1']' returned non-zero exit status 1.
+Starting real API inference. Statistics and corpus index remain frozen.
+DUAL_CHANNEL_RETRIEVED 96
+REAL_API_CALL_COMPLETED 09_revision_H05_2_1_single_E30_retry
+REAL_API_CALL_COMPLETED 10_rereview_H05_2
+REAL_API_CALL_COMPLETED 10b_question_coverage
+GENERATION_FROZEN E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1
+Complete. Scientific output is frozen: E:\Paper\4.TEOA\reviewed_gpt54_triplicate_20261105\test1\engine\app\runs\reviewed_gpt54_repeat1\GENERATION_FROZEN.json

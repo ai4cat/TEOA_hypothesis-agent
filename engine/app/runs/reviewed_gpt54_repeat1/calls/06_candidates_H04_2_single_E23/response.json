@@ -1,0 +1,225 @@
+{
+  "candidates": [
+    {
+      "id": "E23",
+      "hypothesis_id": "H04",
+      "title": "P02 donor-substitution bridge for cobalt-state and quenching readouts",
+      "purpose": "Test in the supplementary homogeneous cobalt platform whether replacing TEOA with TEA changes cobalt-state-sensitive observables or donor-coupled quenching behavior under otherwise matched conditions, then compare only the qualitative direction of donor effects to the primary P01 system.",
+      "evidence_ids": [
+        "EV065",
+        "EV053",
+        "EV052",
+        "GX008"
+      ],
+      "source_to_proposal": "EV065 supports a defined homogeneous cobalt photocatalytic platform with TEOA and measurable quenching; EV053 supports using fluorescence/UV-vis to distinguish donor-versus-catalyst quenching routes; EV052 and GX008 support operando or near-operando state tracking plus negative controls. Proposed transfer is limited: this is a cleaner bridge assay, not the target Co-bpy/g-C3N4 chemistry, so agreement would support donor-linked state trends while disagreement could reflect platform-specific speciation.",
+      "groups": [
+        {
+          "id": "E23G01",
+          "description": "Baseline homogeneous P02 reaction mixture with TEOA under CO2 and illumination.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P02 homogeneous cobalt photocatalysis"
+            },
+            {
+              "name": "cobalt_catalyst",
+              "value": "fixed P02 cobalt catalyst"
+            },
+            {
+              "name": "photosensitizer",
+              "value": "fixed P02 Ru photosensitizer"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "solvent_family",
+              "value": "fixed acetonitrile/water family"
+            },
+            {
+              "name": "gas",
+              "value": "CO2-saturated"
+            },
+            {
+              "name": "light",
+              "value": "fixed illumination program"
+            },
+            {
+              "name": "sample_mode",
+              "value": "full reaction mixture"
+            }
+          ]
+        },
+        {
+          "id": "E23G02",
+          "description": "Single-variable donor substitution to TEA under otherwise matched reaction conditions.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P02 homogeneous cobalt photocatalysis"
+            },
+            {
+              "name": "cobalt_catalyst",
+              "value": "fixed P02 cobalt catalyst"
+            },
+            {
+              "name": "photosensitizer",
+              "value": "fixed P02 Ru photosensitizer"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "solvent_family",
+              "value": "fixed acetonitrile/water family"
+            },
+            {
+              "name": "gas",
+              "value": "CO2-saturated"
+            },
+            {
+              "name": "light",
+              "value": "fixed illumination program"
+            },
+            {
+              "name": "sample_mode",
+              "value": "full reaction mixture"
+            }
+          ]
+        },
+        {
+          "id": "E23G03",
+          "description": "TEOA mixture without cobalt catalyst for donor/photosensitizer background quenching and spectral reference.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P02 homogeneous cobalt photocatalysis"
+            },
+            {
+              "name": "cobalt_catalyst",
+              "value": "omitted"
+            },
+            {
+              "name": "photosensitizer",
+              "value": "fixed P02 Ru photosensitizer"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "solvent_family",
+              "value": "fixed acetonitrile/water family"
+            },
+            {
+              "name": "gas",
+              "value": "CO2-saturated"
+            },
+            {
+              "name": "light",
+              "value": "fixed illumination program"
+            },
+            {
+              "name": "sample_mode",
+              "value": "background blank"
+            }
+          ]
+        },
+        {
+          "id": "E23G04",
+          "description": "TEA mixture without cobalt catalyst for donor/photosensitizer background quenching and spectral reference.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P02 homogeneous cobalt photocatalysis"
+            },
+            {
+              "name": "cobalt_catalyst",
+              "value": "omitted"
+            },
+            {
+              "name": "photosensitizer",
+              "value": "fixed P02 Ru photosensitizer"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "solvent_family",
+              "value": "fixed acetonitrile/water family"
+            },
+            {
+              "name": "gas",
+              "value": "CO2-saturated"
+            },
+            {
+              "name": "light",
+              "value": "fixed illumination program"
+            },
+            {
+              "name": "sample_mode",
+              "value": "background blank"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E23G01",
+          "group_b": "E23G02",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Primary single-variable test for donor-linked differences in cobalt-state-sensitive spectra, quenching behavior, and catalytic output within P02."
+        },
+        {
+          "group_a": "E23G01",
+          "group_b": "E23G03",
+          "changed_factors": [
+            "cobalt_catalyst",
+            "sample_mode"
+          ],
+          "inference": "Separates cobalt-dependent signatures from TEOA/photosensitizer background; not a single-factor causal test because sample purpose also changes."
+        },
+        {
+          "group_a": "E23G02",
+          "group_b": "E23G04",
+          "changed_factors": [
+            "cobalt_catalyst",
+            "sample_mode"
+          ],
+          "inference": "Separates cobalt-dependent signatures from TEA/photosensitizer background; not a single-factor causal test because sample purpose also changes."
+        },
+        {
+          "group_a": "E23G03",
+          "group_b": "E23G04",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Checks whether donor substitution alone changes background quenching or spectral baselines, bounding interpretation of the full-mixture contrast."
+        }
+      ],
+      "procedure": [
+        "Prepare matched P02 mixtures and donor-specific blanks with verified identical cobalt catalyst, photosensitizer, solvent family, gas handling, optical path, and illumination settings except for donor identity or cobalt omission as assigned.",
+        "Run a pilot to set concentrations, path length, and acquisition timing within linear absorbance/emission response and without detector saturation; if donor or catalyst causes severe inner-filter or turbidity artifacts, dilute all groups proportionally and repeat matched measurements.",
+        "Collect donor-sensitive quenching data and cobalt-state-sensitive spectra before illumination and during a short matched illumination window, using donor-specific blanks and dark references to aid assignment.",
+        "In the same matched reaction sets, quantify CO and H2 together after the chosen illumination interval so spectroscopic directionality can be compared with catalytic output without claiming mechanistic proof."
+      ],
+      "measurements": [
+        "Steady-state or time-resolved photosensitizer emission quenching versus donor and cobalt presence; this shows relative quenching behavior but cannot by itself identify the full catalytic pathway.",
+        "UV-vis spectral changes of the cobalt-containing mixture before and during illumination; these can indicate donor-linked state changes or aggregation but cannot uniquely assign a specific cobalt intermediate without independent confirmation.",
+        "If available, operando or near-operando Co K-edge XAS/XANES/EXAFS on matched TEA and TEOA mixtures; these can report average oxidation-state and coordination-environment changes but may miss minority active species.",
+        "GC quantification of CO and H2 from the same matched runs; this establishes product distribution changes but not their sole cause."
+      ],
+      "supports": "Support for H04 would be a reproducible donor-dependent change between E23G01 and E23G02 in cobalt-associated spectral or operando XAS observables that is absent or much smaller in the corresponding cobalt-free blanks, with the qualitative donor trend aligning with a donor-linked change in CO/H2 output. Agreement in direction with analogous P01 observations would strengthen transfer, while remaining bounded to trend-level rather than identity-level claims.",
+      "refutes": "H04 is weakened if E23G01 and E23G02 show indistinguishable cobalt-dependent spectra and quenching-corrected state readouts across the operando window, while catalytic differences persist or are explained by donor-only blank behavior. It is also weakened if apparent donor differences arise mainly in E23G03 versus E23G04, indicating upstream donor/photosensitizer effects without clear cobalt-state divergence.",
+      "inconclusive": "Results are inconclusive if donor substitution changes optical baselines, viscosity, solubility, or inner-filter behavior enough to prevent matched interpretation; if cobalt signals are below detection or dominated by broad unresolved features; if TEA and TEOA require materially different concentration windows to keep the assay stable; or if P02 shows donor effects but P01 comparison data are unavailable for bridging.",
+      "parameter_selection": "Use the literature-defined P02 component identities and solvent family, but verify exact concentrations and illumination settings from the supplied source before execution. If any setting is still uncertain, choose it by pilot rules: maintain measurable CO/H2 within a short assay window, keep absorbance/emission in the instrument linear range, keep cobalt and photosensitizer solutions visibly homogeneous, and use one common setting for both donors whenever possible. If one donor destabilizes the mixture under the common setting, reduce all concentrations proportionally and re-run the full matched set rather than optimizing donors separately.",
+      "limitations": "Catalyst architecture differs from the Co-bpy/g-C3N4 target, so this is a transfer test rather than a direct explanation of P01. Donor substitution can change medium properties and quenching simultaneously, and homogeneous average-state methods may not reveal minority active species. Cobalt-free blanks help bound but do not eliminate confounding. Spectral changes alone cannot establish exact coordination structures or prove causality for product selectivity.",
+      "feasibility": "moderate"
+    }
+  ]
+}

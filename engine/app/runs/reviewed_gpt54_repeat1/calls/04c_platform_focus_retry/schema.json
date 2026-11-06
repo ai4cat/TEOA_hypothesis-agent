@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "properties": {
+    "selected_platform_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rationale": {
+      "type": "string"
+    },
+    "alternatives": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "teoa_role": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "selected_platform_ids",
+    "rationale",
+    "alternatives",
+    "teoa_role"
+  ],
+  "additionalProperties": false
+}

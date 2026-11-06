@@ -1,0 +1,17 @@
+# Local credentials and environments
+.env
+.env.*
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Copyrighted local corpus and extracted full text
+*.pdf
+engine/library/index.sqlite
+engine/library/index.sqlite-*
+
+# Keep the recorded reference run; new runs are local by default.
+engine/app/runs/*
+!engine/app/runs/reviewed_gpt54_repeat1/

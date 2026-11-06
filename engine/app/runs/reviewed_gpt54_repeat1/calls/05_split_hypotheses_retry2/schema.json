@@ -1,0 +1,83 @@
+{
+  "type": "object",
+  "properties": {
+    "hypotheses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^H[0-9]{2}$"
+          },
+          "question_id": {
+            "type": "string",
+            "enum": [
+              "Q1",
+              "Q2",
+              "Q3",
+              "Q4",
+              "Q5",
+              "Q6"
+            ]
+          },
+          "claim": {
+            "type": "string"
+          },
+          "alternative": {
+            "type": "string"
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "method_evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "platform_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "platform_and_comparator_choice": {
+            "type": "string"
+          },
+          "uncertainty": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "question_id",
+          "claim",
+          "alternative",
+          "evidence_ids",
+          "method_evidence_ids",
+          "platform_ids",
+          "platform_and_comparator_choice",
+          "uncertainty"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 4,
+      "maxItems": 6
+    },
+    "gaps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "hypotheses",
+    "gaps"
+  ],
+  "additionalProperties": false
+}

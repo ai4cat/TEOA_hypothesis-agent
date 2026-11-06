@@ -1,0 +1,20 @@
+{
+  "version": "question_led_he_v5",
+  "families": {
+    "Q1": "Additive identity, functionality, concentration and medium effects",
+    "Q2": "Catalyst identity, local environment, component interactions and stability",
+    "Q3": "Charge supply, electronic response and productive catalytic events",
+    "Q4": "Substrate interaction, activation, subsequent steps and signal assignment",
+    "Q5": "Performance, competing products, product origin and component contributions",
+    "Q6": "Independent interventions separating electron supply from other additive roles"
+  },
+  "candidate_target": [
+    24,
+    36
+  ],
+  "candidate_limit": 36,
+  "maximum_supplement_search_rounds": 1,
+  "maximum_scientific_revision_rounds": 2,
+  "budget_authorization": "Budget configured explicitly for this run; bounded stages and full accounting retained.",
+  "scope_update": "User requested more characterization and experiment options during retrieval. Up to 36 independently useful candidates; no padding."
+}

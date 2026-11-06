@@ -1,0 +1,2011 @@
+[
+  {
+    "evidence_id": "GX001",
+    "chunk_id": "P_5a7518ab0e95a586c665c202ff34d18b2c3f48c0f6687a2deac26aac28e05eb8:p4:c2",
+    "paper_id": "P_5a7518ab0e95a586c665c202ff34d18b2c3f48c0f6687a2deac26aac28e05eb8",
+    "page": 4,
+    "query_id": "SQ2",
+    "query_ids": [
+      "SQ2"
+    ],
+    "retrieval_matches": [
+      {
+        "query_id": "SQ2",
+        "rank": 1,
+        "bm25": -17.41300022515455
+      }
+    ],
+    "rrf": 0.01639344262295082,
+    "title": "Rapid electron transfer via dynamic coordinative interaction boosts quantum efficiency for photocatalytic CO2 reduction",
+    "doi_candidates": "[\"10.1038/s41467-021-24647-y\"]",
+    "spans": [
+      {
+        "id": "S1",
+        "start": 0,
+        "end": 220,
+        "text": "2b, the                                       CO selectivity of 91%. More importantly, the maximum QE (see\nCo-Npy bond  lengths  are ~2.26–2.29 Å  in IrQPY-CoPc and   Fig. 3b and Methods) was calculated to 10.2%±0.5% in "
+      },
+      {
+        "id": "S2",
+        "start": 220,
+        "end": 441,
+        "text": "the\nIrQPY-(CoPc)2,  respectively, which are longer than those of  IrQPY/CoPc system within the ﬁrst hour of photocatalysis, which\nequatorial Co-NPc bonds (ca. 1.92–1.93 Å), showing the presence    is more than four times "
+      },
+      {
+        "id": "S3",
+        "start": 441,
+        "end": 655,
+        "text": "higher than that of IrBPY/CoPc (2.4% ±\nof weak axial coordination in both adducts. We also analyzed the                                                                  0.2%). The above comparison demonstrates the "
+      },
+      {
+        "id": "S4",
+        "start": 655,
+        "end": 876,
+        "text": "remarkable per-\nMayer bond orders52 of Co-N bonds and found that the bond                                                          formance of the coordination-interacted IrQPY/CoPc system for\norder of Co-Npy (0.24~0.25) "
+      },
+      {
+        "id": "S5",
+        "start": 876,
+        "end": 1087,
+        "text": "is only ca. half of that of Co-NPc   photocatalytic CO2 reduction.\n(0.48), which further indicates the weak coordinate bonds. Pre-                                                   To assure the contribution of "
+      },
+      {
+        "id": "S6",
+        "start": 1087,
+        "end": 1303,
+        "text": "coordinative interaction in the\nsumably, the low-spin d7 CoII center in CoPc molecules owns a                                                                  present system, the competitive binding from TEA and BIH\n"
+      },
+      {
+        "id": "S7",
+        "start": 1303,
+        "end": 1520,
+        "text": "half-ﬁlled dz2 orbital which will weaken the axial coordination   should be considered. The 1H NMR titration between BIH and\nfrom the z-direction, whereas the dx2-y2  is vacant for strong  CoPc did not show a visible "
+      },
+      {
+        "id": "S8",
+        "start": 1520,
+        "end": 1740,
+        "text": "shift of the proton signals of BIH\nequatorial coordination. In addition, the relatively labile axial                                                            (Supplementary  Fig.  10),  which  indicates  the  absence  "
+      },
+      {
+        "id": "S9",
+        "start": 1740,
+        "end": 1961,
+        "text": "of\ncoordinate bond can be partially attributed to the cationic nature                                                                coordination of BIH at CoPc. In contrast, 1H NMR titration is\nof IrQPY, which makes the "
+      },
+      {
+        "id": "S10",
+        "start": 1961,
+        "end": 2000,
+        "text": "pyridine less electron-donating.       "
+      }
+    ],
+    "retrieval_flags": []
+  },
+  {
+    "evidence_id": "GX002",
+    "chunk_id": "P_6546149d346d0987ef6a2ad466c66f72232592ce97e72b8c49170970b050be5e:p9:c1",
+    "paper_id": "P_6546149d346d0987ef6a2ad466c66f72232592ce97e72b8c49170970b050be5e",
+    "page": 9,
+    "query_id": "SQ3",
+    "query_ids": [
+      "SQ1",
+      "SQ3"
+    ],
+    "retrieval_matches": [
+      {
+        "query_id": "SQ1",
+        "rank": 27,
+        "bm25": -14.210946351568637
+      },
+      {
+        "query_id": "SQ3",
+        "rank": 1,
+        "bm25": -19.642188585424414
+      }
+    ],
+    "rrf": 0.02788769549651404,
+    "title": "",
+    "doi_candidates": "[\"10.1021/acs.organomet.1c00180\"]",
+    "spans": [
+      {
+        "id": "S1",
+        "start": 0,
+        "end": 221,
+        "text": "ne\n                                   H intermediate with the help of TEOA (base) (b′ species →a\nligand that causes the π−π* and dπ−π* transitions to occur at\n                                                              "
+      },
+      {
+        "id": "S2",
+        "start": 221,
+        "end": 434,
+        "text": "            species, [Cp*(bpy)IrIII−H]+ + TEOA →[Cp*(bpy)IrI]0 +\nlower energies.55 This result suggests that the proximate n-type                                                 TEOAH+). In turn, the deprotonated "
+      },
+      {
+        "id": "S3",
+        "start": 434,
+        "end": 648,
+        "text": "[Cp*(bpy)IrI]0 would be\nTiO2 semiconductor  serves  as an  (pesuedo)electron-with-       easily converted to the 1η-bound CO2-adduct, [Cp*(bpy)-\ndrawing substituent on the bipyridine ligand. This is analogous      "
+      },
+      {
+        "id": "S4",
+        "start": 648,
+        "end": 868,
+        "text": "IrIII(1η−C(O)OH)]+, in the presence of proton source (H+)\nto the previous  results  that show  that the attachment  of     (a species →c species). The catalytic cycle of the TiO2-bound\nelectron-withdrawing groups at the "
+      },
+      {
+        "id": "S5",
+        "start": 868,
+        "end": 1086,
+        "text": "4,4′-positions of bipyridine      Cp*Ir(III) catalyst for CO2-to-CO conversion (Route B) can\nligand leads to a considerable positive shift of Ered value in the     be completed via the successive dehydration step with "
+      },
+      {
+        "id": "S6",
+        "start": 1086,
+        "end": 1307,
+        "text": "the\n\n                                                             2438                                               https://doi.org/10.1021/acs.organomet.1c00180\n                                                          "
+      },
+      {
+        "id": "S7",
+        "start": 1307,
+        "end": 1437,
+        "text": "                                                                                               Organometallics 2021, 40, 2430−2442"
+      }
+    ],
+    "retrieval_flags": [
+      "CO_may_mean_carbon_monoxide_not_cobalt"
+    ]
+  },
+  {
+    "evidence_id": "GX003",
+    "chunk_id": "P_71c566524134a2ce4761974294feb703b6c7cbaf4c575b108ac12db211fa5e09:p10:c2",
+    "paper_id": "P_71c566524134a2ce4761974294feb703b6c7cbaf4c575b108ac12db211fa5e09",
+    "page": 10,
+    "query_id": "SQ6",
+    "query_ids": [
+      "SQ6"
+    ],
+    "retrieval_matches": [
+      {
+        "query_id": "SQ6",
+        "rank": 1,
+        "bm25": -14.831477767961486
+      }
+    ],
+    "rrf": 0.01639344262295082,
+    "title": "",
+    "doi_candidates": "[\"10.1021/jacs.9b11089\"]",
+    "spans": [
+      {
+        "id": "S1",
+        "start": 0,
+        "end": 221,
+        "text": "09                     1.998    1.996         1.99                 1.982                                      241                               EPR\n42                                    0\n43\n44                            "
+      },
+      {
+        "id": "S2",
+        "start": 221,
+        "end": 435,
+        "text": "               -2\n45                                    3400           3420           3440           3460           3480\n46                                              Magnetic Field /G\n47\n48\n           Figure 5. "
+      },
+      {
+        "id": "S3",
+        "start": 435,
+        "end": 654,
+        "text": "Electron paramagnetic resonance (EPR) spectra of (a) Rb3Bi2I9, (b) Cs3Bi2I9 and (c)49\n           MA3Bi2I9 under illumination for 1 h in the absence (solid curves) or presence (dashed curves) of50\n51        CO2 and H2O. "
+      },
+      {
+        "id": "S4",
+        "start": 654,
+        "end": 867,
+        "text": "The vertical dashed lines show the corresponding g-factor values.\n52\n                  Electron paramagnetic resonance (EPR) spectra were recorded for samples in toluene53\n54             solution at 77 K for each "
+      },
+      {
+        "id": "S5",
+        "start": 867,
+        "end": 1088,
+        "text": "catalyst under illumination in the presence or absence of CO2 and H2O\n55\n56          vapors to examine charge trapping and interfacial charge transfer. Figure 5 shows the EPR data in\n57\n58                                 "
+      },
+      {
+        "id": "S6",
+        "start": 1088,
+        "end": 1181,
+        "text": "                  9\n59\n60                                        ACS Paragon Plus Environment"
+      }
+    ],
+    "retrieval_flags": []
+  },
+  {
+    "evidence_id": "GX004",
+    "chunk_id": "P_4e198e311887634bcf3a8099c8b647fdad3983b9e46e0ec199b29a2945f98c59:p9:c0",
+    "paper_id": "P_4e198e311887634bcf3a8099c8b647fdad3983b9e46e0ec199b29a2945f98c59",
+    "page": 9,
+    "query_id": "SQ1",
+    "query_ids": [
+      "SQ1"
+    ],
+    "retrieval_matches": [
+      {
+        "query_id": "SQ1",
+        "rank": 2,
+        "bm25": -20.659055536509392
+      }
+    ],
+    "rrf": 0.016129032258064516,
+    "title": "",
+    "doi_candidates": "[\"10.1021/jacs.5c09982\"]",
+    "spans": [
+      {
+        "id": "S1",
+        "start": 0,
+        "end": 214,
+        "text": "Journal of the American Chemical Society                             pubs.acs.org/JACS                                      Article\n\nTEOA   Triethanolamine                                           (8) Takeda, H.; "
+      },
+      {
+        "id": "S2",
+        "start": 214,
+        "end": 435,
+        "text": "Cometto, C.; Ishitani, O.; Robert, M. Electrons,\nSED      Sacrificial electron donor                                 Photons,  Protons and  Earth-Abundant  Metal Complexes  for\nHAT    Hydrogen atom transfer               "
+      },
+      {
+        "id": "S3",
+        "start": 435,
+        "end": 655,
+        "text": "                    Molecular Catalysis of CO2 Reduction. ACS Catal 2017, 7 (1),\nPT      Proton transfer                                        70−88.\n                                                                     "
+      },
+      {
+        "id": "S4",
+        "start": 655,
+        "end": 874,
+        "text": "(9) Bolton, J. R.; Hall, D. O. Photochemical conversion and storageET      Electron transfer\n                                                                              of solar energy. Annu. Rev. Energy 1979, 4 (1), "
+      },
+      {
+        "id": "S5",
+        "start": 874,
+        "end": 1095,
+        "text": "353−401.\n3tBNB   2,4,6-Tri-tert-butylnitrosobenzene\n                                                                    (10) Lehn, J.-M.; Ziessel, R. Photochemical generation of carbon\nbpy      2,2′-Bipyridine            "
+      },
+      {
+        "id": "S6",
+        "start": 1095,
+        "end": 1313,
+        "text": "                                                  monoxide and hydrogen by reduction of carbon dioxide and water\nBP     Benzophenone                                                                  under visible light "
+      },
+      {
+        "id": "S7",
+        "start": 1313,
+        "end": 1526,
+        "text": "irradiation. Proc. Natl. Acad.  Sci. 1982, 79 (2),\nCN-bpy  4,4′-Dicyano-2,2′-bipyridine                            701−704.\nphen    1,10-Phenanthroline                                       (11) Wayner, D. D. M.; "
+      },
+      {
+        "id": "S8",
+        "start": 1526,
+        "end": 1719,
+        "text": "Dannenberg,  J.  J.; Griller, D. Oxidation\nppy      2-Phenylpyridine                                                potentials of α-aminoalkyl radicals: bond dissociation energies for\ndtbbpy   "
+      },
+      {
+        "id": "S9",
+        "start": 1719,
+        "end": 1938,
+        "text": "4,4′-Di-tert-butyl-2,2′-bipyridine                               related radical cations. Chem. Phys. Lett 1986, 131 (3), 189−191.\nFc      Ferrocene                                               (12)  Portis,  L.  C.;  "
+      },
+      {
+        "id": "S10",
+        "start": 1938,
+        "end": 2000,
+        "text": "Bhat,  V.; Mann,  C.  K.  Electrochemical\nS        Solute     "
+      }
+    ],
+    "retrieval_flags": []
+  },
+  {
+    "evidence_id": "GX005",
+    "chunk_id": "P_33183d8d601d5e2bb43de6af197639782fb21e173199fd029d1b8584ec3d70c4:p17:c1",
+    "paper_id": "P_33183d8d601d5e2bb43de6af197639782fb21e173199fd029d1b8584ec3d70c4",
+    "page": 17,
+    "query_id": "SQ2",
+    "query_ids": [
+      "SQ2"
+    ],
+    "retrieval_matches": [
+      {
+        "query_id": "SQ2",
+        "rank": 2,
+        "bm25": -17.10687256552825
+      }
+    ],
+    "rrf": 0.016129032258064516,
+    "title": "Cobalt porphyrin immobilized on the TiO2 nanotube electrode for CO2 electroreduction in aqueous solution",
+    "doi_candidates": "[\"10.1016/j.jechem.2020.06.067\"]",
+    "spans": [
+      {
+        "id": "S1",
+        "start": 0,
+        "end": 214,
+        "text": "anar cobalt\n\ncentre of CoTPP and the axial coordination is responsible for the enhanced catalytic activity\n\n[50]. Herein, we endeavoured to study the process of different solvents coordination to\n\nCoTPP. The axial "
+      },
+      {
+        "id": "S2",
+        "start": 214,
+        "end": 430,
+        "text": "coordination numbers and equilibrium constants of pyridine, DMF, and\n\nTHF were investigated by means of spectrophotometric titration method as described in the\n\nexperimental section according to the literature [40]. "
+      },
+      {
+        "id": "S3",
+        "start": 430,
+        "end": 599,
+        "text": "Although spectrophotometric titration\n\nwas performed under mild conditions where CoTPP was involved, the conclusions here can\n\n                                        16"
+      }
+    ],
+    "retrieval_flags": []
+  },
+  {
+    "evidence_id": "GX006",
+    "chunk_id": "P_5c4cc5a4b76e6cc21377b60536c5236113259eca73adbecec144aff998efa0cc:p6:c2",
+    "paper_id": "P_5c4cc5a4b76e6cc21377b60536c5236113259eca73adbecec144aff998efa0cc",
+    "page": 6,
+    "query_id": "SQ3",
+    "query_ids": [
+      "SQ1",
+      "SQ3"
+    ],
+    "retrieval_matches": [
+      {
+        "query_id": "SQ1",
+        "rank": 8,
+        "bm25": -17.400047714402202
+      },
+      {
+        "query_id": "SQ3",
+        "rank": 2,
+        "bm25": -18.383808231063014
+      }
+    ],
+    "rrf": 0.030834914611005692,
+    "title": "",
+    "doi_candidates": "[\"10.1038/s41467-023-37401-3\"]",
+    "spans": [
+      {
+        "id": "S1",
+        "start": 0,
+        "end": 221,
+        "text": ",\nthe electron and the proton from Co@Si and solution, respectively,   which  are  compatible  with  downstream  industrial  catalytic\nwhich subsequently converts to form the COOH* intermediate and   processes  such  as  "
+      },
+      {
+        "id": "S2",
+        "start": 221,
+        "end": 440,
+        "text": "Fischer–Tropsch  synthesis  and  methanol\nﬁnally forms CO (Steps v and vi)52,66. A considerable amount of as-   production72,73. This work develops a synthetic path toward efﬁcient\nformed protons are eventually reduced "
+      },
+      {
+        "id": "S3",
+        "start": 440,
+        "end": 660,
+        "text": "on the Co-free c-Si facets to  SACs using group IV semiconductors, which are believed to be ideal\nproduce H2 (Step vii). Similar joint reaction processes have also been   photocatalytic platforms  for CO2  valorization  "
+      },
+      {
+        "id": "S4",
+        "start": 660,
+        "end": 880,
+        "text": "integrated with\nfound from other photocatalytic systems such as Janus particles, and   organic synthesis.\ntwo-dimensional heterostructures67–71.\n   We report a solid-state synthetic strategy to prepare Si-based  Methods\n"
+      },
+      {
+        "id": "S5",
+        "start": 880,
+        "end": 1100,
+        "text": "SACs with tunable Co concentrations between 0.4 wt% and 3.4 wt%  Chemicals\nand a porous SiO2 matrix as catalyst support. The formation of   All chemicals used are commercially available and were used with-\nCo@Si powders "
+      },
+      {
+        "id": "S6",
+        "start": 1100,
+        "end": 1316,
+        "text": "is based on a two-step solid-state epitaxial growth   out any additional puriﬁcation steps. Trimethoxysilane (TriMOS,\nprocess. The in situ formation of the CoSi2 intermediate is key to the   95%), tetramethoxysilane "
+      },
+      {
+        "id": "S7",
+        "start": 1316,
+        "end": 1532,
+        "text": "(TMOS), cobalt chloride hexahydrate\nformation of Si domains at relatively low temperatures and the   (CoCl2·6H2O, 98%), cobalt (97%), cobalt oxide (98%), electronic-\nsubsequent Co diffusion into the silicon lattice. "
+      },
+      {
+        "id": "S8",
+        "start": 1532,
+        "end": 1751,
+        "text": "Combined spec-   grade hydroﬂuoric acid (HF, 49%), azazobisisobutyronitrile (AIBN,\ntroscopic and microscopic techniques were applied to elucidate the   98%), triethanolamine (TEOA, 98%), tris(2,2’-bipyridine) ruthenium\n"
+      },
+      {
+        "id": "S9",
+        "start": 1751,
+        "end": 1966,
+        "text": "atomic environment of the active Co sites on silicon nanodomains.   dichloride ([Ru(bpy)3]2+Cl2, 99%), 1-octene (98%), 1-dodecene (95%),\nThe catalytic efﬁciency towards visible-light-driven syngas produc-   toluene "
+      },
+      {
+        "id": "S10",
+        "start": 1966,
+        "end": 2000,
+        "text": "(99%), dichloromethane (99.9%), an"
+      }
+    ],
+    "retrieval_flags": []
+  },
+  {
+    "evidence_id": "GX007",
+    "chunk_id": "P_eb4c376322354629881ea2b938d5b63623340d02da686c5e72202d5b6220c1c1:p4:c2",
+    "paper_id": "P_eb4c376322354629881ea2b938d5b63623340d02da686c5e72202d5b6220c1c1",
+    "page": 4,
+    "query_id": "SQ5",
+    "query_ids": [
+      "SQ5"
+    ],
+    "retrieval_matches": [
+      {
+        "query_id": "SQ5",
+        "rank": 2,
+        "bm25": -20.256821704712927
+      }
+    ],
+    "rrf": 0.016129032258064516,
+    "title": "",
+    "doi_candidates": "[\"10.1016/j.catcom.2011.03.024\"]",
+    "spans": [
+      {
+        "id": "S1",
+        "start": 0,
+        "end": 207,
+        "text": "                                                            Supplementary data to  this  article can be found online at\nFig. 3. H2 production from systems containing Acr (1.5×10−4M), TEOA (2.5% v/v), and    "
+      },
+      {
+        "id": "S2",
+        "start": 207,
+        "end": 428,
+        "text": "doi:10.1016/j.catcom.2011.03.024.\neffect of varying Co(III)O in DMF/H2O 3:1 upon irradiation (λN420 nm) at pH 9: (a) the\nH2 generation after 20 min irradiation; and (b) H2 generation vs. time.\n                            "
+      },
+      {
+        "id": "S3",
+        "start": 428,
+        "end": 649,
+        "text": "                                     References\n\n3.4. Replaced TEOA by TEA                                                                 [1] M. Graetzel, Acc. Chem. Res. 14 (1981) 376.\n                                  "
+      },
+      {
+        "id": "S4",
+        "start": 649,
+        "end": 870,
+        "text": "                                                                  [2]  A.J. Esswein, D.G. Nocera, Chem. Rev. 107 (2007) 4022.\n                                                                                               "
+      },
+      {
+        "id": "S5",
+        "start": 870,
+        "end": 1090,
+        "text": "     [3] M. Wang, Y. Na, M. Gorlov, L. Sun, Dalton Trans. (2009) 6458.\n   To further check the effect of electron donors on the activity and        [4] K. Sakai, H. Ozawa, Coord. Chem. Rev. 251 (2007) 2753.\nstability of "
+      },
+      {
+        "id": "S6",
+        "start": 1090,
+        "end": 1311,
+        "text": "the photocatalytic system, triethylamine (TEA) was        [5] E.D. Cline, S.E. Adamson, S. Bernhard, Inorg. Chem. 47 (2008) 10378.\n                                                                                          "
+      },
+      {
+        "id": "S7",
+        "start": 1311,
+        "end": 1532,
+        "text": "          [6]  S.F. Chan, M. Chou, C. Creutz, T. Matsubara, N. Sutin, J. Am. Chem. Soc. 103 (1981)\nemployed to replace TEOA. The absorption spectra of the Acr+TEA                                                           "
+      },
+      {
+        "id": "S8",
+        "start": 1532,
+        "end": 1753,
+        "text": "                                 369.\nsolution [Fig. S6(a)] showed that, upon irradiation, leuco-Acr was        [7] M. Elvington, J. Brown, S.M. Arachchige, K.J. Brewer, J. Am. Chem. Soc. 129 (2007)\nformed within 10 min, "
+      },
+      {
+        "id": "S9",
+        "start": 1753,
+        "end": 1973,
+        "text": "although the rate of the Acr fading was lower          10644.\nthan that of TEOA. This result indicates that the rate of reductive        [8]  S. Rau, B. Schafer, D. Gleich, E. Anders, M. Rudolph, M. Friedrich, H. Gorls, "
+      },
+      {
+        "id": "S10",
+        "start": 1973,
+        "end": 2000,
+        "text": "W.\n                        "
+      }
+    ],
+    "retrieval_flags": []
+  },
+  {
+    "evidence_id": "GX008",
+    "chunk_id": "P_d45644df03a32ddcacbcd0eb6914abbe188ef23fc5a8582f26689f066de7259b:p7:c4",
+    "paper_id": "P_d45644df03a32ddcacbcd0eb6914abbe188ef23fc5a8582f26689f066de7259b",
+    "page": 7,
+    "query_id": "SQ6",
+    "query_ids": [
+      "SQ6"
+    ],
+    "retrieval_matches": [
+      {
+        "query_id": "SQ6",
+        "rank": 2,
+        "bm25": -14.472673983087072
+      }
+    ],
+    "rrf": 0.016129032258064516,
+    "title": "",
+    "doi_candidates": "[\"10.1038/s43586-023-00243-wnature\"]",
+    "spans": [
+      {
+        "id": "S1",
+        "start": 0,
+        "end": 216,
+        "text": "of light irradiation (at the same        In situ XPS and XAS can detect the change in the chemical environ-\ntemperature), CO2 (using argon instead), reductant, catalyst (leaving  ment of catalyst elements induced by "
+      },
+      {
+        "id": "S2",
+        "start": 216,
+        "end": 437,
+        "text": "illumination or reactants, which\nthe blank support if used), photosensitizer or solvent. The negative   suggests the change in electron density and the corresponding charge\ncontrol experiments should result in negligible "
+      },
+      {
+        "id": "S3",
+        "start": 437,
+        "end": 656,
+        "text": "yields. Nevertheless,    behaviours24,40,136,137. For catalysts with intrinsic or photo-induced para-\nto obtain solid evidence that the results are not artefacts especially  magnetic responses, in situ EPR measurements "
+      },
+      {
+        "id": "S4",
+        "start": 656,
+        "end": 873,
+        "text": "can be performed\nwhen the amount of products is small, a complete and reproducible   alongside XPS and XAS37,138,139. Furthermore, the coupling of oper-\n13CO2 labelling experiment is required.                         "
+      },
+      {
+        "id": "S5",
+        "start": 873,
+        "end": 1094,
+        "text": "ando scanning fluorescence X-ray microscopy and environmental\n                                              TEM enables the investigation of electronic structure change at the\nMeasurements                                 "
+      },
+      {
+        "id": "S6",
+        "start": 1094,
+        "end": 1304,
+        "text": "                      single-particle level138. In addition, Kevin probe and Mott–Schottky\nThe assessment of photocatalytic CO2 reduction performance requires  measurements reveal the Fermi level and hence the "
+      },
+      {
+        "id": "S7",
+        "start": 1304,
+        "end": 1524,
+        "text": "interfacial band\nproduct analysis, measurement of quantum and energy efficiencies,   bending upon contact136. For homogeneous photocatalytic CO2 reduc-\nevaluation of catalyst stability and recyclability and confirmation "
+      },
+      {
+        "id": "S8",
+        "start": 1524,
+        "end": 1745,
+        "text": "by   tion, UV–Vis, XAS, TAS, IR and Raman spectroscopies help to reveal\n\nNature Reviews Methods Primers |     (2023) 3:61                                                                       7\n\n                          "
+      },
+      {
+        "id": "S9",
+        "start": 1745,
+        "end": 1784,
+        "text": "                         0123456789();:"
+      }
+    ],
+    "retrieval_flags": []
+  },
+  {
+    "evidence_id": "GX009",
+    "chunk_id": "P_91ab617a2c63b47a0d246e4e3a9ddd73b7de37e0f7696c81abf028a8ea68daf5:p5:c0",
+    "paper_id": "P_91ab617a2c63b47a0d246e4e3a9ddd73b7de37e0f7696c81abf028a8ea68daf5",
+    "page": 5,
+    "query_id": "SQ1",
+    "query_ids": [
+      "SQ1",
+      "SQ3"
+    ],
+    "retrieval_matches": [
+      {
+        "query_id": "SQ1",
+        "rank": 3,
+        "bm25": -20.418456580244097
+      },
+      {
+        "query_id": "SQ3",
+        "rank": 23,
+        "bm25": -10.58200789548456
+      }
+    ],
+    "rrf": 0.02792120864410021,
+    "title": "",
+    "doi_candidates": "[\"10.1039/c9ra06235a\"]",
+    "spans": [
+      {
+        "id": "S1",
+        "start": 0,
+        "end": 221,
+        "text": "View Article Online\n\n         Paper                                                                                      RSC Advances\n\n           Co(I) pd to bpy p* back-bonding in the Co(bpy)n+ series. In 4  Conclusions\n"
+      },
+      {
+        "id": "S2",
+        "start": 221,
+        "end": 438,
+        "text": "          addition, the occurrence of a partial dissociation between cobalt\n        and bpy generated the possibility of anchoring again with the   In summary, a heterocatalytic system was mediated by [Emim]\n         "
+      },
+      {
+        "id": "S3",
+        "start": 438,
+        "end": 654,
+        "text": "surrounding  solvent  molecules.  This  spectroscopic  result  BF4/H2O/TEOA for the selective reduction of CO2. The inuence\n         provided evidence in support of the speculates that coordinated   factors for the "
+      },
+      {
+        "id": "S4",
+        "start": 654,
+        "end": 873,
+        "text": "catalytic performance were characterized in        Licence.    between the Co(bpy)+ complexes and solvents.                      detail. (i) The role of water was that of a dilution agent to adjust\n            In fact, "
+      },
+      {
+        "id": "S5",
+        "start": 873,
+        "end": 1093,
+        "text": "the redox process for the Co-complex was previously   the viscosity of the current system and that of a proton source to\n         inspected by  electrochemical  experiments.33 Those  reports   assist the proton-coupling "
+      },
+      {
+        "id": "S6",
+        "start": 1093,
+        "end": 1313,
+        "text": "process, which was responsible for        Unported    indicated an existence of CoII/I and CoI/0 redox pairs during   the CO2 conversion. (ii) The activity and selectivity were closely\n   3.0     cyclic voltammetry (CV) "
+      },
+      {
+        "id": "S7",
+        "start": 1313,
+        "end": 1532,
+        "text": "scans. The generation of Co(I) species   related to the viscosity and conductivity. (iii) The coordination\nPM.       subsequently served as an important activated catalyst for CO2.  between the metal center and [Emim]+ "
+      },
+      {
+        "id": "S8",
+        "start": 1532,
+        "end": 1738,
+        "text": "may have promoted the\n6:58:46       speciesFurther toobservationsgive a [Co–CO2]veried adduct.the bindingIt is ofwellCO2knownwith thethatCo(I)the   stabilitywere helpfulof theforCO2studyingintermediates.a "
+      },
+      {
+        "id": "S9",
+        "start": 1738,
+        "end": 1951,
+        "text": "broaderTherefore,range of alltheofgreenthesesystem,results\n          electrochemical   behaviors   are   strongly  inuenced  by   developing a new, eﬃcient, articial photosynthesis system,\n         surrounding  "
+      },
+      {
+        "id": "S10",
+        "start": 1951,
+        "end": 2000,
+        "text": "factors. Ionic liquids such as [Emim]BF4 can   be"
+      }
+    ],
+    "retrieval_flags": []
+  },
+  {
+    "evidence_id": "GX010",
+    "chunk_id": "P_9834dfb7dad6ac806018b78bb16e044e58fde19760b847d890090941b411d7aa:p6:c3",
+    "paper_id": "P_9834dfb7dad6ac806018b78bb16e044e58fde19760b847d890090941b411d7aa",
+    "page": 6,
+    "query_id": "SQ2",
+    "query_ids": [
+      "SQ2"
+    ],
+    "retrieval_matches": [
+      {
+        "query_id": "SQ2",
+        "rank": 4,
+        "bm25": -15.375106260891446
+      }
+    ],
+    "rrf": 0.015625,
+    "title": "Modulating the mechanism of electrocatalytic CO2 reduction by cobalt phthalocyanine through polymer coordination and encapsulation",
+    "doi_candidates": "[\"10.1038/s41467-019-09626-8\"]",
+    "spans": [
+      {
+        "id": "S1",
+        "start": 0,
+        "end": 220,
+        "text": "h an aggregate inverse-isotope effect from the\nisotopic  fractionation  parameter  which   is  related  to  the   Z-sites (pyridyl sites on the polymer). Note that a weak inverse-\npropensity for a hydrogenic site in the "
+      },
+      {
+        "id": "S2",
+        "start": 220,
+        "end": 434,
+        "text": "rate-determining step of   isotope  effect  is  a somewhat common phenomena  for H+\nthe reaction to interact with D+ compared to water, and Z is a   exchange reactions at weak bases such as pyridine53. The results\n"
+      },
+      {
+        "id": "S3",
+        "start": 434,
+        "end": 651,
+        "text": "parameter related to the aggregate isotope effect from multiple   of  the CoPc-P4VP  proton  inventory  studies  support  our\nequivalent hydrogenic sites, called Z-sites, with individual weak   hypothesis that proton "
+      },
+      {
+        "id": "S4",
+        "start": 651,
+        "end": 872,
+        "text": "delivery to the active site is controlled\nisotope effects (see Supplementary Information for an explana-   by a polymer-based proton relay mechanism. Note that in our\ntion of Eq. (2))33,44,53.                             "
+      },
+      {
+        "id": "S5",
+        "start": 872,
+        "end": 1093,
+        "text": "                  analysis  we  do  not  take  into  account  contributions  to\n  For all the systems investigated, the electrocatalytic current for   the overall isotope effect from the expected H-bonding interac-\nCO2RR "
+      },
+      {
+        "id": "S6",
+        "start": 1093,
+        "end": 1312,
+        "text": "was measured in partially deuterated phosphate solutions   tions between the P4VP polymer and reactive CO2 intermediates\nat pH/pD = 5 using 2-min  rotating  disk CA measurements     (i.e., secondary-coordination sphere "
+      },
+      {
+        "id": "S7",
+        "start": 1312,
+        "end": 1532,
+        "text": "effects). This is because weak\nat −1.25 V vs. SCE and a rotation rate of 1600 rpm. Partially  H-bonds tend to have negligible isotope effects with ϕ ~ 1 and\ndeuterated  phosphate  solutions  were  prepared  by  mixing   "
+      },
+      {
+        "id": "S8",
+        "start": 1532,
+        "end": 1752,
+        "text": "therefore do not typically contribute signiﬁcantly to the overall\nappropriate amounts of the pH 5 phosphate solution and pD 5   isotope effect47.\ndeuterated phosphate solution. In a plot of jn/j0 as a function of n,     "
+      },
+      {
+        "id": "S9",
+        "start": 1752,
+        "end": 1972,
+        "text": "In contrast to CoPc-P4VP, the activity of CoPc(py) shows a\nthe shape of the resulting curve is dependent on the relative sizes   linear attenuation with increasing n conﬁrming that without the\nof ϕ and Z. Z > 1 suggests "
+      },
+      {
+        "id": "S10",
+        "start": 1972,
+        "end": 2000,
+        "text": "there is an aggregate invers"
+      }
+    ],
+    "retrieval_flags": []
+  },
+  {
+    "evidence_id": "GX011",
+    "chunk_id": "P_8689ac208ca47243d76c5c5b1c86e3ff6f3aa79b8a2e8b964677b9aeb334000f:p5:c0",
+    "paper_id": "P_8689ac208ca47243d76c5c5b1c86e3ff6f3aa79b8a2e8b964677b9aeb334000f",
+    "page": 5,
+    "query_id": "SQ3",
+    "query_ids": [
+      "SQ3"
+    ],
+    "retrieval_matches": [
+      {
+        "query_id": "SQ3",
+        "rank": 3,
+        "bm25": -16.156624449296384
+      }
+    ],
+    "rrf": 0.015873015873015872,
+    "title": "",
+    "doi_candidates": "[\"10.1021/acscatal.6b01208\"]",
+    "spans": [
+      {
+        "id": "S1",
+        "start": 0,
+        "end": 217,
+        "text": "ACS Catalysis                                  Page 4 of 31\n\n\n1\n2\n3               2).24 Alternatively, the 18-electron species [Re−I(bpy)(CO)3]− is also a plausible nucleophile,244\n5\n6           although deemed to be "
+      },
+      {
+        "id": "S2",
+        "start": 217,
+        "end": 437,
+        "text": "less likely when TEOA is used as the sacrificial electron donor. After\n7\n8             binding, CO2 is reduced to CO and H2O with multiple protonation steps.\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n"
+      },
+      {
+        "id": "S3",
+        "start": 437,
+        "end": 636,
+        "text": "30\n31\n32                  In addition, a binuclear pathway involving a rhenium dimer carboxylate intermediate is\n33\n34             also proposed based on the work by Fujita and co-workers in which a "
+      },
+      {
+        "id": "S4",
+        "start": 636,
+        "end": 845,
+        "text": "one-electron-reduced35\n36\n37           species of a derivative of 1, Re0(dmb)(CO)3 (dmb =  4,4'-dimethyl-2,2'-bipyridine), is prepared\n38\n39         by photocleavage of the Re-Re bond of [Re(dmb)(CO)3]2.37,39 "
+      },
+      {
+        "id": "S5",
+        "start": 845,
+        "end": 1065,
+        "text": "Furthermore, rhenium-carbonate\n40\n41\n42          (A) and -iminoester (B) species have been reported to form during the photochemical reduction\n43\n44           of CO2 by 1 (Figure 1).19 The former forms via the insertion "
+      },
+      {
+        "id": "S6",
+        "start": 1065,
+        "end": 1269,
+        "text": "of CO2 into the TEOA adduct,\n45\n46           [Re(bpy)(CO)3(TEOA)]+, when the solvent is DMF, whereas the latter is the product of the\n47\n48\n             attack of TEOA on the acetonitrile (ACN) ligand in "
+      },
+      {
+        "id": "S7",
+        "start": 1269,
+        "end": 1486,
+        "text": "[ReI(bpy)(CO)3(ACN)]+ when the reaction is49\n50\n51          performed in ACN .19 The former species has recently been proposed as the active form of the\n52\n53              catalyst in the photoreduction of CO2 in the "
+      },
+      {
+        "id": "S8",
+        "start": 1486,
+        "end": 1707,
+        "text": "presence of TEOA in DMF. However, the chemical54\n55\n56            details of this conversion have yet to be clarified.\n57\n58\n59\n60                                                                                      4\n   "
+      },
+      {
+        "id": "S9",
+        "start": 1707,
+        "end": 1764,
+        "text": "                             ACS Paragon Plus Environment"
+      }
+    ],
+    "retrieval_flags": [
+      "CO_may_mean_carbon_monoxide_not_cobalt"
+    ]
+  },
+  {
+    "evidence_id": "GX012",
+    "chunk_id": "P_fc7beb9eb90f51083af586b330fac03b0b842dbfd5be5d157c416a39d2189903:p4:c2",
+    "paper_id": "P_fc7beb9eb90f51083af586b330fac03b0b842dbfd5be5d157c416a39d2189903",
+    "page": 4,
+    "query_id": "SQ5",
+    "query_ids": [
+      "SQ5"
+    ],
+    "retrieval_matches": [
+      {
+        "query_id": "SQ5",
+        "rank": 3,
+        "bm25": -19.514264960288614
+      }
+    ],
+    "rrf": 0.015873015873015872,
+    "title": "",
+    "doi_candidates": "[\"10.1016/j.cej.2024.156035\"]",
+    "spans": [
+      {
+        "id": "S1",
+        "start": 0,
+        "end": 215,
+        "text": "g an     reduction procedure. As shown in Fig. S5, CC-ZIS-CoTPPS demonstrated\nLED lamp (420 nm) using triethanolamine (TEOA) as a sacrificial agent.     superior photocatalytic stability with gradually decreased CO "
+      },
+      {
+        "id": "S2",
+        "start": 215,
+        "end": 431,
+        "text": "genera­\nAs illustrated in Figs. 3a and S6, the CO production rate of CC-ZIS-     tion and unchanged H2 production. The SEM imaging and XRD results of\nCoTPPS reaches up to 1679.23 μmol h−1 m−2, surpassing that re­    "
+      },
+      {
+        "id": "S3",
+        "start": 431,
+        "end": 643,
+        "text": "CC-ZIS-CoTPPS remained stable after four cycles, further proving the\nported in most relevant literature (Table S1). However, no CO was     superior photocatalytic stability (Figs. S2 and S4).\ngenerated without a "
+      },
+      {
+        "id": "S4",
+        "start": 643,
+        "end": 859,
+        "text": "photocatalyst or in the presence of CC only. The        Furthermore, the photocatalytic antibacterial capability of the self-\nphotocatalytic CO2 reduction activity is elevated to a much higher     standing nanosheet "
+      },
+      {
+        "id": "S5",
+        "start": 859,
+        "end": 1080,
+        "text": "arrays of CC-ZIS-CoTPPS was evaluated. As shown\nextent after modifying CoTPPS on CC-ZIS, which results from the     in Fig. 3e, CC-ZIS-CoTPPS achieves a sterilization rate of 61.64 % in the\nincreased light absorption. In "
+      },
+      {
+        "id": "S6",
+        "start": 1080,
+        "end": 1300,
+        "text": "Figs. 3b and S7, the concentration of     absence of light within 30 min, implying a mechanical sterilization ef­\nCoTPPS in CC-ZIS-CoTPPS is modified to enhance the photocatalytic      fect of CC-ZIS-CoTPPS. It is worth "
+      },
+      {
+        "id": "S7",
+        "start": 1300,
+        "end": 1520,
+        "text": "noting that CC-ZIS-CoTPPS can ach­\nactivity. Specifically, the CoTPPS loading amount affects the photo­     ieve a 100 % killing rate under visible light irradiation within 10 min.\ncatalytic CO2 reduction performance in "
+      },
+      {
+        "id": "S8",
+        "start": 1520,
+        "end": 1734,
+        "text": "a trade-off manner. The photo­     This efficient sterilization is contributed by photochemical impact of CC-\ncatalytic CO2 reduction  activity  of CC-ZIS-CoTPPS with moderate    ZIS-CoTPPS and physical–mechanical "
+      },
+      {
+        "id": "S9",
+        "start": 1734,
+        "end": 1954,
+        "text": "sterilization. Moreover, bifunc­\nloading of CoTPPS is significantly higher than that of other controls. In     tional photocatalytic photocatalytic CO2 reduction coupled with in-situ\nthe   photocatalytic    reactions,   "
+      },
+      {
+        "id": "S10",
+        "start": 1954,
+        "end": 2000,
+        "text": "TEOA,   triethylamine   (TEA),      sterilizat"
+      }
+    ],
+    "retrieval_flags": []
+  },
+  {
+    "evidence_id": "GX013",
+    "chunk_id": "P_7238fbb2ba9e5417d77a0ef6a4a2f7e8d2bebafcd9f3c75d852f21e7678b8828:p20:c0",
+    "paper_id": "P_7238fbb2ba9e5417d77a0ef6a4a2f7e8d2bebafcd9f3c75d852f21e7678b8828",
+    "page": 20,
+    "query_id": "SQ6",
+    "query_ids": [
+      "SQ6"
+    ],
+    "retrieval_matches": [
+      {
+        "query_id": "SQ6",
+        "rank": 3,
+        "bm25": -14.15004557913484
+      }
+    ],
+    "rrf": 0.015873015873015872,
+    "title": "Metal‐Organic Frameworks for Photocatalytic Water Splitting and CO2 Reduction",
+    "doi_candidates": "[\"10.1002/ange.202217565\", \"10.1002/anie.202217565\"]",
+    "spans": [
+      {
+        "id": "S1",
+        "start": 0,
+        "end": 221,
+        "text": "Angewandte\n\n                                                                                                    Chemie                              Reviews                                                                  "
+      },
+      {
+        "id": "S2",
+        "start": 221,
+        "end": 442,
+        "text": "                                                                                                                                                                                                                             "
+      },
+      {
+        "id": "S3",
+        "start": 442,
+        "end": 663,
+        "text": "                            15213773,\n                                                                                                                                                                                       "
+      },
+      {
+        "id": "S4",
+        "start": 663,
+        "end": 877,
+        "text": "                                                                                                                                                                                  2023,\nproduced via LMCT process was "
+      },
+      {
+        "id": "S5",
+        "start": 877,
+        "end": 1097,
+        "text": "clearly obtained by EPR                                                                                                                       15,\nspectroscopy.[13] PCN-222  is a representative porphyrinicMOF in which an "
+      },
+      {
+        "id": "S6",
+        "start": 1097,
+        "end": 1318,
+        "text": "enhanced porphyrin π-cation radical                                                                                                                                                                                          "
+      },
+      {
+        "id": "S7",
+        "start": 1318,
+        "end": 1538,
+        "text": "                                                                                                                                                                                                                 Downloaded\n"
+      },
+      {
+        "id": "S8",
+        "start": 1538,
+        "end": 1759,
+        "text": "signal was  detected by EPR under  illumination  (Fig-                                                                                                                                                              from\nure "
+      },
+      {
+        "id": "S9",
+        "start": 1759,
+        "end": 1973,
+        "text": "26c),  while  the EPR  signal  for  the homogeneous\nporphyrin molecule gave no apparent change. The porphyr-\nin π-cation radical signal unambiguously demonstrated that\nthe photogenerated holes were located on the  "
+      },
+      {
+        "id": "S10",
+        "start": 1973,
+        "end": 2000,
+        "text": "ligand,\nsupporting the LMCT"
+      }
+    ],
+    "retrieval_flags": []
+  },
+  {
+    "evidence_id": "GX014",
+    "chunk_id": "P_a867af8f8cc7741a62a6fbc02b8137f7b21417364ae3e099a756b357f1b07df7:p10:c0",
+    "paper_id": "P_a867af8f8cc7741a62a6fbc02b8137f7b21417364ae3e099a756b357f1b07df7",
+    "page": 10,
+    "query_id": "SQ1",
+    "query_ids": [
+      "SQ1"
+    ],
+    "retrieval_matches": [
+      {
+        "query_id": "SQ1",
+        "rank": 5,
+        "bm25": -19.129040432234795
+      }
+    ],
+    "rrf": 0.015384615384615385,
+    "title": "",
+    "doi_candidates": "[\"10.1021/acs.jpcc.4c07100\"]",
+    "spans": [
+      {
+        "id": "S1",
+        "start": 0,
+        "end": 213,
+        "text": "The Journal of Physical Chemistry C                                 pubs.acs.org/JPCC                                          Article\n\nScheme 3. Excited-State Relaxation Pathways of [Pyr2(Bpy)]Cp*RhCl2 Following "
+      },
+      {
+        "id": "S2",
+        "start": 213,
+        "end": 433,
+        "text": "Photoexcitation at 400 nma\n\n\n\n\n\naMICT, TICT, and LMCT means mesomeric, twisted intramolecular, and ligand-to-metal charge transfer, respectively. The times in the figure are\napproximated values from the decays in Figure "
+      },
+      {
+        "id": "S3",
+        "start": 433,
+        "end": 654,
+        "text": "7.\n\nstabilization of the LMCT state results therefore in a complex      This shows that the spatial arrangement of the polymer favors\nsynergy between the polarity of the solvent governing the      the internal conversion "
+      },
+      {
+        "id": "S4",
+        "start": 654,
+        "end": 871,
+        "text": "processes in comparison with the free\nMICT/TICT character of the excited state and the viscosity of      molecular ligand. This can be understood by the fact that the\nthe TEOA (η= 0.9 mPa•s) solution constraining the "
+      },
+      {
+        "id": "S5",
+        "start": 871,
+        "end": 1092,
+        "text": "twisting    3D arrangement in the polymers induces some torsion around\nmotion around the pyrene and bipyridine C−C bond. At high      the pyrene−bipyridine bond.\nconcentrations, the TEOA molecules affect the degree of π- "
+      },
+      {
+        "id": "S6",
+        "start": 1092,
+        "end": 1309,
+        "text": "       In addition, we can notice (Figure 1) that the transient\nconjugation and charge transfer to the metal, notably by acting      absorption spectra of the CMP exhibit a maximum absorption\non the twisting dynamics "
+      },
+      {
+        "id": "S7",
+        "start": 1309,
+        "end": 1526,
+        "text": "around the interring C−C bond,       at 700 nm and a second maximum at 550 nm, similar to the\nwhich is a particularly critical parameter affecting the nature       transient absorption band measured for the molecular "
+      },
+      {
+        "id": "S8",
+        "start": 1526,
+        "end": 1742,
+        "text": "models.\nand the yield of formation of the catalytically active LMCT    We therefore assigned the transient absorption bands of the\nspecies.                                  CMP to the MICT and TICT contributions, in "
+      },
+      {
+        "id": "S9",
+        "start": 1742,
+        "end": 1962,
+        "text": "agreement\n   3.4. From the Molecular Model Compounds to the      with the conclusion deduced from the time-resolved emission\nPyrene−Bipyridine Porous Polymers (PyrBpy-CMP). In      data that two forms of exciting states "
+      },
+      {
+        "id": "S10",
+        "start": 1962,
+        "end": 2000,
+        "text": "coexist in the porous\nthe  last  part "
+      }
+    ],
+    "retrieval_flags": []
+  },
+  {
+    "evidence_id": "GX015",
+    "chunk_id": "P_6557f5a822ebcbc8ddcaa06f169d804f27c620b0b2b8b22b59c3ed49aafc101d:p24:c2",
+    "paper_id": "P_6557f5a822ebcbc8ddcaa06f169d804f27c620b0b2b8b22b59c3ed49aafc101d",
+    "page": 24,
+    "query_id": "SQ2",
+    "query_ids": [
+      "SQ2"
+    ],
+    "retrieval_matches": [
+      {
+        "query_id": "SQ2",
+        "rank": 5,
+        "bm25": -15.053547936993233
+      }
+    ],
+    "rrf": 0.015384615384615385,
+    "title": " ",
+    "doi_candidates": "[\"10.1039/C9EE03660A\", \"10.1039/C9EE03660AViewbeenArticle\"]",
+    "spans": [
+      {
+        "id": "S1",
+        "start": 0,
+        "end": 219,
+        "text": "                                 where the raised dz2 orbital of Co(I) from CoPc-P4VP becomes a2:28:29     8 The influence of the supports on the CO2       conversion                                                     "
+      },
+      {
+        "id": "S2",
+        "start": 219,
+        "end": 440,
+        "text": "stronger nucleophile and favour the binding and activation of CO2.\n         The above sections described several strategies for immobilization of   (b) The interaction from secondary sphere pyridinium residues to1/3/2020 "
+      },
+      {
+        "id": "S3",
+        "start": 440,
+        "end": 653,
+        "text": "      molecular catalysts to fabricate heterogeneous electrocatalysts. For   activated CO2 intermediate. (c) Controlled proton transfer through  Accepted\non              all those electrocatalysts, the substrates "
+      },
+      {
+        "id": "S4",
+        "start": 653,
+        "end": 872,
+        "text": "employed play a key role in   the pyridyl residues of the polymers as proton relays from the outer-\n         promoting  the  activity  of  molecular  electrocatalysts.  These   coordination sphere. Following that, they "
+      },
+      {
+        "id": "S5",
+        "start": 872,
+        "end": 1093,
+        "text": "further clarified an explicit\n           substrates could help either tune the electronic structure of the   research on the primary and outer-coordination sphere researchDownloaded         catalytic  center,  facilitate "
+      },
+      {
+        "id": "S6",
+        "start": 1093,
+        "end": 1312,
+        "text": " the  electron  transfer  or  increase   with the assistance of  kinetic isotope effect  (KIE) and proton\n2019.       concentration of surface redox active moieties etc., subsequently   inventory studies to explain the "
+      },
+      {
+        "id": "S7",
+        "start": 1312,
+        "end": 1533,
+        "text": "enhanced selectivity and activity.191          improving  the  selectivity,  activity  or  durability  of  molecules   They found from KIE research that the fifth coordination from pyridyl\n             catalysts.91,94,98 "
+      },
+      {
+        "id": "S8",
+        "start": 1533,
+        "end": 1754,
+        "text": "The previous research also hinted that catalysts   group changed the reaction mechanism from the CO2 binding step                                                                                                            "
+      },
+      {
+        "id": "S9",
+        "start": 1754,
+        "end": 1970,
+        "text": "                                     Science          immobilized onto substrates may lead to a  different reaction   ([CoPcH]- → [CO2-CoPcH]-) for CoPc to a subsequent protonation stepDecember\n24       mechanism.90 "
+      },
+      {
+        "id": "S10",
+        "start": 1970,
+        "end": 2000,
+        "text": "Thus,  it  is necessary to  cl"
+      }
+    ],
+    "retrieval_flags": []
+  },
+  {
+    "evidence_id": "GX016",
+    "chunk_id": "P_3955b549dcd77240721befde85c06d244448079b55867e72af3cb6f427878fbf:p6:c0",
+    "paper_id": "P_3955b549dcd77240721befde85c06d244448079b55867e72af3cb6f427878fbf",
+    "page": 6,
+    "query_id": "SQ3",
+    "query_ids": [
+      "SQ1",
+      "SQ3"
+    ],
+    "retrieval_matches": [
+      {
+        "query_id": "SQ1",
+        "rank": 18,
+        "bm25": -15.162532174133284
+      },
+      {
+        "query_id": "SQ3",
+        "rank": 4,
+        "bm25": -15.035814759054677
+      }
+    ],
+    "rrf": 0.02844551282051282,
+    "title": "",
+    "doi_candidates": "[\"10.26599/NRE.2024.9120149\"]",
+    "spans": [
+      {
+        "id": "S1",
+        "start": 0,
+        "end": 202,
+        "text": "6\n                                                         Nano Research Energy 2025, 4: e9120149\n\n\n   triazine  conjugated COFs  with  photoactivity  as  the  basic    Lu  et   al.  [74]  synthesized  "
+      },
+      {
+        "id": "S2",
+        "start": 202,
+        "end": 415,
+        "text": "2,6-diaminoanthraquinone-2,4,6-\n   framework, and introduced trimethyl chloride (bipyridine (bpy))     triformylphloroglucinol    (DQTP)   COF     using     2,6-\n  rhenium  complex  (Re(bpy)(CO)3Cl)  as  the CO2  "
+      },
+      {
+        "id": "S3",
+        "start": 415,
+        "end": 634,
+        "text": "reduction     diaminoanthraquinone as a monomer, in which the interlayer\n   catalytic  active  site through post modification method, thus     quinone oxygen atoms have appropriate distances, providing a\n   obtaining a "
+      },
+      {
+        "id": "S4",
+        "start": 634,
+        "end": 850,
+        "text": "heterogeneous COFs photocatalyst that can be used      feasible coordination environment for anchoring transition metal\n   for CO2 photocatalytic reduction (hereinafter referred to as Re-      catalytic sites. It is "
+      },
+      {
+        "id": "S5",
+        "start": 850,
+        "end": 1065,
+        "text": "interesting that by introducing different metal\n  COF, Fig. 4). The test results show that using triethanolamine      catalytic sites, CO2 can be selectively reduced to different products.\n  (TEOA) as a sacrificial "
+      },
+      {
+        "id": "S6",
+        "start": 1065,
+        "end": 1286,
+        "text": "agent, Re-COF can effectively reduce CO2   DQTP COF coordinates with Zn(II), Co(II), and Ni(II) to form\n   to CO (15 mmol·g−1) under Xe lamp  (cut-off wavelength =    DQTP-COF-M (M =  Co,  Ni,  Zn)  photocatalyst.  Using\n"
+      },
+      {
+        "id": "S7",
+        "start": 1286,
+        "end": 1499,
+        "text": "   420 nm) irradiation, and has high selectivity (98%) and persistence     Ru(bpy)3Cl2 as a photosensitizer and triethanolamine as a hole\n   (> 20 h), with better activity than homogeneous Re catalyst. More       "
+      },
+      {
+        "id": "S8",
+        "start": 1499,
+        "end": 1708,
+        "text": "sacrificial  agent, CO2 was reduced under  visible  light. The\n   importantly, this work combines in-situ testing and time-resolved     reduction product of DQTP COF-Co was CO, and the reaction\n   absorption  "
+      },
+      {
+        "id": "S9",
+        "start": 1708,
+        "end": 1924,
+        "text": "spectroscopy  to  reveal  key  intermediate  species      rate was 1020  μmol·g−1·h−1. When the coordinated metal ion\n   involved in CO2 reduction.                                        changes to Zn, the reduction "
+      },
+      {
+        "id": "S10",
+        "start": 1924,
+        "end": 2000,
+        "text": "product of DQTP COF-Zn  is\n                                             HCOO"
+      }
+    ],
+    "retrieval_flags": []
+  },
+  {
+    "evidence_id": "GX017",
+    "chunk_id": "P_c678220b90731c9be5e24af1cd2b4bcb96d248b1c025e7d91b8e96f1158d4894:p8:c12",
+    "paper_id": "P_c678220b90731c9be5e24af1cd2b4bcb96d248b1c025e7d91b8e96f1158d4894",
+    "page": 8,
+    "query_id": "SQ6",
+    "query_ids": [
+      "SQ6"
+    ],
+    "retrieval_matches": [
+      {
+        "query_id": "SQ6",
+        "rank": 4,
+        "bm25": -13.986444852889614
+      }
+    ],
+    "rrf": 0.015625,
+    "title": "",
+    "doi_candidates": "[\"10.1002/adfm.202521148\"]",
+    "spans": [
+      {
+        "id": "S1",
+        "start": 0,
+        "end": 221,
+        "text": "                                                                                                                                                                                                                             "
+      },
+      {
+        "id": "S2",
+        "start": 221,
+        "end": 442,
+        "text": "                                                                                                                                                                                                                             "
+      },
+      {
+        "id": "S3",
+        "start": 442,
+        "end": 652,
+        "text": "                                                                                            Library\ndirect SN2 substitution of the ─OH group with an ─NH2 group    evant step of this reaction. In situ EPR using "
+      },
+      {
+        "id": "S4",
+        "start": 652,
+        "end": 871,
+        "text": "5,5-dimethyl-1-                for\nor ii) a stepwise dehydrogenation-reductive amination process   pyrroline─N-oxide (DMPO) as a spin trapping agent the char-                          rules\nvia a pyruvate intermediate, "
+      },
+      {
+        "id": "S5",
+        "start": 871,
+        "end": 1090,
+        "text": "isotopic labeling experiments us-    acteristic DMPO─•NH2 and DMPO─•H adduct signals are de-           ofuse;\ning fully deuterated lactic acid (d4-LA) and LA were conducted    tected before and after light illumination "
+      },
+      {
+        "id": "S6",
+        "start": 1090,
+        "end": 1308,
+        "text": "in the PLA/ammonia           OA\n(Figure 6j,k). The persistence of 𝛼-hydrogen in both reactant    co-existence system (Figure 6 h),[6] the characteristic DMPO-                                          articles\n(LA) and "
+      },
+      {
+        "id": "S7",
+        "start": 1308,
+        "end": 1529,
+        "text": "product (alanine) alongside exclusive 𝛼-deuterium re-    alkoxyl radical adduct signals and their ring-opening product                are\n                         NMR), combined                                            "
+      },
+      {
+        "id": "S8",
+        "start": 1529,
+        "end": 1750,
+        "text": "    with pyru-    signals                                                                         in                                                                          the                                            "
+      },
+      {
+        "id": "S9",
+        "start": 1750,
+        "end": 1971,
+        "text": "                 LA/ammonia                                                                                                co-existence                                                                                      "
+      },
+      {
+        "id": "S10",
+        "start": 1971,
+        "end": 2000,
+        "text": "               system,       "
+      }
+    ],
+    "retrieval_flags": []
+  },
+  {
+    "evidence_id": "GX018",
+    "chunk_id": "P_540c114a8432e689d828d65f48cf7e6df6b28a386dac4be6c56b1d2405e2ca6b:p6:c0",
+    "paper_id": "P_540c114a8432e689d828d65f48cf7e6df6b28a386dac4be6c56b1d2405e2ca6b",
+    "page": 6,
+    "query_id": "SQ2",
+    "query_ids": [
+      "SQ2"
+    ],
+    "retrieval_matches": [
+      {
+        "query_id": "SQ2",
+        "rank": 6,
+        "bm25": -15.026900633936725
+      }
+    ],
+    "rrf": 0.015151515151515152,
+    "title": "",
+    "doi_candidates": "[\"10.26434/chemrxiv-2024-5dcf2\"]",
+    "spans": [
+      {
+        "id": "S1",
+        "start": 0,
+        "end": 220,
+        "text": "initiate one-electron transfer to the catalyst under light irradiation.[17] Depending on the reac-\n\n             tion conditions, this is accomplished via either an oxidative or a reductive quenching pathway.\n\n          "
+      },
+      {
+        "id": "S2",
+        "start": 220,
+        "end": 441,
+        "text": "The oxidative quenching pathway involves electron transfer from the photoexcited PS to the\n\n              catalyst, forming an oxidised PS. The PS is regenerated by quenching with a SED, most often\n\n           an organic "
+      },
+      {
+        "id": "S3",
+        "start": 441,
+        "end": 660,
+        "text": "amine. The reductive quenching pathway follows an initial electron transfer from\n\n             the SED to the excited PS, yielding a one-electron reduced PS, which then reduces the catalyst.\n\n            Regardless the "
+      },
+      {
+        "id": "S4",
+        "start": 660,
+        "end": 881,
+        "text": "nature of the preferred quenching pathway, both yield the corresponding SED\n\n              radical cation, which is further stabilised by the abstraction of a proton by another SED mole-\n\n             cule leading to the "
+      },
+      {
+        "id": "S5",
+        "start": 881,
+        "end": 1097,
+        "text": "corresponding SED radical and the protonated SED cation (Scheme 1).\n\n\n\n\n\n          Scheme 1. Generalised oxidative and reductive quenching pathway involved in photochemical\n\n        CRR highlighting the formation of "
+      },
+      {
+        "id": "S6",
+        "start": 1097,
+        "end": 1317,
+        "text": "different SED species:[1,2] SED radical cation (SED•+, pur-\n\n               ple), SED radical (SED•, red) and the protonated SED cation (HSED+, blue). While the degra-\n\n             dation of the SED• has been discussed "
+      },
+      {
+        "id": "S7",
+        "start": 1317,
+        "end": 1532,
+        "text": "previously,[1,18,19] the precise involvement of the rad-\n\n               ical species (SED•+, SED•) in the reaction mechanism remained unclear.[17,20,21]\n\n           As the one-electron reduction of CO2 is the less "
+      },
+      {
+        "id": "S8",
+        "start": 1532,
+        "end": 1748,
+        "text": "thermodynamically feasible CRR pathway,\n\n             two-electron CRR combined with proton addition to the reduced species are mainly observed.\n\n             Catalysts capable of accepting and transferring multiple "
+      },
+      {
+        "id": "S9",
+        "start": 1748,
+        "end": 1964,
+        "text": "electrons are thus beneficial for effi-\n\n              cient CRR.[1,2] However, most PS allow for one-electron transfer only, yielding the one-elec-\n\n            tron-reduced species (OERS) of the catalyst. To avoid "
+      },
+      {
+        "id": "S10",
+        "start": 1964,
+        "end": 2000,
+        "text": "unwanted side reactions or decomposi"
+      }
+    ],
+    "retrieval_flags": []
+  },
+  {
+    "evidence_id": "GX019",
+    "chunk_id": "P_a867af8f8cc7741a62a6fbc02b8137f7b21417364ae3e099a756b357f1b07df7:p7:c3",
+    "paper_id": "P_a867af8f8cc7741a62a6fbc02b8137f7b21417364ae3e099a756b357f1b07df7",
+    "page": 7,
+    "query_id": "SQ3",
+    "query_ids": [
+      "SQ3"
+    ],
+    "retrieval_matches": [
+      {
+        "query_id": "SQ3",
+        "rank": 5,
+        "bm25": -15.026628405566257
+      }
+    ],
+    "rrf": 0.015384615384615385,
+    "title": "",
+    "doi_candidates": "[\"10.1021/acs.jpcc.4c07100\"]",
+    "spans": [
+      {
+        "id": "S1",
+        "start": 0,
+        "end": 208,
+        "text": "ed-shifted in comparison with the\n                                                      Pyr2Bpy  ligand  in THF. The  absorption  spectrum  of\nSimilar results have been reported for the photoreduction of     "
+      },
+      {
+        "id": "S2",
+        "start": 208,
+        "end": 426,
+        "text": "[Pyr2Bpy]Cp*RhCl2 in MeCN is similar to that of protonated\nthe nπ*  S1  state  of  4,4′-bipyridine  for which  intrapair     [Pyr2BpyH]+41  that was  assigned  to  a  charge  transfer\nrecombination was found to be the "
+      },
+      {
+        "id": "S3",
+        "start": 426,
+        "end": 646,
+        "text": "main deactivation path       transition from pyrene to the bpyH+ moiety by Ortí and co-\n(ϕdeact = 95%) even in a highly polar dielectric solvent (MeCN,      workers.41 DFT  calculations  of  the HOMO/LUMO  of\nMeCN:H2O  "
+      },
+      {
+        "id": "S4",
+        "start": 646,
+        "end": 867,
+        "text": "mixture).44,45 In many photocatalytic  applica-     [Pyr2Bpy]Cp*RhCl2  have  also shown  that  the  lowest\ntions, TEOA is introduced as a sacrificial electron46−48 donor.       transition corresponds to a charge transfer "
+      },
+      {
+        "id": "S5",
+        "start": 867,
+        "end": 1085,
+        "text": "from the pyrene\nTEOA can be irreversibly oxidized (ENHE = +0.5 to −0.7 V) as     moiety toward the bipyridine−rhodium moiety.35 We can\na sacrificial electron donor to regenerate the photosensitizer, or      observe in "
+      },
+      {
+        "id": "S6",
+        "start": 1085,
+        "end": 1297,
+        "text": "less polar ProCN and BuCN a decrease in the\ndepending on the reaction conditions, it can act as a BrØnsted       relative intensity of the lowest absorption band and an increase\nbase when associated with another "
+      },
+      {
+        "id": "S7",
+        "start": 1297,
+        "end": 1515,
+        "text": "sacrificial electron donor.      of the absorption at 350−375 nm for BuCN. As the polarity of\nOur result shows that at high concentrations, it can react with      the solvent is known to assists the charge separation, "
+      },
+      {
+        "id": "S8",
+        "start": 1515,
+        "end": 1736,
+        "text": "this effect\nthe excited state of the photosensitized ligand, and thus, it can      support the assignment of the lowest optical transition to a\n\n                                                             1319           "
+      },
+      {
+        "id": "S9",
+        "start": 1736,
+        "end": 1957,
+        "text": "                                             https://doi.org/10.1021/acs.jpcc.4c07100\n                                                                                                                                       "
+      },
+      {
+        "id": "S10",
+        "start": 1957,
+        "end": 2000,
+        "text": "                                           "
+      }
+    ],
+    "retrieval_flags": []
+  },
+  {
+    "evidence_id": "GX020",
+    "chunk_id": "P_f9392a0225e918023d83c4f3a69cf5765f2e314b88c0323483c2f534dd1dab40:p1:c0",
+    "paper_id": "P_f9392a0225e918023d83c4f3a69cf5765f2e314b88c0323483c2f534dd1dab40",
+    "page": 1,
+    "query_id": "SQ5",
+    "query_ids": [
+      "SQ5"
+    ],
+    "retrieval_matches": [
+      {
+        "query_id": "SQ5",
+        "rank": 5,
+        "bm25": -19.024275527536563
+      }
+    ],
+    "rrf": 0.015384615384615385,
+    "title": "",
+    "doi_candidates": "[\"10.1016/j.jpowsour.2020.228333\"]",
+    "spans": [
+      {
+        "id": "S1",
+        "start": 0,
+        "end": 221,
+        "text": "Journal of Power Sources 466 (2020) 228333\n\n                                                 Contents lists available at ScienceDirect\n                           Journal of Power Sources\n\n\n                                "
+      },
+      {
+        "id": "S2",
+        "start": 221,
+        "end": 440,
+        "text": "          journal homepage: www.elsevier.com/locate/jpowsour\n\n\nOrganometallic redox flow batteries using iron triethanolamine and cobalt\ntriethanolamine complexes\nChanho Noh a, Yongjin Chung b,**, Yongchai Kwon a,c,*\na "
+      },
+      {
+        "id": "S3",
+        "start": 440,
+        "end": 655,
+        "text": "Graduate School of Energy and Environment, Seoul National University of Science and Technology, 232 Gongneung-ro, Nowon-gu, Seoul, 01811, Republic of Korea\nb Department of Chemical and Biological Engineering, Korea "
+      },
+      {
+        "id": "S4",
+        "start": 655,
+        "end": 864,
+        "text": "National University of Transportation, 50 Daehak-ro, Chungju, Chungbuk, 27469, Republic of Korea\nc Department of Chemical and Biomolecular Engineering, Seoul National University of Science and Technology, 232 "
+      },
+      {
+        "id": "S5",
+        "start": 864,
+        "end": 1084,
+        "text": "Gongneung-ro, Nowon-gu, Seoul, 01811, Republic of\nKorea\n\n\nH I G H L I G H T S                   G R A P H I C A L A B S T R A C T\n\n  Fe (TEA) and Co(TEA) are proposed as\n  redox couple of ARFB.\n  Optimal ratio of Co ion "
+      },
+      {
+        "id": "S6",
+        "start": 1084,
+        "end": 1303,
+        "text": "and TEA ligand\n  is determined for optimal Co(TEA).\n 4 M NaOH  is required for optimizing\n  1:2.5 Fe (TEA) and 1:1 Co(TEA).\n ARFB using  this redox couple shows\n  excellent CE (99%) and power density\n  (35 mW cm  2).\n  "
+      },
+      {
+        "id": "S7",
+        "start": 1303,
+        "end": 1524,
+        "text": "Electrolyte cost per capacity of ARFB is\n 43% lower than VRFB.\n\n\n\n\nA R T I C L E  I N F O                  A B S T R A C T\n\nKeywords:                                       Organometallic complexes consisting of iron- and "
+      },
+      {
+        "id": "S8",
+        "start": 1524,
+        "end": 1737,
+        "text": "cobalt-triethanolamine ligand (Fe (TEA) and Co(TEA)) are\nOrganometallic complex                          proposed as redox couple of aqueous redox flow battery (ARFB). Fe (TEA) and Co(TEA) are dissolved in sodium\n"
+      },
+      {
+        "id": "S9",
+        "start": 1737,
+        "end": 1958,
+        "text": "Triethanolamine chelate                           hydroxide (NaOH) electrolyte, while their chemical stability and electrochemical reactivity are quantitativelyCobalt and iron                                              "
+      },
+      {
+        "id": "S10",
+        "start": 1958,
+        "end": 2000,
+        "text": "     characterized. As a result, the chemi"
+      }
+    ],
+    "retrieval_flags": []
+  },
+  {
+    "evidence_id": "GX021",
+    "chunk_id": "P_3a625099692ac29bdd597df3dee78a696c76bea3950eaecc916016b4a275beff:p7:c8",
+    "paper_id": "P_3a625099692ac29bdd597df3dee78a696c76bea3950eaecc916016b4a275beff",
+    "page": 7,
+    "query_id": "SQ6",
+    "query_ids": [
+      "SQ4",
+      "SQ6"
+    ],
+    "retrieval_matches": [
+      {
+        "query_id": "SQ4",
+        "rank": 15,
+        "bm25": -15.470441921592318
+      },
+      {
+        "query_id": "SQ6",
+        "rank": 5,
+        "bm25": -13.697659986006158
+      }
+    ],
+    "rrf": 0.02871794871794872,
+    "title": "Photo‐Self‐Fenton Reaction Mediated by Silver Single Atom and Cluster Photocatalysts for Highly Selective Generation of Singlet Oxygen Toward Efficient Organic Wastewater Treatment",
+    "doi_candidates": "[\"10.1002/anie.202504028\"]",
+    "spans": [
+      {
+        "id": "S1",
+        "start": 0,
+        "end": 219,
+        "text": "                                                                                                                                                                   Conditions\n\n\n\n\n\nFigure 4. Insights into the degradation "
+      },
+      {
+        "id": "S2",
+        "start": 219,
+        "end": 440,
+        "text": "mechanism for tracking the ·OOH intermediate-involved oxidation pathways. a) The inﬂuence of diﬀerent\nscavengers on the degradation characteristics of 4-CP for the AgSA–AgC/ZnO. b) EPR spectra of DMPO-·OH, DMPO-·O2−, and "
+      },
+      {
+        "id": "S3",
+        "start": 440,
+        "end": 651,
+        "text": "TEMP-1O2 for\nAgSA–AgC/ZnO. c) Quantitative analysis and proportion of reactive oxygen species (ROS) produced by AgSA–AgC/ZnO. d) High-resolution XPS\nspectra of Ag 3d before and after photocatalytic reaction for "
+      },
+      {
+        "id": "S4",
+        "start": 651,
+        "end": 868,
+        "text": "AgSA–AgC/ZnO. e) In situ EPR spectra of DMPO-·OOH for AgSA–AgC/ZnO and ZnO in\nthe dark and with diﬀerent irradiation times. f) In situ FTIR spectra of the photo-self-Fenton oxidation reaction for AgSA–AgC/ZnO. g) The "
+      },
+      {
+        "id": "S5",
+        "start": 868,
+        "end": 1089,
+        "text": "schematicillustration of the photocatalytic photo-self-Fenton mechanism for pollutants degradation.                                                                                                                          "
+      },
+      {
+        "id": "S6",
+        "start": 1089,
+        "end": 1310,
+        "text": "                                                                                                                                                                                                                             "
+      },
+      {
+        "id": "S7",
+        "start": 1310,
+        "end": 1531,
+        "text": "                                                                                                                                                                                                                             "
+      },
+      {
+        "id": "S8",
+        "start": 1531,
+        "end": 1752,
+        "text": "                                                                                                                                                                                                                             "
+      },
+      {
+        "id": "S9",
+        "start": 1752,
+        "end": 1973,
+        "text": "                                                                                                                                                                                                                             "
+      },
+      {
+        "id": "S10",
+        "start": 1973,
+        "end": 2000,
+        "text": "                           "
+      }
+    ],
+    "retrieval_flags": []
+  },
+  {
+    "evidence_id": "GX022",
+    "chunk_id": "P_6cf8bc905951ec43c83f74b543386886c2b1724acf5169585f7d3b8ef364dff8:p1:c1",
+    "paper_id": "P_6cf8bc905951ec43c83f74b543386886c2b1724acf5169585f7d3b8ef364dff8",
+    "page": 1,
+    "query_id": "SQ2",
+    "query_ids": [
+      "SQ2"
+    ],
+    "retrieval_matches": [
+      {
+        "query_id": "SQ2",
+        "rank": 7,
+        "bm25": -14.7045113581338
+      }
+    ],
+    "rrf": 0.014925373134328358,
+    "title": "Template for Electronic Submission to ACS Journals",
+    "doi_candidates": "[\"10.1021/jacs.3c10127\"]",
+    "spans": [
+      {
+        "id": "S1",
+        "start": 0,
+        "end": 219,
+        "text": "tion of 4-trifluoromethylphenol. In contrast, while the iron-porphyrin complex with -CF3\npositioned opposite the ionizable -OH shows the smallest CO2 reduction rate constants and its turnover frequency is less\nenhanced "
+      },
+      {
+        "id": "S2",
+        "start": 219,
+        "end": 435,
+        "text": "with addition of phenols. The origin of this effect is rationalized based on kinetic isotope effect experiments and\ndensity functional calculations. We conclude that catalysts with weaker internal acids coupled with "
+      },
+      {
+        "id": "S3",
+        "start": 435,
+        "end": 646,
+        "text": "stronger external acids\nadditives provide superior CO2 reduction kinetics.\n\n\n\nIntroduction                                                        product,3,17–20 iron porphyrins are known for their high effi-\n  "
+      },
+      {
+        "id": "S4",
+        "start": 646,
+        "end": 861,
+        "text": "Transformations of small molecules, such as CO2, H2O,      ciencies for CO2 to CO conversion. Ultimately, CO is a useful\nand NH3, are essential to renewable energy technology.1–5     product that can feed into many "
+      },
+      {
+        "id": "S5",
+        "start": 861,
+        "end": 1080,
+        "text": "downstream synthetic ap-\nThe redox chemistry of those molecules almost always re-      plications.\nquires a series of proton (H+) and electron (e–) transfer re-       Of interest in this manuscript are metalloporphyrin "
+      },
+      {
+        "id": "S6",
+        "start": 1080,
+        "end": 1300,
+        "text": "cata-\nactions, which means that those steps can be classified as       lysts, which have a degree of synthetic flexibility that allows\nproton-coupled electron transfer (PCET) reactions.6 PCET      for the opportunity to "
+      },
+      {
+        "id": "S7",
+        "start": 1300,
+        "end": 1515,
+        "text": "systematically explore how ancillary\nreactions of those small molecules are often sluggish in iso-     groups affect CO2-to-CO conversion. This is a feature that is\nlation and therefore require a mediator for their "
+      },
+      {
+        "id": "S8",
+        "start": 1515,
+        "end": 1733,
+        "text": "efficient    common to coordination complexes and many designs have\ntransformation. As such, there is substantial effort in de-     been explored. A few selected design strategies that focus\nsigning, synthesizing, and "
+      },
+      {
+        "id": "S9",
+        "start": 1733,
+        "end": 1945,
+        "text": "investigating coordination com-    on metalloporphyrins include, for example: the number and\nplexes  that  mediate  their  electrochemical  transfor-      position of ancillary hydrogen (H) bonding/proton donat-\n"
+      },
+      {
+        "id": "S10",
+        "start": 1945,
+        "end": 2000,
+        "text": "mations.7–12 The structure of the coordination complex "
+      }
+    ],
+    "retrieval_flags": [
+      "CO_may_mean_carbon_monoxide_not_cobalt"
+    ]
+  },
+  {
+    "evidence_id": "GX023",
+    "chunk_id": "P_4917d03766dc73ab091758b9d3b89e48be561fbb7b00f2b05e678f4400ef1a24:p11:c2",
+    "paper_id": "P_4917d03766dc73ab091758b9d3b89e48be561fbb7b00f2b05e678f4400ef1a24",
+    "page": 11,
+    "query_id": "SQ3",
+    "query_ids": [
+      "SQ1",
+      "SQ3"
+    ],
+    "retrieval_matches": [
+      {
+        "query_id": "SQ1",
+        "rank": 32,
+        "bm25": -13.77401688138573
+      },
+      {
+        "query_id": "SQ3",
+        "rank": 6,
+        "bm25": -14.759394617406754
+      }
+    ],
+    "rrf": 0.026021080368906456,
+    "title": "",
+    "doi_candidates": "[\"10.26599/NR.2025.94907895\"]",
+    "spans": [
+      {
+        "id": "S1",
+        "start": 0,
+        "end": 217,
+        "text": "sites, facilitating multiple proton–electron coupling transfer     hydrocarbon formation, thereby accelerating the reaction pathway\nprocesses   via  hydrogen   spillover,  thereby  promoting  the     of CO2 → *COOH → "
+      },
+      {
+        "id": "S2",
+        "start": 217,
+        "end": 437,
+        "text": "*HCOOH/*CHO → CH4 (Fig. 7(h)). Li’s\nmethanation of CO2. Moreover, as shown in Figs. 6(f) and 6(h),     group successfully anchored dual-metal site pairs (DMSPs) of Cu\nadjacent Pd1 and PdNPs lower the energy barrier from "
+      },
+      {
+        "id": "S3",
+        "start": 437,
+        "end": 653,
+        "text": "*CO to    and Ni onto MOF-808  (denoted  as MOF-808-CuNi)  via  a\n*CHO conversion,  stabilizing the key intermediate *CHO  for      synergistic  adsorption-chelation  strategy  [69]. Remarkably,  the\ngenerating CH4, "
+      },
+      {
+        "id": "S4",
+        "start": 653,
+        "end": 870,
+        "text": "thereby facilitating the formation of CH4. These     optimized  photocatalyst  achieved  a CH4  production  rate  of\nstudies reveal that d-block noble metal single-atom catalysts enable     158.7  μmol·g−1·h−1  with  "
+      },
+      {
+        "id": "S5",
+        "start": 870,
+        "end": 1089,
+        "text": "97.5%  selectivity  under  visible  light\nefficient CH4  synthesis through  precise  regulation  of  critical      irradiation (Fig. 7(g)). The underlying charge transfer mechanism,\nintermediates (e.g., *CH3O and *CHO) "
+      },
+      {
+        "id": "S6",
+        "start": 1089,
+        "end": 1310,
+        "text": "involved in methanation     as illustrated in Fig. 7(i), the Zr–oxo clusters accept electrons from\npathways, offering novel strategies for the directional synthesis of     the   [Ru(bpy)3]2+/[Ru(bpy)3]3+   redox   cycle  "
+      },
+      {
+        "id": "S7",
+        "start": 1310,
+        "end": 1531,
+        "text": " mediated   by\nhigh-value hydrocarbons.                                             triethanolamine (TEOA), which drives CO2 intermediate reduction\n                                                                         "
+      },
+      {
+        "id": "S8",
+        "start": 1531,
+        "end": 1752,
+        "text": "    at Cu/Ni DMSPs to steer selective CH4 formation. Wang’s group\n3.2.2  d-block non-noble metal\n                                                                            successfully  synthesized  cobalt  single-atom  "
+      },
+      {
+        "id": "S9",
+        "start": 1752,
+        "end": 1960,
+        "text": "catalysts (Co/PCN\nThe high CH4  selectivity of d-block noble metals  is  typically    SACs) via a hydrothermal method [68]. By precisely regulating the\nattributed to their ability to stabilize multi-electron "
+      },
+      {
+        "id": "S10",
+        "start": 1960,
+        "end": 2000,
+        "text": "intermediates     cobalt loading to 3.5 "
+      }
+    ],
+    "retrieval_flags": []
+  },
+  {
+    "evidence_id": "GX024",
+    "chunk_id": "P_fe3bffc6e3dae835ef80f930549aaa46d29fea5d219c4f261bf51d9cfaa9cbe2:p1:c1",
+    "paper_id": "P_fe3bffc6e3dae835ef80f930549aaa46d29fea5d219c4f261bf51d9cfaa9cbe2",
+    "page": 1,
+    "query_id": "SQ5",
+    "query_ids": [
+      "SQ5"
+    ],
+    "retrieval_matches": [
+      {
+        "query_id": "SQ5",
+        "rank": 6,
+        "bm25": -18.309735124120763
+      }
+    ],
+    "rrf": 0.015151515151515152,
+    "title": "",
+    "doi_candidates": "[\"10.1002/cssc.201700930\"]",
+    "spans": [
+      {
+        "id": "S1",
+        "start": 0,
+        "end": 219,
+        "text": "pyr-\nchromophore–catalyst assembly.                              romethene) can also be used for photocatalytic oxidation of\n                                                                            sulfides, whereas "
+      },
+      {
+        "id": "S2",
+        "start": 219,
+        "end": 436,
+        "text": "these dyes suffered low stability upon irradia-\n                                                                    tion in the presence of O2 and afford low TONs of about\nTransition metal complexes play an important "
+      },
+      {
+        "id": "S3",
+        "start": 436,
+        "end": 647,
+        "text": "role in photo-     200.[11] Molecular O2 is known as a green and abundant oxi-\ncatalytic reactions.[1] In addition to mononuclear metal com-    dant. Highly efficient activation of O2 for selective oxidation of\n"
+      },
+      {
+        "id": "S4",
+        "start": 647,
+        "end": 868,
+        "text": "plexes,[2] supramolecular complexes known as chromophore–   organic substrates is promising and challenging. In nature, O2\ncatalyst assemblies are widely employed for various photocata-     is capable of participating in "
+      },
+      {
+        "id": "S5",
+        "start": 868,
+        "end": 1089,
+        "text": "redox processes by reacting with\nlytic processes.[3] These assemblies commonly contain a light-   the metal centers of various enzymes.[12] Inspired by these en-\nabsorbing chromophore such as [Ru(bpy)3]2+ and a catalytic "
+      },
+      {
+        "id": "S6",
+        "start": 1089,
+        "end": 1302,
+        "text": "  zymes, great efforts have been devoted to developing efficient\nsite such as high-valent metal–oxo species RuIV(O) to achieve    aerobic  catalysis. Copper compounds are usually utilized in\nefficient cooperative "
+      },
+      {
+        "id": "S7",
+        "start": 1302,
+        "end": 1516,
+        "text": "catalysis.[4] They are usually used in the    aerobic reactions to activate O2 because of the facile accessibil-\npresence of sacrificial electron donors or electron acceptors.     ity of versatile copper oxidation "
+      },
+      {
+        "id": "S8",
+        "start": 1516,
+        "end": 1733,
+        "text": "states.[13] Nevertheless, photo-\nFor instance, triethylamine (TEA), triethanolamine (TEOA), and    catalytic aerobic reactions using copper-based catalytic sites\nascorbic acid have been employed as electron donors in "
+      },
+      {
+        "id": "S9",
+        "start": 1733,
+        "end": 1951,
+        "text": "pho-    are rarely investigated.[14] A ruthenium(II)–copper(II) dyad was\ntocatalytic hydrogen evolution and CO2 reduction.[5] Electron   used for photocatalytic oxidation of organic sulfides in the\nacceptors including "
+      },
+      {
+        "id": "S10",
+        "start": 1951,
+        "end": 2000,
+        "text": "S2O8 2@ and [Co(NH3)5Cl]Cl2 can be utilized   pre"
+      }
+    ],
+    "retrieval_flags": []
+  },
+  {
+    "evidence_id": "GX025",
+    "chunk_id": "P_8e97dda141a74c4bc1726390f42c847c16d0b25d6211b38c56780ae0af355323:p12:c0",
+    "paper_id": "P_8e97dda141a74c4bc1726390f42c847c16d0b25d6211b38c56780ae0af355323",
+    "page": 12,
+    "query_id": "SQ6",
+    "query_ids": [
+      "SQ6"
+    ],
+    "retrieval_matches": [
+      {
+        "query_id": "SQ6",
+        "rank": 6,
+        "bm25": -13.674267612551759
+      }
+    ],
+    "rrf": 0.015151515151515152,
+    "title": "",
+    "doi_candidates": "[]",
+    "spans": [
+      {
+        "id": "S1",
+        "start": 0,
+        "end": 219,
+        "text": "Fig. 6. (a) Tetracycline (TC) degradation over time for TiO2, Ov-TiO2, Ov-B(1-4)-TiO2 (Each experiment was\n\nrepeated three times, with error bars included, to ensure the rigor of the data.), (b) recyclability tests for "
+      },
+      {
+        "id": "S2",
+        "start": 219,
+        "end": 440,
+        "text": "five rounds\n\nwith Ov-B-TiO2, and (c) comparison of it with previously reported catalysts under the same conditions, (d) dark\n\n(green line, left-bottom axis) and simulated solar light (blue line, right-up axis) TC removal "
+      },
+      {
+        "id": "S3",
+        "start": 440,
+        "end": 660,
+        "text": "by Ov-B-TiO2, (e)\n\neffect of TC concentration on degradation rate, (f) control experiments in the presence of scavenging species\nTEOA, IPA, BQ and Ag+, (g) EPR detection of DMPO-(•OH) adducts and (h) DMPO-(•𝑂2−) adducts "
+      },
+      {
+        "id": "S4",
+        "start": 660,
+        "end": 881,
+        "text": "formed by\nadding DMPO in aqueous solution under 10 min. visible light illumination, respectively, and (i) The potential\n\ndegradation pathways of TC using Ov-B-TiO2 under visible light (all species described were detected "
+      },
+      {
+        "id": "S5",
+        "start": 881,
+        "end": 1093,
+        "text": "in this work\n\nby LC-MS)\n\n\n3.4 Photocatalytic tests\nPhotocatalytic experiments evaluated boron-doped TiO2 catalysts for tetracycline (TC) degradation\nunder visible and solar light (Fig. 6a). Boron-doped variants, "
+      },
+      {
+        "id": "S6",
+        "start": 1093,
+        "end": 1312,
+        "text": "especially Ov-B2-TiO2, outperformed\nboth TiO2 and Ov-TiO2. Under visible light (420 nm filter), Ov-B2-TiO2 degraded 90% of TC in 2\nhours and 100% in 3 hours (LC-MS analysis), highlighting boron’s role in enhancing TiO2 "
+      },
+      {
+        "id": "S7",
+        "start": 1312,
+        "end": 1519,
+        "text": "activity.\nFirst-order kinetics were observed (Fig. S16), with a rate constant of 0.016 min⁻¹ for the best sample,\nand stability tests (Fig. 6b) showed consistent performance over five cycles, proving robust\n"
+      },
+      {
+        "id": "S8",
+        "start": 1519,
+        "end": 1712,
+        "text": "recyclability. Comparative analysis (Fig. 6c) shows that Ov-B-TiO2 shows both a higher degradation\nrate  and   rate  constant  than  other  TiO2-based   catalysts  under   identical  conditions"
+      }
+    ],
+    "retrieval_flags": []
+  }
+]

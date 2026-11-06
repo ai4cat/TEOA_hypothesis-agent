@@ -1,0 +1,141 @@
+{
+  "candidates": [
+    {
+      "id": "E01",
+      "hypothesis_id": "H01",
+      "question_ids": [
+        "Q5"
+      ],
+      "candidate_type": "performance",
+      "title": "Matched TEA/TEOA benchmark",
+      "purpose": "Test whether TEA-versus-TEOA substitution alone reproducibly changes CO/H2 distribution in the P01 CoCl2+bpy/g-C3N4 MeCN/H2O platform. This first establishes whether the reported difference survives strict matching before mechanism-focused interpretation.",
+      "method": "Run side-by-side P01 photocatalysis with the literature-grounded TEOA baseline and a TEA-only comparator while holding catalyst, ligand, g-C3N4, solvent ratio, CO2 handling, illumination, reactor geometry, and GC workflow fixed; quantify CO and H2 together and preferably as time courses rather than one endpoint only.",
+      "evidence_ids": [
+        "EV059",
+        "EV063",
+        "EV081",
+        "EV045",
+        "GX012",
+        "EV022"
+      ],
+      "distinct_information": "Directly addresses the core claim versus the alternative that apparent donor effects collapse under tighter comparability controls. It yields the primary comparative readout but cannot by itself distinguish donor photophysics from proton-management or cobalt-state causes.",
+      "dependencies": []
+    },
+    {
+      "id": "E02",
+      "hypothesis_id": "H01",
+      "question_ids": [
+        "Q5",
+        "Q1"
+      ],
+      "candidate_type": "combined",
+      "title": "Necessity controls and backgrounds",
+      "purpose": "Determine whether observed CO/H2 in the matched benchmark requires the intended photocatalytic system and whether background formation differs enough to distort the TEA/TEOA comparison. This separates additive-specific comparison from simple artifact or support-only photochemistry.",
+      "method": "Within the same matched assay framework, include dark, Ar/no-CO2, no-cobalt, no-bpy, no-g-C3N4, and no-amine conditions for both donor settings where applicable; analyze CO and H2 by the same gas method and compare background fractions to the full system.",
+      "evidence_ids": [
+        "EV046",
+        "EV081",
+        "EV045",
+        "GX008",
+        "GX012"
+      ],
+      "distinct_information": "Omission tests necessity, not donor specificity, and bounds whether catalyst-free or donor/photosensitizer background H2 or CO could compress the apparent TEA/TEOA selectivity gap. It also identifies which components must remain fixed in later mechanistic experiments.",
+      "dependencies": [
+        "E01"
+      ]
+    },
+    {
+      "id": "E03",
+      "hypothesis_id": "H01",
+      "question_ids": [
+        "Q5",
+        "Q6"
+      ],
+      "candidate_type": "intervention",
+      "title": "Donor amount series",
+      "purpose": "Ask whether any TEA/TEOA difference is intrinsic to donor identity or mainly reflects different effective donor/base or medium regimes. If the difference shrinks across matched amount series, condition-dependence becomes more plausible than a fixed identity effect.",
+      "method": "For TEA and TEOA separately, vary only donor loading around the P01 baseline while keeping all other formulation and operating variables fixed; compare CO amount, H2 amount, and CO/H2 selectivity surfaces rather than single-point values.",
+      "evidence_ids": [
+        "EV061",
+        "EV063",
+        "EV059"
+      ],
+      "distinct_information": "This is an amount-variation intervention, not an omission or identity substitution, and it tests whether donor identity effects persist after exploring comparable donor windows. It is especially relevant because medium composition and amine proportion are reported to alter CO/H2 outputs in related cobalt systems.",
+      "dependencies": [
+        "E01"
+      ]
+    },
+    {
+      "id": "E04",
+      "hypothesis_id": "H01",
+      "question_ids": [
+        "Q3"
+      ],
+      "candidate_type": "characterization",
+      "title": "Donor-side quenching comparison",
+      "purpose": "Assess whether TEA and TEOA differ in upstream photoredox behavior under matched catalyst-containing conditions, providing a discriminating covariate for any catalytic product shift. Similar quenching despite different CO/H2 would weaken a purely donor-photophysics explanation.",
+      "method": "Apply transferable fluorescence and/or UV-vis quenching measurements to the matched baseline and TEA-substituted formulations, using the same absorber-containing sample state with and without cobalt components as references; if feasible, include a cleaner supplementary P02 homogeneous assay to validate directionality of donor effects.",
+      "evidence_ids": [
+        "EV053",
+        "EV065",
+        "GX007",
+        "EV011"
+      ],
+      "distinct_information": "This characterization does not prove mechanism but tests whether donor substitution measurably changes the electron-transfer entry step that could feed the cobalt manifold. It helps discriminate upstream donor effects from downstream proton or catalyst-state explanations.",
+      "dependencies": [
+        "E01"
+      ]
+    },
+    {
+      "id": "E05",
+      "hypothesis_id": "H01",
+      "question_ids": [
+        "Q2"
+      ],
+      "candidate_type": "characterization",
+      "title": "Cobalt state under each donor",
+      "purpose": "Check whether TEA and TEOA produce different cobalt-state or coordination signatures during or near operation, which would support a donor-linked change in the catalytic manifold rather than only a bulk assay artifact. Null differences would not exclude all mechanisms but would narrow them.",
+      "method": "Use near-operando or operando-accessible spectroscopy on matched P01 samples before illumination and under irradiation, with catalyst-free or donor-free references where needed for assignment; prioritize methods transferable for cobalt/environment changes rather than recovered-sample-only inference.",
+      "evidence_ids": [
+        "GX008",
+        "EV046",
+        "EV059"
+      ],
+      "distinct_information": "Provides descriptive state information complementary to product data and can reveal donor-correlated cobalt changes without claiming causal proof of the active species. Its interpretability is limited by unresolved exact active-state identity in P01.",
+      "dependencies": [
+        "E01",
+        "E02"
+      ]
+    },
+    {
+      "id": "E06",
+      "hypothesis_id": "H01",
+      "question_ids": [
+        "Q4",
+        "Q5"
+      ],
+      "candidate_type": "combined",
+      "title": "CO origin check by donor",
+      "purpose": "Verify that CO observed under each donor condition is CO2-derived and not a donor-specific carbon artifact, especially if TEA and TEOA give different CO outputs. This protects the central comparison from overinterpreting donor-dependent side chemistry as altered CO2 reduction selectivity.",
+      "method": "Repeat the matched benchmark with reproducible 13CO2 labeling and GC-MS or equivalent isotopic product analysis for the TEA and TEOA cases, alongside the established negative controls from the benchmark set.",
+      "evidence_ids": [
+        "EV046",
+        "EV021",
+        "EV022",
+        "EV082",
+        "GX008"
+      ],
+      "distinct_information": "This experiment bounds origin claims rather than explaining why TEA and TEOA differ; a positive CO2-origin result still leaves donor-side, proton-management, and cobalt-state explanations open. It is most valuable if significant CO is observed in both donor conditions or if donor-specific CO backgrounds are suspected.",
+      "dependencies": [
+        "E01",
+        "E02"
+      ]
+    }
+  ],
+  "gaps": [
+    "No supplied evidence gives a strict within-paper TEA-versus-TEOA head-to-head in the exact P01 CoCl2+bpy/g-C3N4 MeCN/H2O recipe, so the benchmark remains a proposed confirmation experiment rather than a literature-established comparison.",
+    "Exact numerical concentrations, light intensity, and reactor settings for a fully matched TEA substitution in P01 are not provided here and require source verification or pilot matching; they should not be invented from unrelated papers.",
+    "Direct evidence for operando cobalt-state signatures specifically in the TEA/TEOA Co-bpy comparison is absent, so E05 is a transferable characterization proposal with assignment uncertainty.",
+    "The supplied evidence supports donor-side quenching methods mainly in nonidentical systems, so any mapping from quenching differences to CO/H2 selectivity in P01 remains correlative unless combined with the catalytic benchmark and controls."
+  ]
+}

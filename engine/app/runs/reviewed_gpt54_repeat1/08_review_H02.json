@@ -1,0 +1,74 @@
+{
+  "decisions": [
+    {
+      "candidate_id": "E07",
+      "decision": "shortlist",
+      "major_issues": [],
+      "rationale": "This is a defensible, bounded characterization experiment in the main P01 platform. The proposal uses direct system anchoring from EV059 for the formulation family and method-transfer evidence from EV053 and GX007 that donor substitution can alter quenching/bleaching observables. The group structure is well matched for the stated question: the primary TEA-versus-TEOA contrast keeps non-donor factors fixed, while no-donor and no-cobalt references appropriately bound background and cobalt-associated contributions. The proposal also explicitly limits inference to upstream photophysics rather than claiming full mechanistic proof, which matches the available evidence. Main limitations are already acknowledged: suspension scattering, inner-filter effects, and possible co-varying medium changes may restrict interpretation, but those are reasons for careful piloting rather than rejection.",
+      "evidence_support": "direct",
+      "inference_validity": "adequate_for_stated_question",
+      "candidate_value": "retain",
+      "implementation_readiness": "ready_for_researcher_planning",
+      "resource_level": "low_cost",
+      "prior_issue_resolution": "No previous review provided."
+    },
+    {
+      "candidate_id": "E08",
+      "decision": "revise",
+      "major_issues": [
+        "Transient signal assignment to specific reduced cobalt or absorber-associated states is provisional and may be confounded in the heterogeneous supported P01 system.",
+        "Donor substitution may co-vary pH, viscosity, ionic strength, or suspension behavior, so a donor-dependent kinetic difference would not isolate pure electron-delivery causality without tighter medium controls or explicit bounding."
+      ],
+      "rationale": "The candidate is scientifically valuable because it directly targets the hypothesis prediction that donor substitution should alter transient reduced-state observables if upstream photoredox delivery changes. The evidence base is transferable rather than direct: EV007, EV018, EV005, and EV041 support that TEOA can affect reduced-state formation/lifetime and that TAS can probe donor-sensitive kinetics, but none directly establish the same assignments in Co-bpy/g-C3N4 P01. The proposed control set is strong, especially the no-donor and no-cobalt references, and the text appropriately warns against overassignment. However, the current framing still risks overinterpreting donor-dependent transient differences as electron-delivery changes into the cobalt manifold when supported heterogeneity and medium changes could generate similar effects. It should be retained with revised emphasis on descriptive kinetic contrasts unless independent assignment support is obtained.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "needs_revision",
+      "candidate_value": "conditional",
+      "implementation_readiness": "pilot_needed",
+      "resource_level": "specialist",
+      "prior_issue_resolution": "No previous review provided."
+    },
+    {
+      "candidate_id": "E09",
+      "decision": "shortlist",
+      "major_issues": [],
+      "rationale": "This is a sound supplementary candidate. EV065 gives direct anchoring for a cobalt/Ru/TEOA homogeneous platform with quenching observability, while EV053, EV077, and EV011 support donor-side quenching measurements and the plausibility of distinct TEA/TEOA donor chemistry. The proposal is careful not to claim equivalence to P01 and instead uses P02 to test directionality transfer under cleaner optical conditions with reduced support-related confounding. The matched TEA-versus-TEOA comparison is appropriate, and donor-only/no-cobalt references help distinguish donor-to-photosensitizer effects from cobalt-involved pathways. Because the proposal keeps conclusions limited to supplementary transfer rather than direct proof about P01, the inferential scope is acceptable without major issues.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "adequate_for_stated_question",
+      "candidate_value": "retain",
+      "implementation_readiness": "ready_for_researcher_planning",
+      "resource_level": "moderate",
+      "prior_issue_resolution": "No previous review provided."
+    },
+    {
+      "candidate_id": "E10",
+      "decision": "revise",
+      "major_issues": [
+        "The proposed photophysics-to-products correlation cannot by itself discriminate whether donor-side observables are causal drivers of CO/H2 shifts versus parallel consequences of other donor-induced changes such as proton activity or catalyst-state differences.",
+        "The optional P02 bridge is useful but, as written, risks being interpreted too strongly; cross-platform agreement would support transferable directionality only, not a shared mechanism, and cross-platform disagreement would remain ambiguous."
+      ],
+      "rationale": "This is an integrative and potentially high-value candidate because it directly tests the hypothesis's discriminating prediction within matched donor substitutions and includes product quantification plus background controls. EV081 supports the need to quantify both CO and H2 and include catalyst-free controls, while EV053, EV007, EV065, and GX007 support the photophysical side. The design is stronger than a pure catalysis readout because it explicitly asks whether donor-side observables and catalytic outputs move together. Still, the main inference needs tightening: correlation is informative but not mechanistic proof, and decoupling could arise from insensitive observables rather than absence of donor-side effects. The candidate should therefore be retained but revised so conclusions are explicitly framed as correlation/discordance testing rather than causal adjudication.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "needs_revision",
+      "candidate_value": "conditional",
+      "implementation_readiness": "details_needed",
+      "resource_level": "moderate",
+      "prior_issue_resolution": "No previous review provided."
+    },
+    {
+      "candidate_id": "E11",
+      "decision": "revise",
+      "major_issues": [
+        "The no-absorber control slot is explicitly confounded because donor identity is not strictly matched there, limiting its interpretability as a background comparator.",
+        "Radical-trap signals may reflect secondary trapped products, viscosity-dependent linewidth changes, or probe perturbation rather than distinct productive donor-radical routes, so donor-specific signal differences risk overassignment without tighter control logic."
+      ],
+      "rationale": "This candidate is plausible and relevant because EV016 and EV011 directly support that both TEOA and TEA can generate donor-derived radicals and that EPR spin trapping can detect related species, while GX018 provides a suitable cautionary framework that radical involvement may be mechanistically uncertain. The proposal properly states that radical observation is not catalytic proof and allows switching to P02 if P01 is too heterogeneous. However, the control architecture is weaker than in E07-E09: the compressed no-absorber control is acknowledged as confounded, and the method is especially vulnerable to ambiguous spectral interpretation, trap artifacts, and viscosity/broadening differences between donors. The candidate remains worth retaining as a specialist characterization option, but it needs revised controls and more conservative inference boundaries.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "needs_revision",
+      "candidate_value": "conditional",
+      "implementation_readiness": "pilot_needed",
+      "resource_level": "specialist",
+      "prior_issue_resolution": "No previous review provided."
+    }
+  ],
+  "overall": "E07 and E09 are the strongest candidates for researcher consideration because they ask bounded, well-controlled questions aligned to the available evidence without overclaiming mechanism. E08, E10, and E11 are retainable but need revision because their current interpretations risk overassigning transient or radical signals, or overreading photophysics-to-products correlation as causation. None of the candidates should be rejected outright: the supplied evidence supports a program of donor-side characterization and matched TEA/TEOA comparison, but direct support is strongest for descriptive quenching/optical tests and weaker for mechanistic assignment of specific transient or radical intermediates in the target P01 system."
+}

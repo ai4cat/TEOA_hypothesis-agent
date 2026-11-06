@@ -1,0 +1,98 @@
+{
+  "options": [
+    {
+      "id": "P01",
+      "catalyst_system": "Primary option. In situ assembled Co(II)-bipyridine molecular platform on g-C3N4-assisted CO2 photoreduction: cobalt source CoCl2, ligand 2,2'-bipyridine to form a Co(bpy)-type species reported as Co(bpy)3Cl2 by source summary, light-absorbing component g-C3N4, additive/electron donor/proton-related component TEOA in MeCN/H2O. Comparator condition retains the same platform and substitutes TEA for TEOA as the focal additive comparison.",
+      "comparator_additives": [
+        "TEA"
+      ],
+      "rationale": "This is the closest direct match to the researcher-specified Co(II)-bipyridine context because the supplied evidence explicitly combines CoCl2, bpy, MeCN/H2O, and TEOA in photocatalytic CO2 reduction, and separately notes literature tables in the same formulation family that include triethylamine as an alternative amine with different CO/H2 selectivities under related conditions. It therefore best supports a controlled TEA-versus-TEOA comparison while preserving the original Co-bpy question rather than replacing it with a different cobalt architecture. The platform also supports connected questions on donor-controlled CO/H2 partitioning, in situ cobalt-speciation change, donor-derived radical formation, and quenching-route discrimination. TEOA is retained as focal additive because the direct system evidence is TEOA-based, while TEA is justified as comparator by literature mention in the same formulation family and by independent donor-reactivity evidence that TEA and TEOA form distinct oxidized/radical intermediates after reductive quenching.",
+      "evidence_ids": [
+        "EV059",
+        "EV027",
+        "EV011",
+        "EV016",
+        "EV061",
+        "GX008"
+      ],
+      "basis": "mixed",
+      "questions_enabled": [
+        "H01 donor identity changes CO/H2 distribution under otherwise matched Co-bpy conditions",
+        "H02 TEA versus TEOA changes reductive-quenching efficiency or route rather than only downstream catalysis",
+        "H03 TEA versus TEOA changes proton-management/CO2-solvation environment and thereby apparent selectivity",
+        "H04 donor substitution changes cobalt speciation or ligand environment during turnover"
+      ],
+      "limitations": "The exact active cobalt species is not fully verified from supplied spans because assembly may be in situ and g-C3N4/support effects may matter. The provided evidence does not show a strict within-paper TEA-versus-TEOA head-to-head under one unchanged formulation, so the comparison is literature-grounded but still needs source verification or pilot matching. Numerical concentrations beyond quoted snippets should not be invented. Direct support is strongest for TEOA baseline and weaker for TEA comparator identity/performance in the exact same setup."
+    },
+    {
+      "id": "P02",
+      "catalyst_system": "Homogeneous cobalt photocatalytic CO2-to-CO platform with explicit photosensitizer conditions: cobalt catalyst reported as 1-Co, light absorber [Ru(phen)3]2+, additive/electron donor TEOA, medium CO2-saturated acetonitrile/water (4:1), white LED or visible-light irradiation. Comparator retains TEOA baseline and substitutes TEA in the same donor role.",
+      "comparator_additives": [
+        "TEA"
+      ],
+      "rationale": "This option is less direct to Co-bpy identity but stronger for a chemically defined homogeneous cobalt photocatalytic assay with explicit photosensitizer, donor, and medium conditions. It is attractive if the priority is quenching and kinetic characterization because the supplied evidence includes Stern-Volmer-type quenching analysis in the cobalt/TEOA/Ru system. It can therefore support controlled interventions on donor identity, excited-state quenching, reduced-intermediate formation, and no-catalyst/no-CO2 product controls. TEA is justified as comparator not by direct use in this exact cobalt paper, but by direct cross-system evidence that TEA and TEOA are both standard sacrificial quenchers that form distinct α-aminoalkyl radicals, and by direct donor substitution evidence showing different photoredox behavior when TEA replaces TEOA.",
+      "evidence_ids": [
+        "EV065",
+        "EV011",
+        "GX007",
+        "EV053",
+        "EV081",
+        "GX008"
+      ],
+      "basis": "mixed",
+      "questions_enabled": [
+        "H01 donor identity changes upstream photoredox kinetics before product selectivity diverges",
+        "H02 TEOA versus TEA switches reductive versus oxidative quenching balance or quenching efficiency",
+        "H03 observed CO/H2 changes arise partly from photosensitizer/background chemistry rather than cobalt alone",
+        "H04 donor substitution influences catalyst persistence over time"
+      ],
+      "limitations": "This is not an explicitly verified Co(II)-bipyridine catalyst in the supplied snippet, so transfer to the user's exact Co-bpy context is limited. TEA comparison is proposed transfer rather than directly reported in this formulation. If strict fidelity to Co-bpy identity outranks homogeneous kinetic tractability, this should remain secondary to P01."
+    },
+    {
+      "id": "P03",
+      "catalyst_system": "CoCl2 + 2,2'-bipyridine + CdS photocatalytic CO2-reduction platform in water/TEOA with optional ionic-liquid medium component [Emim]BF4; products CO and H2 quantified by GC. Catalyst components are cobalt salt plus bpy; light-absorbing component CdS; additive/electron donor TEOA; medium includes H2O and variable [Emim]BF4. Comparator retains TEOA-focused baseline and tests TEA substitution under fixed medium composition.",
+      "comparator_additives": [
+        "TEA"
+      ],
+      "rationale": "This option preserves the core CoCl2/bpy motif and directly reports CO and H2 as outputs, which is valuable for the exact product-distribution question. It also comes with explicit evidence that medium composition strongly changes CO/H2 output, making it a useful comparator platform when the main concern is whether a reported TEA/TEOA effect is actually confounded by solvent, viscosity, conductivity, or coordination environment. TEA is justified as comparator because both TEA and TEOA are established sacrificial donors in photocatalytic CO2 reduction and because donor-specific quenching/radical differences are directly documented elsewhere. The platform is therefore suitable for strong comparability controls and for testing whether TEA/TEOA differences survive when ionic-liquid/water ratio, cobalt source, bpy loading, and light absorber are held constant.",
+      "evidence_ids": [
+        "EV063",
+        "GX009",
+        "EV011",
+        "EV013",
+        "GX024",
+        "GX008"
+      ],
+      "basis": "mixed",
+      "questions_enabled": [
+        "H01 apparent TEA/TEOA selectivity differences diminish when medium composition is tightly matched",
+        "H02 donor effects are mediated by viscosity/conductivity/coordination changes rather than intrinsic donor redox chemistry alone",
+        "H03 cobalt-bpy speciation and CO/H2 partitioning are sensitive to secondary medium components",
+        "H04 product-origin and component-necessity controls distinguish true catalytic shifts from assay artifacts"
+      ],
+      "limitations": "The platform is not purely molecular because CdS is the absorber and [Emim]BF4 may be present; this complicates direct mechanistic attribution to a discrete Co(II)-bpy complex. No direct TEA-versus-TEOA comparison is supplied for this exact formulation. Because medium dependence is strong, this is useful as a confounder-testing alternative but weaker than P01 for isolating donor effects in the original molecular-complex framing."
+    },
+    {
+      "id": "P04",
+      "catalyst_system": "Homogeneous binuclear cobalt photocatalytic CO2-reduction benchmark: cobalt catalyst [L1Co(OH)(CO3)]-type binuclear cryptate system, photosensitizer [Ru(phen)3]2+, additive/electron donor TEOA, medium CO2-saturated CH3CN/H2O (4:1), 450 nm irradiation. Comparator keeps TEOA focal baseline and substitutes TEA for donor-role comparison.",
+      "comparator_additives": [
+        "TEA"
+      ],
+      "rationale": "This is not the target Co-bpy complex, but it is a chemically explicit homogeneous cobalt photocatalytic CO2-reduction system with donor, photosensitizer, medium, and irradiation conditions identified. It is therefore a useful literature-grounded supplementary validation platform if the researcher wants to test whether any TEA/TEOA effect generalizes across homogeneous cobalt photocatalysis rather than being unique to one Co-bpy formulation. TEA is justified as a comparator by direct donor chemistry evidence and by broader cobalt-photocatalysis evidence that donor identity can alter CO output. This option is especially useful for connected quenching and product studies under homogeneous conditions.",
+      "evidence_ids": [
+        "EV023",
+        "EV011",
+        "EV069",
+        "GX012",
+        "EV053"
+      ],
+      "basis": "mixed",
+      "questions_enabled": [
+        "H01 whether donor-dependent CO/H2 trends are specific to one Co-bpy platform or general across homogeneous cobalt photocatalysis",
+        "H02 whether TEA/TEOA primarily affects donor-side quenching chemistry in Ru-sensitized cobalt systems",
+        "H03 whether no-catalyst and support-free controls reveal background donor/photosensitizer contributions"
+      ],
+      "limitations": "Catalyst architecture differs substantially from a Co(II)-bipyridine complex, so mechanistic transfer is limited. It should not replace the primary Co-bpy comparison to be explained. TEA use in this exact system is proposed, not directly reported in the supplied snippet."
+    }
+  ]
+}

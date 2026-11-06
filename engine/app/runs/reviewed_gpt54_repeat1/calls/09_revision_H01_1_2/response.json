@@ -1,0 +1,260 @@
+{
+  "candidates": [
+    {
+      "id": "E06",
+      "hypothesis_id": "H01",
+      "title": "13CO2 origin check for CO under matched TEOA and TEA conditions",
+      "purpose": "Determine whether CO detected in the matched donor comparison is CO2-derived under both donor identities, protecting the TEA/TEOA selectivity comparison against donor-specific carbon artifacts or background CO formation.",
+      "evidence_ids": [
+        "EV046",
+        "EV021",
+        "EV022",
+        "EV082",
+        "GX008"
+      ],
+      "source_to_proposal": "EV021 reports that TEOA can participate non-innocently while isotope labeling still verified CO2 as the CO source. EV046, EV022, EV082, and GX008 support transferable use of 13CO2, GC-MS, and negative controls in photocatalytic CO2-reduction studies. Proposed transfer: apply donor-matched 13CO2 labeling and donor-matched catalyst-omission negatives to the same P01-like benchmark workflow, and interpret carbon origin separately from donor-effect or mechanism claims.",
+      "groups": [
+        {
+          "id": "E06G01",
+          "description": "Matched P01-like baseline with TEOA under labeled carbon dioxide",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01-like matched formulation"
+            },
+            {
+              "name": "donor_identity",
+              "value": "TEOA"
+            },
+            {
+              "name": "carbon_feed",
+              "value": "13CO2"
+            },
+            {
+              "name": "cobalt_components",
+              "value": "present"
+            },
+            {
+              "name": "illumination_state",
+              "value": "illuminated"
+            },
+            {
+              "name": "analysis_mode",
+              "value": "GC-MS matched workflow"
+            }
+          ]
+        },
+        {
+          "id": "E06G02",
+          "description": "Matched P01-like comparator with TEA under labeled carbon dioxide",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01-like matched formulation"
+            },
+            {
+              "name": "donor_identity",
+              "value": "TEA"
+            },
+            {
+              "name": "carbon_feed",
+              "value": "13CO2"
+            },
+            {
+              "name": "cobalt_components",
+              "value": "present"
+            },
+            {
+              "name": "illumination_state",
+              "value": "illuminated"
+            },
+            {
+              "name": "analysis_mode",
+              "value": "GC-MS matched workflow"
+            }
+          ]
+        },
+        {
+          "id": "E06G03",
+          "description": "Matched TEOA formulation under unlabeled carbon dioxide reference",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01-like matched formulation"
+            },
+            {
+              "name": "donor_identity",
+              "value": "TEOA"
+            },
+            {
+              "name": "carbon_feed",
+              "value": "CO2"
+            },
+            {
+              "name": "cobalt_components",
+              "value": "present"
+            },
+            {
+              "name": "illumination_state",
+              "value": "illuminated"
+            },
+            {
+              "name": "analysis_mode",
+              "value": "GC-MS matched workflow"
+            }
+          ]
+        },
+        {
+          "id": "E06G04",
+          "description": "Matched TEA formulation under unlabeled carbon dioxide reference",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01-like matched formulation"
+            },
+            {
+              "name": "donor_identity",
+              "value": "TEA"
+            },
+            {
+              "name": "carbon_feed",
+              "value": "CO2"
+            },
+            {
+              "name": "cobalt_components",
+              "value": "present"
+            },
+            {
+              "name": "illumination_state",
+              "value": "illuminated"
+            },
+            {
+              "name": "analysis_mode",
+              "value": "GC-MS matched workflow"
+            }
+          ]
+        },
+        {
+          "id": "E06G05",
+          "description": "Matched TEOA labeled-gas negative control without cobalt components",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01-like matched formulation"
+            },
+            {
+              "name": "donor_identity",
+              "value": "TEOA"
+            },
+            {
+              "name": "carbon_feed",
+              "value": "13CO2"
+            },
+            {
+              "name": "cobalt_components",
+              "value": "absent"
+            },
+            {
+              "name": "illumination_state",
+              "value": "illuminated"
+            },
+            {
+              "name": "analysis_mode",
+              "value": "GC-MS matched workflow"
+            }
+          ]
+        },
+        {
+          "id": "E06G06",
+          "description": "Matched TEA labeled-gas negative control without cobalt components",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01-like matched formulation"
+            },
+            {
+              "name": "donor_identity",
+              "value": "TEA"
+            },
+            {
+              "name": "carbon_feed",
+              "value": "13CO2"
+            },
+            {
+              "name": "cobalt_components",
+              "value": "absent"
+            },
+            {
+              "name": "illumination_state",
+              "value": "illuminated"
+            },
+            {
+              "name": "analysis_mode",
+              "value": "GC-MS matched workflow"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E06G01",
+          "group_b": "E06G03",
+          "changed_factors": [
+            "carbon_feed"
+          ],
+          "inference": "Single-factor isotopic-origin check for the TEOA case. A labeled CO signature only under 13CO2 supports CO2 as the CO source in this donor condition."
+        },
+        {
+          "group_a": "E06G02",
+          "group_b": "E06G04",
+          "changed_factors": [
+            "carbon_feed"
+          ],
+          "inference": "Single-factor isotopic-origin check for the TEA case. This tests whether CO under TEA is likewise CO2-derived rather than a donor-specific carbon artifact."
+        },
+        {
+          "group_a": "E06G01",
+          "group_b": "E06G02",
+          "changed_factors": [
+            "donor_identity"
+          ],
+          "inference": "Single-factor donor comparison under identical labeled feed. If both show CO2-derived CO, any donor-dependent CO difference is more interpretable as a true output difference, though cause remains unresolved."
+        },
+        {
+          "group_a": "E06G01",
+          "group_b": "E06G05",
+          "changed_factors": [
+            "cobalt_components"
+          ],
+          "inference": "Single-factor catalyst-necessity check for labeled CO detection in the TEOA condition."
+        },
+        {
+          "group_a": "E06G02",
+          "group_b": "E06G06",
+          "changed_factors": [
+            "cobalt_components"
+          ],
+          "inference": "Single-factor catalyst-necessity check for labeled CO detection in the TEA condition."
+        }
+      ],
+      "procedure": [
+        "Reproduce the same P01-like matched benchmark workflow for TEOA and TEA, changing only the specified carbon feed and cobalt-component presence across groups.",
+        "Calibrate GC-MS retention and mass assignment with unlabeled and labeled CO references or equivalent instrument checks before sample analysis, then analyze labeled and unlabeled reaction headspace with the same method.",
+        "Run donor-matched catalyst-present and catalyst-omission groups under 13CO2, plus unlabeled reference groups for each donor, using the same gas handling and sampling sequence.",
+        "Interpret first whether CO is CO2-derived in each donor condition, then whether any donor-dependent CO amount persists within the labeled matched pair, without treating origin verification as a mechanism test."
+      ],
+      "measurements": [
+        "GC-MS isotopic pattern for CO under 13CO2 and under unlabeled CO2 references",
+        "CO and H2 amounts from the same matched runs to preserve donor-comparison context",
+        "Signals in donor-matched catalyst-omission controls to bound analytical or background CO contributions",
+        "Repeat-injection or repeat-run consistency for low-signal labeled CO assignment if signal is near detection limit"
+      ],
+      "supports": "Detection of the expected labeled CO signature in both donor conditions, with corresponding unlabeled reference patterns in natural-abundance runs and little or no labeled CO in the donor-matched catalyst-omission controls, supports the claim that observed CO in the TEA/TEOA comparison is genuinely CO2-derived under both donors.",
+      "refutes": "If a donor condition shows CO without the expected labeled signature under 13CO2, or if comparable labeled CO appears in the matched catalyst-omission control for that donor, the CO comparison is undermined by artifact or background formation concerns.",
+      "inconclusive": "Very low CO signal, overlapping fragments, carryover, or inconsistent gas handling can leave origin assignment inconclusive. Even a positive 13CO2 result does not identify why TEA and TEOA differ; it only addresses carbon origin and catalyst dependence of detected CO.",
+      "parameter_selection": "Use the same matched formulation, reactor, illumination program, and sampling schedule as the verified benchmark. Because no isotope-analysis recipe is supplied, first establish GC-MS discrimination between labeled and unlabeled CO with instrument-specific checks, then choose sampling volume and run time to detect the smallest benchmark CO signal without overload. If signal remains marginal, prioritize the donor-matched labeled pairs and donor-matched catalyst-omission negatives over expanding the matrix.",
+      "limitations": "This card verifies product origin and bounds catalyst dependence of labeled CO detection; it does not resolve whether donor effects arise from photophysics, proton management, medium composition, or cobalt-state changes. Before/after agreement in product origin cannot by itself establish the operating-state mechanism.",
+      "feasibility": "moderate"
+    }
+  ]
+}

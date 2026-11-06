@@ -1,0 +1,223 @@
+{
+  "candidates": [
+    {
+      "id": "E14",
+      "hypothesis_id": "H03",
+      "title": "Isotope-sensitive operando signatures in TEA vs TEOA Co-bpy photocatalysis",
+      "purpose": "Test whether TEA and TEOA give different H/D-sensitive spectroscopic features under matched P01 CO2-reduction conditions, consistent with different proton-management or hydrogen-containing states rather than a donor effect visible only in product ratios.",
+      "evidence_ids": [
+        "EV080",
+        "GX010",
+        "GX015",
+        "EV031"
+      ],
+      "source_to_proposal": "EV080 supports isotope substitution as a transferable assignment aid in operando FTIR-type measurements, but not species identity in this Co-bpy system. GX010 and GX015 support proton-inventory and isotope logic as discriminators of proton-delivery environments in cobalt CO2-reduction chemistry, not as direct evidence for this photocatalyst. EV031 supports the transferable idea that donor/solvent environment can change detectable intermediate populations and selectivity in bipyridine-based CO2 reduction. Proposed transfer: compare matched TEA and TEOA P01 samples with H2O versus D2O in the same spectroscopic configuration, and interpret isotope-sensitive differences only as evidence for differing hydrogen-coupled observables under these conditions.",
+      "groups": [
+        {
+          "id": "E14G01",
+          "description": "P01 baseline with TEOA in H2O-containing medium under illuminated CO2 conditions",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 in MeCN/H2O-family medium"
+            },
+            {
+              "name": "additive",
+              "value": "TEOA"
+            },
+            {
+              "name": "isotopic_medium",
+              "value": "H2O-containing"
+            },
+            {
+              "name": "gas",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "spectroscopy_mode",
+              "value": "single predefined operando or near-operando mode"
+            }
+          ]
+        },
+        {
+          "id": "E14G02",
+          "description": "Matched TEOA sample with D2O substituted for the aqueous component",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 in MeCN/H2O-family medium"
+            },
+            {
+              "name": "additive",
+              "value": "TEOA"
+            },
+            {
+              "name": "isotopic_medium",
+              "value": "D2O-containing"
+            },
+            {
+              "name": "gas",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "spectroscopy_mode",
+              "value": "single predefined operando or near-operando mode"
+            }
+          ]
+        },
+        {
+          "id": "E14G03",
+          "description": "P01 comparator with TEA in H2O-containing medium under illuminated CO2 conditions",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 in MeCN/H2O-family medium"
+            },
+            {
+              "name": "additive",
+              "value": "TEA"
+            },
+            {
+              "name": "isotopic_medium",
+              "value": "H2O-containing"
+            },
+            {
+              "name": "gas",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "spectroscopy_mode",
+              "value": "single predefined operando or near-operando mode"
+            }
+          ]
+        },
+        {
+          "id": "E14G04",
+          "description": "Matched TEA sample with D2O substituted for the aqueous component",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 in MeCN/H2O-family medium"
+            },
+            {
+              "name": "additive",
+              "value": "TEA"
+            },
+            {
+              "name": "isotopic_medium",
+              "value": "D2O-containing"
+            },
+            {
+              "name": "gas",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "spectroscopy_mode",
+              "value": "single predefined operando or near-operando mode"
+            }
+          ]
+        },
+        {
+          "id": "E14G05",
+          "description": "Donor-free reference under otherwise matched illuminated CO2 conditions for background assignment",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 in MeCN/H2O-family medium"
+            },
+            {
+              "name": "additive",
+              "value": "none"
+            },
+            {
+              "name": "isotopic_medium",
+              "value": "H2O-containing"
+            },
+            {
+              "name": "gas",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "spectroscopy_mode",
+              "value": "single predefined operando or near-operando mode"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E14G01",
+          "group_b": "E14G02",
+          "changed_factors": [
+            "isotopic_medium"
+          ],
+          "inference": "Within TEOA, isotope-dependent shifts or time-course changes identify hydrogen-coupled observables worth tracking, but do not uniquely assign structure or catalytic relevance."
+        },
+        {
+          "group_a": "E14G03",
+          "group_b": "E14G04",
+          "changed_factors": [
+            "isotopic_medium"
+          ],
+          "inference": "Within TEA, isotope-sensitive features provide the matched comparator for whether TEA accesses similar or different hydrogen-coupled observables."
+        },
+        {
+          "group_a": "E14G01",
+          "group_b": "E14G03",
+          "changed_factors": [
+            "additive"
+          ],
+          "inference": "Under H2O, donor-dependent spectral differences are descriptive only; if absent, a strong proton-management explanation is weakened but not excluded."
+        },
+        {
+          "group_a": "E14G02",
+          "group_b": "E14G04",
+          "changed_factors": [
+            "additive"
+          ],
+          "inference": "Under D2O, persistence or loss of donor-dependent signatures helps bound whether TEA/TEOA differences track hydrogen-coupled observables or remain compatible with cobalt-state and donor-redox alternatives."
+        }
+      ],
+      "procedure": [
+        "Verify one exact spectroscopic mode before comparison and apply it to all groups; if true operando sensitivity is inadequate in pilot, switch the whole card to a fixed-delay near-operando transfer protocol rather than mixing modes.",
+        "Prepare matched P01 TEA and TEOA samples from the same cobalt source, bpy source, g-C3N4 batch, solvent family, cell geometry, and CO2 handling; include donor-free background if signal quality permits.",
+        "Run a pilot to set path length, loading, and acquisition window by criteria of unsaturated spectra, manageable scattering/background drift, and repeatable catalyst-region features; reject settings that differ in baseline quality between TEA and TEOA beyond preset tolerance.",
+        "Acquire time-resolved spectra for H2O- and D2O-containing TEA and TEOA samples under the same illumination and gas conditions, with matched dark or pre-illumination references for subtraction.",
+        "Track reproducible band positions, intensities, and time profiles, and compare them with parallel CO and H2 measurements only as correlation, not mechanism proof."
+      ],
+      "measurements": [
+        "Time-resolved operando or fixed-delay near-operando spectra in predefined regions assigned only as candidate hydrogen-coupled, CO2-derived, ligand-associated, or background-sensitive features",
+        "Isotope-induced shifts, attenuation, or altered temporal evolution upon H2O to D2O substitution within each donor condition",
+        "Difference spectra versus dark, pre-illumination, and donor-free references to identify background or support-derived contributions",
+        "Replicate agreement of donor-dependent isotope responses across independently prepared samples",
+        "Parallel CO and H2 product amounts from matched runs to test whether spectral differences co-occur with selectivity differences without equating them"
+      ],
+      "supports": "Support for H03 would be a reproducible donor-dependent isotope response under matched acquisition: TEA and TEOA differ in H/D-sensitive band positions, magnitudes, or time behavior beyond donor-free/background changes, and the difference is not explained by obvious baseline artifacts. Stronger but still non-decisive support occurs if donor-dependent catalytic CO/H2 divergence also weakens or reorganizes under the same D2O substitution.",
+      "refutes": "Evidence against H03 would be that TEA and TEOA show no reproducible difference in isotope-sensitive observables under matched conditions, while spectra are dominated by shared or non-isotope-sensitive changes. If catalytic TEA/TEOA differences remain substantial in matched runs despite indistinguishable H/D-sensitive signatures, a proton-management-centered account is weakened relative to alternatives.",
+      "inconclusive": "Inconclusive if signal-to-background is inadequate, scattering from the suspension obscures donor comparisons, assignment remains dominated by overlapping support/solvent features, or D2O substitution changes bulk properties enough that spectral differences cannot be bounded to hydrogen-coupled observables. Donor-dependent but non-isotope-sensitive changes are also inconclusive for H03 because they remain compatible with cobalt speciation or donor photoredox effects.",
+      "parameter_selection": "Use the literature-anchored P01 formulation family only after verifying exact baseline composition from supplied source records. Calibrate path length, catalyst loading, aqueous fraction, and acquisition interval by pilot criteria of stable baseline, detectable catalyst-region signal, and repeatable spectra across replicate preparations. Predefine acceptable baseline-drift and scattering thresholds before comparing donors. Keep preparation order and nominal component identities matched between H2O and D2O groups. If pH/pD matching is attempted, document one convention and use it consistently without claiming exact equivalence.",
+      "limitations": "This characterization card narrows inference to whether TEA and TEOA differ in isotope-sensitive observables under matched conditions. It cannot uniquely identify intermediates, prove rate-determining roles, or isolate proton management from all other donor-dependent medium changes. D2O perturbs more than proton mass, and TEA versus TEOA also changes donor structure and solution properties. Near-operando measurements may miss the true operating state.",
+      "feasibility": "specialist"
+    }
+  ]
+}

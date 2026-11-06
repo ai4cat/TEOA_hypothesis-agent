@@ -1,0 +1,132 @@
+{
+  "questions": [
+    {
+      "question_id": "Q1",
+      "mechanism_evidence_ids": [
+        "EV011",
+        "EV061",
+        "EV029",
+        "EV031",
+        "EV013",
+        "GX014",
+        "GX019",
+        "GX007",
+        "GX009"
+      ],
+      "method_evidence_ids": [
+        "EV016",
+        "EV018"
+      ],
+      "status": "partial",
+      "reason": "There is substantial source support that TEA/TEOA identity can change donor-radical chemistry, proton/base behavior, CO2 capture or adduct formation, and medium properties such as viscosity and solvent effects. However, the supplied evidence is mostly cross-system and does not provide a head-to-head TEA versus TEOA comparison within one unchanged Co(II)-bipyridine CO2-photoreduction formulation. Methods exist to observe donor-derived radicals and charge-carrier responses, but their transfer to the target cobalt system remains unvalidated, so discrimination is plausible but not yet directly established."
+    },
+    {
+      "question_id": "Q2",
+      "mechanism_evidence_ids": [
+        "EV059",
+        "EV027",
+        "EV048",
+        "EV051",
+        "EV085",
+        "GX016",
+        "GX001",
+        "GX005",
+        "GX011"
+      ],
+      "method_evidence_ids": [
+        "EV004",
+        "EV052",
+        "EV076",
+        "EV088",
+        "GX008"
+      ],
+      "status": "partial",
+      "reason": "The dataset supports catalyst-speciation and interaction hypotheses in cobalt photocatalysis, including possible donor coordination, altered local environment, deactivation, or active-species ambiguity. It also contains transferable operando and solution-characterization methods with actual observables for coordination environment and catalyst state. But there is no direct evidence that TEA versus TEOA changes Co(II)-bipyridine identity or stability under matched target conditions, so the family is only partially supported."
+    },
+    {
+      "question_id": "Q3",
+      "mechanism_evidence_ids": [
+        "EV007",
+        "EV011",
+        "EV053",
+        "EV065",
+        "EV041",
+        "EV095",
+        "EV071",
+        "GX007",
+        "GX018"
+      ],
+      "method_evidence_ids": [
+        "EV053",
+        "EV018",
+        "EV005",
+        "EV077"
+      ],
+      "status": "partial",
+      "reason": "This family has strong transferable mechanistic support that sacrificial donors influence reductive quenching, reduced-intermediate formation, lifetimes, and electron-transfer routes, with explicit donor-side chemistry for TEOA and both TEA/TEOA radical formation. It also has usable methods: fluorescence or UV-vis quenching, transient absorption, and luminescence quenching all provide concrete observables and route discrimination. Yet the evidence is not a direct TEA-versus-TEOA demonstration in the target Co(II)-bipyridine CO2-reduction system, so support remains partial rather than complete."
+    },
+    {
+      "question_id": "Q4",
+      "mechanism_evidence_ids": [
+        "EV021",
+        "EV029",
+        "EV031",
+        "EV063",
+        "EV024",
+        "GX011"
+      ],
+      "method_evidence_ids": [
+        "EV080",
+        "EV004",
+        "EV068",
+        "GX008"
+      ],
+      "status": "partial",
+      "reason": "The evidence supports considering additive-dependent effects on CO2 interaction, intermediate stability, and assignment ambiguity, including isotope-bounded origin checks and cross-system proposals that TEOA can assist CO2 trapping or alter intermediate populations. Transferable operando FTIR/Raman/XAS strategies with isotope substitution offer real discriminating observables for assignment. However, the supplied literature does not directly identify substrate-bound intermediates in a Co(II)-bipyridine TEA/TEOA comparison, so the question family is only partially covered."
+    },
+    {
+      "question_id": "Q5",
+      "mechanism_evidence_ids": [
+        "EV059",
+        "EV021",
+        "EV046",
+        "EV081",
+        "EV045",
+        "EV063",
+        "EV022",
+        "EV069",
+        "GX012"
+      ],
+      "method_evidence_ids": [
+        "EV046",
+        "EV081",
+        "EV082",
+        "GX008"
+      ],
+      "status": "supported",
+      "reason": "This family is the best supported. The supplied evidence directly addresses photocatalytic CO/H2 outputs, no-component controls, catalyst-free background contributions, CO2 versus Ar or dark controls, and 13CO2 origin verification across related CO2-reduction systems. The methods are usable and discriminating: GC for CO/H2 quantification, GC-MS with 13CO2 for origin, and explicit omission controls to separate component contributions. Although the exact TEA-versus-TEOA difference in a single matched Co(II)-bipyridine system still needs confirmation, both the question family and a plausible characterization/discrimination method are present."
+    },
+    {
+      "question_id": "Q6",
+      "mechanism_evidence_ids": [
+        "EV061",
+        "EV029",
+        "EV041",
+        "EV013",
+        "EV024",
+        "GX010",
+        "GX015",
+        "GX019",
+        "GX009"
+      ],
+      "method_evidence_ids": [
+        "EV080",
+        "GX010",
+        "EV053"
+      ],
+      "status": "partial",
+      "reason": "The literature supports multiple non-electron-donation roles for TEOA or related amines: proton relay or proton-source effects, CO2 capture/adduct chemistry, coordination effects, and medium-property changes. It also provides transferable discriminating methods such as isotope substitution for hydrogen-containing assignments, proton-inventory style tests, and quenching-route discrimination. But no supplied study cleanly decouples electron donation from these other roles for TEA versus TEOA in a matched Co(II)-bipyridine photocatalytic CO2-reduction system, so the family remains partial."
+    }
+  ],
+  "supplement_queries": []
+}

@@ -1,0 +1,16 @@
+{
+  "at": "2026-11-05T03:55:51.184907+00:00",
+  "all_checks_passed": true,
+  "status": "passed",
+  "api_calls": 0,
+  "records_modified": 0,
+  "hypotheses": 5,
+  "candidates": 29,
+  "evidence": 64,
+  "exact_quotes": 188,
+  "model_observed": {
+    "gpt-5.4": 90
+  },
+  "final_api_origins": 29,
+  "manifest_files_checked": 0
+}

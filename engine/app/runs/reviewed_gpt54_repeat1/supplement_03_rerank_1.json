@@ -1,0 +1,155 @@
+{
+  "assessments": [
+    {
+      "evidence_id": "GX001",
+      "decision": "include",
+      "span_ids": [
+        "S6",
+        "S8",
+        "S9"
+      ],
+      "role": "direct comparative evidence on donor/catalyst coordination competition",
+      "claim": "In a CoPc photocatalytic CO2-reduction system, BIH showed no visible 1H NMR titration shift with CoPc, while the authors explicitly note that competitive binding from TEA should be considered; this supports testing whether amine donor coordination at cobalt can change catalytic behavior.",
+      "transfer_limit": "System is CoPc with IrQPY photosensitizer and BIH donor, not a Co(II)-bipyridine complex and not a TEA vs TEOA comparison. TEA competition is proposed rather than directly measured here, so transfer is limited to the hypothesis that donor coordination may matter.",
+      "reason": "Relevant because it directly concerns cobalt-site coordination and explicitly raises TEA competition in photocatalysis. Included despite mismatch because it gives a source-grounded rationale for donor-coordination experiments, but only the BIH non-coordination observation is directly shown.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 2,
+        "discriminatory_value": 2,
+        "transferability": 1
+      }
+    },
+    {
+      "evidence_id": "GX002",
+      "decision": "exclude",
+      "span_ids": [
+        "S1",
+        "S2",
+        "S5"
+      ],
+      "role": "mechanistic background in a non-cobalt CO-producing system",
+      "claim": "The snippet discusses TEOA-assisted steps in an Ir catalyst cycle for CO2-to-CO conversion.",
+      "transfer_limit": "Uses CO as carbon monoxide, not cobalt; catalyst is Cp*Ir on TiO2, not the target Co(II)-bipyridine context.",
+      "reason": "Excluded because it is not about cobalt identity or a TEA/TEOA comparison in the target system. It may offer general background on TEOA as base/proton-management agent, but it is too indirect and lexically confounded by CO meaning carbon monoxide.",
+      "scores": {
+        "research_relevance": 1,
+        "direct_evidence": 1,
+        "discriminatory_value": 1,
+        "transferability": 0
+      }
+    },
+    {
+      "evidence_id": "GX003",
+      "decision": "include",
+      "span_ids": [
+        "S3",
+        "S4",
+        "S5"
+      ],
+      "role": "transferable operando characterization precedent",
+      "claim": "Illumination-dependent EPR spectra were recorded at 77 K in the presence or absence of CO2 and H2O to examine charge trapping and interfacial charge transfer.",
+      "transfer_limit": "Materials are bismuth iodide photocatalysts in toluene, not homogeneous Co(II)-bipyridine chemistry. Transfer is methodological only; spectral assignments and states will not transfer directly.",
+      "reason": "Included as method evidence because it exemplifies controlled EPR comparisons under illumination and gas/reactant variation, which could inspire discriminating state characterization if paramagnetic cobalt intermediates are accessible in the target system.",
+      "scores": {
+        "research_relevance": 1,
+        "direct_evidence": 2,
+        "discriminatory_value": 2,
+        "transferability": 1
+      }
+    },
+    {
+      "evidence_id": "GX004",
+      "decision": "exclude",
+      "span_ids": [
+        "S1",
+        "S2",
+        "S6"
+      ],
+      "role": "reference/abbreviation list",
+      "claim": "The snippet defines abbreviations such as TEOA and bpy and lists references.",
+      "transfer_limit": "No experimental observation or system-specific result.",
+      "reason": "Excluded as reference-only content without direct scientific evidence for the research question.",
+      "scores": {
+        "research_relevance": 0,
+        "direct_evidence": 0,
+        "discriminatory_value": 0,
+        "transferability": 0
+      }
+    },
+    {
+      "evidence_id": "GX005",
+      "decision": "include",
+      "span_ids": [
+        "S1",
+        "S2"
+      ],
+      "role": "direct evidence that solvents can axially coordinate cobalt porphyrins",
+      "claim": "For CoTPP, different solvents including pyridine, DMF, and THF were investigated by spectrophotometric titration for axial coordination numbers and equilibrium constants, and axial coordination was linked to enhanced catalytic activity.",
+      "transfer_limit": "Cobalt porphyrin electroreduction in aqueous solution is not the target Co(II)-bipyridine photocatalytic system. Evidence supports the general plausibility of donor coordination at cobalt but not the specific effect of TEA versus TEOA.",
+      "reason": "Included because it provides actual measurements of donor coordination to a cobalt macrocycle and motivates direct binding studies with amines in the target system. Structural and catalytic context differ, so transfer is bounded.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 2,
+        "discriminatory_value": 2,
+        "transferability": 1
+      }
+    },
+    {
+      "evidence_id": "GX006",
+      "decision": "exclude",
+      "span_ids": [
+        "S2",
+        "S3",
+        "S8"
+      ],
+      "role": "different photocatalytic syngas platform using TEOA",
+      "claim": "A silicon-based cobalt single-atom photocatalyst with TEOA and Ru(bpy)3 was used for visible-light-driven syngas production, with H2 formed on Co-free facets.",
+      "transfer_limit": "Heterogeneous Co@Si system; no TEA comparator; cobalt is not a Co(II)-bipyridine complex.",
+      "reason": "Excluded because although it involves TEOA and cobalt photocatalysis, it does not inform the specific TEA/TEOA comparison in the supplied molecular cobalt-bipyridine context and risks overtransfer across a very different platform.",
+      "scores": {
+        "research_relevance": 1,
+        "direct_evidence": 2,
+        "discriminatory_value": 1,
+        "transferability": 0
+      }
+    },
+    {
+      "evidence_id": "GX007",
+      "decision": "include",
+      "span_ids": [
+        "S3",
+        "S6",
+        "S8"
+      ],
+      "role": "direct donor-substitution evidence affecting photochemical behavior",
+      "claim": "In a photocatalytic system, TEA was used to replace TEOA, and upon irradiation the Acr+TEA solution formed leuco-Acr within 10 min, but the rate of Acr fading was lower than with TEOA, indicating different reductive quenching behavior of the electron donor.",
+      "transfer_limit": "This is an H2-production system with Acr photosensitizer and cobalt oxide in DMF/H2O, not CO2 reduction with a Co(II)-bipyridine molecular catalyst. It informs donor effects on photoredox and stability, not product selectivity in the target system.",
+      "reason": "Included because it directly compares TEA and TEOA under irradiation and reports a measurable kinetic difference, supporting the hypothesis that donor identity can alter upstream photochemical steps even when the catalytic platform differs.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 2,
+        "discriminatory_value": 2,
+        "transferability": 2
+      }
+    },
+    {
+      "evidence_id": "GX008",
+      "decision": "include",
+      "span_ids": [
+        "S1",
+        "S4",
+        "S8"
+      ],
+      "role": "transferable methodological guidance for controls and characterization",
+      "claim": "The review states that photocatalytic CO2-reduction studies should include negative controls omitting key components and reproducible 13CO2 labeling, and that for homogeneous systems UV–Vis, XAS, TAS, IR, and Raman can help reveal system behavior.",
+      "transfer_limit": "This is general methods guidance rather than a specific Co(II)-bipyridine/TEA/TEOA experiment. Applicability depends on the actual formulation, concentrations, and detectable intermediates.",
+      "reason": "Included because it directly supports rigorous experimental design and characterization choices for the target comparison, especially origin controls and suitable spectroscopies for homogeneous photocatalytic CO2 reduction.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 1,
+        "discriminatory_value": 3,
+        "transferability": 3
+      }
+    }
+  ]
+}

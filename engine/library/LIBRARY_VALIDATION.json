@@ -1,0 +1,18 @@
+{
+  "lib1": 1988,
+  "lib2": 395,
+  "pdf_files_verified": 2383,
+  "paper_records": 2291,
+  "text_chunks": 131045,
+  "all_pdf_sha256_match": true,
+  "identity_changes": [
+    {
+      "library": "lib1",
+      "doc_id": "doc_0950",
+      "old_paper_id": "P_3ddc8be696662c1ad4777d68081d6ce9720d99f0f22be2a217fd7e96f16efeb8",
+      "current_paper_id": "P_9868039315a56c766e0cd572bd13e5bb72e15b610ff9074e206c8e10b7210ce6"
+    }
+  ],
+  "source": "C:\\Users\\dell\\Nutstore\\1\\1.Paper\\11-12_AI_photocatalyst\\2.Paper2\\5.agent\\0.for submit\\PDF_database",
+  "index_text": "Existing text reused only for byte-identical PDFs; changed identities re-matched or re-extracted; excluded memberships and orphan records removed."
+}

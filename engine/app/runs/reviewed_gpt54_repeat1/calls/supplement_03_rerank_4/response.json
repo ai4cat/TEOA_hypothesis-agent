@@ -1,0 +1,19 @@
+{
+  "assessments": [
+    {
+      "evidence_id": "GX025",
+      "decision": "exclude",
+      "span_ids": [],
+      "role": "irrelevant photocatalysis background",
+      "claim": "This snippet reports tetracycline degradation on boron-doped TiO2 with scavenger and EPR tests, not photocatalytic CO2 reduction with a Co(II)–bipyridine system or a TEA versus TEOA product-distribution comparison.",
+      "transfer_limit": "Major mismatch in catalyst class, reaction, products, and role of TEOA; here TEOA appears as a scavenger/control in pollutant degradation rather than an electron donor in the target CO2-reduction system.",
+      "reason": "Although the snippet contains photocatalysis, controls, and radical-detection methods, it does not address CO2 reduction, cobalt-bipyridine complexes, CO/H2 selectivity, or TEA/TEOA as comparator sacrificial donors. Its value for the stated research question is too indirect, and lexical confusion between Co and CO is avoided because the text concerns neither cobalt complexes nor carbon-monoxide product analysis.",
+      "scores": {
+        "research_relevance": 0,
+        "direct_evidence": 2,
+        "discriminatory_value": 0,
+        "transferability": 0
+      }
+    }
+  ]
+}

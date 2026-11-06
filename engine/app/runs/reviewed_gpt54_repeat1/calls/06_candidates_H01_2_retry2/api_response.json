@@ -1,0 +1,269 @@
+{
+  "id": "resp_0c2af1f2f03904f8016aebf101361c8193a54c02d5b0a1a2ab",
+  "object": "response",
+  "model": "gpt-5.4",
+  "usage": {
+    "total_tokens": 18802,
+    "input_tokens": 14433,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 4369,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "created_at": 1793847553,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "completed_at": 1793847600,
+  "content_filters": [
+    {
+      "blocked": false,
+      "source_type": "prompt",
+      "content_filter_raw": [],
+      "content_filter_results": {},
+      "content_filter_offsets": {
+        "start_offset": 0,
+        "end_offset": 62648,
+        "check_offset": 0
+      }
+    }
+  ],
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 16000,
+  "max_tool_calls": null,
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0c2af1f2f03904f8016aebf10257ec8193853cde1cdd9759d7",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"candidates\":[{\"id\":\"E04\",\"hypothesis_id\":\"H01\",\"title\":\"TEA versus TEOA donor-side quenching comparison in the P01 baseline matrix\",\"purpose\":\"Test whether replacing TEOA with TEA changes upstream photoredox observables under otherwise matched P01-like formulations, providing a covariate for any donor-dependent CO/H2 shift without claiming full mechanism.\",\"evidence_ids\":[\"EV053\",\"EV065\",\"GX007\",\"EV011\"],\"source_to_proposal\":\"EV053 and EV065 support transferable fluorescence/UV-vis quenching logic in donor-containing photocatalytic cobalt systems; GX007 shows TEA-for-TEOA substitution can change photochemical behavior; EV011 supports that TEA and TEOA form different donor-derived radical species after quenching. Proposed transfer: adapt these observables to the matched P01 absorber-containing formulation, with cobalt-containing and cobalt-free references to separate donor-side from cobalt-side effects.\",\"groups\":[{\"id\":\"E04G01\",\"description\":\"P01-like absorber-containing baseline with TEOA and cobalt components\",\"factors\":[{\"name\":\"platform\",\"value\":\"P01-like matched formulation\"},{\"name\":\"donor_identity\",\"value\":\"TEOA\"},{\"name\":\"cobalt_components\",\"value\":\"present\"},{\"name\":\"absorber\",\"value\":\"same as baseline\"},{\"name\":\"solvent_matrix\",\"value\":\"same as baseline\"},{\"name\":\"gas_condition\",\"value\":\"same nonreactive measurement condition\"},{\"name\":\"illumination_state\",\"value\":\"matched quenching measurement\"}]},{\"id\":\"E04G02\",\"description\":\"P01-like absorber-containing comparator with TEA and cobalt components\",\"factors\":[{\"name\":\"platform\",\"value\":\"P01-like matched formulation\"},{\"name\":\"donor_identity\",\"value\":\"TEA\"},{\"name\":\"cobalt_components\",\"value\":\"present\"},{\"name\":\"absorber\",\"value\":\"same as baseline\"},{\"name\":\"solvent_matrix\",\"value\":\"same as baseline\"},{\"name\":\"gas_condition\",\"value\":\"same nonreactive measurement condition\"},{\"name\":\"illumination_state\",\"value\":\"matched quenching measurement\"}]},{\"id\":\"E04G03\",\"description\":\"Baseline donor matrix without cobalt components\",\"factors\":[{\"name\":\"platform\",\"value\":\"P01-like matched formulation\"},{\"name\":\"donor_identity\",\"value\":\"TEOA\"},{\"name\":\"cobalt_components\",\"value\":\"absent\"},{\"name\":\"absorber\",\"value\":\"same as baseline\"},{\"name\":\"solvent_matrix\",\"value\":\"same as baseline\"},{\"name\":\"gas_condition\",\"value\":\"same nonreactive measurement condition\"},{\"name\":\"illumination_state\",\"value\":\"matched quenching measurement\"}]},{\"id\":\"E04G04\",\"description\":\"Comparator donor matrix without cobalt components\",\"factors\":[{\"name\":\"platform\",\"value\":\"P01-like matched formulation\"},{\"name\":\"donor_identity\",\"value\":\"TEA\"},{\"name\":\"cobalt_components\",\"value\":\"absent\"},{\"name\":\"absorber\",\"value\":\"same as baseline\"},{\"name\":\"solvent_matrix\",\"value\":\"same as baseline\"},{\"name\":\"gas_condition\",\"value\":\"same nonreactive measurement condition\"},{\"name\":\"illumination_state\",\"value\":\"matched quenching measurement\"}]}],\"comparisons\":[{\"group_a\":\"E04G01\",\"group_b\":\"E04G02\",\"changed_factors\":[\"donor_identity\"],\"inference\":\"Single-factor donor comparison in the full matrix. A reproducible difference in quenching observable supports donor-dependent upstream photoredox behavior under matched conditions.\"},{\"group_a\":\"E04G03\",\"group_b\":\"E04G04\",\"changed_factors\":[\"donor_identity\"],\"inference\":\"Single-factor donor comparison without cobalt components. Similar donor ordering here would suggest an absorber/donor effect that does not require cobalt.\"},{\"group_a\":\"E04G01\",\"group_b\":\"E04G03\",\"changed_factors\":[\"cobalt_components\"],\"inference\":\"Tests whether cobalt presence changes the quenching response in the TEOA matrix; helps assign whether the measured signal includes cobalt-associated pathways.\"},{\"group_a\":\"E04G02\",\"group_b\":\"E04G04\",\"changed_factors\":[\"cobalt_components\"],\"inference\":\"Tests whether cobalt presence changes the quenching response in the TEA matrix; donor dependence of this cobalt effect may indicate altered interaction with the cobalt-containing manifold.\"}],\"procedure\":[\"Prepare matched absorber-containing samples using the P01 baseline composition logic, changing only donor identity or cobalt-component presence across groups.\",\"Record fluorescence and/or UV-vis responses under identical optical settings, including blanks for solvent and absorber-free backgrounds if needed for subtraction.\",\"Run a small pilot to set sample absorbance within the instrument-linear range and to confirm that donor addition does not saturate or fully extinguish the signal before useful comparison.\",\"Compare donor-dependent quenching trends first in cobalt-free matrices, then in cobalt-containing matrices, and retain raw spectra and corrected Stern-Volmer-style summaries only if linearity is empirically adequate.\"],\"measurements\":[\"Steady-state fluorescence intensity or lifetime proxy of the absorber-containing sample under matched excitation\",\"UV-vis spectral changes during donor addition or short irradiation exposure\",\"Apparent quenching trend versus donor condition in cobalt-free and cobalt-containing matrices\",\"Background absorbance/scattering from donor, solvent, g-C3N4, and cobalt-containing mixtures\"],\"supports\":\"A reproducible TEA-versus-TEOA difference in quenching observable under otherwise matched conditions, especially if the direction is consistent across repeats and not explained by simple optical background, supports H01 secondary explanation that donor identity changes upstream photoredox entry. If this covaries with later CO/H2 differences from the benchmark, it strengthens but does not prove a donor-photophysics contribution.\",\"refutes\":\"If TEA and TEOA give indistinguishable quenching behavior within calibrated detection limits in both cobalt-free and cobalt-containing matrices, a large donor-specific upstream quenching difference is disfavored as the main explanation for any product shift, though downstream proton or cobalt-state effects remain possible.\",\"inconclusive\":\"Strong scattering, overlapping absorbance, unstable baselines, or donor-dependent sample degradation that prevents reliable assignment makes the result inconclusive. A difference in quenching alone also cannot establish the active catalytic pathway or predict CO/H2 direction without catalytic correlation.\",\"parameter_selection\":\"Use the same nominal absorber, solvent matrix, and cobalt-component presence as the verified P01 baseline. Because no exact optical recipe is supplied, pilot donor additions should set a range that changes signal measurably without complete quench or severe inner-filter artifacts. Accept Stern-Volmer treatment only over the empirically linear region; otherwise report descriptive matched-point comparisons.\",\"limitations\":\"This is a characterization proposal, not a catalytic readout. Signals may reflect absorber/donor or absorber/cobalt interactions without identifying the turnover-relevant species. In a heterogeneous g-C3N4 matrix, scattering and adsorption can confound fluorescence or UV-vis comparisons. Transfer from EV053, EV065, and GX007 is methodological, not proof that the same quenching route controls P01 selectivity.\",\"feasibility\":\"moderate\"},{\"id\":\"E05\",\"hypothesis_id\":\"H01\",\"title\":\"Near-operando cobalt-state comparison under TEOA and TEA\",\"purpose\":\"Assess whether TEA and TEOA correlate with different cobalt oxidation or coordination signatures in the P01 primary system, narrowing whether donor identity changes the cobalt-containing catalytic manifold rather than only bulk assay conditions.\",\"evidence_ids\":[\"GX008\",\"EV046\",\"EV059\"],\"source_to_proposal\":\"EV059 anchors the CoCl2 plus bpy plus g-C3N4 plus TEOA formulation family closest to the target context. GX008 supports UV-vis, XAS, IR, Raman, and related operando-capable methods for homogeneous or mixed photocatalytic systems, while EV046 supports before/after and control logic but warns that recovered-state data alone are insufficient. Proposed transfer: use the P01 baseline and TEA comparator with matched catalyst-containing and catalyst-free references, prioritizing near-operando measurements over post-reaction-only inference.\",\"groups\":[{\"id\":\"E05G01\",\"description\":\"Matched P01 baseline under TEOA before illumination\",\"factors\":[{\"name\":\"platform\",\"value\":\"P01-like matched formulation\"},{\"name\":\"donor_identity\",\"value\":\"TEOA\"},{\"name\":\"cobalt_components\",\"value\":\"present\"},{\"name\":\"illumination_state\",\"value\":\"before illumination\"},{\"name\":\"gas_condition\",\"value\":\"same reaction gas handling\"},{\"name\":\"sample_timing\",\"value\":\"initial\"}]},{\"id\":\"E05G02\",\"description\":\"Matched P01 baseline under TEOA during or immediately after controlled illumination window\",\"factors\":[{\"name\":\"platform\",\"value\":\"P01-like matched formulation\"},{\"name\":\"donor_identity\",\"value\":\"TEOA\"},{\"name\":\"cobalt_components\",\"value\":\"present\"},{\"name\":\"illumination_state\",\"value\":\"during or immediate quench after illumination\"},{\"name\":\"gas_condition\",\"value\":\"same reaction gas handling\"},{\"name\":\"sample_timing\",\"value\":\"matched illuminated\"}]},{\"id\":\"E05G03\",\"description\":\"Matched P01 comparator under TEA before illumination\",\"factors\":[{\"name\":\"platform\",\"value\":\"P01-like matched formulation\"},{\"name\":\"donor_identity\",\"value\":\"TEA\"},{\"name\":\"cobalt_components\",\"value\":\"present\"},{\"name\":\"illumination_state\",\"value\":\"before illumination\"},{\"name\":\"gas_condition\",\"value\":\"same reaction gas handling\"},{\"name\":\"sample_timing\",\"value\":\"initial\"}]},{\"id\":\"E05G04\",\"description\":\"Matched P01 comparator under TEA during or immediately after controlled illumination window\",\"factors\":[{\"name\":\"platform\",\"value\":\"P01-like matched formulation\"},{\"name\":\"donor_identity\",\"value\":\"TEA\"},{\"name\":\"cobalt_components\",\"value\":\"present\"},{\"name\":\"illumination_state\",\"value\":\"during or immediate quench after illumination\"},{\"name\":\"gas_condition\",\"value\":\"same reaction gas handling\"},{\"name\":\"sample_timing\",\"value\":\"matched illuminated\"}]},{\"id\":\"E05G05\",\"description\":\"Matched donor-containing matrix without cobalt components for background assignment\",\"factors\":[{\"name\":\"platform\",\"value\":\"P01-like matched formulation\"},{\"name\":\"donor_identity\",\"value\":\"TEOA or TEA matched separately in pilot\"},{\"name\":\"cobalt_components\",\"value\":\"absent\"},{\"name\":\"illumination_state\",\"value\":\"matched to compared state\"},{\"name\":\"gas_condition\",\"value\":\"same reaction gas handling\"},{\"name\":\"sample_timing\",\"value\":\"background reference\"}]}],\"comparisons\":[{\"group_a\":\"E05G01\",\"group_b\":\"E05G02\",\"changed_factors\":[\"illumination_state\",\"sample_timing\"],\"inference\":\"Within TEOA, descriptive comparison for cobalt-state evolution under illumination. This is not a single-factor causal test because timing changes with illumination state, but it can reveal whether cobalt-associated signatures emerge or decay during operation.\"},{\"group_a\":\"E05G03\",\"group_b\":\"E05G04\",\"changed_factors\":[\"illumination_state\",\"sample_timing\"],\"inference\":\"Within TEA, descriptive comparison for cobalt-state evolution under illumination. Compare direction and magnitude with the TEOA pair, but retain the same descriptive limit.\"},{\"group_a\":\"E05G01\",\"group_b\":\"E05G03\",\"changed_factors\":[\"donor_identity\"],\"inference\":\"Single-factor donor comparison before illumination. Any initial difference suggests donor-dependent pre-equilibrium or coordination differences before turnover begins.\"},{\"group_a\":\"E05G02\",\"group_b\":\"E05G04\",\"changed_factors\":[\"donor_identity\"],\"inference\":\"Single-factor donor comparison at the matched illuminated state. A reproducible donor-dependent cobalt signature supports donor-linked changes in the cobalt manifold under operating conditions.\"}],\"procedure\":[\"Select one primary spectroscopic mode with cobalt sensitivity available in-house or through a facility, and pair it with one simpler cross-check if possible.\",\"Collect reference spectra for the full matrix and cobalt-free background, then acquire matched pre-illumination and illuminated-state spectra for TEOA and TEA formulations using the same sampling geometry and timing logic.\",\"Use a pilot illumination window short enough to preserve measurable cobalt signal while still producing a state change, and freeze timing/handling before the donor comparison.\",\"Interpret only features that differ reproducibly from cobalt-free backgrounds and that persist across at least one independent physical readout or repeat set.\"],\"measurements\":[\"Cobalt-sensitive spectral signatures consistent with oxidation-state or coordination-environment change\",\"Difference spectra between pre-illumination and illuminated states under each donor\",\"Background spectra from donor-containing cobalt-free matrix\",\"If available, concurrent UV-vis changes of the full sample to track gross decomposition or aggregation\"],\"supports\":\"A reproducible donor-dependent cobalt-associated spectral difference under matched illuminated conditions, especially when absent or smaller before illumination, supports a link between donor identity and the cobalt-containing catalytic manifold. Correlation with catalytic CO/H2 changes would strengthen this interpretation.\",\"refutes\":\"If TEA and TEOA give no reproducible difference in cobalt-associated signatures before or during illumination within the method's resolution, a large donor-specific cobalt-state change is disfavored as the dominant explanation for product differences, though subtle states below detection or non-cobalt factors may remain.\",\"inconclusive\":\"Recovered-sample-only differences, unresolved overlapping features, or spectral changes equally present in cobalt-free backgrounds are inconclusive for cobalt-state assignment. Even a clear donor-dependent cobalt signal cannot by itself prove the active species, rate-limiting step, or causal path to CO versus H2.\",\"parameter_selection\":\"Because no exact operando settings are supplied, choose the method by availability and cobalt detectability: low-barrier UV-vis if features are visible, or specialist XAS/IR/Raman if needed. Use pilot scans to determine concentration/pathlength or collection time that gives unsaturated, reproducible spectra and a short illumination interval that changes signal without complete decomposition. Hold reactor, gas handling, and optical flux constant across donors.\",\"limitations\":\"In situ active-state identity for P01 is unresolved. Heterogeneous support and mixed solution/solid phases can blur cobalt assignments. Pre/post contrasts are inherently time-coupled and therefore descriptive rather than isolated causal tests. This card characterizes state correlation, not full mechanism.\",\"feasibility\":\"specialist\"},{\"id\":\"E06\",\"hypothesis_id\":\"H01\",\"title\":\"13CO2 origin check for CO under matched TEOA and TEA conditions\",\"purpose\":\"Determine whether CO detected in the matched donor comparison is CO2-derived under both donor identities, protecting the TEA/TEOA selectivity comparison against donor-specific carbon artifacts or background CO formation.\",\"evidence_ids\":[\"EV046\",\"EV021\",\"EV022\",\"EV082\",\"GX008\"],\"source_to_proposal\":\"EV021 shows TEOA can participate non-innocently yet isotope labeling can still verify CO2 origin; EV046, EV022, EV082, and GX008 support transferable use of negative controls and 13CO2 plus GC-MS in photocatalytic CO2 reduction studies. Proposed transfer: apply reproducible 13CO2 labeling to the P01 matched benchmark for both donors, alongside key benchmark negatives, and interpret origin separately from selectivity or mechanism.\",\"groups\":[{\"id\":\"E06G01\",\"description\":\"Matched P01 baseline with TEOA under labeled carbon dioxide\",\"factors\":[{\"name\":\"platform\",\"value\":\"P01-like matched formulation\"},{\"name\":\"donor_identity\",\"value\":\"TEOA\"},{\"name\":\"carbon_feed\",\"value\":\"13CO2\"},{\"name\":\"cobalt_components\",\"value\":\"present\"},{\"name\":\"illumination_state\",\"value\":\"illuminated\"},{\"name\":\"analysis_mode\",\"value\":\"GC-MS matched workflow\"}]},{\"id\":\"E06G02\",\"description\":\"Matched P01 comparator with TEA under labeled carbon dioxide\",\"factors\":[{\"name\":\"platform\",\"value\":\"P01-like matched formulation\"},{\"name\":\"donor_identity\",\"value\":\"TEA\"},{\"name\":\"carbon_feed\",\"value\":\"13CO2\"},{\"name\":\"cobalt_components\",\"value\":\"present\"},{\"name\":\"illumination_state\",\"value\":\"illuminated\"},{\"name\":\"analysis_mode\",\"value\":\"GC-MS matched workflow\"}]},{\"id\":\"E06G03\",\"description\":\"Matched TEOA formulation under unlabeled carbon dioxide reference\",\"factors\":[{\"name\":\"platform\",\"value\":\"P01-like matched formulation\"},{\"name\":\"donor_identity\",\"value\":\"TEOA\"},{\"name\":\"carbon_feed\",\"value\":\"CO2\"},{\"name\":\"cobalt_components\",\"value\":\"present\"},{\"name\":\"illumination_state\",\"value\":\"illuminated\"},{\"name\":\"analysis_mode\",\"value\":\"GC-MS matched workflow\"}]},{\"id\":\"E06G04\",\"description\":\"Matched TEA formulation under unlabeled carbon dioxide reference\",\"factors\":[{\"name\":\"platform\",\"value\":\"P01-like matched formulation\"},{\"name\":\"donor_identity\",\"value\":\"TEA\"},{\"name\":\"carbon_feed\",\"value\":\"CO2\"},{\"name\":\"cobalt_components\",\"value\":\"present\"},{\"name\":\"illumination_state\",\"value\":\"illuminated\"},{\"name\":\"analysis_mode\",\"value\":\"GC-MS matched workflow\"}]},{\"id\":\"E06G05\",\"description\":\"Matched labeled-gas negative control without cobalt components\",\"factors\":[{\"name\":\"platform\",\"value\":\"P01-like matched formulation\"},{\"name\":\"donor_identity\",\"value\":\"TEOA or TEA matched separately in pilot\"},{\"name\":\"carbon_feed\",\"value\":\"13CO2\"},{\"name\":\"cobalt_components\",\"value\":\"absent\"},{\"name\":\"illumination_state\",\"value\":\"illuminated\"},{\"name\":\"analysis_mode\",\"value\":\"GC-MS matched workflow\"}]}],\"comparisons\":[{\"group_a\":\"E06G01\",\"group_b\":\"E06G03\",\"changed_factors\":[\"carbon_feed\"],\"inference\":\"Single-factor isotopic-origin check for the TEOA case. Appearance of labeled CO pattern only with 13CO2 supports CO2 as the carbon source for detected CO.\"},{\"group_a\":\"E06G02\",\"group_b\":\"E06G04\",\"changed_factors\":[\"carbon_feed\"],\"inference\":\"Single-factor isotopic-origin check for the TEA case. This tests whether CO under TEA is likewise CO2-derived rather than donor-specific carbon artifact.\"},{\"group_a\":\"E06G01\",\"group_b\":\"E06G02\",\"changed_factors\":[\"donor_identity\"],\"inference\":\"Single-factor donor comparison under identical labeled feed. This can show whether any donor-dependent CO amount persists after origin is verified, but it does not identify cause.\"},{\"group_a\":\"E06G01\",\"group_b\":\"E06G05\",\"changed_factors\":[\"donor_identity\",\"cobalt_components\"],\"inference\":\"Multi-factor contrast against a key negative control. Useful to bound catalyst dependence of labeled CO detection, but confounded by donor choice if only one negative-control donor is run.\"}],\"procedure\":[\"Reproduce the matched P01 benchmark for TEOA and TEA using the same reactor, gas handling, illumination, and sampling workflow as the benchmark experiment, substituting labeled CO2 only where specified.\",\"Run GC-MS with unlabeled and labeled CO references or established mass-fragment checks to verify that the instrument can distinguish labeled from unlabeled CO under the expected small-signal regime.\",\"Include at least one labeled-gas negative control omitting cobalt components, and retain benchmark dark or no-CO2 controls from the parent assay if available in the same campaign.\",\"Interpret isotopic origin separately from total CO/H2 performance: first ask whether CO is CO2-derived in each donor case, then compare donor-dependent CO amount only within the labeled matched pair.\"],\"measurements\":[\"GC-MS isotopic pattern for CO under 13CO2 and under unlabeled CO2 references\",\"CO and H2 amounts from the same matched runs to preserve the donor comparison context\",\"Blank and negative-control signals for reactor or analytical background CO\",\"If measurable, reproducibility of labeled CO detection across repeat injections or runs\"],\"supports\":\"Detection of the labeled CO signature in both donor conditions, with the corresponding unlabeled reference pattern in the natural-abundance runs and little or no labeled CO in the negative control, supports the claim that observed CO in the donor comparison is genuinely CO2-derived. This validates interpreting donor-dependent CO changes as altered CO2-reduction output rather than obvious carbon-source artifact.\",\"refutes\":\"If CO detected in a donor condition lacks the expected labeled signature under 13CO2, or if similar labeled CO appears in the key negative control, the central TEA/TEOA CO comparison is undermined and donor-specific or assay-background artifacts become a stronger explanation.\",\"inconclusive\":\"Very low CO signal, overlapping mass fragments, memory effects, or inconsistent gas handling can make origin assignment inconclusive. Even a positive 13CO2 result does not explain why TEA and TEOA differ; it only bounds the carbon-source question.\",\"parameter_selection\":\"Use the same matched formulation and illumination program as the verified benchmark. Because no isotope-analysis recipe is supplied, first calibrate GC-MS retention and fragment assignment with unlabeled and labeled CO standards or validated instrument checks, then choose a sampling volume and run time that detect the smallest benchmark CO signal without overload. If product is near detection limit, prioritize fewer well-controlled labeled runs over a broad matrix.\",\"limitations\":\"This card verifies product origin, not mechanism. A positive result cannot distinguish donor-photophysics, proton management, medium effects, or cobalt-state explanations. The negative control is not a perfectly matched single-factor test if only one donor identity is used there; conclusions from that contrast must stay bounded.\",\"feasibility\":\"moderate\"}]}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "in_memory",
+  "reasoning": {
+    "context": "current_turn",
+    "effort": "none",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "research_output",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "candidates": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "hypothesis_id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "purpose": {
+                  "type": "string"
+                },
+                "evidence_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "source_to_proposal": {
+                  "type": "string"
+                },
+                "groups": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "description": {
+                        "type": "string"
+                      },
+                      "factors": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "name",
+                            "value"
+                          ],
+                          "additionalProperties": false
+                        }
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "description",
+                      "factors"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "comparisons": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "group_a": {
+                        "type": "string"
+                      },
+                      "group_b": {
+                        "type": "string"
+                      },
+                      "changed_factors": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "inference": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "group_a",
+                      "group_b",
+                      "changed_factors",
+                      "inference"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "procedure": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "measurements": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "supports": {
+                  "type": "string"
+                },
+                "refutes": {
+                  "type": "string"
+                },
+                "inconclusive": {
+                  "type": "string"
+                },
+                "parameter_selection": {
+                  "type": "string"
+                },
+                "limitations": {
+                  "type": "string"
+                },
+                "feasibility": {
+                  "type": "string",
+                  "enum": [
+                    "low_cost",
+                    "moderate",
+                    "specialist"
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "hypothesis_id",
+                "title",
+                "purpose",
+                "evidence_ids",
+                "source_to_proposal",
+                "groups",
+                "comparisons",
+                "procedure",
+                "measurements",
+                "supports",
+                "refutes",
+                "inconclusive",
+                "parameter_selection",
+                "limitations",
+                "feasibility"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "candidates"
+        ],
+        "additionalProperties": false
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "user": null,
+  "metadata": {}
+}

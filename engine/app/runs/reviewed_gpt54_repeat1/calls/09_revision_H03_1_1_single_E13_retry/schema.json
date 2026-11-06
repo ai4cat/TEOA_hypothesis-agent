@@ -1,0 +1,161 @@
+{
+  "type": "object",
+  "properties": {
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "hypothesis_id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "purpose": {
+            "type": "string"
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source_to_proposal": {
+            "type": "string"
+          },
+          "groups": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "factors": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "value": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "name",
+                      "value"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "required": [
+                "id",
+                "description",
+                "factors"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "comparisons": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "group_a": {
+                  "type": "string"
+                },
+                "group_b": {
+                  "type": "string"
+                },
+                "changed_factors": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "inference": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "group_a",
+                "group_b",
+                "changed_factors",
+                "inference"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "procedure": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "measurements": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "supports": {
+            "type": "string"
+          },
+          "refutes": {
+            "type": "string"
+          },
+          "inconclusive": {
+            "type": "string"
+          },
+          "parameter_selection": {
+            "type": "string"
+          },
+          "limitations": {
+            "type": "string"
+          },
+          "feasibility": {
+            "type": "string",
+            "enum": [
+              "low_cost",
+              "moderate",
+              "specialist"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "hypothesis_id",
+          "title",
+          "purpose",
+          "evidence_ids",
+          "source_to_proposal",
+          "groups",
+          "comparisons",
+          "procedure",
+          "measurements",
+          "supports",
+          "refutes",
+          "inconclusive",
+          "parameter_selection",
+          "limitations",
+          "feasibility"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "candidates"
+  ],
+  "additionalProperties": false
+}

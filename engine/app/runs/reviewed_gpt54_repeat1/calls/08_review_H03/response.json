@@ -1,0 +1,93 @@
+{
+  "decisions": [
+    {
+      "candidate_id": "E13",
+      "decision": "revise",
+      "major_issues": [
+        "The normalized comparison still leaves major uncontrolled donor-linked properties entangled because matching MeCN/H2O and total amine-derived fraction does not match proton activity, CO2 uptake/speciation, viscosity, conductivity, or cobalt coordination between TEA and TEOA.",
+        "The card lacks an internal no-amine or non-CO2 control within the specified groups, so apparent donor-dependent gas differences rely on external workflow checks rather than built-in attribution controls.",
+        "The stated inference can overread collapse of the TEA/TEOA difference as mainly medium/proton-management causation, when normalization itself changes several hidden variables and may differentially affect catalyst viability."
+      ],
+      "rationale": "This is a useful within-platform comparison anchored by direct system evidence for the P01 formulation family and by transferable evidence that amines and medium can alter CO2-reduction behavior. It has clear value as a descriptive test of whether a TEA/TEOA difference survives tighter recipe matching. However, the proposed primary contrast does not isolate donor identity versus medium effects as strongly as claimed, because TEA and TEOA remain chemically non-equivalent even at matched volume fraction and solvent ratio. The design is therefore defensible for researcher consideration only after tightening the interpretation and, ideally, adding explicit attribution controls or covariates that better document what normalization changed.",
+      "evidence_support": "direct",
+      "inference_validity": "needs_revision",
+      "candidate_value": "conditional",
+      "implementation_readiness": "details_needed",
+      "resource_level": "low_cost",
+      "prior_issue_resolution": "No prior review provided. Current assessment explicitly recognizes the direct P01 anchoring from EV059 while preserving transfer limits from medium-effect evidence. New concerns are the residual confounding after composition normalization, absence of built-in attribution controls in the core group set, and overinterpretation risk if any selectivity collapse is treated as specifically proton-management driven."
+    },
+    {
+      "candidate_id": "E14",
+      "decision": "revise",
+      "major_issues": [
+        "Signal assignment remains substantially ambiguous because isotope-sensitive bands in this mixed photocatalytic suspension do not uniquely identify donor-specific proton-management states versus cobalt speciation, solvent, or support-related features.",
+        "D2O substitution perturbs multiple properties beyond proton transfer, so donor-to-donor isotope differences are not a clean discriminator of proton-management alone.",
+        "The operando or near-operando spectroscopy mode is underspecified, making feasibility, background subtraction, and comparability across TEA/TEOA conditions uncertain."
+      ],
+      "rationale": "The candidate is scientifically valuable as a characterization-heavy discriminator and is supported by transferable method evidence for isotope-assisted operando assignment and by cross-system precedent that solvent/additive environment can alter observed intermediates. The proposed controls are better than many alternatives, including donor-free background and within-donor H2O/D2O contrasts. Still, the card should be revised because the inferential claims need stronger limits and the measurement plan needs more explicit handling of weak signals, scattering, and assignment ambiguity in a g-C3N4-containing photocatalytic mixture. It is worth retaining as a specialist pilot, not as a ready mechanistic test.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "needs_revision",
+      "candidate_value": "conditional",
+      "implementation_readiness": "pilot_needed",
+      "resource_level": "specialist",
+      "prior_issue_resolution": "No prior review provided. Current assessment credits the candidate for including isotope and background controls, but newly flags unresolved assignment ambiguity, solvent-isotope confounding, and missing detail on the exact spectroscopic implementation needed for interpretable comparison."
+    },
+    {
+      "candidate_id": "E15",
+      "decision": "shortlist",
+      "major_issues": [],
+      "rationale": "This is a bounded descriptive characterization study with appropriate limits. It does not overclaim mechanistic proof, uses matched inert versus CO2 equilibrated comparisons within each donor, and includes a no-amine background to bound non-donor contributions. The evidence is mostly transferable rather than direct, but it is sufficient for a defensible researcher-facing screen asking whether TEA and TEOA generate different detectable CO2-associated states in the actual P01 medium family. Because the card explicitly treats any signal as associational rather than proof of the active state, the inference is appropriately constrained.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "adequate_for_stated_question",
+      "candidate_value": "retain",
+      "implementation_readiness": "pilot_needed",
+      "resource_level": "moderate",
+      "prior_issue_resolution": "No prior review provided. Current assessment notes that the card already resolves common prior-style concerns by adding inert references, no-amine background, reproducibility checks, and explicit warnings against assigning active-species identity from descriptive spectra."
+    },
+    {
+      "candidate_id": "E16",
+      "decision": "revise",
+      "major_issues": [
+        "The 'non-sacrificial proton-management adjustment or inert base' is too loosely defined, creating major interpretive risk because different replacements could alter coordination, ionic strength, or side reactivity rather than only bulk acid-base environment.",
+        "The key rescue comparison is intrinsically confounded: failure to rescue cannot rule out proton-management contributions, while apparent rescue may arise from unrelated medium effects.",
+        "The TEA versus inert-adjustment contrast changes more than one factor and cannot support mechanistic ranking unless interpretation is sharply limited."
+      ],
+      "rationale": "This candidate has practical value because omission and bounded replacement tests can show whether amine presence is necessary and whether some behavior can be moved by a non-donor acid-base intervention. The direct TEA/TEOA comparator also keeps the platform fixed. However, the replacement arm is too open-ended to support the stated mechanistic emphasis without revision. The card should be retained but reframed as a limited intervention screen, with stricter criteria for choosing the replacement and more cautious interpretation of any partial rescue.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "needs_revision",
+      "candidate_value": "conditional",
+      "implementation_readiness": "details_needed",
+      "resource_level": "low_cost",
+      "prior_issue_resolution": "No prior review provided. Current assessment accepts the card's own limitation that non-sacrificial base cannot replicate donor redox, but identifies unresolved issues in the undefined replacement chemistry and in overreading rescue/failure outcomes beyond what the design can support."
+    },
+    {
+      "candidate_id": "E17",
+      "decision": "shortlist",
+      "major_issues": [],
+      "rationale": "This is a defensible descriptive interaction map. It directly addresses the hypothesis prediction that donor-dependent CO/H2 differences may weaken or cross over when medium variables are changed in a controlled way. The card appropriately limits inference to donor-by-medium interaction rather than claiming isolation of a unique mechanism, and it includes practical comparability checks for phase behavior and common analytics. Although evidence is mostly transferable and not direct TEA-versus-TEOA proof in P01, the design is well matched to the stated question and valuable for researcher planning.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "adequate_for_stated_question",
+      "candidate_value": "retain",
+      "implementation_readiness": "ready_for_researcher_planning",
+      "resource_level": "low_cost",
+      "prior_issue_resolution": "No prior review provided. Current assessment finds that the card already addresses likely concerns by explicitly treating water-fraction effects as medium-sensitive descriptive evidence, not single-cause mechanism proof, and by requiring an operationally comparable single-phase window for both donors."
+    },
+    {
+      "candidate_id": "E18",
+      "decision": "revise",
+      "major_issues": [
+        "Bulk descriptors such as pH/pD proxy, conductivity, and CO2 uptake proxy may not track the local environment at cobalt or g-C3N4 sites, so correlation with CO/H2 can be weak or misleading.",
+        "The proposal risks overinterpreting paired donor/product/descriptor differences as evidence for proton-management causation when all measured variables can co-vary with other donor-specific effects.",
+        "The CO2 uptake-related readout is reactor- and method-dependent and may be difficult to compare cleanly across catalytic suspensions without disturbing the system."
+      ],
+      "rationale": "The candidate is useful as a low-cost correlation screen and appropriately states that bulk measurements do not prove local mechanism. It gains value from combining catalytic outputs with matched descriptor measurements and isotope perturbation. However, the core inference still needs revision because the measured covariates are indirect, and the suggested uptake proxy may be too method-sensitive for strong conclusions. As a descriptive screen it is worth retaining, but the interpretation should be narrowed and the descriptor suite prioritized toward the most stable, reproducible measures.",
+      "evidence_support": "transfer_with_limits",
+      "inference_validity": "needs_revision",
+      "candidate_value": "conditional",
+      "implementation_readiness": "pilot_needed",
+      "resource_level": "low_cost",
+      "prior_issue_resolution": "No prior review provided. Current assessment acknowledges the card's own cautions about bulk-versus-local mismatch, but newly identifies the uptake proxy and correlation-to-causation leap as unresolved issues requiring revision."
+    }
+  ],
+  "overall": "E15 and E17 are the strongest candidates for shortlist because they ask bounded questions with interpretations that remain aligned to the actual controls. E13, E14, E16, and E18 should be retained in revised form rather than rejected: each has research value, but each currently risks overinterpreting descriptive or confounded contrasts as stronger mechanistic discrimination than the supplied design can support. Across the set, direct support is strongest only for staying within the P01 formulation family; most mechanistic justification is transferable with clear limits. The best near-term package is a low-cost descriptive interaction/characterization sequence: E17 and E15 first, then revised E13 or E18 for follow-up, with E14 reserved for specialist pilot work if simpler screens indicate a real donor-dependent medium effect worth probing spectroscopically."
+}

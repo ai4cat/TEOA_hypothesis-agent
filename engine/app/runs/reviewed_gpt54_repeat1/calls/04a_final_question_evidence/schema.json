@@ -1,0 +1,110 @@
+{
+  "type": "object",
+  "properties": {
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question_id": {
+            "type": "string",
+            "enum": [
+              "Q1",
+              "Q2",
+              "Q3",
+              "Q4",
+              "Q5",
+              "Q6"
+            ]
+          },
+          "mechanism_evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "method_evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "supported",
+              "partial",
+              "gap"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "question_id",
+          "mechanism_evidence_ids",
+          "method_evidence_ids",
+          "status",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "supplement_queries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "question_id": {
+            "type": "string",
+            "enum": [
+              "Q1",
+              "Q2",
+              "Q3",
+              "Q4",
+              "Q5",
+              "Q6"
+            ]
+          },
+          "channel": {
+            "type": "string",
+            "enum": [
+              "teoa_system",
+              "method"
+            ]
+          },
+          "question": {
+            "type": "string"
+          },
+          "term_groups": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9]+$"
+              }
+            }
+          }
+        },
+        "required": [
+          "id",
+          "question_id",
+          "channel",
+          "question",
+          "term_groups"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "questions",
+    "supplement_queries"
+  ],
+  "additionalProperties": false
+}

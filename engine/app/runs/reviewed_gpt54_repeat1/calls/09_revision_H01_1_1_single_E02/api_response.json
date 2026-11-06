@@ -1,0 +1,326 @@
+{
+  "id": "resp_0527e05a3ae651ed016aebf915accc819681d5c367e850be67",
+  "object": "response",
+  "created_at": 1793849621,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "completed_at": 1793849636,
+  "content_filters": [
+    {
+      "blocked": false,
+      "source_type": "prompt",
+      "content_filter_raw": [],
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        }
+      },
+      "content_filter_offsets": {
+        "start_offset": 0,
+        "end_offset": 51352,
+        "check_offset": 0
+      }
+    },
+    {
+      "blocked": false,
+      "source_type": "completion",
+      "content_filter_raw": [],
+      "content_filter_results": {
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "content_filter_offsets": {
+        "start_offset": 0,
+        "end_offset": 8405,
+        "check_offset": 0
+      }
+    }
+  ],
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 16000,
+  "max_tool_calls": null,
+  "model": "gpt-5.4",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0527e05a3ae651ed016aebf91684e881969b1b77a8676c5e68",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"candidates\":[{\"id\":\"E02\",\"hypothesis_id\":\"H01\",\"title\":\"Matched donor-specific necessity and background controls\",\"purpose\":\"Test whether any TEA versus TEOA CO/H2 difference persists only in the complete photocatalytic formulation after symmetric light, gas-feed, and cobalt-necessity controls for both donors.\",\"evidence_ids\":[\"EV046\",\"EV081\",\"EV045\",\"GX008\",\"GX012\"],\"source_to_proposal\":\"EV046, EV081, EV045, and GX008 support negative controls for light, CO2 versus inert gas, and key component omission, while EV081 and GX012 show that catalyst-free or altered-component backgrounds can still produce some gas. The proposal narrows transfer to assay-validation logic in the P01 donor comparison and does not assume these controls alone identify mechanism.\",\"groups\":[{\"id\":\"E02G01\",\"description\":\"Full TEOA system under light and CO2.\",\"factors\":[{\"name\":\"platform\",\"value\":\"P01 CoCl2+bpy with g-C3N4 photocatalysis\"},{\"name\":\"amine_identity\",\"value\":\"TEOA\"},{\"name\":\"cobalt_component\",\"value\":\"present\"},{\"name\":\"bpy_component\",\"value\":\"present\"},{\"name\":\"g-C3N4_component\",\"value\":\"present\"},{\"name\":\"gas_feed\",\"value\":\"CO2\"},{\"name\":\"illumination\",\"value\":\"on\"},{\"name\":\"atmosphere_mode\",\"value\":\"sealed photocatalysis\"}]},{\"id\":\"E02G02\",\"description\":\"Full TEA system under light and CO2.\",\"factors\":[{\"name\":\"platform\",\"value\":\"P01 CoCl2+bpy with g-C3N4 photocatalysis\"},{\"name\":\"amine_identity\",\"value\":\"TEA\"},{\"name\":\"cobalt_component\",\"value\":\"present\"},{\"name\":\"bpy_component\",\"value\":\"present\"},{\"name\":\"g-C3N4_component\",\"value\":\"present\"},{\"name\":\"gas_feed\",\"value\":\"CO2\"},{\"name\":\"illumination\",\"value\":\"on\"},{\"name\":\"atmosphere_mode\",\"value\":\"sealed photocatalysis\"}]},{\"id\":\"E02G03\",\"description\":\"TEOA dark control.\",\"factors\":[{\"name\":\"platform\",\"value\":\"P01 CoCl2+bpy with g-C3N4 photocatalysis\"},{\"name\":\"amine_identity\",\"value\":\"TEOA\"},{\"name\":\"cobalt_component\",\"value\":\"present\"},{\"name\":\"bpy_component\",\"value\":\"present\"},{\"name\":\"g-C3N4_component\",\"value\":\"present\"},{\"name\":\"gas_feed\",\"value\":\"CO2\"},{\"name\":\"illumination\",\"value\":\"off\"},{\"name\":\"atmosphere_mode\",\"value\":\"sealed photocatalysis\"}]},{\"id\":\"E02G04\",\"description\":\"TEA dark control.\",\"factors\":[{\"name\":\"platform\",\"value\":\"P01 CoCl2+bpy with g-C3N4 photocatalysis\"},{\"name\":\"amine_identity\",\"value\":\"TEA\"},{\"name\":\"cobalt_component\",\"value\":\"present\"},{\"name\":\"bpy_component\",\"value\":\"present\"},{\"name\":\"g-C3N4_component\",\"value\":\"present\"},{\"name\":\"gas_feed\",\"value\":\"CO2\"},{\"name\":\"illumination\",\"value\":\"off\"},{\"name\":\"atmosphere_mode\",\"value\":\"sealed photocatalysis\"}]},{\"id\":\"E02G05\",\"description\":\"TEOA inert-gas control.\",\"factors\":[{\"name\":\"platform\",\"value\":\"P01 CoCl2+bpy with g-C3N4 photocatalysis\"},{\"name\":\"amine_identity\",\"value\":\"TEOA\"},{\"name\":\"cobalt_component\",\"value\":\"present\"},{\"name\":\"bpy_component\",\"value\":\"present\"},{\"name\":\"g-C3N4_component\",\"value\":\"present\"},{\"name\":\"gas_feed\",\"value\":\"Ar\"},{\"name\":\"illumination\",\"value\":\"on\"},{\"name\":\"atmosphere_mode\",\"value\":\"sealed photocatalysis\"}]},{\"id\":\"E02G06\",\"description\":\"TEA inert-gas control.\",\"factors\":[{\"name\":\"platform\",\"value\":\"P01 CoCl2+bpy with g-C3N4 photocatalysis\"},{\"name\":\"amine_identity\",\"value\":\"TEA\"},{\"name\":\"cobalt_component\",\"value\":\"present\"},{\"name\":\"bpy_component\",\"value\":\"present\"},{\"name\":\"g-C3N4_component\",\"value\":\"present\"},{\"name\":\"gas_feed\",\"value\":\"Ar\"},{\"name\":\"illumination\",\"value\":\"on\"},{\"name\":\"atmosphere_mode\",\"value\":\"sealed photocatalysis\"}]},{\"id\":\"E02G07\",\"description\":\"TEOA no-cobalt control.\",\"factors\":[{\"name\":\"platform\",\"value\":\"P01 CoCl2+bpy with g-C3N4 photocatalysis\"},{\"name\":\"amine_identity\",\"value\":\"TEOA\"},{\"name\":\"cobalt_component\",\"value\":\"absent\"},{\"name\":\"bpy_component\",\"value\":\"present\"},{\"name\":\"g-C3N4_component\",\"value\":\"present\"},{\"name\":\"gas_feed\",\"value\":\"CO2\"},{\"name\":\"illumination\",\"value\":\"on\"},{\"name\":\"atmosphere_mode\",\"value\":\"sealed photocatalysis\"}]},{\"id\":\"E02G08\",\"description\":\"TEA no-cobalt control.\",\"factors\":[{\"name\":\"platform\",\"value\":\"P01 CoCl2+bpy with g-C3N4 photocatalysis\"},{\"name\":\"amine_identity\",\"value\":\"TEA\"},{\"name\":\"cobalt_component\",\"value\":\"absent\"},{\"name\":\"bpy_component\",\"value\":\"present\"},{\"name\":\"g-C3N4_component\",\"value\":\"present\"},{\"name\":\"gas_feed\",\"value\":\"CO2\"},{\"name\":\"illumination\",\"value\":\"on\"},{\"name\":\"atmosphere_mode\",\"value\":\"sealed photocatalysis\"}]}],\"comparisons\":[{\"group_a\":\"E02G01\",\"group_b\":\"E02G03\",\"changed_factors\":[\"illumination\"],\"inference\":\"Tests whether TEOA-system gas formation requires light.\"},{\"group_a\":\"E02G02\",\"group_b\":\"E02G04\",\"changed_factors\":[\"illumination\"],\"inference\":\"Tests whether TEA-system gas formation requires light.\"},{\"group_a\":\"E02G01\",\"group_b\":\"E02G05\",\"changed_factors\":[\"gas_feed\"],\"inference\":\"Tests whether CO in the TEOA system depends on CO2 rather than donor or background decomposition under otherwise matched conditions.\"},{\"group_a\":\"E02G02\",\"group_b\":\"E02G06\",\"changed_factors\":[\"gas_feed\"],\"inference\":\"Tests whether CO in the TEA system depends on CO2 rather than donor or background decomposition under otherwise matched conditions.\"},{\"group_a\":\"E02G01\",\"group_b\":\"E02G07\",\"changed_factors\":[\"cobalt_component\"],\"inference\":\"Tests whether cobalt is necessary for the TEOA system under the chosen assay conditions.\"},{\"group_a\":\"E02G02\",\"group_b\":\"E02G08\",\"changed_factors\":[\"cobalt_component\"],\"inference\":\"Tests whether cobalt is necessary for the TEA system under the chosen assay conditions.\"},{\"group_a\":\"E02G01\",\"group_b\":\"E02G02\",\"changed_factors\":[\"amine_identity\"],\"inference\":\"If the full systems differ while matched controls for both donors remain low relative to their paired full systems, the TEA versus TEOA difference is more credibly assigned to donor identity under this formulation; if donor-specific backgrounds are substantial, interpretation remains bounded.\"}],\"procedure\":[\"Prepare one matched reaction matrix for both donors, changing only amine identity within each donor pair and holding reactor format, nominal loadings, solvent composition, gas handling, and GC method constant.\",\"Run full, dark, inert-gas, and no-cobalt groups for both donors in the same campaign with randomized position/order if possible.\",\"Quantify CO and H2 for every group by the same calibrated GC workflow and compare each control only to its donor-matched full system before comparing donors.\",\"Interpret donor effects only after symmetric controls show that full-system signals exceed donor-matched backgrounds by a practically meaningful margin under the same assay window.\"],\"measurements\":[\"GC-detected CO amount\",\"GC-detected H2 amount\",\"CO/H2 product ratio or selectivity metric calculated from the same GC dataset\",\"Whether each donor-matched control is above, near, or below blank/detection background\",\"Optional note of visible precipitation or color change as a non-decisive covariate\"],\"supports\":\"H01 is supported if TEA and TEOA full systems reproducibly differ in CO and/or H2 distribution while both donors show low dark, inert-gas, and no-cobalt outputs relative to their own full systems.\",\"refutes\":\"H01 is weakened or refuted for this platform if the TEA and TEOA full systems converge within experimental uncertainty after strict matching, or if one or both donors show control outputs comparable to the corresponding full system so that the apparent donor effect is explained by backgrounds.\",\"inconclusive\":\"The result is inconclusive if full-system signals are near detection limits, if donor-specific controls are non-negligible and differ between donors, or if instability prevents fair comparison across the reaction window.\",\"parameter_selection\":\"Use the same nominal baseline formulation for all eight groups. If all groups are near detection limits, extend irradiation time equally for the entire matrix in a pilot until at least one full system is quantifiable above blank noise. Do not optimize TEA and TEOA separately inside this control card; keep any later donor-specific optimization outside the matched assay-validation test.\",\"limitations\":\"This card tests assay validity and donor dependence under one matched formulation but does not isolate why donors differ. No-cobalt omission does not separately test ligand or absorber necessity. Equal nominal conditions do not guarantee equal pH, donor consumption, or active-species population, so mechanistic interpretation remains bounded.\",\"feasibility\":\"low_cost\"}]}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "in_memory",
+  "reasoning": {
+    "context": "current_turn",
+    "effort": "none",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "research_output",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "candidates": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "hypothesis_id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "purpose": {
+                  "type": "string"
+                },
+                "evidence_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "source_to_proposal": {
+                  "type": "string"
+                },
+                "groups": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "description": {
+                        "type": "string"
+                      },
+                      "factors": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "name",
+                            "value"
+                          ],
+                          "additionalProperties": false
+                        }
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "description",
+                      "factors"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "comparisons": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "group_a": {
+                        "type": "string"
+                      },
+                      "group_b": {
+                        "type": "string"
+                      },
+                      "changed_factors": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "inference": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "group_a",
+                      "group_b",
+                      "changed_factors",
+                      "inference"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "procedure": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "measurements": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "supports": {
+                  "type": "string"
+                },
+                "refutes": {
+                  "type": "string"
+                },
+                "inconclusive": {
+                  "type": "string"
+                },
+                "parameter_selection": {
+                  "type": "string"
+                },
+                "limitations": {
+                  "type": "string"
+                },
+                "feasibility": {
+                  "type": "string",
+                  "enum": [
+                    "low_cost",
+                    "moderate",
+                    "specialist"
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "hypothesis_id",
+                "title",
+                "purpose",
+                "evidence_ids",
+                "source_to_proposal",
+                "groups",
+                "comparisons",
+                "procedure",
+                "measurements",
+                "supports",
+                "refutes",
+                "inconclusive",
+                "parameter_selection",
+                "limitations",
+                "feasibility"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "candidates"
+        ],
+        "additionalProperties": false
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 12105,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 2304
+    },
+    "output_tokens": 1992,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14097
+  },
+  "user": null,
+  "metadata": {}
+}

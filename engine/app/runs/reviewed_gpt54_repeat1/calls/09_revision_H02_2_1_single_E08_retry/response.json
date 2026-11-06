@@ -1,0 +1,338 @@
+{
+  "candidates": [
+    {
+      "id": "E08",
+      "hypothesis_id": "H02",
+      "title": "Transient reduced-state comparison",
+      "purpose": "Determine whether TEA and TEOA produce different transient amplitudes or decay kinetics in the P01 cobalt-containing formulation, while bounding interpretation if donor substitution also changes bulk medium or interfacial properties.",
+      "evidence_ids": [
+        "EV007",
+        "EV018",
+        "EV005",
+        "EV041",
+        "GX008"
+      ],
+      "source_to_proposal": "EV007 and EV041 support that TEOA can participate in reductive quenching and alter reduced-intermediate lifetimes in photocatalytic systems. EV018 and EV005 support transient methods for donor-sensitive carrier kinetics but also show platform dependence and incomplete species assignment. GX008 supports negative controls and TAS-type characterization in photocatalytic systems. Proposed transfer: compare donor-dependent transient observables in P01 as descriptive kinetic signatures, using no-donor and no-cobalt references and a medium-adjustment pilot to narrow overassignment rather than claiming a specific cobalt intermediate.",
+      "groups": [
+        {
+          "id": "E08G01",
+          "description": "P01 transient measurement with TEOA and cobalt present under baseline medium",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 formulation"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "light_condition",
+              "value": "matched pump-probe excitation"
+            },
+            {
+              "name": "sample_state",
+              "value": "matched optical preparation chosen by pilot"
+            },
+            {
+              "name": "atmosphere",
+              "value": "matched CO2-relevant preparation"
+            },
+            {
+              "name": "medium_control",
+              "value": "baseline P01 medium"
+            }
+          ]
+        },
+        {
+          "id": "E08G02",
+          "description": "P01 transient measurement with TEA and cobalt present under baseline medium",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 formulation"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "light_condition",
+              "value": "matched pump-probe excitation"
+            },
+            {
+              "name": "sample_state",
+              "value": "matched optical preparation chosen by pilot"
+            },
+            {
+              "name": "atmosphere",
+              "value": "matched CO2-relevant preparation"
+            },
+            {
+              "name": "medium_control",
+              "value": "baseline P01 medium"
+            }
+          ]
+        },
+        {
+          "id": "E08G03",
+          "description": "No-donor background with cobalt present",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 formulation"
+            },
+            {
+              "name": "donor",
+              "value": "none"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "light_condition",
+              "value": "matched pump-probe excitation"
+            },
+            {
+              "name": "sample_state",
+              "value": "matched optical preparation chosen by pilot"
+            },
+            {
+              "name": "atmosphere",
+              "value": "matched CO2-relevant preparation"
+            },
+            {
+              "name": "medium_control",
+              "value": "baseline P01 medium"
+            }
+          ]
+        },
+        {
+          "id": "E08G04",
+          "description": "TEOA without cobalt reference",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 formulation"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "absent"
+            },
+            {
+              "name": "light_condition",
+              "value": "matched pump-probe excitation"
+            },
+            {
+              "name": "sample_state",
+              "value": "matched optical preparation chosen by pilot"
+            },
+            {
+              "name": "atmosphere",
+              "value": "matched CO2-relevant preparation"
+            },
+            {
+              "name": "medium_control",
+              "value": "baseline P01 medium"
+            }
+          ]
+        },
+        {
+          "id": "E08G05",
+          "description": "TEA without cobalt reference",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 formulation"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "absent"
+            },
+            {
+              "name": "light_condition",
+              "value": "matched pump-probe excitation"
+            },
+            {
+              "name": "sample_state",
+              "value": "matched optical preparation chosen by pilot"
+            },
+            {
+              "name": "atmosphere",
+              "value": "matched CO2-relevant preparation"
+            },
+            {
+              "name": "medium_control",
+              "value": "baseline P01 medium"
+            }
+          ]
+        },
+        {
+          "id": "E08G06",
+          "description": "TEOA with cobalt present after pilot medium adjustment",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 formulation"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "light_condition",
+              "value": "matched pump-probe excitation"
+            },
+            {
+              "name": "sample_state",
+              "value": "matched optical preparation chosen by pilot"
+            },
+            {
+              "name": "atmosphere",
+              "value": "matched CO2-relevant preparation"
+            },
+            {
+              "name": "medium_control",
+              "value": "pilot-adjusted medium chosen to narrow measured bulk differences where feasible"
+            }
+          ]
+        },
+        {
+          "id": "E08G07",
+          "description": "TEA with cobalt present after pilot medium adjustment",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 formulation"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "light_condition",
+              "value": "matched pump-probe excitation"
+            },
+            {
+              "name": "sample_state",
+              "value": "matched optical preparation chosen by pilot"
+            },
+            {
+              "name": "atmosphere",
+              "value": "matched CO2-relevant preparation"
+            },
+            {
+              "name": "medium_control",
+              "value": "pilot-adjusted medium chosen to narrow measured bulk differences where feasible"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E08G01",
+          "group_b": "E08G02",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Primary descriptive contrast for donor-dependent transient amplitudes or lifetimes in the full P01 formulation. A difference supports donor-associated kinetic differences under these conditions but does not by itself identify the transient species or isolate electron-delivery causality."
+        },
+        {
+          "group_a": "E08G01",
+          "group_b": "E08G03",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Tests whether TEOA produces donor-enabled transient populations above the no-donor background."
+        },
+        {
+          "group_a": "E08G02",
+          "group_b": "E08G03",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Tests whether TEA produces donor-enabled transient populations above the no-donor background."
+        },
+        {
+          "group_a": "E08G04",
+          "group_b": "E08G05",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Compares donor-dependent signals without cobalt. Similar donor trends with and without cobalt shift interpretation toward absorber or support-side carrier dynamics rather than uniquely cobalt-associated kinetics."
+        },
+        {
+          "group_a": "E08G06",
+          "group_b": "E08G07",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Secondary contrast after pilot medium adjustment. If the donor difference persists after narrowing measured bulk-medium differences, support is stronger for donor-associated kinetic effects; if it collapses, the original contrast is bounded by medium confounding."
+        },
+        {
+          "group_a": "E08G01",
+          "group_b": "E08G06",
+          "changed_factors": [
+            "medium_control"
+          ],
+          "inference": "Assesses sensitivity of the TEOA transient signature to pilot medium adjustment; a large change indicates substantial interpretive dependence on bulk-medium conditions."
+        },
+        {
+          "group_a": "E08G02",
+          "group_b": "E08G07",
+          "changed_factors": [
+            "medium_control"
+          ],
+          "inference": "Assesses sensitivity of the TEA transient signature to pilot medium adjustment; a large change indicates substantial interpretive dependence on bulk-medium conditions."
+        }
+      ],
+      "procedure": [
+        "Run a pilot to choose sample handling, optical density range, probe wavelengths, and pump fluence that give stable baselines and reproducible donor-enabled signals without obvious damage or nonlinear response.",
+        "Acquire transient traces for all groups under matched preparation age, suspension density, optical path, and atmosphere handling, with dark/background subtraction and repeat preparations.",
+        "Measure bulk covariates that donor substitution may change, including pH or comparable acidity-basicity readout, absorbance or scattering proxy, and handling observations relevant to suspension behavior, before interpreting kinetic contrasts.",
+        "Compare amplitudes and decay parameters only in reproducible time windows with acceptable signal-to-noise, using no-donor and no-cobalt references to keep assignments descriptive unless independently corroborated.",
+        "If feasible from the pilot, repeat the TEA versus TEOA comparison under medium-adjusted conditions designed only to narrow measurable bulk differences, then report whether the donor contrast persists, shrinks, or becomes ambiguous."
+      ],
+      "measurements": [
+        "Transient absorption or analogous pump-probe amplitude at selected probe wavelengths",
+        "Decay kinetics or characteristic lifetimes in reproducible time windows",
+        "Ground-state bleach recovery if observable",
+        "Dark and no-donor background traces for artifact detection",
+        "No-cobalt reference traces to separate cobalt-associated changes from absorber or support-side dynamics",
+        "Bulk covariates for each donor condition, including pH or comparable acidity-basicity readout, optical density or scattering proxy, and suspension-handling notes",
+        "Assignment confidence statement distinguishing descriptive donor-sensitive transients from specifically assigned cobalt intermediates"
+      ],
+      "supports": "Support for H02 would be a reproducible TEA versus TEOA difference in transient formation, amplitude, or persistence in the full P01 formulation, with donor-enabled signals above no-donor background and a contrast that is absent or smaller in no-cobalt references or that persists after medium-adjustment pilots. This supports donor-associated kinetic differences consistent with altered upstream photoredox delivery, while remaining agnostic about exact intermediate identity unless cross-checked independently.",
+      "refutes": "Evidence against a strong upstream donor-kinetics account would be closely matched TEA and TEOA transient observables in cobalt-containing P01 under both baseline and medium-adjusted conditions, provided the method is sensitive enough to detect donor-enabled signals and controls behave as expected. If catalytic selectivity still differs elsewhere under such matched transient behavior, interpretation shifts toward downstream chemistry or unobserved states.",
+      "inconclusive": "Inconclusive if signals are too weak, unstable, or dominated by scattering, photothermal artifacts, or degradation; if donor substitution changes bulk-medium properties so strongly that medium-adjusted comparison is not feasible; if no-cobalt references show similar donor differences that cannot be separated from cobalt effects; or if assignments remain too uncertain to connect the transient contrast to the catalytic manifold beyond a descriptive observation.",
+      "parameter_selection": "Select probe wavelengths and fitting windows by pilot spectra on donor-containing and no-donor samples, choosing regions with adequate signal-to-noise and minimal artifact. Set pump fluence below nonlinear or damaging regimes by fluence-dependence checks. Keep preparation age, optical density range, and path length matched across groups. If medium adjustment is attempted, choose adjustments only after measuring which bulk properties differ most between TEA and TEOA in the actual samples; do not assume a literature recipe. If adjustment introduces new instability, report only the baseline descriptive comparison.",
+      "limitations": "Species assignment in a heterogeneous supported system is provisional, and transient differences do not uniquely prove electron flow into a specific cobalt intermediate. Donor substitution can co-vary pH, viscosity, ionic environment, adsorption, and suspension stability, so even a clear transient difference may reflect combined effects. No-cobalt controls help bound interpretation but do not recreate the same interfacial environment as cobalt-containing samples.",
+      "feasibility": "specialist"
+    }
+  ]
+}

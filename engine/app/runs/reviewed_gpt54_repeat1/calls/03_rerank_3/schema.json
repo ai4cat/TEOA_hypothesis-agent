@@ -1,0 +1,89 @@
+{
+  "type": "object",
+  "properties": {
+    "assessments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "evidence_id": {
+            "type": "string"
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "include",
+              "exclude"
+            ]
+          },
+          "span_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 3
+          },
+          "role": {
+            "type": "string"
+          },
+          "claim": {
+            "type": "string"
+          },
+          "transfer_limit": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "scores": {
+            "type": "object",
+            "properties": {
+              "research_relevance": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 3
+              },
+              "direct_evidence": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 3
+              },
+              "discriminatory_value": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 3
+              },
+              "transferability": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 3
+              }
+            },
+            "required": [
+              "research_relevance",
+              "direct_evidence",
+              "discriminatory_value",
+              "transferability"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "evidence_id",
+          "decision",
+          "span_ids",
+          "role",
+          "claim",
+          "transfer_limit",
+          "reason",
+          "scores"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "assessments"
+  ],
+  "additionalProperties": false
+}

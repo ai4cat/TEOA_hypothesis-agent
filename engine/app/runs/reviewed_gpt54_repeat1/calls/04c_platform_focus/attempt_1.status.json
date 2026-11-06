@@ -1,0 +1,8 @@
+{
+  "started_at": "2026-11-05T02:48:07.432113+00:00",
+  "completed_at": "2026-11-05T02:48:15.559276+00:00",
+  "exit_code": 1,
+  "error_type": "RemoteDisconnected",
+  "error_category": "request_or_validation_error",
+  "error": "Request or validation failed; no retry; inspect saved response if present."
+}

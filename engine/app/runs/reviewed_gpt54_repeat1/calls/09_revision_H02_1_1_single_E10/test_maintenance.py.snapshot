@@ -1,0 +1,67 @@
+import argparse
+import importlib.util
+import tempfile
+import unittest
+from pathlib import Path
+from unittest.mock import patch
+from agent_common import ROOT, save, load, sha
+from resume_supervisor import retryable, supervise
+from verify_run import contained_file
+import workflow
+
+spec=importlib.util.spec_from_file_location('launcher',ROOT.parent/'agent.py')
+launcher=importlib.util.module_from_spec(spec);spec.loader.exec_module(launcher)
+
+
+class MaintenanceChecks(unittest.TestCase):
+    def test_modified_cache_fails_before_reuse(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            base=Path(tmp);save(base/'response.json',dict(value='original'))
+            save(base/'success.json',dict(response_sha256=sha(base/'response.json')))
+            save(base/'response.json',dict(value='modified'))
+            with self.assertRaisesRegex(ValueError,'hash changed'):workflow.verify_cached_response(base)
+
+    def test_permanent_http_errors_stop_without_launch(self):
+        for code in (400,401,403,404,422):
+            self.assertFalse(retryable(dict(http_status=code)))
+        for code in (408,409,429,500,503):self.assertTrue(retryable(dict(http_status=code)))
+        self.assertFalse(retryable(dict(http_status=429,error_category='quota_or_balance')))
+        with tempfile.TemporaryDirectory() as tmp:
+            run=Path(tmp);save(run/'runtime.json',dict(auto_reconnect=True))
+            save(run/'calls/a/invocation.json',dict(started_at='2026-11-04'))
+            save(run/'calls/a/attempt_1.status.json',dict(exit_code=1,http_status=401,completed_at='2026-11-04'))
+            with patch('resume_supervisor.subprocess.Popen') as launch:
+                supervise(run);launch.assert_not_called()
+            self.assertEqual(load(run/'supervisor_state.json')['status'],'blocked')
+
+    def test_invalid_budget_never_creates_run(self):
+        with tempfile.TemporaryDirectory() as tmp,patch.object(launcher,'APP',Path(tmp)),patch.object(launcher,'dependencies'):
+            for budget in (float('nan'),float('inf'),-1,0):
+                with self.assertRaises(ValueError):launcher.generate(argparse.Namespace(name='new',budget=budget,resume=False))
+            self.assertFalse((Path(tmp)/'runs/new').exists())
+
+    def test_manifest_escape_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            for relative in ('../secret.json',str(Path(tmp).resolve()/'secret.json')):
+                with self.assertRaises(ValueError):contained_file(Path(tmp),relative)
+
+    def test_repair_directory_is_not_a_stage_retry(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            run=Path(tmp);(run/'calls/one_schema_completion').mkdir(parents=True)
+            with patch.object(workflow,'call_api',return_value={}) as call:
+                workflow.stage(run,'one','instruction',{},dict(type='object'))
+            self.assertEqual(call.call_args.args[1],'one')
+
+    def test_verify_full_is_read_only_and_detects_tampering(self):
+        from verify_run import verify_run
+        run=ROOT/load(ROOT/'latest.json')['path']
+        if not (run/'GENERATION_FROZEN.json').exists():self.skipTest('Run is not frozen yet; verify after completion')
+        before={p:sha(p) for p in run.rglob('*') if p.is_file()}
+        self.assertGreater(verify_run(run,full=True)['manifest_files_checked'],0)
+        self.assertEqual(before,{p:sha(p) for p in run.rglob('*') if p.is_file()})
+        record=next(x for x in load(run/'RECORDS_SHA256.json')['files'] if x['path']=='candidates_final.json')
+        with patch('verify_run.sha',side_effect=lambda p:'tampered' if Path(p)==run/record['path'] else sha(p)):
+            with self.assertRaises(ValueError):verify_run(run,full=True)
+
+
+if __name__=='__main__':unittest.main()

@@ -1,0 +1,59 @@
+{
+  "type": "object",
+  "properties": {
+    "queries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "question_id": {
+            "type": "string",
+            "enum": [
+              "Q1",
+              "Q2",
+              "Q3",
+              "Q4",
+              "Q5",
+              "Q6"
+            ]
+          },
+          "channel": {
+            "type": "string",
+            "enum": [
+              "teoa_system",
+              "method"
+            ]
+          },
+          "question": {
+            "type": "string"
+          },
+          "term_groups": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9]+$"
+              }
+            }
+          }
+        },
+        "required": [
+          "id",
+          "question_id",
+          "channel",
+          "question",
+          "term_groups"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "queries"
+  ],
+  "additionalProperties": false
+}

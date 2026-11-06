@@ -1,0 +1,263 @@
+{
+  "candidates": [
+    {
+      "id": "E24",
+      "hypothesis_id": "H04",
+      "title": "Ligand and support omission around donor effect",
+      "purpose": "Test whether a TEA-versus-TEOA cobalt-state difference requires the full Co-bpy/g-C3N4 assembly or is already present when bpy or g-C3N4 is omitted one factor at a time, while also checking whether any CO/H2 signal remains attributable to background pathways.",
+      "evidence_ids": [
+        "EV059",
+        "GX016",
+        "GX008",
+        "EV081"
+      ],
+      "source_to_proposal": "EV059 anchors the primary CoCl2+bpy+g-C3N4+TEOA formulation family and thus justifies omitting bpy or g-C3N4 relative to that baseline. GX008 supports negative-control logic and paired characterization/product analysis rather than relying on catalytic output alone. EV081 shows that no-catalyst or partial-system backgrounds can still yield CO and H2, so omission results must be interpreted as necessity tests, not proof of mechanism. GX016 supports the broader idea that cobalt-centered identity matters to product selectivity under TEOA photocatalysis, motivating tests of whether donor-linked effects disappear when cobalt coordination context is simplified. The proposed transfer is a controlled omission study in the P01-style system; it does not assume literature-established active-species identity or fully matched chemistry beyond the named components.",
+      "groups": [
+        {
+          "id": "E24G01",
+          "description": "Baseline full assembly with TEOA",
+          "factors": [
+            {
+              "name": "cobalt_source",
+              "value": "CoCl2"
+            },
+            {
+              "name": "bpy",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4",
+              "value": "present"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "solvent_system",
+              "value": "P01 baseline MeCN/H2O formulation"
+            },
+            {
+              "name": "gas_condition",
+              "value": "CO2-saturated"
+            },
+            {
+              "name": "illumination_program",
+              "value": "matched visible-light program"
+            },
+            {
+              "name": "analytical_workflow",
+              "value": "matched cobalt-state plus gas-product workflow"
+            }
+          ]
+        },
+        {
+          "id": "E24G02",
+          "description": "Baseline full assembly with TEA",
+          "factors": [
+            {
+              "name": "cobalt_source",
+              "value": "CoCl2"
+            },
+            {
+              "name": "bpy",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4",
+              "value": "present"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "solvent_system",
+              "value": "P01 baseline MeCN/H2O formulation"
+            },
+            {
+              "name": "gas_condition",
+              "value": "CO2-saturated"
+            },
+            {
+              "name": "illumination_program",
+              "value": "matched visible-light program"
+            },
+            {
+              "name": "analytical_workflow",
+              "value": "matched cobalt-state plus gas-product workflow"
+            }
+          ]
+        },
+        {
+          "id": "E24G03",
+          "description": "Ligand-omission formulation with TEOA",
+          "factors": [
+            {
+              "name": "cobalt_source",
+              "value": "CoCl2"
+            },
+            {
+              "name": "bpy",
+              "value": "absent"
+            },
+            {
+              "name": "g-C3N4",
+              "value": "present"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "solvent_system",
+              "value": "P01 baseline MeCN/H2O formulation"
+            },
+            {
+              "name": "gas_condition",
+              "value": "CO2-saturated"
+            },
+            {
+              "name": "illumination_program",
+              "value": "matched visible-light program"
+            },
+            {
+              "name": "analytical_workflow",
+              "value": "matched cobalt-state plus gas-product workflow"
+            }
+          ]
+        },
+        {
+          "id": "E24G04",
+          "description": "Ligand-omission formulation with TEA",
+          "factors": [
+            {
+              "name": "cobalt_source",
+              "value": "CoCl2"
+            },
+            {
+              "name": "bpy",
+              "value": "absent"
+            },
+            {
+              "name": "g-C3N4",
+              "value": "present"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "solvent_system",
+              "value": "P01 baseline MeCN/H2O formulation"
+            },
+            {
+              "name": "gas_condition",
+              "value": "CO2-saturated"
+            },
+            {
+              "name": "illumination_program",
+              "value": "matched visible-light program"
+            },
+            {
+              "name": "analytical_workflow",
+              "value": "matched cobalt-state plus gas-product workflow"
+            }
+          ]
+        },
+        {
+          "id": "E24G05",
+          "description": "Support-omission formulation with TEOA and TEA run as separate matched subruns under the same card workflow",
+          "factors": [
+            {
+              "name": "cobalt_source",
+              "value": "CoCl2"
+            },
+            {
+              "name": "bpy",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4",
+              "value": "absent"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA or TEA in separate matched subruns"
+            },
+            {
+              "name": "solvent_system",
+              "value": "P01 baseline MeCN/H2O formulation"
+            },
+            {
+              "name": "gas_condition",
+              "value": "CO2-saturated"
+            },
+            {
+              "name": "illumination_program",
+              "value": "matched visible-light program"
+            },
+            {
+              "name": "analytical_workflow",
+              "value": "matched cobalt-state plus gas-product workflow"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E24G01",
+          "group_b": "E24G02",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Primary donor-substitution benchmark in the full assembly. A reproducible difference in cobalt-state observables or stability trend here is necessary before omission data can localize where divergence emerges."
+        },
+        {
+          "group_a": "E24G03",
+          "group_b": "E24G04",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Tests whether donor-dependent cobalt-state divergence persists without bpy. Persistence would indicate that a full Co-bpy assembly is not required for the observed donor effect; disappearance would suggest dependence on ligand-defined coordination context."
+        },
+        {
+          "group_a": "E24G01",
+          "group_b": "E24G03",
+          "changed_factors": [
+            "bpy"
+          ],
+          "inference": "Omission test for ligand necessity under TEOA. Any loss or major alteration of cobalt-state signatures or catalytic output indicates dependence on bpy, but this does not isolate a donor effect because donor is fixed."
+        },
+        {
+          "group_a": "E24G01",
+          "group_b": "E24G05",
+          "changed_factors": [
+            "g-C3N4",
+            "donor"
+          ],
+          "inference": "Descriptive comparison only if E24G05 is implemented first with TEOA, then repeated with TEA as matched subruns. Because support omission and donor handling are not simultaneously encoded as separate groups here, support-related conclusions must be bounded and human review should check subrun comparability before causal interpretation."
+        }
+      ],
+      "procedure": [
+        "Verify the P01 baseline composition from the supplied source, then prepare matched reaction mixtures that differ only by the planned omission or donor identity and include fresh blanks/background references for spectroscopy and gas analysis.",
+        "Run a short pilot to set sample concentration, optical density, and acquisition timing so cobalt-state signals are detectable without detector saturation; keep the same calibrated window for all groups within each analytical session.",
+        "For each group, record pre-illumination and near-operando cobalt-state observables under CO2 and matched illumination, then collect paired gas-product data from the same workflow.",
+        "Compare donor effects first within the full assembly and within the ligand-omission pair; if support omission is pursued, run TEOA and TEA support-free subruns under the same calibrated workflow and treat them as bounded descriptive validation.",
+        "Interpret omissions as necessity tests and donor swaps as specificity tests; do not infer a single active species from one signature or from recovered samples alone."
+      ],
+      "measurements": [
+        "Gas-phase CO and H2 quantified together by the same GC workflow for all groups; report amount and CO/H2 distribution, noting that product ratios alone cannot identify cobalt speciation.",
+        "Near-operando cobalt-state observable from an element- or coordination-sensitive method feasible in the lab context, such as XAS/XPS-compatible sampling or solution/solid UV-Vis features; state explicitly which sample state is measured and that assignments may remain ambiguous.",
+        "Pre- versus during-illumination change in cobalt-related spectral features or signal loss as a bounded stability/deactivation indicator; this can show donor- or omission-dependent change but cannot by itself prove the catalytically active state.",
+        "Background product formation in omission groups, used to bound non-full-assembly contributions; detection of CO or H2 here does not establish catalytic equivalence to the full system."
+      ],
+      "supports": "H04 is supported if the full assembly shows a reproducible TEA-versus-TEOA difference in cobalt-state or stability observables, and the difference changes systematically when bpy is omitted or when support-free subruns are examined, indicating that donor-dependent divergence depends on ligand or support context rather than arising solely from generic donor chemistry. Stronger support occurs if the direction of the state/stability difference tracks the direction of CO/H2 changes across the matched groups.",
+      "refutes": "H04 is weakened if TEA and TEOA give indistinguishable cobalt-state and stability observables in the full assembly within method resolution, and omission of bpy or g-C3N4 changes overall activity but does not reveal any donor-dependent cobalt-state divergence. It is further weakened if donor substitution affects CO/H2 while cobalt-state observables remain unchanged across all matched formulations.",
+      "inconclusive": "Results are inconclusive if product signals are near background, cobalt-state signals are below detection or assignment is non-unique, omission groups cause severe optical or compositional changes that prevent comparable measurements, or support-free subruns are not adequately matched. A donor effect seen only in one method without corroboration or with drifting baselines should remain provisional.",
+      "parameter_selection": "Do not invent concentrations or illumination settings. Use the source-anchored P01 baseline after verification, then perform a pilot to choose the lowest concentration and path length that still provide stable cobalt-state signal above blank/background and measurable CO/H2 above analytical detection. Calibrate sampling time to a pre-conversion window where signals are detectable but bulk depletion is limited. If support-free mixtures change turbidity or absorbance, recalibrate acquisition settings using blanks while preserving identical reactor geometry, gas handling, and analytical timing across compared groups.",
+      "limitations": "Direct TEA-versus-TEOA head-to-head evidence in the exact P01 recipe is incomplete, so this card begins from a source-anchored but still pilot-verified baseline. Omission of bpy or g-C3N4 may create chemically different cobalt species rather than simple partial versions of the full catalyst, so omissions test dependence, not mechanistic continuity. Multi-factor support-free comparison is partially confounded unless implemented as explicit matched subruns. Recovered-sample measurements may miss the operating state, and generic spectral changes cannot by themselves establish the active species or exact coordination geometry.",
+      "feasibility": "moderate"
+    }
+  ]
+}

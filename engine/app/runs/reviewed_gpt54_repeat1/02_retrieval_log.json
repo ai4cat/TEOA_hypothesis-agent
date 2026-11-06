@@ -1,0 +1,137 @@
+{
+  "version": "api_evidence_rerank_v2",
+  "queries": [
+    {
+      "query_id": "Q1_teoa_system",
+      "fts": "(\"TEOA\" OR \"triethanolamine\") AND (\"additive\" OR \"donor\" OR \"scavenger\") AND (\"concentration\" OR \"medium\" OR \"solvent\" OR \"pH\")",
+      "matching_chunks": 269,
+      "matching_paper_records": 143,
+      "top_hits": 100,
+      "filters": {},
+      "pool_allocated": 8
+    },
+    {
+      "query_id": "Q1_method",
+      "fts": "(\"spectroscopy\" OR \"titration\" OR \"electrochemistry\") AND (\"protonation\" OR \"speciation\" OR \"buffering\") AND (\"concentration\" OR \"medium\" OR \"solvent\" OR \"viscosity\")",
+      "matching_chunks": 28,
+      "matching_paper_records": 22,
+      "top_hits": 28,
+      "filters": {},
+      "pool_allocated": 8
+    },
+    {
+      "query_id": "Q2_teoa_system",
+      "fts": "(\"TEOA\" OR \"triethanolamine\") AND (\"cobalt\" OR \"catalyst\" OR \"bipyridine\") AND (\"stability\" OR \"coordination\" OR \"interaction\" OR \"degradation\")",
+      "matching_chunks": 351,
+      "matching_paper_records": 199,
+      "top_hits": 100,
+      "filters": {},
+      "pool_allocated": 8
+    },
+    {
+      "query_id": "Q2_method",
+      "fts": "(\"xas\" OR \"epr\" OR \"uvvis\" OR \"nmr\") AND (\"speciation\" OR \"coordination\" OR \"interaction\" OR \"stability\") AND (\"operando\" OR \"inSitu\" OR \"photolysis\")",
+      "matching_chunks": 134,
+      "matching_paper_records": 68,
+      "top_hits": 100,
+      "filters": {},
+      "pool_allocated": 8
+    },
+    {
+      "query_id": "Q3_teoa_system",
+      "fts": "(\"TEOA\" OR \"triethanolamine\") AND (\"quenching\" OR \"electron\" OR \"transfer\" OR \"charge\") AND (\"turnover\" OR \"photocatalytic\" OR \"kinetics\")",
+      "matching_chunks": 1228,
+      "matching_paper_records": 395,
+      "top_hits": 100,
+      "filters": {},
+      "pool_allocated": 8
+    },
+    {
+      "query_id": "Q3_method",
+      "fts": "(\"transient\" OR \"fluorescence\" OR \"absorption\" OR \"spectroelectrochemistry\") AND (\"quenching\" OR \"electron\" OR \"kinetics\" OR \"lifetime\") AND (\"photocurrent\" OR \"quantum\" OR \"efficiency\")",
+      "matching_chunks": 1052,
+      "matching_paper_records": 547,
+      "top_hits": 100,
+      "filters": {},
+      "pool_allocated": 8
+    },
+    {
+      "query_id": "Q4_teoa_system",
+      "fts": "(\"TEOA\" OR \"triethanolamine\") AND (\"CO2\" OR \"substrate\" OR \"activation\") AND (\"intermediate\" OR \"adsorption\" OR \"assignment\" OR \"signal\")",
+      "matching_chunks": 424,
+      "matching_paper_records": 193,
+      "top_hits": 100,
+      "filters": {},
+      "pool_allocated": 8
+    },
+    {
+      "query_id": "Q4_method",
+      "fts": "(\"ftir\" OR \"raman\" OR \"ir\" OR \"mass\") AND (\"binding\" OR \"intermediate\" OR \"adsorption\" OR \"assignment\") AND (\"isotope\" OR \"labeling\" OR \"operando\")",
+      "matching_chunks": 283,
+      "matching_paper_records": 144,
+      "top_hits": 100,
+      "filters": {},
+      "pool_allocated": 8
+    },
+    {
+      "query_id": "Q5_teoa_system",
+      "fts": "(\"TEOA\" OR \"triethanolamine\") AND (\"performance\" OR \"selectivity\" OR \"rate\" OR \"stability\") AND (\"CO\" OR \"H2\" OR \"origin\" OR \"contribution\")",
+      "matching_chunks": 1132,
+      "matching_paper_records": 380,
+      "top_hits": 100,
+      "filters": {},
+      "pool_allocated": 8
+    },
+    {
+      "query_id": "Q5_method",
+      "fts": "(\"gc\" OR \"ms\" OR \"nmr\" OR \"hplc\") AND (\"product\" OR \"selectivity\" OR \"rate\" OR \"yield\") AND (\"isotope\" OR \"origin\" OR \"control\")",
+      "matching_chunks": 400,
+      "matching_paper_records": 305,
+      "top_hits": 100,
+      "filters": {},
+      "pool_allocated": 8
+    },
+    {
+      "query_id": "Q6_teoa_system",
+      "fts": "(\"TEOA\" OR \"triethanolamine\") AND (\"electron\" OR \"donation\" OR \"reductant\") AND (\"proton\" OR \"coordination\" OR \"buffering\" OR \"viscosity\")",
+      "matching_chunks": 274,
+      "matching_paper_records": 147,
+      "top_hits": 100,
+      "filters": {},
+      "pool_allocated": 8
+    },
+    {
+      "query_id": "Q6_method",
+      "fts": "(\"electrochemistry\" OR \"spectroscopy\" OR \"titration\" OR \"calorimetry\") AND (\"electron\" OR \"proton\" OR \"coordination\" OR \"medium\") AND (\"intervention\" OR \"decoupling\" OR \"mechanistic\")",
+      "matching_chunks": 142,
+      "matching_paper_records": 107,
+      "top_hits": 100,
+      "filters": {
+        "likely_reference_list": 2
+      },
+      "pool_allocated": 8
+    }
+  ],
+  "pool_chunks": 96,
+  "pool_paper_records": 89,
+  "policy": {
+    "version": "api_evidence_rerank_v2",
+    "top_hits_per_query": 100,
+    "candidates_per_query": 8,
+    "max_candidates": 96,
+    "max_candidates_per_paper": 2,
+    "api_batch_size": 8,
+    "max_selected": 48,
+    "max_selected_per_paper": 2,
+    "weights": {
+      "research_relevance": 0.4,
+      "direct_evidence": 0.3,
+      "discriminatory_value": 0.2,
+      "transferability": 0.1
+    },
+    "weight_provenance": "Explicit engineering defaults based on research relevance and evidence assessment; not validated as optimal. Change before a new run and retain the previous configuration.",
+    "selection_policy": "Preserve one eligible snippet per query where possible, then fill by weighted API assessment. Positive, negative and null evidence use identical criteria. No named-paper, folder, ligand or comparator bonuses.",
+    "design_version": "dual_channel_question_method"
+  },
+  "note": "BM25 values are retained per query; raw scores from different queries are not directly compared. RRF (constant 60) is only a deterministic tie-breaker after API assessment. No API was invoked during this local retrieval step."
+}

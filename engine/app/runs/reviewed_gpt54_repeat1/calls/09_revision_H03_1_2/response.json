@@ -1,0 +1,195 @@
+{
+  "candidates": [
+    {
+      "id": "E18",
+      "hypothesis_id": "H03",
+      "title": "Matched donor comparison with stable bulk descriptors",
+      "purpose": "Test whether TEA versus TEOA differences in the P01 Co-bpy/g-C3N4 system reproducibly co-vary with directly measured bulk proton-management and medium descriptors, while keeping the conclusion descriptive rather than causal.",
+      "evidence_ids": [
+        "GX009",
+        "EV061",
+        "GX010",
+        "EV013"
+      ],
+      "source_to_proposal": "The sources support treating TEA and TEOA as multifunctional additives that can alter proton supply, CO2-associated solution behavior, conductivity, viscosity, and related medium properties, and they show that isotope-sensitive proton-transfer tests can be mechanistically informative in other cobalt systems. The proposal transfers only the need to measure donor-dependent covariates alongside catalytic outputs within one fixed baseline formulation. It does not assume that bulk descriptors equal the local environment at cobalt or g-C3N4, and it excludes the previously overreaching CO2-uptake proxy as a core readout.",
+      "groups": [
+        {
+          "id": "E18G01",
+          "description": "Baseline catalytic formulation with TEOA under the selected P01 recipe and matched analytical workflow.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2 + 2,2'-bipyridine + g-C3N4 in MeCN/H2O under CO2 and light"
+            },
+            {
+              "name": "amine_additive",
+              "value": "TEOA"
+            },
+            {
+              "name": "water_isotope",
+              "value": "H2O-containing medium"
+            },
+            {
+              "name": "illumination_program",
+              "value": "matched catalytic program"
+            },
+            {
+              "name": "sampling_schedule",
+              "value": "matched pre-irradiation and post-irradiation sampling"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            }
+          ]
+        },
+        {
+          "id": "E18G02",
+          "description": "Comparator catalytic formulation with TEA substituted as the only intended formulation change.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2 + 2,2'-bipyridine + g-C3N4 in MeCN/H2O under CO2 and light"
+            },
+            {
+              "name": "amine_additive",
+              "value": "TEA"
+            },
+            {
+              "name": "water_isotope",
+              "value": "H2O-containing medium"
+            },
+            {
+              "name": "illumination_program",
+              "value": "matched catalytic program"
+            },
+            {
+              "name": "sampling_schedule",
+              "value": "matched pre-irradiation and post-irradiation sampling"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            }
+          ]
+        },
+        {
+          "id": "E18G03",
+          "description": "TEOA formulation with deuterated water replacing water for a bounded isotope perturbation of the same baseline.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2 + 2,2'-bipyridine + g-C3N4 in MeCN/H2O under CO2 and light"
+            },
+            {
+              "name": "amine_additive",
+              "value": "TEOA"
+            },
+            {
+              "name": "water_isotope",
+              "value": "D2O-containing medium"
+            },
+            {
+              "name": "illumination_program",
+              "value": "matched catalytic program"
+            },
+            {
+              "name": "sampling_schedule",
+              "value": "matched pre-irradiation and post-irradiation sampling"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            }
+          ]
+        },
+        {
+          "id": "E18G04",
+          "description": "TEA formulation with deuterated water replacing water for the corresponding bounded isotope perturbation.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2 + 2,2'-bipyridine + g-C3N4 in MeCN/H2O under CO2 and light"
+            },
+            {
+              "name": "amine_additive",
+              "value": "TEA"
+            },
+            {
+              "name": "water_isotope",
+              "value": "D2O-containing medium"
+            },
+            {
+              "name": "illumination_program",
+              "value": "matched catalytic program"
+            },
+            {
+              "name": "sampling_schedule",
+              "value": "matched pre-irradiation and post-irradiation sampling"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E18G01",
+          "group_b": "E18G02",
+          "changed_factors": [
+            "amine_additive"
+          ],
+          "inference": "Primary descriptive comparison: if donor identity changes CO/H2 together with stable bulk descriptors under otherwise matched conditions, the observation is consistent with a medium/proton-management contribution but does not isolate causation from other donor-specific effects."
+        },
+        {
+          "group_a": "E18G01",
+          "group_b": "E18G03",
+          "changed_factors": [
+            "water_isotope"
+          ],
+          "inference": "Within TEOA, isotope-sensitive changes test whether product distribution and measured bulk descriptors respond to a proton-related perturbation, while recognizing that solvent isotope substitution changes multiple properties."
+        },
+        {
+          "group_a": "E18G02",
+          "group_b": "E18G04",
+          "changed_factors": [
+            "water_isotope"
+          ],
+          "inference": "Within TEA, the corresponding isotope comparison asks whether proton-related perturbation measurably alters products or descriptors in the alternative donor environment."
+        },
+        {
+          "group_a": "E18G03",
+          "group_b": "E18G04",
+          "changed_factors": [
+            "amine_additive"
+          ],
+          "inference": "TEOA versus TEA under the same isotope condition tests whether the donor contrast persists after a matched isotope perturbation; persistence weakens a simple bulk proton-management-only account, while collapse supports that account only descriptively."
+        }
+      ],
+      "procedure": [
+        "Prepare the four matched formulations from one verified P01 stock plan, changing only amine identity and water isotope while keeping reactor geometry, gas handling, illumination, and sampling times identical.",
+        "After the same CO2 equilibration routine for each sample, measure only bulk descriptors that pass an initial stability pilot in the actual reaction medium, prioritizing one calibrated acidity proxy and conductivity before irradiation.",
+        "Run the matched photocatalytic test and quantify both CO and H2 with the same analytical workflow, then repeat the selected bulk-descriptor measurements after irradiation.",
+        "Interpret the data through paired contrasts between matched groups, asking whether donor-dependent product differences reproduce and whether they accompany reproducible descriptor differences without inferring local mechanistic identity from bulk values alone."
+      ],
+      "measurements": [
+        "CO amount or rate under each group",
+        "H2 amount or rate under each group",
+        "CO/H2 product ratio or selectivity descriptor",
+        "Pre-irradiation acidity proxy measured by one calibrated method used consistently across all groups",
+        "Post-irradiation acidity proxy shift by the same method",
+        "Pre-irradiation conductivity",
+        "Post-irradiation conductivity",
+        "Replicate-to-replicate variation of catalytic outputs and bulk descriptors"
+      ],
+      "supports": "Support for H03 would be a reproducible association in which TEA and TEOA show different CO/H2 behavior together with different stable bulk descriptor values or shifts, and the matched D2O perturbation alters the donor contrast in a way consistent across repeats. This supports a contribution from medium or proton-management differences, not a complete mechanism.",
+      "refutes": "Evidence against H03 as the main explanation would be that TEA and TEOA give reproducibly different CO/H2 outputs while the validated bulk descriptors remain indistinguishable within uncertainty and the isotope perturbation does not materially change the donor contrast. That would shift attention toward explanations such as donor-dependent quenching or cobalt-state formation.",
+      "inconclusive": "Results are inconclusive if catalytic differences are not reproducible, if acidity or conductivity measurements are unstable in the mixed suspension, if isotope substitution causes uncontrolled formulation changes, or if descriptor differences appear without any consistent relation to product behavior across matched repeats. Bulk correlation cannot establish local interfacial conditions or specific intermediates.",
+      "parameter_selection": "Use the literature-anchored P01 formulation only as the starting recipe and verify any missing numerical settings from the supplied source set before execution. First run a pilot in the actual reaction medium to choose one acidity-proxy method that is stable, calibrated, and minimally perturbing; use that single method for every group rather than mixing pH and pD scales. In the same pilot, confirm that conductivity readings are repeatable in catalyst-containing suspensions and define a fixed sampling delay after CO2 equilibration and after irradiation. If D2O materially changes miscibility, suspension stability, or instrument response, keep the H2O donor comparison as the primary test and report isotope arms as bounded descriptive comparisons only.",
+      "limitations": "This card is intentionally narrowed to a descriptive covariate screen. TEA and TEOA may simultaneously alter proton transfer, reductive quenching, coordination, viscosity, and CO2 solvation. Bulk acidity and conductivity do not establish the local environment at active sites, and D2O is not a single-factor perturbation. Therefore the experiment can prioritize which explanations deserve stronger follow-up, but it cannot by itself prove proton-management causation.",
+      "feasibility": "low_cost"
+    }
+  ]
+}

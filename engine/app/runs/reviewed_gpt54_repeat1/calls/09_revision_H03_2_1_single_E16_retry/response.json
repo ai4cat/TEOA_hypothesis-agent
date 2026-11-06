@@ -1,0 +1,179 @@
+{
+  "candidates": [
+    {
+      "id": "E16",
+      "hypothesis_id": "H03",
+      "title": "Amine omission and bounded inert-base replacement",
+      "purpose": "Test whether amine presence is necessary in the P01 TEA/TEOA comparison and whether a tightly screened non-donor base can produce only limited medium-related shifts, without treating it as an amine surrogate or proof of proton-management causality.",
+      "evidence_ids": [
+        "EV013",
+        "EV024",
+        "GX010",
+        "GX015",
+        "GX008"
+      ],
+      "source_to_proposal": "EV013 supports treating TEA and TEOA as multifunctional additives that can act as H+ source and hole scavenger, so omission is required before interpreting additive identity effects. EV024, GX010, and GX015 support the narrower transferable idea that proton-delivery environment can alter CO2-reduction behavior, which justifies a bounded non-donor-base probe. GX008 supports matched negative controls and broad product analysis. Transfer remains limited because no supplied evidence shows that a non-donor base reproduces the sacrificial-donor role in the target Co-bpy photocatalysis; therefore any shift with base addition is only descriptive evidence for medium contribution.",
+      "groups": [
+        {
+          "id": "E16G01",
+          "description": "Primary TEOA baseline in the stated P01 Co-bpy/g-C3N4 assay.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2 + 2,2'-bipyridine + g-C3N4 in MeCN/H2O under CO2 and light"
+            },
+            {
+              "name": "amine_condition",
+              "value": "TEOA present"
+            },
+            {
+              "name": "base_condition",
+              "value": "none"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            }
+          ]
+        },
+        {
+          "id": "E16G02",
+          "description": "Amine omission control with baseline otherwise retained.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2 + 2,2'-bipyridine + g-C3N4 in MeCN/H2O under CO2 and light"
+            },
+            {
+              "name": "amine_condition",
+              "value": "none"
+            },
+            {
+              "name": "base_condition",
+              "value": "none"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            }
+          ]
+        },
+        {
+          "id": "E16G03",
+          "description": "No amine plus one pre-screened non-donor base chosen only if it shows low blank reactivity and acceptable mixture compatibility.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2 + 2,2'-bipyridine + g-C3N4 in MeCN/H2O under CO2 and light"
+            },
+            {
+              "name": "amine_condition",
+              "value": "none"
+            },
+            {
+              "name": "base_condition",
+              "value": "pre-screened non-donor base present"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            }
+          ]
+        },
+        {
+          "id": "E16G04",
+          "description": "TEA comparator under the same platform.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2 + 2,2'-bipyridine + g-C3N4 in MeCN/H2O under CO2 and light"
+            },
+            {
+              "name": "amine_condition",
+              "value": "TEA present"
+            },
+            {
+              "name": "base_condition",
+              "value": "none"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E16G01",
+          "group_b": "E16G02",
+          "changed_factors": [
+            "amine_condition"
+          ],
+          "inference": "Omission test for whether an amine is required under the TEOA baseline; it does not separate donor redox, proton-management, and solvation roles."
+        },
+        {
+          "group_a": "E16G02",
+          "group_b": "E16G03",
+          "changed_factors": [
+            "base_condition"
+          ],
+          "inference": "Tests whether a carefully screened non-donor base causes any reproducible shift relative to no amine; any rescue is bounded evidence for medium contribution only, not amine equivalence."
+        },
+        {
+          "group_a": "E16G01",
+          "group_b": "E16G04",
+          "changed_factors": [
+            "amine_condition"
+          ],
+          "inference": "Direct TEA versus TEOA comparison within one platform; remains a multifunctional additive identity contrast rather than a single-mechanism causal test."
+        },
+        {
+          "group_a": "E16G03",
+          "group_b": "E16G04",
+          "changed_factors": [
+            "amine_condition",
+            "base_condition"
+          ],
+          "inference": "Confounded descriptive contrast only; do not use it to rank mechanisms beyond bounding whether some behavior can be approached without an amine donor."
+        }
+      ],
+      "procedure": [
+        "Verify the P01 baseline composition from the supplied scope, then perform a short pilot screen of candidate non-donor bases in the same solvent matrix using blank-reactivity and compatibility checks before selecting at most one replacement condition.",
+        "Prepare the listed groups with identical catalyst, ligand, g-C3N4, solvent ratio, reactor geometry, CO2 handling, irradiation schedule, and analytical workflow; vary only the stated factors.",
+        "Run photocatalysis under CO2 with matched sampling and quantify both CO and H2 for every group using one calibrated gas-analysis workflow.",
+        "Record a bulk acid-base descriptor in the chosen medium if measurable, and note visible precipitation, turbidity, color change, or phase instability as comparability flags.",
+        "If no non-donor base passes pilot criteria, execute only the omission and TEA/TEOA arms and report the replacement arm as blocked rather than forcing interpretation."
+      ],
+      "measurements": [
+        "CO amount or rate by the common gas-analysis workflow",
+        "H2 amount or rate by the same workflow",
+        "CO/H2 ratio or selectivity metric derived from paired CO and H2 data",
+        "Bulk acid-base descriptor before and after reaction if measurable in the chosen medium",
+        "Qualitative observations of precipitation, turbidity, color change, or phase separation as comparability checks"
+      ],
+      "supports": "H03 is supported only in a limited sense if amine omission strongly suppresses or shifts the baseline behavior and the pre-screened non-donor base causes a reproducible partial movement in activity or CO/H2 distribution relative to no amine, while TEA and TEOA still differ under matched conditions.",
+      "refutes": "H03 is weakened if the non-donor base produces no reproducible shift relative to no amine and TEA versus TEOA differences remain large under otherwise matched conditions, especially if omission mainly removes activity in a manner consistent with loss of sacrificial-donor function alone.",
+      "inconclusive": "Inconclusive if the selected base introduces background reactivity, coordination changes, instability, or phase changes; if bulk acid-base comparison is not meaningful in the medium; or if CO and H2 signals are near detection limits.",
+      "parameter_selection": "Do not invent concentrations. Use the verified P01 baseline for TEA and TEOA conditions. For the replacement arm, screen candidate non-donor bases in the same solvent matrix and select one only if it satisfies all pilot criteria: negligible CO and H2 in catalyst-free or no-light blanks, no obvious decomposition or precipitation before irradiation, and a measurable change in a bulk acid-base descriptor relative to E16G02. If no candidate satisfies these criteria, retain only E16G01, E16G02, and E16G04.",
+      "limitations": "The replacement arm remains intrinsically limited because a non-donor base cannot reproduce sacrificial electron donation. Any observed rescue can also arise from coordination, ionic-strength, viscosity, or solvation changes. Failure to rescue does not exclude proton-management contributions. Bulk acid-base descriptors in MeCN/H2O may not represent local proton delivery. This card therefore tests necessity plus bounded medium sensitivity, not full causal separation.",
+      "feasibility": "low_cost"
+    }
+  ]
+}

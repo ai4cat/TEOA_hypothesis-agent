@@ -1,0 +1,81 @@
+{
+  "version": "api_evidence_rerank_v2",
+  "queries": [
+    {
+      "query_id": "SQ1",
+      "fts": "(\"TEOA\" OR \"triethanolamine\") AND (\"cobalt\" OR \"bipyridine\" OR \"molecular\") AND (\"proton\" OR \"coordination\" OR \"viscosity\")",
+      "matching_chunks": 126,
+      "matching_paper_records": 82,
+      "top_hits": 100,
+      "filters": {},
+      "pool_allocated": 6
+    },
+    {
+      "query_id": "SQ2",
+      "fts": "(\"isotope\" OR \"titration\" OR \"quenching\") AND (\"electron\" OR \"proton\" OR \"coordination\")",
+      "matching_chunks": 901,
+      "matching_paper_records": 353,
+      "top_hits": 100,
+      "filters": {},
+      "pool_allocated": 6
+    },
+    {
+      "query_id": "SQ3",
+      "fts": "(\"TEOA\" OR \"triethanolamine\") AND (\"cobalt\" OR \"bipyridine\") AND (\"adduct\" OR \"intermediate\" OR \"assignment\")",
+      "matching_chunks": 37,
+      "matching_paper_records": 28,
+      "top_hits": 37,
+      "filters": {},
+      "pool_allocated": 6
+    },
+    {
+      "query_id": "SQ4",
+      "fts": "(\"operando\" OR \"ftir\" OR \"raman\" OR \"epr\") AND (\"binding\" OR \"intermediate\" OR \"isotope\")",
+      "matching_chunks": 1244,
+      "matching_paper_records": 563,
+      "top_hits": 100,
+      "filters": {},
+      "pool_allocated": 6
+    },
+    {
+      "query_id": "SQ5",
+      "fts": "(\"TEOA\" OR \"triethanolamine\") AND (\"TEA\" OR \"triethylamine\") AND (\"speciation\" OR \"stability\" OR \"degradation\")",
+      "matching_chunks": 29,
+      "matching_paper_records": 22,
+      "top_hits": 29,
+      "filters": {},
+      "pool_allocated": 6
+    },
+    {
+      "query_id": "SQ6",
+      "fts": "(\"uvvis\" OR \"xas\" OR \"epr\" OR \"nmr\") AND (\"speciation\" OR \"degradation\" OR \"illumination\")",
+      "matching_chunks": 223,
+      "matching_paper_records": 135,
+      "top_hits": 100,
+      "filters": {},
+      "pool_allocated": 6
+    }
+  ],
+  "pool_chunks": 36,
+  "pool_paper_records": 34,
+  "policy": {
+    "version": "api_evidence_rerank_v2",
+    "top_hits_per_query": 100,
+    "candidates_per_query": 6,
+    "max_candidates": 36,
+    "max_candidates_per_paper": 2,
+    "api_batch_size": 8,
+    "max_selected": 18,
+    "max_selected_per_paper": 2,
+    "weights": {
+      "research_relevance": 0.4,
+      "direct_evidence": 0.3,
+      "discriminatory_value": 0.2,
+      "transferability": 0.1
+    },
+    "weight_provenance": "Explicit engineering defaults based on research relevance and evidence assessment; not validated as optimal. Change before a new run and retain the previous configuration.",
+    "selection_policy": "Preserve one eligible snippet per query where possible, then fill by weighted API assessment. Positive, negative and null evidence use identical criteria. No named-paper, folder, ligand or comparator bonuses.",
+    "design_version": "dual_channel_question_method"
+  },
+  "note": "BM25 values are retained per query; raw scores from different queries are not directly compared. RRF (constant 60) is only a deterministic tie-breaker after API assessment. No API was invoked during this local retrieval step."
+}

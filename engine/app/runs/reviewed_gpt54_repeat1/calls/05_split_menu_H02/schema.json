@@ -1,0 +1,103 @@
+{
+  "type": "object",
+  "properties": {
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "enum": [
+              "E07",
+              "E08",
+              "E09",
+              "E10",
+              "E11",
+              "E12"
+            ]
+          },
+          "hypothesis_id": {
+            "type": "string",
+            "enum": [
+              "H02"
+            ]
+          },
+          "question_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4",
+                "Q5",
+                "Q6"
+              ]
+            }
+          },
+          "candidate_type": {
+            "type": "string",
+            "enum": [
+              "characterization",
+              "intervention",
+              "performance",
+              "combined"
+            ]
+          },
+          "title": {
+            "type": "string"
+          },
+          "purpose": {
+            "type": "string"
+          },
+          "method": {
+            "type": "string"
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "distinct_information": {
+            "type": "string"
+          },
+          "dependencies": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "hypothesis_id",
+          "question_ids",
+          "candidate_type",
+          "title",
+          "purpose",
+          "method",
+          "evidence_ids",
+          "distinct_information",
+          "dependencies"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 6
+    },
+    "gaps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "candidates",
+    "gaps"
+  ],
+  "additionalProperties": false
+}

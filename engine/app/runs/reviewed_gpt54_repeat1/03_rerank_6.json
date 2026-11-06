@@ -1,0 +1,148 @@
+{
+  "assessments": [
+    {
+      "evidence_id": "EV041",
+      "decision": "include",
+      "span_ids": [
+        "S4",
+        "S7",
+        "S9"
+      ],
+      "role": "transferable mechanistic evidence on sacrificial-donor/photoredox pathway characterization",
+      "claim": "In a Ru/POM/TEOA photocatalytic system, TEOA reductively quenches the excited photosensitizer to form [Ru(bpy)3]+, and the authors interpret the system as operating through a reductive quenching pathway in which protonation of the catalyst is important for charge accumulation.",
+      "transfer_limit": "Not a Co(II)–bipyridine CO2-reduction system; catalyst, products, solvent, and photosensitizer differ, so this supports mechanistic hypotheses and characterization choices for TEOA-containing systems rather than the specific TEA/TEOA product-distribution comparison.",
+      "reason": "Useful because it gives source-grounded evidence that TEOA can participate directly in reductive quenching and that protonation state can gate downstream electron accumulation, both plausible competing explanations for donor-dependent product changes. However, the chemical platform is different and does not directly report CO/H2 behavior for a Co-bpy CO2-reduction system.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 2,
+        "discriminatory_value": 2,
+        "transferability": 2
+      }
+    },
+    {
+      "evidence_id": "EV042",
+      "decision": "include",
+      "span_ids": [
+        "S5",
+        "S7",
+        "S8"
+      ],
+      "role": "transferable methods background",
+      "claim": "The review states that irradiated-electrode photocurrent and EIS can probe active charge-carrier population and charge-transfer resistance, and that excited-state redox potentials of photosensitizers in homogeneous systems can be estimated by phase-modulated voltammetry or Rehm–Weller analysis.",
+      "transfer_limit": "General methods review rather than direct evidence in the target Co(II)–bipyridine TEA/TEOA system; electrode-based observables may not transfer directly to a homogeneous photocatalytic suspension without validation.",
+      "reason": "Included as method support because it identifies characterization approaches relevant to distinguishing charge-generation and transfer explanations, but it does not itself establish any donor effect or product-distribution outcome in the target chemistry.",
+      "scores": {
+        "research_relevance": 1,
+        "direct_evidence": 1,
+        "discriminatory_value": 1,
+        "transferability": 2
+      }
+    },
+    {
+      "evidence_id": "EV043",
+      "decision": "exclude",
+      "span_ids": [],
+      "role": "irrelevant/insufficiently comparable background",
+      "claim": "This snippet mentions TEOA and a Co(bpy)3Cl2 co-catalyst in heterogeneous photocatalytic CO2-reduction contexts, and separately discusses stabilization of CO2− intermediates on single-atom Co sites.",
+      "transfer_limit": "Fragmented, heterogeneous systems with unclear linkage between statements; not a defined Co(II)–bipyridine molecular system comparing TEA and TEOA.",
+      "reason": "Excluded because the snippet is textually corrupted and combines unrelated heterogeneous examples without a clear, traceable observation about the TEA/TEOA comparison or a directly useful control. It offers little reliable discriminatory value for the target question.",
+      "scores": {
+        "research_relevance": 1,
+        "direct_evidence": 1,
+        "discriminatory_value": 0,
+        "transferability": 1
+      }
+    },
+    {
+      "evidence_id": "EV044",
+      "decision": "exclude",
+      "span_ids": [],
+      "role": "irrelevant due to CO/Co ambiguity and platform mismatch",
+      "claim": "The snippet discusses operando Raman-MS and Raman assignments of adsorbed CO intermediates in MEA electrolysers on Cu under high current density.",
+      "transfer_limit": "Electrocatalytic Cu MEA system; retrieval flag indicates CO refers to carbon monoxide, not cobalt. Not photocatalytic Co(II)–bipyridine chemistry.",
+      "reason": "Excluded because it is outside the target platform and the CO terminology concerns carbon monoxide intermediates rather than cobalt complexes. Although methodologically sophisticated, it is not meaningfully comparable to the donor-dependent homogeneous photocatalytic question.",
+      "scores": {
+        "research_relevance": 0,
+        "direct_evidence": 2,
+        "discriminatory_value": 1,
+        "transferability": 0
+      }
+    },
+    {
+      "evidence_id": "EV045",
+      "decision": "include",
+      "span_ids": [
+        "S1",
+        "S3",
+        "S4"
+      ],
+      "role": "transferable control evidence for photocatalytic CO2-reduction assays",
+      "claim": "In a g-C3N4 photocatalytic CO2-reduction system, no products are observed in the dark, replacing CO2 with Ar suppresses CO formation while leaving only a little H2, and activity over cycling required addition of extra TEOA.",
+      "transfer_limit": "Heterogeneous carbon nitride system, not Co(II)–bipyridine; the observation informs control design and donor-consumption/stability considerations but not the specific cause of TEA versus TEOA selectivity differences.",
+      "reason": "Included because it preserves useful negative/control evidence and indicates that donor replenishment can matter during cycling, which is relevant when comparing amine sacrificial donors. It does not directly compare TEA with TEOA or define a molecular Co-bpy catalyst.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 3,
+        "discriminatory_value": 2,
+        "transferability": 1
+      }
+    },
+    {
+      "evidence_id": "EV046",
+      "decision": "include",
+      "span_ids": [
+        "S4",
+        "S8",
+        "S9"
+      ],
+      "role": "transferable control and origin-verification evidence",
+      "claim": "In a Ni photocatalytic CO2-reduction system, CH4 is absent without catalyst, photosensitizer, sacrificial agent, light, or CO2, and 13CO2 labeling with GC-MS was used to verify carbon origin while before/after structural characterization assessed catalyst integrity after cycling.",
+      "transfer_limit": "Different catalyst, product, and architecture from Co(II)–bipyridine CO/H2 systems, so this mainly transfers as assay/control logic and origin/stability characterization rather than direct mechanistic evidence on donor effects.",
+      "reason": "Included because it directly supports rigorous component-necessity, isotopic-origin, and stability checks that are highly relevant when assessing whether TEA/TEOA changes apparent selectivity or catalyst persistence. The chemistry is different, limiting mechanistic transfer.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 3,
+        "discriminatory_value": 3,
+        "transferability": 2
+      }
+    },
+    {
+      "evidence_id": "EV047",
+      "decision": "include",
+      "span_ids": [
+        "S5",
+        "S7",
+        "S8"
+      ],
+      "role": "transferable stability/comparative-system evidence",
+      "claim": "A Re-CTF-py photocatalytic CO2-reduction system using MeCN/TEOA (4/1) shows high selectivity for CO, but the CO yield drops to about 90% on the second recycle and almost disappears by the third recycle, with text attributing weakening νas(C=O) bands to dissociation of the Re(CO)3Cl moiety.",
+      "transfer_limit": "Re-based solid-gas system rather than Co(II)–bipyridine; useful mainly for highlighting deactivation and the need to connect activity changes to structural probes in TEOA-containing systems.",
+      "reason": "Included because it couples catalytic behavior in a TEOA-containing CO2-reduction system with a proposed structural degradation explanation, motivating comparable stability and identity checks when interpreting donor-dependent product distributions. Transfer to the target molecular cobalt system is limited.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 2,
+        "discriminatory_value": 2,
+        "transferability": 1
+      }
+    },
+    {
+      "evidence_id": "EV048",
+      "decision": "include",
+      "span_ids": [
+        "S5",
+        "S6",
+        "S9"
+      ],
+      "role": "transferable mechanistic and comparator evidence on cobalt molecular photocatalysis",
+      "claim": "Mechanistic investigations in a molecular photocatalytic CO2-to-CO system found that coordinative interaction between a pyridine-appended Ir photosensitizer and unmodified cobalt phthalocyanine accelerated electron transfer, and control experiments indicated that the dynamic interaction helped avoid blocking labile sites.",
+      "transfer_limit": "Cobalt phthalocyanine with an Ir photosensitizer is not a Co(II)–bipyridine complex, and the snippet does not involve TEA/TEOA comparison; transfer is limited to hypotheses about coordination environment, intermolecular association, and electron-transfer discrimination.",
+      "reason": "Included because it is a cobalt molecular photocatalysis example with explicit mechanistic and comparative claims showing that supramolecular/coordination interactions can strongly alter electron transfer and catalytic performance. This supports considering donor-dependent coordination or association effects as competing explanations, but direct applicability to Co-bpy must be tested.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 2,
+        "discriminatory_value": 2,
+        "transferability": 2
+      }
+    }
+  ]
+}

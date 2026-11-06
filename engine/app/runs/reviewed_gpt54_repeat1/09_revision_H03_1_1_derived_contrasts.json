@@ -1,0 +1,773 @@
+{
+  "candidates": [
+    {
+      "id": "E13",
+      "hypothesis_id": "H03",
+      "title": "Medium-normalized TEA vs TEOA with attribution controls",
+      "purpose": "Test whether the TEA/TEOA CO/H2 difference in the P01 Co-bpy/g-C3N4 system persists after tighter recipe matching, while embedding internal attribution controls so any collapse of the difference is interpreted only as reduced compatibility with a strong medium-dominant explanation rather than proof of a specific proton-management mechanism.",
+      "evidence_ids": [
+        "EV061",
+        "EV013",
+        "GX009",
+        "EV059",
+        "EV031"
+      ],
+      "source_to_proposal": "EV059 directly anchors the CoCl2+bpy/g-C3N4/MeCN:H2O/TEOA platform and notes TEA as a related donor option. EV061, EV013, GX009, and EV031 are transferred only as source observations that amines and solvent environments can alter CO2 association, proton availability, viscosity, conductivity, coordination environment, and intermediate stability. The proposal therefore compares TEA and TEOA within one anchored formulation family, adds no-amine and Ar controls for attribution, and narrows inference because composition normalization cannot make TEA and TEOA chemically equivalent.",
+      "groups": [
+        {
+          "id": "E13G01",
+          "description": "Baseline P01 formulation with TEOA under literature-anchored solvent composition.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 under irradiation"
+            },
+            {
+              "name": "amine_identity",
+              "value": "TEOA"
+            },
+            {
+              "name": "gas_identity",
+              "value": "CO2"
+            },
+            {
+              "name": "solvent_mode",
+              "value": "literature-anchored MeCN/H2O formulation"
+            },
+            {
+              "name": "amine_volume_fraction_mode",
+              "value": "literature-anchored for the selected TEOA baseline"
+            },
+            {
+              "name": "component_loadings",
+              "value": "same across all groups after pilot verification"
+            },
+            {
+              "name": "illumination_mode",
+              "value": "same lamp, geometry, temperature control, and run time across all groups"
+            },
+            {
+              "name": "analysis_workflow",
+              "value": "same CO and H2 quantification workflow across all groups"
+            }
+          ]
+        },
+        {
+          "id": "E13G02",
+          "description": "Direct TEA substitution under otherwise unchanged baseline recipe.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 under irradiation"
+            },
+            {
+              "name": "amine_identity",
+              "value": "TEA"
+            },
+            {
+              "name": "gas_identity",
+              "value": "CO2"
+            },
+            {
+              "name": "solvent_mode",
+              "value": "literature-anchored MeCN/H2O formulation"
+            },
+            {
+              "name": "amine_volume_fraction_mode",
+              "value": "literature-anchored for the selected TEOA baseline"
+            },
+            {
+              "name": "component_loadings",
+              "value": "same across all groups after pilot verification"
+            },
+            {
+              "name": "illumination_mode",
+              "value": "same lamp, geometry, temperature control, and run time across all groups"
+            },
+            {
+              "name": "analysis_workflow",
+              "value": "same CO and H2 quantification workflow across all groups"
+            }
+          ]
+        },
+        {
+          "id": "E13G03",
+          "description": "TEOA condition with matched total liquid composition logic across normalized TEA and TEOA groups.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 under irradiation"
+            },
+            {
+              "name": "amine_identity",
+              "value": "TEOA"
+            },
+            {
+              "name": "gas_identity",
+              "value": "CO2"
+            },
+            {
+              "name": "solvent_mode",
+              "value": "composition-normalized MeCN/H2O plus amine-derived fraction"
+            },
+            {
+              "name": "amine_volume_fraction_mode",
+              "value": "matched across TEA and TEOA normalized groups"
+            },
+            {
+              "name": "component_loadings",
+              "value": "same across all groups after pilot verification"
+            },
+            {
+              "name": "illumination_mode",
+              "value": "same lamp, geometry, temperature control, and run time across all groups"
+            },
+            {
+              "name": "analysis_workflow",
+              "value": "same CO and H2 quantification workflow across all groups"
+            }
+          ]
+        },
+        {
+          "id": "E13G04",
+          "description": "TEA condition under the same normalized composition logic as E13G03.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 under irradiation"
+            },
+            {
+              "name": "amine_identity",
+              "value": "TEA"
+            },
+            {
+              "name": "gas_identity",
+              "value": "CO2"
+            },
+            {
+              "name": "solvent_mode",
+              "value": "composition-normalized MeCN/H2O plus amine-derived fraction"
+            },
+            {
+              "name": "amine_volume_fraction_mode",
+              "value": "matched across TEA and TEOA normalized groups"
+            },
+            {
+              "name": "component_loadings",
+              "value": "same across all groups after pilot verification"
+            },
+            {
+              "name": "illumination_mode",
+              "value": "same lamp, geometry, temperature control, and run time across all groups"
+            },
+            {
+              "name": "analysis_workflow",
+              "value": "same CO and H2 quantification workflow across all groups"
+            }
+          ]
+        },
+        {
+          "id": "E13G05",
+          "description": "Normalized TEOA condition under Ar instead of CO2 as an internal origin and background-gas control.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 under irradiation"
+            },
+            {
+              "name": "amine_identity",
+              "value": "TEOA"
+            },
+            {
+              "name": "gas_identity",
+              "value": "Ar"
+            },
+            {
+              "name": "solvent_mode",
+              "value": "composition-normalized MeCN/H2O plus amine-derived fraction"
+            },
+            {
+              "name": "amine_volume_fraction_mode",
+              "value": "matched across TEA and TEOA normalized groups"
+            },
+            {
+              "name": "component_loadings",
+              "value": "same across all groups after pilot verification"
+            },
+            {
+              "name": "illumination_mode",
+              "value": "same lamp, geometry, temperature control, and run time across all groups"
+            },
+            {
+              "name": "analysis_workflow",
+              "value": "same CO and H2 quantification workflow across all groups"
+            }
+          ]
+        },
+        {
+          "id": "E13G06",
+          "description": "Normalized TEA condition under Ar instead of CO2 as an internal origin and background-gas control.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 under irradiation"
+            },
+            {
+              "name": "amine_identity",
+              "value": "TEA"
+            },
+            {
+              "name": "gas_identity",
+              "value": "Ar"
+            },
+            {
+              "name": "solvent_mode",
+              "value": "composition-normalized MeCN/H2O plus amine-derived fraction"
+            },
+            {
+              "name": "amine_volume_fraction_mode",
+              "value": "matched across TEA and TEOA normalized groups"
+            },
+            {
+              "name": "component_loadings",
+              "value": "same across all groups after pilot verification"
+            },
+            {
+              "name": "illumination_mode",
+              "value": "same lamp, geometry, temperature control, and run time across all groups"
+            },
+            {
+              "name": "analysis_workflow",
+              "value": "same CO and H2 quantification workflow across all groups"
+            }
+          ]
+        },
+        {
+          "id": "E13G07",
+          "description": "Normalized composition without added amine under CO2 to test whether either donor is functionally necessary for measurable output in this recipe family.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 under irradiation"
+            },
+            {
+              "name": "amine_identity",
+              "value": "none"
+            },
+            {
+              "name": "gas_identity",
+              "value": "CO2"
+            },
+            {
+              "name": "solvent_mode",
+              "value": "composition-normalized MeCN/H2O plus amine-derived fraction replaced by matched non-amine liquid volume"
+            },
+            {
+              "name": "amine_volume_fraction_mode",
+              "value": "zero added amine"
+            },
+            {
+              "name": "component_loadings",
+              "value": "same across all groups after pilot verification"
+            },
+            {
+              "name": "illumination_mode",
+              "value": "same lamp, geometry, temperature control, and run time across all groups"
+            },
+            {
+              "name": "analysis_workflow",
+              "value": "same CO and H2 quantification workflow across all groups"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E13G01",
+          "group_b": "E13G02",
+          "changed_factors": [
+            "amine_identity"
+          ],
+          "inference": "Descriptive anchored comparison: whether an apparent TEA/TEOA selectivity difference is reproduced in the literature-linked recipe."
+        },
+        {
+          "group_a": "E13G03",
+          "group_b": "E13G04",
+          "changed_factors": [
+            "amine_identity"
+          ],
+          "inference": "Primary bounded comparison: if a difference remains after the defined composition normalization, donor identity or other donor-linked properties still matter within this constrained recipe family."
+        },
+        {
+          "group_a": "E13G01",
+          "group_b": "E13G03",
+          "changed_factors": [
+            "solvent_mode",
+            "amine_volume_fraction_mode"
+          ],
+          "inference": "Normalization-effect check within TEOA; this multi-factor contrast shows whether normalization itself changes output and therefore how strongly the anchored comparison was composition-sensitive."
+        },
+        {
+          "group_a": "E13G02",
+          "group_b": "E13G04",
+          "changed_factors": [
+            "solvent_mode",
+            "amine_volume_fraction_mode"
+          ],
+          "inference": "Normalization-effect check within TEA; large changes indicate that the unnormalized donor comparison was materially confounded by recipe composition."
+        },
+        {
+          "group_a": "E13G03",
+          "group_b": "E13G05",
+          "changed_factors": [
+            "gas_identity"
+          ],
+          "inference": "CO2-attribution control for the normalized TEOA condition; CO observed mainly under CO2 supports assignment of carbon-containing products to the intended feed rather than background contamination."
+        },
+        {
+          "group_a": "E13G04",
+          "group_b": "E13G06",
+          "changed_factors": [
+            "gas_identity"
+          ],
+          "inference": "CO2-attribution control for the normalized TEA condition; H2 may persist under Ar, so this contrast mainly bounds carbon-product attribution rather than hydrogen pathways."
+        },
+        {
+          "group_a": "E13G03",
+          "group_b": "E13G07",
+          "changed_factors": [
+            "amine_identity",
+            "amine_volume_fraction_mode",
+            "solvent_mode"
+          ],
+          "inference": "Necessity-oriented comparison for added amine in the normalized TEOA recipe family, but not a single-factor causal test because amine removal also changes total liquid composition logic."
+        },
+        {
+          "group_a": "E13G04",
+          "group_b": "E13G07",
+          "changed_factors": [
+            "amine_identity",
+            "amine_volume_fraction_mode",
+            "solvent_mode"
+          ],
+          "inference": "Necessity-oriented comparison for added amine in the normalized TEA recipe family, likewise confounded by composition change and therefore bounded to functional necessity rather than mechanism."
+        }
+      ],
+      "procedure": [
+        "Select one executable P01 baseline from EV059, then pilot catalyst loading, g-C3N4 amount, reactor fill, and sampling times to obtain quantifiable CO and H2 without detector saturation or immediate deactivation.",
+        "Prepare all groups with the same cobalt source, bpy source, g-C3N4 batch, reactor geometry, illumination program, and analytical workflow; for E13G03-E13G06 explicitly match MeCN/H2O and total amine-derived fraction across TEA and TEOA normalized groups.",
+        "Run the irradiations under identical timing and temperature control, sampling headspace at common time points for CO and H2 in one calibration campaign that includes the Ar and no-amine groups.",
+        "Report CO amount, H2 amount, and CO/H2 time profiles for every group, and record bulk pre- and post-run apparent pH plus visible phase or precipitation changes only as comparability covariates.",
+        "Interpret the normalized TEA versus TEOA contrast narrowly, using the control groups to confirm baseline attribution and to avoid reading any selectivity collapse as proof of one specific hidden variable."
+      ],
+      "measurements": [
+        "Gas-phase CO amount versus time.",
+        "Gas-phase H2 amount versus time.",
+        "CO/H2 ratio or selectivity versus time calculated from jointly measured products.",
+        "Bulk pre- and post-run apparent pH of the liquid phase as a covariate only.",
+        "Qualitative notes on color change, precipitation, or phase separation as comparability checks only.",
+        "Analytical blank and calibration stability across the full sample set."
+      ],
+      "supports": "Supports the medium-dominant version of H03 only in a narrowed sense if a TEA/TEOA difference evident in the anchored recipe becomes substantially smaller or disappears in the normalized comparison, while the CO2 and no-amine controls show that the normalized experiment still produces attributable signal. This would indicate that recipe-linked medium effects contribute materially, without identifying which hidden variable is responsible.",
+      "refutes": "Refutes the stronger medium-dominant emphasis of H03 if the TEA/TEOA difference is reproduced with similar direction and magnitude in both anchored and normalized comparisons, suggesting that the controlled composition variables are not the main source of the selectivity difference. That outcome would be more compatible with donor-specific redox, coordination, or cobalt-state alternatives, though not uniquely proving any one of them.",
+      "inconclusive": "Inconclusive if one or more normalized groups give signal near detection limits, if normalization causes incompatible catalyst stability or phase behavior, if the Ar or no-amine controls reveal strong background artifacts, or if the observed TEA/TEOA differences are comparable to run-to-run analytical uncertainty.",
+      "parameter_selection": "Do not invent literature values. Use the EV059-linked recipe family only to choose the starting composition logic, then pilot the minimum necessary executable settings: catalyst loading window, support amount, irradiation time, sampling interval, and gas calibration range. For normalized groups, hold MeCN/H2O ratio and total amine-derived fraction constant across TEA and TEOA where physically feasible; if miscibility or handling prevents exact matching, document the deviation and narrow the inference rather than asserting equivalence.",
+      "limitations": "TEA and TEOA remain chemically nonequivalent even after composition normalization, so this card cannot isolate proton activity, dissolved CO2, viscosity, conductivity, and cobalt coordination effects from one another. The no-amine comparison also changes overall liquid composition and therefore tests functional necessity more than pure mechanistic causality. Product data alone cannot identify the active cobalt species or the dominant hidden variable behind any selectivity shift.",
+      "feasibility": "low_cost"
+    },
+    {
+      "id": "E14",
+      "hypothesis_id": "H03",
+      "title": "Isotope-sensitive operando signatures in TEA vs TEOA Co-bpy photocatalysis",
+      "purpose": "Test whether TEA and TEOA give different H/D-sensitive spectroscopic features under matched P01 CO2-reduction conditions, consistent with different proton-management or hydrogen-containing states rather than a donor effect visible only in product ratios.",
+      "evidence_ids": [
+        "EV080",
+        "GX010",
+        "GX015",
+        "EV031"
+      ],
+      "source_to_proposal": "EV080 supports isotope substitution as a transferable assignment aid in operando FTIR-type measurements, but not species identity in this Co-bpy system. GX010 and GX015 support proton-inventory and isotope logic as discriminators of proton-delivery environments in cobalt CO2-reduction chemistry, not as direct evidence for this photocatalyst. EV031 supports the transferable idea that donor/solvent environment can change detectable intermediate populations and selectivity in bipyridine-based CO2 reduction. Proposed transfer: compare matched TEA and TEOA P01 samples with H2O versus D2O in the same spectroscopic configuration, and interpret isotope-sensitive differences only as evidence for differing hydrogen-coupled observables under these conditions.",
+      "groups": [
+        {
+          "id": "E14G01",
+          "description": "P01 baseline with TEOA in H2O-containing medium under illuminated CO2 conditions",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 in MeCN/H2O-family medium"
+            },
+            {
+              "name": "additive",
+              "value": "TEOA"
+            },
+            {
+              "name": "isotopic_medium",
+              "value": "H2O-containing"
+            },
+            {
+              "name": "gas",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "spectroscopy_mode",
+              "value": "single predefined operando or near-operando mode"
+            }
+          ]
+        },
+        {
+          "id": "E14G02",
+          "description": "Matched TEOA sample with D2O substituted for the aqueous component",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 in MeCN/H2O-family medium"
+            },
+            {
+              "name": "additive",
+              "value": "TEOA"
+            },
+            {
+              "name": "isotopic_medium",
+              "value": "D2O-containing"
+            },
+            {
+              "name": "gas",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "spectroscopy_mode",
+              "value": "single predefined operando or near-operando mode"
+            }
+          ]
+        },
+        {
+          "id": "E14G03",
+          "description": "P01 comparator with TEA in H2O-containing medium under illuminated CO2 conditions",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 in MeCN/H2O-family medium"
+            },
+            {
+              "name": "additive",
+              "value": "TEA"
+            },
+            {
+              "name": "isotopic_medium",
+              "value": "H2O-containing"
+            },
+            {
+              "name": "gas",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "spectroscopy_mode",
+              "value": "single predefined operando or near-operando mode"
+            }
+          ]
+        },
+        {
+          "id": "E14G04",
+          "description": "Matched TEA sample with D2O substituted for the aqueous component",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 in MeCN/H2O-family medium"
+            },
+            {
+              "name": "additive",
+              "value": "TEA"
+            },
+            {
+              "name": "isotopic_medium",
+              "value": "D2O-containing"
+            },
+            {
+              "name": "gas",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "spectroscopy_mode",
+              "value": "single predefined operando or near-operando mode"
+            }
+          ]
+        },
+        {
+          "id": "E14G05",
+          "description": "Donor-free reference under otherwise matched illuminated CO2 conditions for background assignment",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 in MeCN/H2O-family medium"
+            },
+            {
+              "name": "additive",
+              "value": "none"
+            },
+            {
+              "name": "isotopic_medium",
+              "value": "H2O-containing"
+            },
+            {
+              "name": "gas",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "spectroscopy_mode",
+              "value": "single predefined operando or near-operando mode"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E14G01",
+          "group_b": "E14G02",
+          "changed_factors": [
+            "isotopic_medium"
+          ],
+          "inference": "Within TEOA, isotope-dependent shifts or time-course changes identify hydrogen-coupled observables worth tracking, but do not uniquely assign structure or catalytic relevance."
+        },
+        {
+          "group_a": "E14G03",
+          "group_b": "E14G04",
+          "changed_factors": [
+            "isotopic_medium"
+          ],
+          "inference": "Within TEA, isotope-sensitive features provide the matched comparator for whether TEA accesses similar or different hydrogen-coupled observables."
+        },
+        {
+          "group_a": "E14G01",
+          "group_b": "E14G03",
+          "changed_factors": [
+            "additive"
+          ],
+          "inference": "Under H2O, donor-dependent spectral differences are descriptive only; if absent, a strong proton-management explanation is weakened but not excluded."
+        },
+        {
+          "group_a": "E14G02",
+          "group_b": "E14G04",
+          "changed_factors": [
+            "additive"
+          ],
+          "inference": "Under D2O, persistence or loss of donor-dependent signatures helps bound whether TEA/TEOA differences track hydrogen-coupled observables or remain compatible with cobalt-state and donor-redox alternatives."
+        }
+      ],
+      "procedure": [
+        "Verify one exact spectroscopic mode before comparison and apply it to all groups; if true operando sensitivity is inadequate in pilot, switch the whole card to a fixed-delay near-operando transfer protocol rather than mixing modes.",
+        "Prepare matched P01 TEA and TEOA samples from the same cobalt source, bpy source, g-C3N4 batch, solvent family, cell geometry, and CO2 handling; include donor-free background if signal quality permits.",
+        "Run a pilot to set path length, loading, and acquisition window by criteria of unsaturated spectra, manageable scattering/background drift, and repeatable catalyst-region features; reject settings that differ in baseline quality between TEA and TEOA beyond preset tolerance.",
+        "Acquire time-resolved spectra for H2O- and D2O-containing TEA and TEOA samples under the same illumination and gas conditions, with matched dark or pre-illumination references for subtraction.",
+        "Track reproducible band positions, intensities, and time profiles, and compare them with parallel CO and H2 measurements only as correlation, not mechanism proof."
+      ],
+      "measurements": [
+        "Time-resolved operando or fixed-delay near-operando spectra in predefined regions assigned only as candidate hydrogen-coupled, CO2-derived, ligand-associated, or background-sensitive features",
+        "Isotope-induced shifts, attenuation, or altered temporal evolution upon H2O to D2O substitution within each donor condition",
+        "Difference spectra versus dark, pre-illumination, and donor-free references to identify background or support-derived contributions",
+        "Replicate agreement of donor-dependent isotope responses across independently prepared samples",
+        "Parallel CO and H2 product amounts from matched runs to test whether spectral differences co-occur with selectivity differences without equating them"
+      ],
+      "supports": "Support for H03 would be a reproducible donor-dependent isotope response under matched acquisition: TEA and TEOA differ in H/D-sensitive band positions, magnitudes, or time behavior beyond donor-free/background changes, and the difference is not explained by obvious baseline artifacts. Stronger but still non-decisive support occurs if donor-dependent catalytic CO/H2 divergence also weakens or reorganizes under the same D2O substitution.",
+      "refutes": "Evidence against H03 would be that TEA and TEOA show no reproducible difference in isotope-sensitive observables under matched conditions, while spectra are dominated by shared or non-isotope-sensitive changes. If catalytic TEA/TEOA differences remain substantial in matched runs despite indistinguishable H/D-sensitive signatures, a proton-management-centered account is weakened relative to alternatives.",
+      "inconclusive": "Inconclusive if signal-to-background is inadequate, scattering from the suspension obscures donor comparisons, assignment remains dominated by overlapping support/solvent features, or D2O substitution changes bulk properties enough that spectral differences cannot be bounded to hydrogen-coupled observables. Donor-dependent but non-isotope-sensitive changes are also inconclusive for H03 because they remain compatible with cobalt speciation or donor photoredox effects.",
+      "parameter_selection": "Use the literature-anchored P01 formulation family only after verifying exact baseline composition from supplied source records. Calibrate path length, catalyst loading, aqueous fraction, and acquisition interval by pilot criteria of stable baseline, detectable catalyst-region signal, and repeatable spectra across replicate preparations. Predefine acceptable baseline-drift and scattering thresholds before comparing donors. Keep preparation order and nominal component identities matched between H2O and D2O groups. If pH/pD matching is attempted, document one convention and use it consistently without claiming exact equivalence.",
+      "limitations": "This characterization card narrows inference to whether TEA and TEOA differ in isotope-sensitive observables under matched conditions. It cannot uniquely identify intermediates, prove rate-determining roles, or isolate proton management from all other donor-dependent medium changes. D2O perturbs more than proton mass, and TEA versus TEOA also changes donor structure and solution properties. Near-operando measurements may miss the true operating state.",
+      "feasibility": "specialist"
+    },
+    {
+      "id": "E16",
+      "hypothesis_id": "H03",
+      "title": "Amine omission and bounded inert-base replacement",
+      "purpose": "Test whether amine presence is necessary in the P01 TEA/TEOA comparison and whether a tightly screened non-donor base can shift outcomes in a limited way consistent with mixed proton-management contributions, without claiming replacement of sacrificial donation.",
+      "evidence_ids": [
+        "EV013",
+        "EV024",
+        "GX010",
+        "GX015",
+        "GX008"
+      ],
+      "source_to_proposal": "EV013 supports treating TEA and TEOA as multifunctional additives that can act as H+ source and hole scavenger, so omission is needed before interpreting identity effects. EV024, GX010, and GX015 support the narrower proposition that proton-delivery environment can alter CO2-reduction behavior, motivating a bounded non-donor base screen. GX008 supports matched negative controls and broad product analysis. Transfer is limited because no supplied evidence shows a non-sacrificial base reproducing the target Co-bpy photocatalysis; any rescue is therefore descriptive evidence for partial proton-management contribution only.",
+      "groups": [
+        {
+          "id": "E16G01",
+          "description": "Primary TEOA baseline in the P01 Co-bpy/g-C3N4 assay.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2 + 2,2'-bipyridine + g-C3N4 in MeCN/H2O under CO2 and light"
+            },
+            {
+              "name": "amine_condition",
+              "value": "TEOA present"
+            },
+            {
+              "name": "base_condition",
+              "value": "none"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            }
+          ]
+        },
+        {
+          "id": "E16G02",
+          "description": "Amine omission control with baseline otherwise retained.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2 + 2,2'-bipyridine + g-C3N4 in MeCN/H2O under CO2 and light"
+            },
+            {
+              "name": "amine_condition",
+              "value": "none"
+            },
+            {
+              "name": "base_condition",
+              "value": "none"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            }
+          ]
+        },
+        {
+          "id": "E16G03",
+          "description": "No amine plus one pre-screened non-donor base selected by pilot for minimal background reactivity and minimal visible disruption of the Co-bpy/g-C3N4 mixture.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2 + 2,2'-bipyridine + g-C3N4 in MeCN/H2O under CO2 and light"
+            },
+            {
+              "name": "amine_condition",
+              "value": "none"
+            },
+            {
+              "name": "base_condition",
+              "value": "pre-screened non-donor base present"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            }
+          ]
+        },
+        {
+          "id": "E16G04",
+          "description": "TEA comparator under the same platform.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2 + 2,2'-bipyridine + g-C3N4 in MeCN/H2O under CO2 and light"
+            },
+            {
+              "name": "amine_condition",
+              "value": "TEA present"
+            },
+            {
+              "name": "base_condition",
+              "value": "none"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E16G01",
+          "group_b": "E16G02",
+          "changed_factors": [
+            "amine_condition"
+          ],
+          "inference": "Omission test for whether an amine is required under the TEOA baseline; does not separate donor redox from proton-management roles."
+        },
+        {
+          "group_a": "E16G02",
+          "group_b": "E16G03",
+          "changed_factors": [
+            "base_condition"
+          ],
+          "inference": "Tests whether a carefully screened non-donor base shifts activity or CO/H2 distribution relative to no amine; any rescue is bounded evidence for proton-management contribution, not amine equivalence."
+        },
+        {
+          "group_a": "E16G01",
+          "group_b": "E16G04",
+          "changed_factors": [
+            "amine_condition"
+          ],
+          "inference": "Direct TEA versus TEOA comparison within one platform; remains a multi-role additive identity contrast, not single-mechanism proof."
+        },
+        {
+          "group_a": "E16G03",
+          "group_b": "E16G04",
+          "changed_factors": [
+            "amine_condition",
+            "base_condition"
+          ],
+          "inference": "Confounded descriptive contrast between TEA and a non-donor-base condition; useful only to bound how much behavior can be approached without an amine donor."
+        }
+      ],
+      "procedure": [
+        "Verify the P01 baseline composition from the supplied scope, then pre-screen candidate non-donor bases in the same solvent matrix using blank and compatibility checks before selecting one replacement condition.",
+        "Prepare the four listed groups with identical catalyst, ligand, g-C3N4, solvent ratio, reactor geometry, CO2 handling, irradiation schedule, and analytical workflow; vary only the stated factors.",
+        "Run photocatalysis under CO2 with matched sampling and quantify CO and H2 for every group using the same calibrated gas-analysis method.",
+        "Record a bulk acid-base descriptor if measurable in the chosen medium and note obvious precipitation, color change, or phase instability as comparability flags.",
+        "Interpret results only through the specified contrasts and treat any non-donor-base rescue as partial descriptive evidence unless it reproducibly approaches an amine-containing baseline under matched controls."
+      ],
+      "measurements": [
+        "CO amount or rate by the common gas-analysis workflow",
+        "H2 amount or rate by the same workflow",
+        "CO/H2 ratio or selectivity metric from paired CO and H2 data",
+        "Bulk acid-base descriptor before and after reaction if measurable in the chosen medium",
+        "Qualitative observations of precipitation, color change, or phase separation as comparability checks"
+      ],
+      "supports": "H03 is supported if amine omission strongly suppresses or shifts the baseline behavior and the pre-screened non-donor base causes a reproducible partial movement in total activity or CO/H2 distribution toward the TEOA case, while TEA and TEOA still differ under matched conditions.",
+      "refutes": "H03 is weakened if the non-donor base produces no reproducible shift relative to no amine and TEA versus TEOA differences remain large under otherwise matched conditions, especially if omission mainly removes activity in a way consistent with loss of donor function alone.",
+      "inconclusive": "Inconclusive if the selected base causes new background reactivity, instability, or phase changes; if acid-base conditions cannot be compared meaningfully; or if product signals are near detection limits.",
+      "parameter_selection": "Do not invent concentrations. Use the verified P01 baseline for TEA and TEOA conditions. For the replacement arm, first screen candidate non-donor bases in the same solvent matrix and choose one condition only if it meets all pilot criteria: negligible CO and H2 in catalyst-free or no-light blanks, no obvious decomposition or precipitation before irradiation, and a measurable change in a bulk acid-base descriptor relative to E16G02. If no candidate meets these criteria, retain only E16G01/E16G02/E16G04 and report the replacement arm as blocked.",
+      "limitations": "The replacement arm remains limited because a non-donor base cannot reproduce sacrificial electron donation. Positive rescue can also reflect ionic-strength, coordination, viscosity, or solvation changes. Negative rescue cannot exclude proton-management contributions. Bulk acid-base descriptors in MeCN/H2O may not represent local proton delivery. This card therefore tests necessity and bounded medium sensitivity, not full causal separation.",
+      "feasibility": "low_cost"
+    }
+  ]
+}

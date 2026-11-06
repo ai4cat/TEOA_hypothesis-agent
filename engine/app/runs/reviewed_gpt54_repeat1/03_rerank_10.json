@@ -1,0 +1,154 @@
+{
+  "assessments": [
+    {
+      "evidence_id": "EV073",
+      "decision": "exclude",
+      "span_ids": [
+        "S3",
+        "S4",
+        "S6"
+      ],
+      "role": "cross-system background",
+      "claim": "A different photocatalytic system in neutral water with TEOA reportedly produced mainly formaldehyde, with CO and CH4 as minor products.",
+      "transfer_limit": "Not a Co(II)–bipyridine comparison, different catalyst/platform, products, and medium; only broad background on TEOA-containing CO2 photoreduction. CO here is carbon monoxide, not cobalt.",
+      "reason": "Contains experimental observations with TEOA and product distribution, but the catalyst identity and reaction context are unrelated to the target Co(II)–bipyridine TEA/TEOA comparison, so it is too indirect for inclusion.",
+      "scores": {
+        "research_relevance": 1,
+        "direct_evidence": 2,
+        "discriminatory_value": 1,
+        "transferability": 1
+      }
+    },
+    {
+      "evidence_id": "EV074",
+      "decision": "exclude",
+      "span_ids": [
+        "S9",
+        "S10"
+      ],
+      "role": "irrelevant",
+      "claim": "This snippet describes a copper gas-diffusion electrochemical flow-cell setup measured at room temperature.",
+      "transfer_limit": "Electroreduction on copper GDEs is outside the photocatalytic Co(II)–bipyridine TEA/TEOA scope.",
+      "reason": "No relevant photocatalytic Co-bipyridine, TEA/TEOA comparison, or transferable mechanistic observation for the stated question.",
+      "scores": {
+        "research_relevance": 0,
+        "direct_evidence": 1,
+        "discriminatory_value": 0,
+        "transferability": 0
+      }
+    },
+    {
+      "evidence_id": "EV075",
+      "decision": "include",
+      "span_ids": [
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "role": "system option / component evidence",
+      "claim": "A visible-light CO2 photoreduction formulation is explicitly reported that contains a Ru(bpy)3 photosensitizer, TEOA sacrificial donor, MeCN, and a cobalt-containing catalyst platform under high-purity CO2/Ar handling.",
+      "transfer_limit": "Catalyst is Co-Co LDH/MXene rather than a molecular Co(II)–bipyridine complex; snippet gives composition but not comparative TEA data or outcomes here.",
+      "reason": "Useful because it documents a fully specified TEOA-containing photocatalytic formulation with bpy-based photosensitizer and cobalt catalyst components, informing feasible comparator design and component accounting even though it is not the target molecular system.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 2,
+        "discriminatory_value": 1,
+        "transferability": 2
+      }
+    },
+    {
+      "evidence_id": "EV076",
+      "decision": "include",
+      "span_ids": [
+        "S2",
+        "S7",
+        "S8"
+      ],
+      "role": "transferable characterization method evidence",
+      "claim": "XAS is described as element-specific, operable in situ/operando, and EXAFS can provide coordination numbers and interatomic distances, while XPS can identify surface composition and valence-state variations.",
+      "transfer_limit": "Method guidance is from single-atom catalyst context, not specifically a homogeneous Co(II)–bipyridine photocatalytic solution; adaptation to the target system requires validation of sample state and sensitivity.",
+      "reason": "Relevant as transferable characterization evidence for testing changes in cobalt coordination or valence under reaction conditions, which could discriminate donor-dependent speciation hypotheses in the target system.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 1,
+        "discriminatory_value": 2,
+        "transferability": 2
+      }
+    },
+    {
+      "evidence_id": "EV077",
+      "decision": "include",
+      "span_ids": [
+        "S2",
+        "S6",
+        "S8"
+      ],
+      "role": "transferable mechanistic/method evidence",
+      "claim": "In a Ru–Fe photocatalytic system, the presence of Fe caused luminescence quenching consistent with photoinduced electron transfer, and a solution with TEOA was subjected to deoxygenation and 468 nm illumination cycles.",
+      "transfer_limit": "Different reaction chemistry (oxidation, Ru–Fe system, O2 atmosphere variable) and no TEA comparator; transfer is limited to using photophysical quenching and donor-containing illuminated cycles as mechanistic probes.",
+      "reason": "Provides direct example that luminescence quenching can report productive electron transfer in a donor-containing photocatalytic molecular system, which is useful for designing discriminating measurements in the Co(II)–bipyridine context.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 2,
+        "discriminatory_value": 2,
+        "transferability": 2
+      }
+    },
+    {
+      "evidence_id": "EV078",
+      "decision": "exclude",
+      "span_ids": [
+        "S5",
+        "S6",
+        "S8"
+      ],
+      "role": "generic photocatalysis background",
+      "claim": "PL lifetimes and transient photocurrent in a Zr-MOF system were interpreted as indicating charge separation and electron accumulation/transfer to active sites.",
+      "transfer_limit": "Different catalyst class and no cobalt-bipyridine donor comparison; interpretation-heavy and distant from target chemistry.",
+      "reason": "Although it discusses photophysical observables, it does not specifically inform the TEA/TEOA effect in Co(II)–bipyridine CO2 photoreduction as well as more relevant snippets do.",
+      "scores": {
+        "research_relevance": 1,
+        "direct_evidence": 2,
+        "discriminatory_value": 1,
+        "transferability": 1
+      }
+    },
+    {
+      "evidence_id": "EV079",
+      "decision": "include",
+      "span_ids": [
+        "S2",
+        "S3"
+      ],
+      "role": "system option / comparative benchmark",
+      "claim": "A summary table reports a Co–Co LDH/Ti3C2 photocatalyst using MeCN/H2O/TEOA and [Ru(bpy)3]Cl2·6H2O under 5 W LED, with CO as reported product at 6.248 µmol/h.",
+      "transfer_limit": "This is a summarized table entry rather than a full primary report in the snippet, and the catalyst is a heterogeneous Co-based material, not a Co(II)–bipyridine molecular complex. CO denotes carbon monoxide product.",
+      "reason": "Useful as concise evidence that TEOA with Ru(bpy)3 and a cobalt-containing photocatalytic CO2 reduction system can yield CO under MeCN/H2O conditions, helping define alternative formulations and product-analysis scope.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 1,
+        "discriminatory_value": 1,
+        "transferability": 2
+      }
+    },
+    {
+      "evidence_id": "EV080",
+      "decision": "include",
+      "span_ids": [
+        "S3",
+        "S5",
+        "S6"
+      ],
+      "role": "transferable operando assignment/control evidence",
+      "claim": "Operando XANES and isotope-labeled operando FTIR were used under reaction conditions to test structural assignments and vibrational assignments; replacing H2O with D2O shifted a peak to support assignment to a hydrogen-containing adsorbate.",
+      "transfer_limit": "Electrocatalytic Cu system for ethanol, not photocatalytic Co(II)–bipyridine; mechanistic species are different, so transfer is limited to the value of operando and isotopic assignment controls rather than specific chemistry.",
+      "reason": "Provides strong transferable evidence that operando spectroscopy plus isotope substitution can directly discriminate among competing assignments, which is valuable for designing controls in the target photocatalytic system.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 3,
+        "discriminatory_value": 3,
+        "transferability": 2
+      }
+    }
+  ]
+}

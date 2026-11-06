@@ -1,0 +1,230 @@
+{
+  "questions": [
+    {
+      "question_id": "Q1",
+      "mechanism_evidence_ids": [
+        "EV059",
+        "EV011",
+        "EV061",
+        "EV013",
+        "EV063",
+        "EV035"
+      ],
+      "method_evidence_ids": [
+        "EV016",
+        "EV018"
+      ],
+      "status": "supported",
+      "reason": "There is direct or near-direct system evidence that TEOA is used in Co/bpy-relevant CO2 photoreduction formulations and that donor identity or concentration and medium ratio can affect CO/H2 outcomes or CO evolution, with TEOA also explicitly described as multifunctional donor/proton-source and amine-CO2 interactant. Transferable methods provide actual observables for additive effects: EPR spin-trapping can distinguish donor-derived radicals and transient absorption can report additive-dependent charge-carrier signals/lifetimes. Limits remain because no supplied source gives a strict head-to-head TEA versus TEOA comparison in one unchanged Co(II)-bipyridine formulation, but a plausible discriminating method exists."
+    },
+    {
+      "question_id": "Q2",
+      "mechanism_evidence_ids": [
+        "EV059",
+        "EV027",
+        "EV048",
+        "EV047",
+        "EV085",
+        "EV051"
+      ],
+      "method_evidence_ids": [
+        "EV052",
+        "EV076",
+        "EV004",
+        "EV088"
+      ],
+      "status": "partial",
+      "reason": "The supplied literature supports that catalyst identity, coordination environment, intermolecular interactions, and degradation can matter in cobalt or related photocatalytic CO2-reduction systems, and there is direct formulation evidence for CoCl2+bpy+TEOA platforms. However, direct evidence that TEA versus TEOA changes Co-bipyridine speciation or stability in the target family is not supplied. Usable characterization methods are available with explicit observables and limits: operando/in situ XAS/EXAFS can track coordination numbers, distances, and dynamic cobalt state, while operando approaches distinguish operating-state changes from before/after artifacts. Because mechanism support is indirect for the specific TEA/TEOA comparison, this family is only partial."
+    },
+    {
+      "question_id": "Q3",
+      "mechanism_evidence_ids": [
+        "EV053",
+        "EV007",
+        "EV065",
+        "EV041",
+        "EV011",
+        "EV095"
+      ],
+      "method_evidence_ids": [
+        "EV053",
+        "EV018",
+        "EV005",
+        "EV077"
+      ],
+      "status": "supported",
+      "reason": "This family has strong transferable mechanistic support that sacrificial donors can control reductive quenching, reduced-intermediate formation/lifetime, and downstream productive turnover in molecular photocatalysis, plus direct cobalt-system evidence for quenching analysis in TEOA-containing CO2 photoreduction. It also has concrete discriminating methods with observables: fluorescence/UV-vis quenching can distinguish donor-versus-catalyst quenching routes, transient absorption can monitor reduced-species or electron lifetimes, and luminescence quenching can report photoinduced electron transfer. Direct TEA versus TEOA evidence in Co-bpy is still absent, but both the question support and a plausible discriminating method are present."
+    },
+    {
+      "question_id": "Q4",
+      "mechanism_evidence_ids": [
+        "EV029",
+        "EV031",
+        "EV021",
+        "EV024"
+      ],
+      "method_evidence_ids": [
+        "EV080",
+        "EV068"
+      ],
+      "status": "partial",
+      "reason": "There is transferable evidence that donor environment can alter CO2 trapping or intermediate stability and that TEOA-specific chemistry may couple to substrate handling, but direct substrate-binding or intermediate-assignment evidence in a Co(II)-bipyridine TEA/TEOA system is not supplied. Method support is real but generic: operando FTIR/Raman/EPR and isotope-substitution controls can test vibrational assignments and distinguish hydrogen-containing adsorbates or binding states, yet no supplied source demonstrates a target-like Co-bpy substrate-assignment measurement under TEA/TEOA variation. Therefore the family is mechanistically suggestive with usable methods, but not sufficiently direct for supported."
+    },
+    {
+      "question_id": "Q5",
+      "mechanism_evidence_ids": [
+        "EV059",
+        "EV021",
+        "EV046",
+        "EV081",
+        "EV045",
+        "EV069"
+      ],
+      "method_evidence_ids": [
+        "EV046",
+        "EV081",
+        "EV082"
+      ],
+      "status": "supported",
+      "reason": "Performance and assay logic are well supported. Direct and transferable system evidence covers CO/H2 quantification, catalyst-omission/background contributions, dark/no-CO2 controls, donor-associated confounding, and 13CO2 origin checks. The methods are explicit and discriminating: GC quantifies CO and H2, GC-MS with 13CO2 tests carbon origin, and before/after characterization checks stability limits. Although the exact TEA-versus-TEOA effect in one Co-bpy formulation remains unconfirmed, this family has both evidence for the scientific question and clear usable methods for discrimination."
+    },
+    {
+      "question_id": "Q6",
+      "mechanism_evidence_ids": [
+        "EV061",
+        "EV029",
+        "EV013",
+        "EV024",
+        "EV091",
+        "EV025"
+      ],
+      "method_evidence_ids": [
+        "EV080"
+      ],
+      "status": "partial",
+      "reason": "The literature provides several competing explanations beyond simple electron donation: proton-source behavior, amine-CO2 interaction, coordination or medium effects, and donor-side radical chemistry. But direct evidence in a Co(II)-bipyridine TEA/TEOA system that independently separates electron supply from these other roles is weak. Method evidence is also sparse: isotope-substitution/operando assignment logic is transferable, but no supplied source gives a well-established decoupling protocol with explicit observables for separating electron donation from protonation, coordination, and medium effects in the target class. Hence this family remains partial and relatively weak."
+    }
+  ],
+  "supplement_queries": [
+    {
+      "id": "SQ1",
+      "question_id": "Q6",
+      "channel": "teoa_system",
+      "question": "What studies on TEOA in photocatalytic CO2 reduction explicitly separate electron donation from proton, coordination, or medium effects in cobalt bipyridine or closely related molecular systems?",
+      "term_groups": [
+        [
+          "TEOA",
+          "triethanolamine"
+        ],
+        [
+          "cobalt",
+          "bipyridine",
+          "molecular"
+        ],
+        [
+          "proton",
+          "coordination",
+          "viscosity"
+        ]
+      ]
+    },
+    {
+      "id": "SQ2",
+      "question_id": "Q6",
+      "channel": "method",
+      "question": "Which methods can independently decouple electron transfer from proton management and coordination effects in additive dependent photocatalytic systems?",
+      "term_groups": [
+        [
+          "isotope",
+          "titration",
+          "quenching"
+        ],
+        [
+          "electron",
+          "proton",
+          "coordination"
+        ]
+      ]
+    },
+    {
+      "id": "SQ3",
+      "question_id": "Q4",
+      "channel": "teoa_system",
+      "question": "What TEOA containing photocatalytic CO2 reduction studies identify cobalt or bipyridine bound CO2 adducts or downstream intermediates with assignable signals?",
+      "term_groups": [
+        [
+          "TEOA",
+          "triethanolamine"
+        ],
+        [
+          "cobalt",
+          "bipyridine"
+        ],
+        [
+          "adduct",
+          "intermediate",
+          "assignment"
+        ]
+      ]
+    },
+    {
+      "id": "SQ4",
+      "question_id": "Q4",
+      "channel": "method",
+      "question": "Which operando methods best assign CO2 binding and hydrogenated intermediates in molecular photocatalytic systems under additive variation?",
+      "term_groups": [
+        [
+          "operando",
+          "ftir",
+          "raman",
+          "epr"
+        ],
+        [
+          "binding",
+          "intermediate",
+          "isotope"
+        ]
+      ]
+    },
+    {
+      "id": "SQ5",
+      "question_id": "Q2",
+      "channel": "teoa_system",
+      "question": "Are TEA and TEOA reported to change cobalt bipyridine speciation or stability during photocatalytic CO2 reduction under otherwise matched conditions?",
+      "term_groups": [
+        [
+          "TEOA",
+          "triethanolamine"
+        ],
+        [
+          "TEA",
+          "triethylamine"
+        ],
+        [
+          "speciation",
+          "stability",
+          "degradation"
+        ]
+      ]
+    },
+    {
+      "id": "SQ6",
+      "question_id": "Q2",
+      "channel": "method",
+      "question": "Which solution phase methods can resolve cobalt bipyridine speciation and degradation during illuminated CO2 reduction?",
+      "term_groups": [
+        [
+          "uvvis",
+          "xas",
+          "epr",
+          "nmr"
+        ],
+        [
+          "speciation",
+          "degradation",
+          "illumination"
+        ]
+      ]
+    }
+  ]
+}

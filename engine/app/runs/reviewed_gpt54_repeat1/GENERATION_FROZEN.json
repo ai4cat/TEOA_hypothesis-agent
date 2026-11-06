@@ -1,0 +1,8 @@
+{
+  "time": "2026-11-05T03:55:48.796072+00:00",
+  "file": "candidates_final.json",
+  "sha256": "d68796324c46183d80ea1752a924756e3ece8f482f4af24db59107a429cec835",
+  "evidence_sha256": "e825ca1201c22c501d41ba6d7a80798f2474d7f51c29c4b75db33917ec0766bf",
+  "upstream_unchanged": true,
+  "scientific_status": "API-generated research candidates; unresolved reviews and question gaps retained; no experimental validation."
+}

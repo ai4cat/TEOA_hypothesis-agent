@@ -1,0 +1,187 @@
+{
+  "candidates": [
+    {
+      "id": "E28",
+      "hypothesis_id": "H05",
+      "title": "Matched TEA/TEOA integration of adduct-sensitive signals with quenching observables",
+      "purpose": "Test whether donor-dependent substrate-associated or catalyst-linked signals persist between TEA and TEOA under otherwise matched Co-bpy photocatalysis even when donor-side quenching observables are similar, thereby discriminating H05 from a purely upstream quenching explanation.",
+      "evidence_ids": [
+        "EV029",
+        "GX011",
+        "EV011",
+        "GX008"
+      ],
+      "source_to_proposal": "EV029 and GX011 provide transferable but non-Co evidence that TEOA can form catalyst/CO2-associated adduct chemistry beyond simple donation. EV011 supports the competing explanation that both TEA and TEOA can act through reductive quenching and donor-radical formation. GX008 supports combining negative controls, 13CO2 origin checks, and spectroscopy in homogeneous photocatalytic CO2-reduction studies. Proposed transfer: in the P01 Co-bpy baseline, compare TEA versus TEOA while holding the rest of the formulation fixed and integrate any adduct/intermediate-sensitive spectral difference with independently measured quenching behavior. This is a proposal, not a reported Co-bpy result.",
+      "groups": [
+        {
+          "id": "E28G01",
+          "description": "Matched P01 baseline with TEOA under CO2 and illumination",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy with g-C3N4 baseline formulation"
+            },
+            {
+              "name": "donor_additive",
+              "value": "TEOA"
+            },
+            {
+              "name": "atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "spectroscopy_mode",
+              "value": "same adduct-sensitive mode and same quenching assay"
+            },
+            {
+              "name": "origin_control",
+              "value": "natural abundance CO2"
+            }
+          ]
+        },
+        {
+          "id": "E28G02",
+          "description": "Matched P01 comparator with TEA substituted only in donor/additive role",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy with g-C3N4 baseline formulation"
+            },
+            {
+              "name": "donor_additive",
+              "value": "TEA"
+            },
+            {
+              "name": "atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "spectroscopy_mode",
+              "value": "same adduct-sensitive mode and same quenching assay"
+            },
+            {
+              "name": "origin_control",
+              "value": "natural abundance CO2"
+            }
+          ]
+        },
+        {
+          "id": "E28G03",
+          "description": "TEOA group repeated with 13CO2 for origin-bounded product/signal cross-check if signal and product are detectable",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy with g-C3N4 baseline formulation"
+            },
+            {
+              "name": "donor_additive",
+              "value": "TEOA"
+            },
+            {
+              "name": "atmosphere",
+              "value": "13CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "spectroscopy_mode",
+              "value": "same adduct-sensitive mode and same quenching assay"
+            },
+            {
+              "name": "origin_control",
+              "value": "13CO2"
+            }
+          ]
+        },
+        {
+          "id": "E28G04",
+          "description": "TEA group repeated with 13CO2 for origin-bounded product/signal cross-check if signal and product are detectable",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy with g-C3N4 baseline formulation"
+            },
+            {
+              "name": "donor_additive",
+              "value": "TEA"
+            },
+            {
+              "name": "atmosphere",
+              "value": "13CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "spectroscopy_mode",
+              "value": "same adduct-sensitive mode and same quenching assay"
+            },
+            {
+              "name": "origin_control",
+              "value": "13CO2"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E28G01",
+          "group_b": "E28G02",
+          "changed_factors": [
+            "donor_additive"
+          ],
+          "inference": "Primary single-factor comparator: if adduct/intermediate-sensitive signals differ while quenching observables remain similar within calibration limits, that favors donor-specific downstream substrate-associated chemistry over a purely upstream quenching explanation."
+        },
+        {
+          "group_a": "E28G01",
+          "group_b": "E28G03",
+          "changed_factors": [
+            "atmosphere",
+            "origin_control"
+          ],
+          "inference": "Tests whether TEOA-associated product assignment and any isotope-trackable signal behavior remain consistent with CO2 origin; this does not by itself prove a specific adduct structure."
+        },
+        {
+          "group_a": "E28G02",
+          "group_b": "E28G04",
+          "changed_factors": [
+            "atmosphere",
+            "origin_control"
+          ],
+          "inference": "Same origin-bounded check for the TEA comparator; useful to exclude donor-specific product-origin artifacts, but it is not a TEA versus TEOA causal contrast."
+        }
+      ],
+      "procedure": [
+        "Prepare the matched P01 baseline and TEA comparator by changing only donor/additive identity; verify by a pilot checklist that reactor geometry, gas handling, sampling schedule, and analytical workflow are identical.",
+        "Acquire the chosen adduct-sensitive spectral readout and the chosen donor-side quenching readout on the same formulations under dark and illuminated states, using the same backgrounds and references for both donors.",
+        "Run photocatalysis long enough to collect CO and H2 together and, where signal intensity permits, repeat with 13CO2 for origin-bounded cross-checks of products and any isotope-responsive spectral feature.",
+        "Compare TEA versus TEOA first on quenching observables and then on adduct/intermediate-sensitive signals and product distribution, using matched timing windows rather than mixing early-state and end-point data."
+      ],
+      "measurements": [
+        "CO and H2 quantified together by the same product-analysis workflow for all groups",
+        "Donor-side quenching observable already established for the platform, such as excited-state decay or emission quenching of the light-absorbing component",
+        "Adduct/intermediate-sensitive spectral feature from the dependent characterization method, recorded with dark/background references and under the same sample state for both donors",
+        "For 13CO2 groups, isotopic shift or isotopic product assignment if detectable",
+        "Covariates needed for comparability, such as pH or apparent basicity proxy, optical density, and any visible precipitation or color change",
+        "Signal absence/presence limits and reproducibility across repeat preparations"
+      ],
+      "supports": "Support for H05 would be a reproducible TEA-versus-TEOA difference in substrate-associated or catalyst-linked spectral signatures, and/or CO2-origin-bounded behavior linked to those signatures, while donor-side quenching observables remain similar enough that upstream quenching alone cannot account for the catalytic difference. Stronger support occurs if the spectral difference tracks the donor identity in the matched comparison and the 13CO2 check is consistent with CO2-derived product formation.",
+      "refutes": "Evidence against H05 would be that under matched conditions TEA and TEOA show no reproducible difference in adduct/intermediate-sensitive signals beyond noise or assignment uncertainty, while any catalytic difference is instead accompanied by clear quenching differences large enough to explain it, or the TEA/TEOA product difference disappears after strict matching.",
+      "inconclusive": "Inconclusive if both quenching and adduct-sensitive observables change together, if signal assignment is ambiguous, if isotope sensitivity is below detection, if products are too low for reliable integration, or if medium/property differences introduced by donor substitution alter multiple observables without isolating downstream substrate-associated chemistry.",
+      "parameter_selection": "Do not invent concentrations, path lengths, or irradiation settings. Start from the reported P01 TEOA formulation and verify exact values from supplied sources; if absent, run a calibration pilot that first matches absorbance/scattering window, catalyst detectability, and measurable CO/H2 formation for the baseline. Then choose acquisition timing where both quenching and spectral signals are above background but before obvious bulk decomposition or precipitation. Use the same donor molar role and the same total reaction volume across TEA and TEOA unless a preparatory solubility or medium-compatibility pilot shows this is not feasible; if not feasible, retain the comparison as partially confounded rather than pretending full matching.",
+      "limitations": "Depends on prior establishment of a usable adduct-sensitive method and quenching assay in this platform. TEA and TEOA change more than one latent property of the medium, so even the primary contrast may combine donor, base, proton-management, and solvation effects. A spectral signal can indicate donor-dependent association or intermediate population but cannot alone establish the exact structure, rate-limiting step, or full catalytic pathway. 13CO2 controls bound product origin but do not prove that a specific observed signal is the productive intermediate.",
+      "feasibility": "moderate"
+    }
+  ]
+}

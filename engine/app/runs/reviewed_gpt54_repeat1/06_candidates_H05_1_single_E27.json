@@ -1,0 +1,204 @@
+{
+  "candidates": [
+    {
+      "id": "E27",
+      "hypothesis_id": "H05",
+      "title": "13CO2-bounded TEA versus TEOA benchmark with matched background controls",
+      "purpose": "Test whether any TEA/TEOA difference in apparent CO/H2 selectivity remains when counted CO is explicitly confirmed as CO2-derived within the P01 Co-bpy comparison, while checking donor-dependent background gas formation under no-CO2 and dark conditions.",
+      "evidence_ids": [
+        "EV021",
+        "EV085",
+        "GX008",
+        "EV063"
+      ],
+      "source_to_proposal": "EV021 motivates explicit isotope origin-bounding because CO was reported from CO2 rather than TEOA decomposition in a different TEOA-containing photochemical system. EV085 warns that donor decomposition and altered active species can confound product assignment. GX008 supports negative controls and reproducible 13CO2 labeling in photocatalytic CO2-reduction studies. EV063 shows that in a CoCl2/bpy-containing photocatalytic system, CO and H2 outputs are medium-sensitive, so the TEA/TEOA comparison should keep all non-donor factors matched. Proposed transfer: apply isotope-bounded product analysis to the matched P01 donor substitution; this bounds carbon-origin alternatives but does not directly identify adducts or operating cobalt states.",
+      "groups": [
+        {
+          "id": "E27G01",
+          "description": "Baseline P01 formulation with TEOA under 13CO2",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy photocatalytic benchmark"
+            },
+            {
+              "name": "donor_additive",
+              "value": "TEOA"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "13CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "other_components_and_medium",
+              "value": "matched P01 baseline"
+            }
+          ]
+        },
+        {
+          "id": "E27G02",
+          "description": "Comparator P01 formulation with TEA under 13CO2",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy photocatalytic benchmark"
+            },
+            {
+              "name": "donor_additive",
+              "value": "TEA"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "13CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "other_components_and_medium",
+              "value": "matched P01 baseline"
+            }
+          ]
+        },
+        {
+          "id": "E27G03",
+          "description": "TEOA formulation under inert replacement gas control",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy photocatalytic benchmark"
+            },
+            {
+              "name": "donor_additive",
+              "value": "TEOA"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "Ar or N2 in place of CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "other_components_and_medium",
+              "value": "matched P01 baseline"
+            }
+          ]
+        },
+        {
+          "id": "E27G04",
+          "description": "TEA formulation under inert replacement gas control",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy photocatalytic benchmark"
+            },
+            {
+              "name": "donor_additive",
+              "value": "TEA"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "Ar or N2 in place of CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "other_components_and_medium",
+              "value": "matched P01 baseline"
+            }
+          ]
+        },
+        {
+          "id": "E27G05",
+          "description": "Dark control with the selected donor benchmark under 13CO2",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy photocatalytic benchmark"
+            },
+            {
+              "name": "donor_additive",
+              "value": "selected donor from G01 or G02"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "13CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "off"
+            },
+            {
+              "name": "other_components_and_medium",
+              "value": "matched P01 baseline"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E27G01",
+          "group_b": "E27G02",
+          "changed_factors": [
+            "donor_additive"
+          ],
+          "inference": "Primary single-factor test: if electron-supply observables are otherwise matched in the broader program, a donor-dependent change in 13CO formation or 13CO/H2 ratio is consistent with donor-linked substrate or intermediate effects but is not uniquely mechanistic."
+        },
+        {
+          "group_a": "E27G01",
+          "group_b": "E27G03",
+          "changed_factors": [
+            "gas_atmosphere"
+          ],
+          "inference": "Tests whether CO detected with TEOA requires supplied CO2; residual unlabeled or non-CO2-derived CO would limit selectivity interpretation."
+        },
+        {
+          "group_a": "E27G02",
+          "group_b": "E27G04",
+          "changed_factors": [
+            "gas_atmosphere"
+          ],
+          "inference": "Parallel CO2-origin check for the TEA case; donor-specific background gas formation would confound the head-to-head comparison if substantial."
+        },
+        {
+          "group_a": "E27G01",
+          "group_b": "E27G05",
+          "changed_factors": [
+            "donor_additive",
+            "illumination"
+          ],
+          "inference": "Multi-factor descriptive control only because two factors differ if one donor is selected; it checks need for illumination but cannot isolate a donor effect and should not be read as a causal donor contrast."
+        }
+      ],
+      "procedure": [
+        "Verify or pilot-match the P01 baseline composition, reactor geometry, gas-handling sequence, and analytical workflow, then prepare one TEOA and one TEA formulation differing only in donor identity.",
+        "Run illuminated reactions under 13CO2 for G01 and G02 with matched timing and sampling; in parallel or separate matched runs perform inert-gas controls G03 and G04 and one dark control G05.",
+        "Analyze headspace for CO isotopologues and H2 in the same workflow, using standards/blanks needed to separate labeled CO from background and to check carryover.",
+        "Compare donor-dependent CO, H2, and isotopic fractions only within runs that pass control checks for low dark production and low inert-gas CO background."
+      ],
+      "measurements": [
+        "Headspace CO isotopologue signals distinguishing 13CO from unlabeled/background CO",
+        "Total CO amount together with isotopic fraction assigned as CO2-derived",
+        "H2 amount measured in the same samples",
+        "CO/H2 ratio and 13CO/H2 ratio under matched conditions",
+        "Dark-control and inert-gas-control gas outputs as background bounds",
+        "Replicate-to-replicate consistency of gas analysis and isotopic assignment"
+      ],
+      "supports": "Support for H05 is stronger if G01 and G02 show a reproducible donor-dependent difference in the CO2-derived 13CO fraction or 13CO/H2 ratio while inert-gas controls remain low for donor-derived background CO and the broader program finds no commensurate donor difference in upstream electron-supply observables. This would show that the TEA/TEOA effect is not merely an artifact of counting non-CO2 carbon as product, though it would still not prove adduct identity.",
+      "refutes": "H05 is weakened if the apparent TEA/TEOA CO difference disappears once analysis is restricted to confirmed 13CO2-derived CO, or if donor-dependent CO appears similarly in inert-gas or dark controls, indicating that background chemistry can account for the prior selectivity difference. H05 is also weakened if 13CO/H2 remains indistinguishable between donors under well-matched conditions and controls.",
+      "inconclusive": "Inconclusive if isotopic resolution is insufficient, baseline CO contamination or carryover is non-negligible, medium matching between TEA and TEOA is not credible, or any observed donor effect is comparable to run-to-run variability. A retained donor difference in 13CO origin confirms a real product-origin effect but still cannot distinguish adduct stabilization from cobalt-state or quenching explanations.",
+      "parameter_selection": "Do not invent concentrations, light dose, or runtime. Use the verified P01 baseline if explicitly available; otherwise run a pilot to choose a reaction duration that gives quantifiable CO and H2 above blank yet remains before obvious saturation or severe deactivation. Calibrate gas analysis with labeled and unlabeled CO standards or equivalent instrument checks, confirm no memory effect by blank injections, and use the same sampling cadence and reactor volume across all groups. If TEA substitution changes pH, conductivity, or phase behavior enough to break comparability, document this and either predefine a matched-medium adjustment pilot or treat the comparison as partially confounded rather than a strict single-factor test.",
+      "limitations": "This candidate bounds carbon origin but does not directly observe amine-CO2 adducts, catalyst-linked intermediates, or operating cobalt speciation. TEA and TEOA can change multiple hidden properties even when nominal formulation is matched, including proton activity and solvation, so a donor effect here is not uniquely attributable to adduct stabilization. The dark control is intentionally limited and, if only one donor is used, becomes a multi-factor descriptive check rather than a donor-specific contrast. Transfer from the cited literature is methodological and cautionary, not direct proof for P01.",
+      "feasibility": "moderate"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "type": "object",
+  "properties": {
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question_id": {
+            "type": "string",
+            "enum": [
+              "Q1",
+              "Q2",
+              "Q3",
+              "Q4",
+              "Q5",
+              "Q6"
+            ]
+          },
+          "candidate_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "covered",
+              "partial",
+              "gap"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "question_id",
+          "candidate_ids",
+          "status",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "duplicate_or_complementary_groups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "candidate_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "relationship": {
+            "type": "string",
+            "enum": [
+              "complementary",
+              "alternatives",
+              "redundant"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "candidate_ids",
+          "relationship",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "overall": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "questions",
+    "duplicate_or_complementary_groups",
+    "overall"
+  ],
+  "additionalProperties": false
+}

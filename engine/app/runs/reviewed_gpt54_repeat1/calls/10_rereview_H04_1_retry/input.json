@@ -1,0 +1,2740 @@
+{
+  "experimental_candidate_ids": [
+    "E19",
+    "E20",
+    "E21",
+    "E22",
+    "E23",
+    "E24"
+  ],
+  "required_response_schema": {
+    "type": "object",
+    "properties": {
+      "decisions": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "candidate_id": {
+              "type": "string",
+              "enum": [
+                "E19",
+                "E20",
+                "E21",
+                "E22",
+                "E23",
+                "E24"
+              ]
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "shortlist",
+                "revise",
+                "defer",
+                "reject"
+              ]
+            },
+            "major_issues": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "rationale": {
+              "type": "string"
+            },
+            "evidence_support": {
+              "type": "string",
+              "enum": [
+                "direct",
+                "transfer_with_limits",
+                "insufficient"
+              ]
+            },
+            "inference_validity": {
+              "type": "string",
+              "enum": [
+                "adequate_for_stated_question",
+                "needs_revision",
+                "invalid"
+              ]
+            },
+            "candidate_value": {
+              "type": "string",
+              "enum": [
+                "retain",
+                "conditional",
+                "exclude"
+              ]
+            },
+            "implementation_readiness": {
+              "type": "string",
+              "enum": [
+                "pilot_needed",
+                "details_needed",
+                "ready_for_researcher_planning"
+              ]
+            },
+            "resource_level": {
+              "type": "string",
+              "enum": [
+                "low_cost",
+                "moderate",
+                "specialist"
+              ]
+            },
+            "prior_issue_resolution": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "candidate_id",
+            "decision",
+            "major_issues",
+            "rationale",
+            "evidence_support",
+            "inference_validity",
+            "candidate_value",
+            "implementation_readiness",
+            "resource_level",
+            "prior_issue_resolution"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "overall": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "decisions",
+      "overall"
+    ],
+    "additionalProperties": false
+  },
+  "hypotheses": [
+    {
+      "id": "H04",
+      "question_id": "Q2",
+      "claim": "Changing TEA to TEOA alters cobalt speciation, coordination environment, support association, or deactivation pathways during turnover, and this state change contributes to the CO/H2 difference. A discriminating prediction is that donor substitution yields different in situ or near-operando cobalt-state signatures or stability trends that correlate with catalytic output, whereas indistinguishable cobalt-state observables would weaken this explanation.",
+      "alternative": "The active cobalt state and deactivation behavior are effectively the same with TEA and TEOA, so product differences originate upstream in donor photochemistry or downstream in proton/CO2 handling instead of cobalt speciation.",
+      "evidence_ids": [
+        "EV059",
+        "EV048",
+        "GX001",
+        "GX005",
+        "GX011",
+        "EV085",
+        "GX016",
+        "GX009",
+        "EV051"
+      ],
+      "method_evidence_ids": [
+        "EV004",
+        "EV052",
+        "EV076",
+        "EV088",
+        "GX008",
+        "EV068"
+      ],
+      "platform_ids": [
+        "P01",
+        "P02"
+      ],
+      "platform_and_comparator_choice": "P01 remains primary because the question is about the original Co-bpy context and supported g-C3N4 formulation; P02 can supplement if a homogeneous cobalt system gives cleaner donor-dependent state readouts. The comparator remains single-variable TEA-for-TEOA substitution within a fixed baseline.",
+      "uncertainty": "The exact active cobalt species in P01 is unresolved even before donor substitution, so state assignments may remain ambiguous. Much of the coordination precedent comes from other cobalt families or other metals, limiting mechanistic transfer."
+    }
+  ],
+  "candidates": [
+    {
+      "id": "E19",
+      "hypothesis_id": "H04",
+      "title": "Operando cobalt-state comparison under TEOA versus TEA",
+      "purpose": "Test whether replacing TEOA with TEA in the primary P01 Co-bpy/g-C3N4 CO2-photoreduction formulation changes observable cobalt oxidation-state, coordination, or stability signatures during operation, and whether any donor-dependent state difference tracks catalytic output.",
+      "evidence_ids": [
+        "EV052",
+        "EV076",
+        "EV088",
+        "GX008",
+        "EV059",
+        "GX001",
+        "GX005",
+        "GX011",
+        "EV085",
+        "EV068"
+      ],
+      "source_to_proposal": "EV059 anchors the P01 TEOA-based CoCl2+bpy+g-C3N4 formulation and motivates TEA as a comparator within the same family. EV052, EV076, EV088, GX008, and EV068 support operando or near-operando XAS plus complementary UV-vis/Raman/IR style characterization as a way to monitor catalyst state during CO2 reduction rather than relying only on recovered samples. GX001, GX005, and GX011 justify testing whether donor identity could alter cobalt coordination/speciation, but these are transferred from other cobalt or bipyridine-related systems and do not establish the same chemistry here. EV085 cautions that donor decomposition or decomposition-derived catalysts can confound interpretation, so this proposal is limited to donor-dependent cobalt-linked observables and stability trends unless independent methods converge.",
+      "groups": [
+        {
+          "id": "E19G01",
+          "description": "Baseline matched photocatalytic formulation with TEOA under CO2 and illumination for operando or near-operando cobalt-state tracking.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 in MeCN/H2O photocatalytic formulation"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present as baseline CoCl2+bpy formulation"
+            },
+            {
+              "name": "bpy",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4",
+              "value": "present"
+            },
+            {
+              "name": "gas",
+              "value": "CO2"
+            },
+            {
+              "name": "irradiation",
+              "value": "light"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "sampling_mode",
+              "value": "before illumination and during reaction"
+            }
+          ]
+        },
+        {
+          "id": "E19G02",
+          "description": "Single-variable donor substitution to TEA under otherwise matched photocatalytic conditions.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 in MeCN/H2O photocatalytic formulation"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present as baseline CoCl2+bpy formulation"
+            },
+            {
+              "name": "bpy",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4",
+              "value": "present"
+            },
+            {
+              "name": "gas",
+              "value": "CO2"
+            },
+            {
+              "name": "irradiation",
+              "value": "light"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "sampling_mode",
+              "value": "before illumination and during reaction"
+            }
+          ]
+        },
+        {
+          "id": "E19G03",
+          "description": "Dark reference for the TEOA formulation to separate illumination-driven state changes from static donor coordination or preparation effects.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 in MeCN/H2O photocatalytic formulation"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present as baseline CoCl2+bpy formulation"
+            },
+            {
+              "name": "bpy",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4",
+              "value": "present"
+            },
+            {
+              "name": "gas",
+              "value": "CO2"
+            },
+            {
+              "name": "irradiation",
+              "value": "dark"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "sampling_mode",
+              "value": "before illumination and matched hold time"
+            }
+          ]
+        },
+        {
+          "id": "E19G04",
+          "description": "Dark reference for the TEA formulation under otherwise matched conditions.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 in MeCN/H2O photocatalytic formulation"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present as baseline CoCl2+bpy formulation"
+            },
+            {
+              "name": "bpy",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4",
+              "value": "present"
+            },
+            {
+              "name": "gas",
+              "value": "CO2"
+            },
+            {
+              "name": "irradiation",
+              "value": "dark"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "sampling_mode",
+              "value": "before illumination and matched hold time"
+            }
+          ]
+        },
+        {
+          "id": "E19G05",
+          "description": "No-cobalt illuminated reference with TEOA to identify donor/support background signals and product background under the baseline matrix.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 in MeCN/H2O photocatalytic formulation"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "absent"
+            },
+            {
+              "name": "bpy",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4",
+              "value": "present"
+            },
+            {
+              "name": "gas",
+              "value": "CO2"
+            },
+            {
+              "name": "irradiation",
+              "value": "light"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "sampling_mode",
+              "value": "before illumination and during reaction"
+            }
+          ]
+        },
+        {
+          "id": "E19G06",
+          "description": "No-cobalt illuminated reference with TEA to bound donor-specific non-cobalt spectral and product backgrounds in the comparator matrix.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 in MeCN/H2O photocatalytic formulation"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "absent"
+            },
+            {
+              "name": "bpy",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4",
+              "value": "present"
+            },
+            {
+              "name": "gas",
+              "value": "CO2"
+            },
+            {
+              "name": "irradiation",
+              "value": "light"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "sampling_mode",
+              "value": "before illumination and during reaction"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E19G01",
+          "group_b": "E19G02",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Primary single-variable test of whether donor identity changes cobalt-linked observables or stability trends under matched turnover conditions; any correlated product shift is associative rather than by itself causal proof."
+        },
+        {
+          "group_a": "E19G01",
+          "group_b": "E19G03",
+          "changed_factors": [
+            "irradiation",
+            "sampling_mode"
+          ],
+          "inference": "Descriptive control for whether the TEOA formulation shows illumination-associated cobalt-state changes beyond dark-state coordination or hold-time effects; not a clean single-factor causal test because state handling also differs."
+        },
+        {
+          "group_a": "E19G02",
+          "group_b": "E19G04",
+          "changed_factors": [
+            "irradiation",
+            "sampling_mode"
+          ],
+          "inference": "Descriptive control for whether the TEA formulation shows illumination-associated cobalt-state changes beyond dark-state donor interaction or hold-time effects; not a clean single-factor causal test."
+        },
+        {
+          "group_a": "E19G01",
+          "group_b": "E19G05",
+          "changed_factors": [
+            "cobalt_component"
+          ],
+          "inference": "Bounds non-cobalt backgrounds in the TEOA matrix so cobalt-linked features are not assigned from donor, ligand, support, or cell signals alone."
+        },
+        {
+          "group_a": "E19G02",
+          "group_b": "E19G06",
+          "changed_factors": [
+            "cobalt_component"
+          ],
+          "inference": "Bounds non-cobalt backgrounds in the TEA matrix so donor-specific interference is measured rather than assumed absent."
+        },
+        {
+          "group_a": "E19G05",
+          "group_b": "E19G06",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Descriptive comparison of donor-specific matrix backgrounds without cobalt; useful for interference assessment, not for cobalt-state causation."
+        }
+      ],
+      "procedure": [
+        "Prepare one verified P01 baseline formulation, then generate TEOA and TEA variants by donor substitution only; separately prepare matched no-cobalt matrices for both donors and confirm identical reactor geometry, gas handling, and optical path.",
+        "Collect pre-illumination reference spectra for all groups, then acquire operando or near-operando Co-focused XAS and at least one complementary bulk method such as UV-vis during CO2 photoreaction for cobalt-containing groups; acquire matched background spectra for no-cobalt groups.",
+        "Run dark hold-time references for each donor and synchronize product sampling for CO and H2 with the spectroscopic runs where detection permits.",
+        "Interpret donor-dependent spectral evolution using only features justified by internal consistency and background subtraction; reserve species naming or mechanistic claims unless independent observables converge and no-cobalt matrices exclude donor-specific interference."
+      ],
+      "measurements": [
+        "Co K-edge XANES features versus time, including edge-position and intensity changes if above matrix background",
+        "EXAFS-derived coordination-shell trends versus time, reported as model-dependent when multiple fits remain plausible",
+        "Complementary UV-vis spectral evolution of the reaction mixture or suspended system under matched sampling state",
+        "CO and H2 product amounts or rates from the same runs to test whether spectral differences track catalytic output",
+        "No-cobalt background spectra for both TEOA and TEA matrices to identify donor/support/cell contributions",
+        "Dark hold-time spectra for each donor as descriptive references rather than operating-state surrogates"
+      ],
+      "supports": "Support for H04 would be a reproducible donor-dependent difference between E19G01 and E19G02 in cobalt-linked operando or near-operando observables under otherwise matched conditions, with TEA and TEOA showing different spectral evolution trajectories, coordination trends, or decay patterns that align with different CO/H2 outputs, while the paired no-cobalt matrices do not account for the differences.",
+      "refutes": "Evidence against H04 would be that E19G01 and E19G02 show indistinguishable cobalt-linked spectral features and temporal evolution within method resolution, similar stability trends, and no donor-dependent divergence beyond matrix backgrounds, despite independently reproducible CO/H2 differences under the same matched conditions. That would weaken cobalt-speciation or cobalt-deactivation as the main explanation.",
+      "inconclusive": "The result is inconclusive if cobalt signals are too weak, suspension/scattering prevents reliable extraction, donor substitution changes matrix background enough to obscure cobalt features even after no-cobalt controls, multiple cobalt-state models fit equally well, or product differences are not reproduced under the exact spectroscopic-cell conditions. A donor-dependent spectral change without product correlation remains descriptive only.",
+      "parameter_selection": "Do not invent numerical loadings or beam conditions. Use the literature-anchored P01 composition only after source verification. Pilot first to choose the lowest cobalt concentration and path length that still give reproducible cobalt-edge signal above both donor-matrix backgrounds while preserving measurable CO/H2 formation in the spectroscopic cell. Match donor formulations by the same verified baseline recipe except donor identity. Calibrate illumination by equal reactor geometry and measured incident photon flux at the sample. If true operando XAS is impractical, downgrade to near-operando rapid-transfer sampling with the same groups and explicitly narrow inference to time-adjacent, not strictly operating-state, observations.",
+      "limitations": "The active cobalt species in P01 is unresolved, and support-associated, solution-phase, and decomposition-derived cobalt species may coexist. Operando XAS is element-specific but cannot by itself prove the catalytic intermediate, isolate donor photochemistry as upstream cause, or exclude decomposition pathways. Complementary UV-vis changes are non-unique and may reflect donor, ligand, support, or scattering effects. Dark comparisons here remain descriptive because irradiation and sampling_mode both differ. Even with paired no-cobalt matrices, assignment should stop at donor-dependent cobalt-linked observables unless independent methods support a narrower claim.",
+      "feasibility": "specialist"
+    },
+    {
+      "id": "E20",
+      "hypothesis_id": "H04",
+      "title": "TEA versus TEOA pre-irradiation association with Co-bpy formulations",
+      "purpose": "Test whether replacing TEOA with TEA changes detectable pre-turnover association or coordination signatures of the Co-bpy formulation, which could predispose different catalytic states before photochemistry begins.",
+      "evidence_ids": [
+        "GX001",
+        "GX005",
+        "EV048",
+        "EV059"
+      ],
+      "source_to_proposal": "EV059 anchors the target CoCl2+bpy, g-C3N4, MeCN/H2O, TEOA formulation family. GX005 shows spectrophotometric titration can detect axial coordination in a cobalt system, GX001 and EV048 motivate donor/coordination competition and 1H NMR titration as a transferable comparison tool. The proposal transfers these methods cautiously to ask only whether TEA and TEOA produce different pre-irradiation observables, not whether any observed adduct is the active catalytic species.",
+      "groups": [
+        {
+          "id": "E20G01",
+          "description": "P01 baseline precursor mixture without sacrificial amine",
+          "factors": [
+            {
+              "name": "platform_variant",
+              "value": "P01 precursor mixture"
+            },
+            {
+              "name": "cobalt_source",
+              "value": "CoCl2"
+            },
+            {
+              "name": "ligand",
+              "value": "2,2'-bipyridine"
+            },
+            {
+              "name": "support_or_light_absorber",
+              "value": "g-C3N4 present"
+            },
+            {
+              "name": "solvent_system",
+              "value": "MeCN/H2O matched to baseline"
+            },
+            {
+              "name": "CO2_state",
+              "value": "not irradiated pre-turnover sample"
+            },
+            {
+              "name": "amine_additive",
+              "value": "none"
+            },
+            {
+              "name": "titration_mode",
+              "value": "serial addition matched across groups"
+            },
+            {
+              "name": "measurement_mode",
+              "value": "UV-Vis and 1H NMR if sample is sufficiently resolved"
+            }
+          ]
+        },
+        {
+          "id": "E20G02",
+          "description": "Matched P01 precursor mixture with TEA titration",
+          "factors": [
+            {
+              "name": "platform_variant",
+              "value": "P01 precursor mixture"
+            },
+            {
+              "name": "cobalt_source",
+              "value": "CoCl2"
+            },
+            {
+              "name": "ligand",
+              "value": "2,2'-bipyridine"
+            },
+            {
+              "name": "support_or_light_absorber",
+              "value": "g-C3N4 present"
+            },
+            {
+              "name": "solvent_system",
+              "value": "MeCN/H2O matched to baseline"
+            },
+            {
+              "name": "CO2_state",
+              "value": "not irradiated pre-turnover sample"
+            },
+            {
+              "name": "amine_additive",
+              "value": "TEA"
+            },
+            {
+              "name": "titration_mode",
+              "value": "serial addition matched across groups"
+            },
+            {
+              "name": "measurement_mode",
+              "value": "UV-Vis and 1H NMR if sample is sufficiently resolved"
+            }
+          ]
+        },
+        {
+          "id": "E20G03",
+          "description": "Matched P01 precursor mixture with TEOA titration",
+          "factors": [
+            {
+              "name": "platform_variant",
+              "value": "P01 precursor mixture"
+            },
+            {
+              "name": "cobalt_source",
+              "value": "CoCl2"
+            },
+            {
+              "name": "ligand",
+              "value": "2,2'-bipyridine"
+            },
+            {
+              "name": "support_or_light_absorber",
+              "value": "g-C3N4 present"
+            },
+            {
+              "name": "solvent_system",
+              "value": "MeCN/H2O matched to baseline"
+            },
+            {
+              "name": "CO2_state",
+              "value": "not irradiated pre-turnover sample"
+            },
+            {
+              "name": "amine_additive",
+              "value": "TEOA"
+            },
+            {
+              "name": "titration_mode",
+              "value": "serial addition matched across groups"
+            },
+            {
+              "name": "measurement_mode",
+              "value": "UV-Vis and 1H NMR if sample is sufficiently resolved"
+            }
+          ]
+        },
+        {
+          "id": "E20G04",
+          "description": "Simplified homogeneous Co-bpy solution analogue with TEA titration for cleaner spectral assignment",
+          "factors": [
+            {
+              "name": "platform_variant",
+              "value": "homogeneous Co-bpy analogue"
+            },
+            {
+              "name": "cobalt_source",
+              "value": "CoCl2"
+            },
+            {
+              "name": "ligand",
+              "value": "2,2'-bipyridine"
+            },
+            {
+              "name": "support_or_light_absorber",
+              "value": "g-C3N4 absent"
+            },
+            {
+              "name": "solvent_system",
+              "value": "MeCN/H2O matched to baseline"
+            },
+            {
+              "name": "CO2_state",
+              "value": "not irradiated pre-turnover sample"
+            },
+            {
+              "name": "amine_additive",
+              "value": "TEA"
+            },
+            {
+              "name": "titration_mode",
+              "value": "serial addition matched across groups"
+            },
+            {
+              "name": "measurement_mode",
+              "value": "UV-Vis and 1H NMR if sample is sufficiently resolved"
+            }
+          ]
+        },
+        {
+          "id": "E20G05",
+          "description": "Simplified homogeneous Co-bpy solution analogue with TEOA titration for cleaner spectral assignment",
+          "factors": [
+            {
+              "name": "platform_variant",
+              "value": "homogeneous Co-bpy analogue"
+            },
+            {
+              "name": "cobalt_source",
+              "value": "CoCl2"
+            },
+            {
+              "name": "ligand",
+              "value": "2,2'-bipyridine"
+            },
+            {
+              "name": "support_or_light_absorber",
+              "value": "g-C3N4 absent"
+            },
+            {
+              "name": "solvent_system",
+              "value": "MeCN/H2O matched to baseline"
+            },
+            {
+              "name": "CO2_state",
+              "value": "not irradiated pre-turnover sample"
+            },
+            {
+              "name": "amine_additive",
+              "value": "TEOA"
+            },
+            {
+              "name": "titration_mode",
+              "value": "serial addition matched across groups"
+            },
+            {
+              "name": "measurement_mode",
+              "value": "UV-Vis and 1H NMR if sample is sufficiently resolved"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E20G02",
+          "group_b": "E20G03",
+          "changed_factors": [
+            "amine_additive"
+          ],
+          "inference": "Primary single-variable test in the supported P01 precursor formulation: donor-dependent differences in spectral shifts, line shape changes, or saturation behavior would support nonequivalent preassociation before irradiation."
+        },
+        {
+          "group_a": "E20G01",
+          "group_b": "E20G02",
+          "changed_factors": [
+            "amine_additive"
+          ],
+          "inference": "Tests whether TEA produces detectable interaction relative to donor-free precursor background; absence of change limits evidence for strong TEA preassociation under these conditions."
+        },
+        {
+          "group_a": "E20G01",
+          "group_b": "E20G03",
+          "changed_factors": [
+            "amine_additive"
+          ],
+          "inference": "Tests whether TEOA produces detectable interaction relative to donor-free precursor background; stronger or distinct change than TEA would support additive-specific preassembly."
+        },
+        {
+          "group_a": "E20G04",
+          "group_b": "E20G05",
+          "changed_factors": [
+            "amine_additive"
+          ],
+          "inference": "Cleaner analogue comparison checks whether any TEA/TEOA difference persists without g-C3N4; agreement with P01 would support transfer to cobalt-solution association, while disagreement would implicate support-associated complexity."
+        }
+      ],
+      "procedure": [
+        "Prepare matched donor-free CoCl2+bpy precursor samples in the P01 solvent system, with and without g-C3N4 as defined by the selected platform variant, and record baseline spectra before amine addition.",
+        "Add TEA or TEOA in identical serial increments to separate matched samples while holding cobalt source, bpy, solvent composition, temperature, and non-irradiated handling constant.",
+        "After each increment, collect UV-Vis spectra and collect 1H NMR-style spectra only for sample states that remain sufficiently homogeneous and interpretable; retain donor-free references acquired over the same time window.",
+        "Use the simplest binding or association model justified by the data only if reproducible concentration-dependent changes exceed baseline drift; otherwise report descriptive differences and carry forward only bounded conclusions."
+      ],
+      "measurements": [
+        "UV-Vis absorption changes of the precursor mixture as a function of TEA or TEOA addition, including wavelength shifts, new bands, intensity changes, and saturation behavior.",
+        "1H NMR chemical-shift or line-broadening changes for ligand and donor resonances in the simplified homogeneous analogue, with donor-free and amine-only references.",
+        "Replicate-to-replicate baseline drift and time-dependent changes in donor-free samples to distinguish true titration responses from precursor instability.",
+        "Qualitative sample-state observations such as precipitation or turbidity, because these can signal formulation changes but cannot by themselves establish coordination geometry or active-species identity."
+      ],
+      "supports": "Support for H04 would be reproducible donor-dependent pre-irradiation observables under otherwise matched conditions, especially if TEA and TEOA give different shift patterns, different apparent association onset or saturation behavior, or one donor perturbs the Co-bpy precursor while the other does not. Concordant TEA-versus-TEOA differences in both the P01 precursor mixture and the simpler homogeneous analogue would strengthen transfer to cobalt-centered preassociation rather than a support-only artifact.",
+      "refutes": "H04 is weakened if TEA and TEOA give indistinguishable spectra within experimental resolution across matched titrations, while donor-free controls remain stable and the analogue also shows no donor-specific difference. That outcome would argue against strong pre-turnover donor-specific cobalt association as the main source of the CO/H2 difference, though it would not exclude differences arising later under irradiation.",
+      "inconclusive": "Results are inconclusive if spectra are dominated by scattering from g-C3N4, if cobalt/bpy precursor instability masks titration responses, if only one method is interpretable, or if both donors alter bulk medium properties without a cobalt-specific signature. Any observed shift also remains non-diagnostic for the catalytically active state because pre-irradiation association need not persist during turnover.",
+      "parameter_selection": "Use the literature-defined P01 composition family without inventing missing numerical values. First run a pilot with donor-free precursor to identify a time window over which baseline drift is acceptably small. Choose amine addition increments that span from no visible spectral change to either a reproducible plateau or the onset of non-ideal behavior such as precipitation; use the same increment scheme for TEA and TEOA. Attempt 1H NMR only on simplified homogeneous analogue samples that remain sufficiently resolved; if the P01 slurry is not NMR-interpretable, restrict NMR to the analogue and keep UV-Vis as the common measurement. If apparent binding-model fitting is unstable or non-unique, report descriptive titration trends instead of forcing equilibrium constants.",
+      "limitations": "Most evidence is transferred from other cobalt families or other metals, so any assignment to direct cobalt coordination is provisional. P01 contains g-C3N4, so scattering and heterogeneous interfaces may obscure weak spectral changes. TEA and TEOA also change medium properties, so a spectral difference does not uniquely prove inner-sphere coordination. Conversely, no detectable change does not rule out transient or photoinduced interactions below detection limits. This characterization cannot establish product origin, catalytic necessity, or the identity of the true operating species under illumination.",
+      "feasibility": "moderate"
+    },
+    {
+      "id": "E21",
+      "hypothesis_id": "H04",
+      "title": "Deactivation and catalyst persistence map",
+      "purpose": "Test whether replacing TEOA with TEA changes time-dependent cobalt persistence, donor-dependent state drift, or loss of catalytic output in the primary Co-bpy/g-C3N4 platform, rather than only changing endpoint selectivity.",
+      "evidence_ids": [
+        "EV051",
+        "EV085",
+        "EV004",
+        "GX008",
+        "EV059"
+      ],
+      "source_to_proposal": "EV059 anchors the primary CoCl2+bpy/g-C3N4/MeCN-H2O/TEOA platform and motivates a single-variable TEA comparator. EV051 and EV085 justify treating donor identity as a possible driver of catalyst stability, decomposition, or donor-derived confounding rather than assuming unchanged active species. EV004 and GX008 support paired operando or near-operando state tracking with catalytic time-course and rigorous controls. Proposed transfer: apply matched donor substitution within P01 and compare decay profiles and cobalt-state observables over time; this is a proposal, not a reported literature result for this exact system.",
+      "groups": [
+        {
+          "id": "E21G01",
+          "description": "Baseline photocatalysis with TEOA in the primary P01 formulation.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 in MeCN/H2O under CO2 and light"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "bpy_component",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4_component",
+              "value": "present"
+            },
+            {
+              "name": "atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "sampling_scheme",
+              "value": "matched time-course with paired state characterization"
+            }
+          ]
+        },
+        {
+          "id": "E21G02",
+          "description": "Single-variable donor substitution to TEA under otherwise matched conditions.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 in MeCN/H2O under CO2 and light"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "bpy_component",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4_component",
+              "value": "present"
+            },
+            {
+              "name": "atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "sampling_scheme",
+              "value": "matched time-course with paired state characterization"
+            }
+          ]
+        },
+        {
+          "id": "E21G03",
+          "description": "No-cobalt background control with TEOA to bound support and donor background products and donor-state signals.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 in MeCN/H2O under CO2 and light"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "absent"
+            },
+            {
+              "name": "bpy_component",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4_component",
+              "value": "present"
+            },
+            {
+              "name": "atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "sampling_scheme",
+              "value": "matched time-course with paired state characterization"
+            }
+          ]
+        },
+        {
+          "id": "E21G04",
+          "description": "No-cobalt background control with TEA to bound donor-specific background behavior without cobalt.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 in MeCN/H2O under CO2 and light"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "absent"
+            },
+            {
+              "name": "bpy_component",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4_component",
+              "value": "present"
+            },
+            {
+              "name": "atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "sampling_scheme",
+              "value": "matched time-course with paired state characterization"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E21G01",
+          "group_b": "E21G02",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Primary test: if donor substitution changes catalytic decay profile and paired cobalt-state or persistence observables under otherwise matched conditions, that supports donor-linked cobalt speciation or deactivation contributions to the CO/H2 difference."
+        },
+        {
+          "group_a": "E21G01",
+          "group_b": "E21G03",
+          "changed_factors": [
+            "cobalt_component"
+          ],
+          "inference": "Necessity/background control for the TEOA condition: establishes whether time-dependent gas products or spectral changes require cobalt rather than arising from g-C3N4 plus donor alone."
+        },
+        {
+          "group_a": "E21G02",
+          "group_b": "E21G04",
+          "changed_factors": [
+            "cobalt_component"
+          ],
+          "inference": "Necessity/background control for the TEA condition: checks whether donor-dependent decay or product trends persist without cobalt, which would weaken a cobalt-state explanation."
+        },
+        {
+          "group_a": "E21G03",
+          "group_b": "E21G04",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Background donor comparison without cobalt: any donor-dependent background products or state-like signals here confound attribution of E21G01 versus E21G02 solely to cobalt chemistry."
+        }
+      ],
+      "procedure": [
+        "Assemble matched P01 reaction mixtures for all groups using the literature-anchored component set; verify source-defined baseline composition where available and hold reactor geometry, gas handling, illumination program, and analytical workflow constant across groups.",
+        "Run photocatalysis under CO2 with repeated aliquot or headspace sampling at predefined time points; in parallel collect paired pre-reaction, during-reaction when feasible, and post-reaction cobalt-state measurements from matched samples for each donor condition.",
+        "Quantify CO and H2 at every time point and document whether signal grows, plateaus, or decays; for characterization collect cobalt-centered observables and note whether any assignment is direct, tentative, or unresolved.",
+        "Compare donor conditions by time-dependent output and state trajectories, then benchmark each against its no-cobalt control to exclude donor/support background behavior.",
+        "If operando acquisition is not feasible, use tightly timed near-operando freeze or rapid-transfer sampling validated by a pilot for minimal handling drift, and report conclusions as bounded by that limitation."
+      ],
+      "measurements": [
+        "Time-resolved CO and H2 amounts from the same analytical method across all groups; these establish output and decay trends but not product origin by themselves.",
+        "Cobalt-centered state observables before, during, and after reaction using a transferable method such as XAS or another cobalt-sensitive spectroscopy; these can show donor-dependent valence or coordination changes but may not uniquely identify the active species.",
+        "Optional complementary UV-Vis, Raman, or IR signatures on matched samples to detect gross donor-dependent catalyst drift or new species; these are supportive only if assignments are validated.",
+        "Mass balance and visible precipitation or phase-change notes to flag catalyst loss or aggregation; these indicate persistence issues but cannot establish molecular identity.",
+        "No-cobalt control products and spectra to bound donor/support background contributions and prevent overassignment of donor-derived or support-derived signals to cobalt turnover."
+      ],
+      "supports": "Support for H04 would be a reproducible donor-dependent difference between E21G01 and E21G02 in catalytic decay profile, cobalt persistence, or cobalt-state trajectory that is absent or much smaller in the no-cobalt controls. Stronger support is obtained if the donor giving different CO/H2 behavior also shows distinct cobalt-state drift or faster loss of cobalt-associated signal over time under otherwise matched conditions.",
+      "refutes": "H04 is weakened if E21G01 and E21G02 show similar time-dependent CO and H2 evolution, similar catalyst persistence, and no reproducible donor-dependent difference in cobalt-state observables beyond measurement uncertainty, while no-cobalt controls remain low and uninformative. It is further weakened if donor-dependent catalytic differences occur without any detectable difference in cobalt-state or persistence despite adequate sensitivity.",
+      "inconclusive": "Results are inconclusive if donor substitution changes multiple uncontrolled medium properties, if characterization sensitivity is insufficient to resolve cobalt under operating conditions, if no-cobalt controls show substantial donor-dependent background products or overlapping signals, or if only ex situ post-reaction differences are observed without validated linkage to the operating state.",
+      "parameter_selection": "Do not invent numeric settings. Use the source-anchored P01 formulation as the starting point and verify any missing concentrations, irradiation range, and sampling interval from the supplied source record before execution. Pilot rules: first confirm product signals are above blank and within the linear range of the product assay; choose time points dense enough to detect an early induction period, plateau, or decay; choose spectroscopic acquisition settings on concentrated matched samples or extended integration only after confirming that the method resolves cobalt above donor/support background; if operando signal is too weak, switch to a validated rapid-transfer near-operando workflow rather than claiming operating-state identity.",
+      "limitations": "Direct literature evidence for a strict TEA-versus-TEOA head-to-head in this exact P01 recipe is incomplete. The active cobalt species is unresolved, so state changes may remain descriptive rather than structurally unique. TEA and TEOA can alter donor strength, proton handling, CO2 interaction, viscosity, and coordination simultaneously, so even the primary contrast does not isolate a single causal subfactor. No-cobalt controls bound some background chemistry but do not recreate the full catalytic manifold. Post-reaction characterization alone cannot establish the true operating state.",
+      "feasibility": "moderate"
+    },
+    {
+      "id": "E22",
+      "hypothesis_id": "H04",
+      "title": "Operando IR/EPR donor-adduct screen",
+      "purpose": "Test whether TEA versus TEOA causes different donor-associated cobalt or substrate-bound species under matched P01 conditions, while bounding what any spectral differences can and cannot establish about the CO/H2 shift.",
+      "evidence_ids": [
+        "GX011",
+        "EV068",
+        "EV016",
+        "EV085"
+      ],
+      "source_to_proposal": "GX011 suggests TEOA can form catalyst adduct-like species in a bipyridine carbonyl system, motivating a cautious transfer test for donor-specific adduct chemistry in Co-bpy rather than assuming the same species. EV016 shows EPR can detect TEOA-derived radicals and that TEA/TEOA can differ in line shape because of physical properties, supporting donor-comparative EPR with matched blanks. EV068 supports operando FTIR/EPR to follow working-state interactions instead of recovered samples only. EV085 warns that donor decomposition and decomposition-derived active species can confound assignments, so symmetric donor-specific blanks are required and any signal must be treated as descriptive unless tied to matched catalytic outputs.",
+      "groups": [
+        {
+          "id": "E22G01",
+          "description": "Baseline P01-like reaction mixture with TEOA under CO2 and illumination for near-operando IR/EPR sampling.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 in MeCN/H2O baseline family"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "bipyridine",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4",
+              "value": "present"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "CO2_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "sampling_mode",
+              "value": "near-operando sealed aliquot or operando cell"
+            }
+          ]
+        },
+        {
+          "id": "E22G02",
+          "description": "Matched comparator with TEA replacing TEOA as the only intended chemical change.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 in MeCN/H2O baseline family"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "bipyridine",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4",
+              "value": "present"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "CO2_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "sampling_mode",
+              "value": "near-operando sealed aliquot or operando cell"
+            }
+          ]
+        },
+        {
+          "id": "E22G03",
+          "description": "Donor-free control under otherwise matched CO2 and illumination conditions.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 in MeCN/H2O baseline family"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "bipyridine",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4",
+              "value": "present"
+            },
+            {
+              "name": "donor",
+              "value": "none"
+            },
+            {
+              "name": "CO2_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "sampling_mode",
+              "value": "near-operando sealed aliquot or operando cell"
+            }
+          ]
+        },
+        {
+          "id": "E22G04",
+          "description": "No-cobalt control with TEOA under matched CO2 and illumination conditions to identify donor/support/background signals.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 in MeCN/H2O baseline family"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "absent"
+            },
+            {
+              "name": "bipyridine",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4",
+              "value": "present"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "CO2_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "sampling_mode",
+              "value": "near-operando sealed aliquot or operando cell"
+            }
+          ]
+        },
+        {
+          "id": "E22G05",
+          "description": "No-cobalt control with TEA under matched CO2 and illumination conditions to identify donor/support/background signals.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 in MeCN/H2O baseline family"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "absent"
+            },
+            {
+              "name": "bipyridine",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4",
+              "value": "present"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "CO2_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "sampling_mode",
+              "value": "near-operando sealed aliquot or operando cell"
+            }
+          ]
+        },
+        {
+          "id": "E22G06",
+          "description": "Dark TEOA control with cobalt present to distinguish light-generated from pre-existing donor/cobalt signals.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 in MeCN/H2O baseline family"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "bipyridine",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4",
+              "value": "present"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "CO2_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "dark"
+            },
+            {
+              "name": "sampling_mode",
+              "value": "near-operando sealed aliquot or operando cell"
+            }
+          ]
+        },
+        {
+          "id": "E22G07",
+          "description": "Dark TEA control with cobalt present to distinguish light-generated from pre-existing donor/cobalt signals.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy+g-C3N4 in MeCN/H2O baseline family"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "bipyridine",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4",
+              "value": "present"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "CO2_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "dark"
+            },
+            {
+              "name": "sampling_mode",
+              "value": "near-operando sealed aliquot or operando cell"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E22G01",
+          "group_b": "E22G02",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Primary donor-identity comparison. Reproducible donor-specific IR bands or EPR features under otherwise matched conditions would support a cobalt-speciation or donor-adduct contribution, but not by itself prove causality for CO/H2."
+        },
+        {
+          "group_a": "E22G01",
+          "group_b": "E22G03",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Tests whether TEOA-dependent features require donor presence. Features absent without donor are consistent with donor-derived radicals, donor binding, or donor-enabled substrate intermediates, but remain assignment-limited."
+        },
+        {
+          "group_a": "E22G02",
+          "group_b": "E22G03",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Tests whether TEA-dependent features require donor presence under the same matched framework, preventing asymmetry in donor interpretation."
+        },
+        {
+          "group_a": "E22G01",
+          "group_b": "E22G04",
+          "changed_factors": [
+            "cobalt_component"
+          ],
+          "inference": "Screens whether candidate TEOA features require cobalt. Signals present in both groups are background from donor, support, solvent, or CO2 handling rather than cobalt-specific species."
+        },
+        {
+          "group_a": "E22G02",
+          "group_b": "E22G05",
+          "changed_factors": [
+            "cobalt_component"
+          ],
+          "inference": "Screens whether candidate TEA features require cobalt. This symmetric control is needed because TEA and TEOA can differ in donor-radical and physical-property backgrounds."
+        },
+        {
+          "group_a": "E22G01",
+          "group_b": "E22G06",
+          "changed_factors": [
+            "illumination"
+          ],
+          "inference": "Tests whether candidate TEOA-associated features are light-generated. A light-only appearance supports turnover-related or photogenerated species; persistence in dark suggests pre-equilibrium binding or background chemistry."
+        },
+        {
+          "group_a": "E22G02",
+          "group_b": "E22G07",
+          "changed_factors": [
+            "illumination"
+          ],
+          "inference": "Tests whether candidate TEA-associated features are light-generated under matched donor-specific conditions."
+        }
+      ],
+      "procedure": [
+        "Prepare matched baseline-family mixtures using the verified P01 component identities; keep vessel geometry, gas handling, solvent ratio, and sampling timing identical across groups.",
+        "Run a short pilot to choose concentration and optical path windows that avoid detector saturation and give measurable cobalt-region EPR/IR baselines; lock those settings before the TEA versus TEOA comparison.",
+        "Collect dark/background spectra first, then acquire operando or rapid sealed near-operando IR and EPR data under CO2 during illumination for each group using the same time points.",
+        "Pair the spectral campaign with matched product analysis from the same batches or parallel identically prepared batches so spectral differences can be compared with CO and H2 outputs without assuming causation.",
+        "Use replicate preparations and conservative peak assignment rules, reporting unmatched or ambiguous features as unknown signals rather than named intermediates."
+      ],
+      "measurements": [
+        "In situ or near-operando IR difference spectra under CO2 and illumination, tracking donor-dependent new bands, band shifts, and growth or decay behavior relative to dark and donor-free baselines.",
+        "In situ or rapid-freeze or rapid-transfer EPR spectra, tracking appearance, disappearance, g-pattern changes, and line broadening under TEA versus TEOA conditions.",
+        "Matched catalytic readouts from parallel or same-batch experiments: CO and H2 amounts or rates, reported together rather than selectivity alone.",
+        "Background spectra from donor-free, no-cobalt, and dark controls for both donors to establish which signals are not cobalt-specific or not light-dependent.",
+        "If signal strength allows, time ordering of spectral changes relative to product formation; this can show correlation but cannot by itself identify the sole active species."
+      ],
+      "supports": "H04 is supported if, under the locked matched P01 comparison, TEA and TEOA show reproducibly different cobalt-requiring and light-dependent IR and or EPR signatures, or different persistence or loss of such signatures over time, and those differences track a donor-dependent CO/H2 change better than donor-free, no-cobalt, or dark backgrounds do.",
+      "refutes": "H04 is weakened if TEA and TEOA give no reproducible difference in cobalt-requiring, light-dependent IR/EPR observables within detection limits while catalytic CO/H2 still differs under the same matched conditions, favoring explanations upstream in donor photochemistry or downstream in proton or CO2 handling rather than cobalt-state divergence.",
+      "inconclusive": "Results are inconclusive if spectra are too weak, dominated by background or support signals, changed by viscosity or other physical effects without cobalt specificity, or if donor-dependent signals appear but cannot be distinguished from donor decomposition, generic radical formation, or unsupported assignments. Correlation without clean symmetric controls also remains inconclusive.",
+      "parameter_selection": "Use the literature-backed P01 formulation family only for component identity, not exact invented numbers. First verify the baseline recipe from source records. Then run pilots to set sample concentration, path length, irradiation interval, and EPR acquisition mode by the rule that cobalt-containing samples must show stable unsaturated baselines and donor-free and no-cobalt controls must remain interpretable. If TEA and TEOA differ strongly in viscosity or optical density, adjust only the measurement configuration, not the chemical formulation, and document that this preserves matched chemistry while changing detection settings. Choose time points by a calibration run that captures pre-illumination, early illumination, and a later turnover window without exhausting the sample.",
+      "limitations": "Assignments are transferred from nonidentical systems and may not map to Co-bpy. IR/EPR can reveal donor-dependent species or state changes but cannot alone establish the full catalytic mechanism, the exact structure of the active cobalt species, or product origin. TEA/TEOA physical-property differences can alter line shape and transport, so apparent spectral differences are not automatically chemical. Near-operando aliquots may miss the true instantaneous working state. No-cobalt controls are background screens, not full single-factor catalytic comparisons because total composition changes.",
+      "feasibility": "specialist"
+    },
+    {
+      "id": "E23",
+      "hypothesis_id": "H04",
+      "title": "P02 donor-substitution bridge for cobalt-state and quenching readouts",
+      "purpose": "Test in the supplementary homogeneous cobalt platform whether replacing TEOA with TEA changes cobalt-state-sensitive observables or donor-coupled quenching behavior under otherwise matched conditions, then compare only the qualitative direction of donor effects to the primary P01 system.",
+      "evidence_ids": [
+        "EV065",
+        "EV053",
+        "EV052",
+        "GX008"
+      ],
+      "source_to_proposal": "EV065 supports a defined homogeneous cobalt photocatalytic platform with TEOA and measurable quenching; EV053 supports using fluorescence/UV-vis to distinguish donor-versus-catalyst quenching routes; EV052 and GX008 support operando or near-operando state tracking plus negative controls. Proposed transfer is limited: this is a cleaner bridge assay, not the target Co-bpy/g-C3N4 chemistry, so agreement would support donor-linked state trends while disagreement could reflect platform-specific speciation.",
+      "groups": [
+        {
+          "id": "E23G01",
+          "description": "Baseline homogeneous P02 reaction mixture with TEOA under CO2 and illumination.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P02 homogeneous cobalt photocatalysis"
+            },
+            {
+              "name": "cobalt_catalyst",
+              "value": "fixed P02 cobalt catalyst"
+            },
+            {
+              "name": "photosensitizer",
+              "value": "fixed P02 Ru photosensitizer"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "solvent_family",
+              "value": "fixed acetonitrile/water family"
+            },
+            {
+              "name": "gas",
+              "value": "CO2-saturated"
+            },
+            {
+              "name": "light",
+              "value": "fixed illumination program"
+            },
+            {
+              "name": "sample_mode",
+              "value": "full reaction mixture"
+            }
+          ]
+        },
+        {
+          "id": "E23G02",
+          "description": "Single-variable donor substitution to TEA under otherwise matched reaction conditions.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P02 homogeneous cobalt photocatalysis"
+            },
+            {
+              "name": "cobalt_catalyst",
+              "value": "fixed P02 cobalt catalyst"
+            },
+            {
+              "name": "photosensitizer",
+              "value": "fixed P02 Ru photosensitizer"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "solvent_family",
+              "value": "fixed acetonitrile/water family"
+            },
+            {
+              "name": "gas",
+              "value": "CO2-saturated"
+            },
+            {
+              "name": "light",
+              "value": "fixed illumination program"
+            },
+            {
+              "name": "sample_mode",
+              "value": "full reaction mixture"
+            }
+          ]
+        },
+        {
+          "id": "E23G03",
+          "description": "TEOA mixture without cobalt catalyst for donor/photosensitizer background quenching and spectral reference.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P02 homogeneous cobalt photocatalysis"
+            },
+            {
+              "name": "cobalt_catalyst",
+              "value": "omitted"
+            },
+            {
+              "name": "photosensitizer",
+              "value": "fixed P02 Ru photosensitizer"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "solvent_family",
+              "value": "fixed acetonitrile/water family"
+            },
+            {
+              "name": "gas",
+              "value": "CO2-saturated"
+            },
+            {
+              "name": "light",
+              "value": "fixed illumination program"
+            },
+            {
+              "name": "sample_mode",
+              "value": "background blank"
+            }
+          ]
+        },
+        {
+          "id": "E23G04",
+          "description": "TEA mixture without cobalt catalyst for donor/photosensitizer background quenching and spectral reference.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P02 homogeneous cobalt photocatalysis"
+            },
+            {
+              "name": "cobalt_catalyst",
+              "value": "omitted"
+            },
+            {
+              "name": "photosensitizer",
+              "value": "fixed P02 Ru photosensitizer"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "solvent_family",
+              "value": "fixed acetonitrile/water family"
+            },
+            {
+              "name": "gas",
+              "value": "CO2-saturated"
+            },
+            {
+              "name": "light",
+              "value": "fixed illumination program"
+            },
+            {
+              "name": "sample_mode",
+              "value": "background blank"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E23G01",
+          "group_b": "E23G02",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Primary single-variable test for donor-linked differences in cobalt-state-sensitive spectra, quenching behavior, and catalytic output within P02."
+        },
+        {
+          "group_a": "E23G01",
+          "group_b": "E23G03",
+          "changed_factors": [
+            "cobalt_catalyst",
+            "sample_mode"
+          ],
+          "inference": "Separates cobalt-dependent signatures from TEOA/photosensitizer background; not a single-factor causal test because sample purpose also changes."
+        },
+        {
+          "group_a": "E23G02",
+          "group_b": "E23G04",
+          "changed_factors": [
+            "cobalt_catalyst",
+            "sample_mode"
+          ],
+          "inference": "Separates cobalt-dependent signatures from TEA/photosensitizer background; not a single-factor causal test because sample purpose also changes."
+        },
+        {
+          "group_a": "E23G03",
+          "group_b": "E23G04",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Checks whether donor substitution alone changes background quenching or spectral baselines, bounding interpretation of the full-mixture contrast."
+        }
+      ],
+      "procedure": [
+        "Prepare matched P02 mixtures and donor-specific blanks with verified identical cobalt catalyst, photosensitizer, solvent family, gas handling, optical path, and illumination settings except for donor identity or cobalt omission as assigned.",
+        "Run a pilot to set concentrations, path length, and acquisition timing within linear absorbance/emission response and without detector saturation; if donor or catalyst causes severe inner-filter or turbidity artifacts, dilute all groups proportionally and repeat matched measurements.",
+        "Collect donor-sensitive quenching data and cobalt-state-sensitive spectra before illumination and during a short matched illumination window, using donor-specific blanks and dark references to aid assignment.",
+        "In the same matched reaction sets, quantify CO and H2 together after the chosen illumination interval so spectroscopic directionality can be compared with catalytic output without claiming mechanistic proof."
+      ],
+      "measurements": [
+        "Steady-state or time-resolved photosensitizer emission quenching versus donor and cobalt presence; this shows relative quenching behavior but cannot by itself identify the full catalytic pathway.",
+        "UV-vis spectral changes of the cobalt-containing mixture before and during illumination; these can indicate donor-linked state changes or aggregation but cannot uniquely assign a specific cobalt intermediate without independent confirmation.",
+        "If available, operando or near-operando Co K-edge XAS/XANES/EXAFS on matched TEA and TEOA mixtures; these can report average oxidation-state and coordination-environment changes but may miss minority active species.",
+        "GC quantification of CO and H2 from the same matched runs; this establishes product distribution changes but not their sole cause."
+      ],
+      "supports": "Support for H04 would be a reproducible donor-dependent change between E23G01 and E23G02 in cobalt-associated spectral or operando XAS observables that is absent or much smaller in the corresponding cobalt-free blanks, with the qualitative donor trend aligning with a donor-linked change in CO/H2 output. Agreement in direction with analogous P01 observations would strengthen transfer, while remaining bounded to trend-level rather than identity-level claims.",
+      "refutes": "H04 is weakened if E23G01 and E23G02 show indistinguishable cobalt-dependent spectra and quenching-corrected state readouts across the operando window, while catalytic differences persist or are explained by donor-only blank behavior. It is also weakened if apparent donor differences arise mainly in E23G03 versus E23G04, indicating upstream donor/photosensitizer effects without clear cobalt-state divergence.",
+      "inconclusive": "Results are inconclusive if donor substitution changes optical baselines, viscosity, solubility, or inner-filter behavior enough to prevent matched interpretation; if cobalt signals are below detection or dominated by broad unresolved features; if TEA and TEOA require materially different concentration windows to keep the assay stable; or if P02 shows donor effects but P01 comparison data are unavailable for bridging.",
+      "parameter_selection": "Use the literature-defined P02 component identities and solvent family, but verify exact concentrations and illumination settings from the supplied source before execution. If any setting is still uncertain, choose it by pilot rules: maintain measurable CO/H2 within a short assay window, keep absorbance/emission in the instrument linear range, keep cobalt and photosensitizer solutions visibly homogeneous, and use one common setting for both donors whenever possible. If one donor destabilizes the mixture under the common setting, reduce all concentrations proportionally and re-run the full matched set rather than optimizing donors separately.",
+      "limitations": "Catalyst architecture differs from the Co-bpy/g-C3N4 target, so this is a transfer test rather than a direct explanation of P01. Donor substitution can change medium properties and quenching simultaneously, and homogeneous average-state methods may not reveal minority active species. Cobalt-free blanks help bound but do not eliminate confounding. Spectral changes alone cannot establish exact coordination structures or prove causality for product selectivity.",
+      "feasibility": "moderate"
+    },
+    {
+      "id": "E24",
+      "hypothesis_id": "H04",
+      "title": "Single-omission matrix for donor-linked cobalt-state effects",
+      "purpose": "Test whether any TEA-versus-TEOA difference in cobalt-state observables and CO/H2 distribution requires the full CoCl2+bpy+g-C3N4 assembly, using explicit one-factor omissions and bounded background interpretation.",
+      "evidence_ids": [
+        "EV059",
+        "GX016",
+        "GX008",
+        "EV081"
+      ],
+      "source_to_proposal": "EV059 supports the CoCl2+bpy+g-C3N4+TEOA formulation family in MeCN/H2O and motivates this as the closest source-anchored platform for donor comparison. GX008 supports explicit negative controls and paired characterization plus product analysis. EV081 shows that partial or no-catalyst systems can still produce CO and H2, so omission results must be treated as necessity/background tests rather than proof of mechanism. GX016 supports the transferable idea that cobalt-centered identity can shift product selectivity under TEOA photocatalysis, motivating tests of whether donor-linked effects persist or collapse when ligand or support is removed. The proposal transfers these observations into a controlled omission matrix in the P01-style system; it does not assume literature-established active-species identity or that omitted formulations are mechanistic continuations of the full catalyst.",
+      "groups": [
+        {
+          "id": "E24G01",
+          "description": "Full assembly with TEOA",
+          "factors": [
+            {
+              "name": "cobalt_source",
+              "value": "CoCl2"
+            },
+            {
+              "name": "bpy",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4",
+              "value": "present"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "solvent_system",
+              "value": "P01 baseline MeCN/H2O formulation"
+            },
+            {
+              "name": "gas_condition",
+              "value": "CO2-saturated"
+            },
+            {
+              "name": "illumination_program",
+              "value": "matched visible-light program"
+            },
+            {
+              "name": "analytical_workflow",
+              "value": "matched cobalt-state plus gas-product workflow"
+            }
+          ]
+        },
+        {
+          "id": "E24G02",
+          "description": "Full assembly with TEA",
+          "factors": [
+            {
+              "name": "cobalt_source",
+              "value": "CoCl2"
+            },
+            {
+              "name": "bpy",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4",
+              "value": "present"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "solvent_system",
+              "value": "P01 baseline MeCN/H2O formulation"
+            },
+            {
+              "name": "gas_condition",
+              "value": "CO2-saturated"
+            },
+            {
+              "name": "illumination_program",
+              "value": "matched visible-light program"
+            },
+            {
+              "name": "analytical_workflow",
+              "value": "matched cobalt-state plus gas-product workflow"
+            }
+          ]
+        },
+        {
+          "id": "E24G03",
+          "description": "Ligand omitted with TEOA",
+          "factors": [
+            {
+              "name": "cobalt_source",
+              "value": "CoCl2"
+            },
+            {
+              "name": "bpy",
+              "value": "absent"
+            },
+            {
+              "name": "g-C3N4",
+              "value": "present"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "solvent_system",
+              "value": "P01 baseline MeCN/H2O formulation"
+            },
+            {
+              "name": "gas_condition",
+              "value": "CO2-saturated"
+            },
+            {
+              "name": "illumination_program",
+              "value": "matched visible-light program"
+            },
+            {
+              "name": "analytical_workflow",
+              "value": "matched cobalt-state plus gas-product workflow"
+            }
+          ]
+        },
+        {
+          "id": "E24G04",
+          "description": "Ligand omitted with TEA",
+          "factors": [
+            {
+              "name": "cobalt_source",
+              "value": "CoCl2"
+            },
+            {
+              "name": "bpy",
+              "value": "absent"
+            },
+            {
+              "name": "g-C3N4",
+              "value": "present"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "solvent_system",
+              "value": "P01 baseline MeCN/H2O formulation"
+            },
+            {
+              "name": "gas_condition",
+              "value": "CO2-saturated"
+            },
+            {
+              "name": "illumination_program",
+              "value": "matched visible-light program"
+            },
+            {
+              "name": "analytical_workflow",
+              "value": "matched cobalt-state plus gas-product workflow"
+            }
+          ]
+        },
+        {
+          "id": "E24G05",
+          "description": "Support omitted with TEOA",
+          "factors": [
+            {
+              "name": "cobalt_source",
+              "value": "CoCl2"
+            },
+            {
+              "name": "bpy",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4",
+              "value": "absent"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "solvent_system",
+              "value": "P01 baseline MeCN/H2O formulation"
+            },
+            {
+              "name": "gas_condition",
+              "value": "CO2-saturated"
+            },
+            {
+              "name": "illumination_program",
+              "value": "matched visible-light program"
+            },
+            {
+              "name": "analytical_workflow",
+              "value": "matched cobalt-state plus gas-product workflow"
+            }
+          ]
+        },
+        {
+          "id": "E24G06",
+          "description": "Support omitted with TEA",
+          "factors": [
+            {
+              "name": "cobalt_source",
+              "value": "CoCl2"
+            },
+            {
+              "name": "bpy",
+              "value": "present"
+            },
+            {
+              "name": "g-C3N4",
+              "value": "absent"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "solvent_system",
+              "value": "P01 baseline MeCN/H2O formulation"
+            },
+            {
+              "name": "gas_condition",
+              "value": "CO2-saturated"
+            },
+            {
+              "name": "illumination_program",
+              "value": "matched visible-light program"
+            },
+            {
+              "name": "analytical_workflow",
+              "value": "matched cobalt-state plus gas-product workflow"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E24G01",
+          "group_b": "E24G02",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Primary donor-substitution benchmark in the full assembly. A reproducible difference here is required before omission results can localize where donor-linked divergence appears."
+        },
+        {
+          "group_a": "E24G03",
+          "group_b": "E24G04",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Tests whether donor-linked differences persist when bpy is omitted. Persistence would show that a full Co-bpy assembly is not required for the observed donor dependence; disappearance would indicate ligand-context dependence."
+        },
+        {
+          "group_a": "E24G05",
+          "group_b": "E24G06",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Tests whether donor-linked differences persist when g-C3N4 is omitted. Persistence would show that support association is not required for the observed donor dependence; disappearance would indicate support-context dependence."
+        },
+        {
+          "group_a": "E24G01",
+          "group_b": "E24G03",
+          "changed_factors": [
+            "bpy"
+          ],
+          "inference": "Necessity test for bpy under TEOA. Any major loss or change indicates dependence on ligand presence, but this comparison alone does not establish why donor effects arise."
+        },
+        {
+          "group_a": "E24G02",
+          "group_b": "E24G04",
+          "changed_factors": [
+            "bpy"
+          ],
+          "inference": "Necessity test for bpy under TEA, providing a matched counterpart to the TEOA ligand-omission comparison."
+        },
+        {
+          "group_a": "E24G01",
+          "group_b": "E24G05",
+          "changed_factors": [
+            "g-C3N4"
+          ],
+          "inference": "Necessity test for g-C3N4 under TEOA. Any major change indicates support dependence, but omitted systems may involve qualitatively different cobalt chemistry."
+        },
+        {
+          "group_a": "E24G02",
+          "group_b": "E24G06",
+          "changed_factors": [
+            "g-C3N4"
+          ],
+          "inference": "Necessity test for g-C3N4 under TEA, providing a matched counterpart to the TEOA support-omission comparison."
+        }
+      ],
+      "procedure": [
+        "Verify the source-anchored P01 baseline composition from EV059, then prepare all six formulations so only the stated factor differs between compared groups.",
+        "Run a pilot to set concentration, path length, sampling times, and reactor loading that give detectable cobalt-state signal and measurable CO and H2 without detector saturation or severe bulk conversion.",
+        "For each group, collect pre-illumination and near-operando cobalt-state measurements under CO2 and matched illumination, then quantify CO and H2 from the same reaction workflow.",
+        "Compare donor effects within each assembly state first, then compare omission versus full-assembly groups within each donor while treating omissions as necessity tests rather than mechanistic identity tests.",
+        "Interpret any product in omission groups against matched blanks and analytical backgrounds; do not infer a single active species from one spectroscopic signature or recovered samples alone."
+      ],
+      "measurements": [
+        "CO and H2 quantified together by one matched GC workflow for all groups, reporting amount and CO/H2 distribution.",
+        "A cobalt-state observable from an element- or coordination-sensitive method feasible in the laboratory context, such as operando or near-operando XAS, XPS-compatible sampling, or UV-Vis features, with sample state stated explicitly.",
+        "Change in cobalt-related spectral features or signal intensity from pre-illumination to illuminated CO2 conditions as a bounded indicator of donor-linked state change or deactivation.",
+        "Background product formation in omission groups, used to bound non-full-assembly contributions rather than to claim catalytic equivalence."
+      ],
+      "supports": "H04 is supported if the full assembly shows a reproducible TEA-versus-TEOA difference in cobalt-state observables or stability trends and that donor-linked difference weakens, disappears, or changes character in at least one omission pair, indicating dependence on ligand or support context. Stronger support occurs if the direction of cobalt-state differences tracks the direction of CO/H2 changes across matched pairs.",
+      "refutes": "H04 is weakened if TEA and TEOA give indistinguishable cobalt-state and stability observables in the full assembly within method resolution, and the ligand-omission and support-omission donor pairs likewise show no reproducible donor-linked divergence despite measurable products. It is further weakened if donor substitution changes CO/H2 but cobalt-state observables remain unchanged across all matched formulations.",
+      "inconclusive": "Results are inconclusive if product signals are near background, cobalt-state signals are below detection or assignment is non-unique, omission causes optical or compositional changes that prevent comparable measurements, or session-to-session drift obscures donor-pair comparisons. A change seen in only one method without corroboration remains provisional.",
+      "parameter_selection": "Do not invent concentrations, catalyst loadings, or illumination settings. Use the verified EV059-style baseline for starting composition, then perform a pilot to choose the lowest concentration and path length that still provide stable cobalt-state signal above blanks and measurable CO and H2 above analytical detection. Choose an early sampling window before heavy conversion or visible precipitation. If support omission changes turbidity or absorbance, recalibrate acquisition settings with blanks while keeping reactor geometry, gas handling, and timing identical across compared groups.",
+      "limitations": "Omission of bpy or g-C3N4 may generate qualitatively different cobalt species rather than partial versions of the full catalyst, so these are dependence tests, not continuity proofs. EV059 does not provide a direct TEA-versus-TEOA head-to-head in one frozen recipe, so baseline comparability still requires verification. Recovered-sample measurements may miss the operating state, and generic spectral changes cannot by themselves identify the active species or exact coordination geometry.",
+      "feasibility": "moderate"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "EV016",
+      "decision": "include",
+      "span_ids": [
+        "S2",
+        "S5",
+        "S9"
+      ],
+      "role": "direct characterization-method evidence for distinguishing TEA and TEOA donor radicals",
+      "claim": "EPR spin-trapping was used to detect TEOA-derived radicals, giving a response similar to TEA-derived adducts but with significant signal broadening attributed to higher viscosity of TEOA.",
+      "transfer_limit": "Observed in a benzophenone/photosensitizer CH3CN donor-radical study rather than the target Co(II)–bipyridine photocatalytic system. Transfer requires validating that analogous radicals form and remain observable under the target conditions.",
+      "reason": "Strongly informs discriminating characterization for TEA vs TEOA because it provides an experimentally grounded way to probe donor-derived radical intermediates and highlights a physical difference between TEA and TEOA that could affect observables and potentially kinetics. It does not by itself prove effects on CO/H2 in cobalt catalysis.",
+      "scores": {
+        "research_relevance": 3,
+        "direct_evidence": 3,
+        "discriminatory_value": 3,
+        "transferability": 2
+      },
+      "paper_id": "P_4e198e311887634bcf3a8099c8b647fdad3983b9e46e0ec199b29a2945f98c59",
+      "chunk_id": "P_4e198e311887634bcf3a8099c8b647fdad3983b9e46e0ec199b29a2945f98c59:p5:c0",
+      "page": 5,
+      "title": "",
+      "doi_candidates": "[\"10.1021/jacs.5c09982\"]",
+      "quotes": [
+        {
+          "id": "S2",
+          "start": 221,
+          "end": 439,
+          "text": "also used to detect TEOA•. The\nwith time-resolved electron paramagnetic resonance (EPR)    EPR spectrum of a solution containing BP, 3tBNB, and TEOA\nspectroscopy  to  detect  α-aminoalkyl  radicals  in  solutions      "
+        },
+        {
+          "id": "S5",
+          "start": 877,
+          "end": 1098,
+          "text": "to\ntheir  detectability by EPR. To  further  substantiate  the     TEOA′s higher viscosity compared to TEA, which constrains\nformation  of TE(O)A•, we  deployed  the  photochemical       free rotation around single bonds "
+        },
+        {
+          "id": "S9",
+          "start": 1748,
+          "end": 1966,
+          "text": "(Figure 2A).                solution (vida supra), we could then elucidate the equilibrium\n  To  trap TE(O)A•,  2,4,6-tri-tert-butylnitrosobenzene      redox  potential  of TEA• by measurement  of  bimolecular\n(3tBNB) "
+        }
+      ]
+    },
+    {
+      "evidence_id": "EV059",
+      "decision": "include",
+      "span_ids": [
+        "S4",
+        "S5",
+        "S7"
+      ],
+      "role": "direct system evidence",
+      "claim": "Literature reports a g-C3N4-assisted molecular CO2 photoreduction formulation using CoCl2 plus bipyridine to form Co(bpy)3Cl2 in MeCN/H2O with TEOA, and the table explicitly lists alternative amines including triethylamine with different CO/H2 selectivities under related conditions.",
+      "transfer_limit": "The exact active cobalt species may depend on in situ assembly and support effects from g-C3N4 or Co-ZIF-9; the snippet does not provide a direct TEA-versus-TEOA head-to-head in one unchanged formulation, so transfer to the researcher's specific Co(II)-bipyridine system requires verification.",
+      "reason": "This is the closest direct match to the target topic because it explicitly combines cobalt chloride and bipyridine in a CO2 photocatalytic system and mentions TEOA while tabulating triethylamine and other amines as donor variants affecting CO/H2 selectivity. It supports selecting this formulation family for controlled TEA/TEOA comparison, while preserving uncertainty about species identity and exact comparability.",
+      "scores": {
+        "research_relevance": 3,
+        "direct_evidence": 2,
+        "discriminatory_value": 2,
+        "transferability": 3
+      },
+      "paper_id": "P_aeb64bbac9bf013826227f892dddce9a09098133b0dbb309d907170b3517d87d",
+      "chunk_id": "P_aeb64bbac9bf013826227f892dddce9a09098133b0dbb309d907170b3517d87d:p5:c1",
+      "page": 5,
+      "title": "g-C3N4 based composite photocatalysts for photocatalytic CO2 reduction",
+      "doi_candidates": "[\"10.1016/j.cattod.2017.05.033\"]",
+      "quotes": [
+        {
+          "id": "S4",
+          "start": 656,
+          "end": 877,
+          "text": "                             Reaction conditions: C3N4 (20 mg), Co-ZIF-9 (4 mmol, 1 mg), bpy (10 mg), solvent\nused as solvent and triethanolamine (TEOA) as a sacriﬁcial electron                                            "
+        },
+        {
+          "id": "S5",
+          "start": 877,
+          "end": 1090,
+          "text": "                                              (5 mL, MeCN:H2O = 3: 2), TEOA (1 mL), λ > 420 nm, 30 °C, 2 h b Sel.CO = mol(CO)/\ndonor [51,141–146]. Wang et  al. [141–144] conducted their CO2     mol(CO + H2).   c  "
+        },
+        {
+          "id": "S7",
+          "start": 1308,
+          "end": 1525,
+          "text": "pressure of CO2 using or a mixture of water and acetonitrile (MeCN) as\nsolvent, triethanolamine (TEOA) as a sacriﬁcial electron donor, Co-\n(bpy)3Cl2 (by adding CoCl2 and bipyridine (bpy)) as a reductive     (Table 1) "
+        }
+      ]
+    },
+    {
+      "evidence_id": "EV048",
+      "decision": "include",
+      "span_ids": [
+        "S5",
+        "S6",
+        "S9"
+      ],
+      "role": "transferable mechanistic and comparator evidence on cobalt molecular photocatalysis",
+      "claim": "Mechanistic investigations in a molecular photocatalytic CO2-to-CO system found that coordinative interaction between a pyridine-appended Ir photosensitizer and unmodified cobalt phthalocyanine accelerated electron transfer, and control experiments indicated that the dynamic interaction helped avoid blocking labile sites.",
+      "transfer_limit": "Cobalt phthalocyanine with an Ir photosensitizer is not a Co(II)–bipyridine complex, and the snippet does not involve TEA/TEOA comparison; transfer is limited to hypotheses about coordination environment, intermolecular association, and electron-transfer discrimination.",
+      "reason": "Included because it is a cobalt molecular photocatalysis example with explicit mechanistic and comparative claims showing that supramolecular/coordination interactions can strongly alter electron transfer and catalytic performance. This supports considering donor-dependent coordination or association effects as competing explanations, but direct applicability to Co-bpy must be tested.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 2,
+        "discriminatory_value": 2,
+        "transferability": 2
+      },
+      "paper_id": "P_5a7518ab0e95a586c665c202ff34d18b2c3f48c0f6687a2deac26aac28e05eb8",
+      "chunk_id": "P_5a7518ab0e95a586c665c202ff34d18b2c3f48c0f6687a2deac26aac28e05eb8:p1:c0",
+      "page": 1,
+      "title": "Rapid electron transfer via dynamic coordinative interaction boosts quantum efficiency for photocatalytic CO2 reduction",
+      "doi_candidates": "[\"10.1038/s41467-021-24647-y\"]",
+      "quotes": [
+        {
+          "id": "S5",
+          "start": 873,
+          "end": 1083,
+          "text": "systematically demonstrated by 1H nuclear magnetic resonance titration, theoretical\n\n          calculations, and spectroscopic measurements. The mechanistic investigations reveal that the\n         coordinative "
+        },
+        {
+          "id": "S6",
+          "start": 1083,
+          "end": 1304,
+          "text": "interaction between the photosensitizer and an unmodiﬁed cobalt phthalocya-\n         nine signiﬁcantly accelerates the electron transfer and thus realizes a remarkable quantum\n         efﬁciency of 10.2% ± 0.5% at 450 nm "
+        },
+        {
+          "id": "S9",
+          "start": 1746,
+          "end": 1960,
+          "text": "\n         native interaction rather than the intrinsic activity. The control experiments demonstrate that\n\n         the dynamic feature of coordinative interaction is important to prevent the coordination\n\n        "
+        }
+      ]
+    },
+    {
+      "evidence_id": "EV081",
+      "decision": "include",
+      "span_ids": [
+        "S2",
+        "S7",
+        "S9"
+      ],
+      "role": "transferable comparative photocatalysis evidence with controls",
+      "claim": "An identifiable molecular photocatalytic CO2-reduction system in DMF/TEOA using Ru(bpy)3^2+, Fe(phen)3Cl2, and BIH quantified CO and H2 by GC, and a no-Fe control still produced small amounts of CO and H2 with relatively stronger H2 formation, showing that donor/photosensitizer/background processes can affect product distribution.",
+      "transfer_limit": "Not the target Co(II)–bipyridine system and uses TEOA plus BIH in DMF with an Fe catalyst; catalyst-concentration effects may not transfer to TEA/TEOA comparisons, but the need for no-catalyst controls and CO/H2 quantification is transferable.",
+      "reason": "Relevant because it directly addresses CO/H2 selectivity in molecular photocatalytic CO2 reduction under sacrificial-donor conditions and includes a catalyst-omission control. It helps frame discriminating experiments for whether observed product ratios arise from the catalyst versus other system components.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 3,
+        "discriminatory_value": 3,
+        "transferability": 2
+      },
+      "paper_id": "P_a6f98c96ac0ad379580f42b38f63a1ed47b0476a62b8c5a1e5ff3e34adb017b2",
+      "chunk_id": "P_a6f98c96ac0ad379580f42b38f63a1ed47b0476a62b8c5a1e5ff3e34adb017b2:p3:c0",
+      "page": 3,
+      "title": "",
+      "doi_candidates": "[\"10.3390/molecules24101878\"]",
+      "quotes": [
+        {
+          "id": "S2",
+          "start": 221,
+          "end": 438,
+          "text": "The photocatalytic reduction systems were assembled using Ru(bpy)32+, complex 1 and BIH\nin a CO2-saturated DMF/TEOA solution. The produced gas products were identiﬁed using gas\nchromatography (GC), with Ar as carrier "
+        },
+        {
+          "id": "S7",
+          "start": 1318,
+          "end": 1529,
+          "text": "in\nthe absence of the Fe(II) complex, small amounts of CO and H2 were detected, with the H2-generation\nrate being superior to that of CO2 reduction [43–45], indicating a signiﬁcant contribution by the PS to\nthe "
+        },
+        {
+          "id": "S9",
+          "start": 1744,
+          "end": 1964,
+          "text": "containing 6.7 × 10−4 M Ru(bpy)32+ and 0.022 M BIH after bright LED\n      visible-light irradiation for 2 h at 298 K.\n\n     Table 1. Controlled experimental results from Fe(phen)3Cl2 (1) for photocatalytic conversion of "
+        }
+      ]
+    },
+    {
+      "evidence_id": "EV065",
+      "decision": "include",
+      "span_ids": [
+        "S2",
+        "S3",
+        "S6"
+      ],
+      "role": "direct system evidence for a photocatalytic Co system using TEOA with a Ru photosensitizer, plus transferable quenching methodology",
+      "claim": "A Co photocatalytic CO2-to-CO system is reported under identifiable conditions with 0.5 mM [Ru(phen)3]2+, 0.3 M TEOA, and CO2-saturated acetonitrile/water (4:1), and Stern-Volmer quenching gave a high quenching rate constant for electron transfer from excited Ru photosensitizer to 1-Co.",
+      "transfer_limit": "Relevant because it uses a cobalt photocatalyst and TEOA in homogeneous CO2 reduction, but the catalyst is 1-Co rather than an explicitly verified Co(II)-bipyridine complex, the photosensitizer is Ru(phen)3 rather than the user's unspecified absorber, and no TEA comparator appears in the snippet.",
+      "reason": "This snippet directly supports a plausible primary comparison platform anchored in a cobalt molecular photocatalytic system with TEOA and measurable CO evolution. It also contributes a transferable mechanistic observable via quenching analysis. Its value is limited by incomplete catalyst identity within the snippet and lack of TEA comparison.",
+      "scores": {
+        "research_relevance": 3,
+        "direct_evidence": 2,
+        "discriminatory_value": 2,
+        "transferability": 2
+      },
+      "paper_id": "P_8400e7c737a228e5975e09b29b939b708609d18638ae6012b95a1ddf257c6493",
+      "chunk_id": "P_8400e7c737a228e5975e09b29b939b708609d18638ae6012b95a1ddf257c6493:p5:c2",
+      "page": 5,
+      "title": "",
+      "doi_candidates": "[\"10.1021/acs.inorgchem.0c02733\"]",
+      "quotes": [
+        {
+          "id": "S2",
+          "start": 216,
+          "end": 434,
+          "text": "density functional theory (DFT) calculations,\nconcentrations of 1-Co. Conditions: 0.5 mM [Ru(phen)3]2+, 0.3 M      the  photocatalytic mechanism  of 1-Co  has been  further\nTEOA, white LED light (λ > 400 nm), 20 mL of "
+        },
+        {
+          "id": "S3",
+          "start": 434,
+          "end": 655,
+          "text": "CO2-saturated      investigated  in  detail. The present  studies provide a new\nacetonitrile/water (v:v = 4:1). (b) The amounts of CO evolution at 2      direction toward the development of novel photocatalysts with\nh vs "
+        },
+        {
+          "id": "S6",
+          "start": 1090,
+          "end": 1303,
+          "text": "purchased from commercial  sources without  further  puriﬁcation.\nconstant of 1.06 × 1010 L mol−1 s−1 was obtained, indicating      [Ru(phen)3](PF6)2 and triethanolamine (TEOA) were commercially\nthat the electron "
+        }
+      ]
+    },
+    {
+      "evidence_id": "EV053",
+      "decision": "include",
+      "span_ids": [
+        "S4",
+        "S7",
+        "S8"
+      ],
+      "role": "direct mechanistic comparison method for sacrificial-donor versus catalyst quenching pathways",
+      "claim": "In a photocatalytic system containing TEOA and a cobalt species, fluorescence and UV–vis measurements were used to distinguish whether the excited photosensitizer is reductively quenched by TEOA or oxidatively quenched by the catalyst; the singlet fluorescence was not quenched by either additive, and the authors explicitly frame this as discrimination between two electron-transfer routes.",
+      "transfer_limit": "The snippet names TEOA and a cobalt species but does not verify a Co(II)–bipyridine CO2-reduction formulation; transfer is mainly methodological and mechanistic rather than direct system matching.",
+      "reason": "This is the strongest supplied evidence for a testable, discriminating experiment relevant to the TEA/TEOA question: donor identity may alter quenching pathway and thus product distribution. It provides actual observables and a competing-route framework.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 2,
+        "discriminatory_value": 3,
+        "transferability": 2
+      },
+      "paper_id": "P_eb4c376322354629881ea2b938d5b63623340d02da686c5e72202d5b6220c1c1",
+      "chunk_id": "P_eb4c376322354629881ea2b938d5b63623340d02da686c5e72202d5b6220c1c1:p2:c1",
+      "page": 2,
+      "title": "",
+      "doi_candidates": "[\"10.1016/j.catcom.2011.03.024\"]",
+      "quotes": [
+        {
+          "id": "S4",
+          "start": 660,
+          "end": 874,
+          "text": "2.2.2. Fluorescence quenching                                        observed upon addition of either TEOA or Co(III)O, suggesting that the\n  A 7.5×10−5M solution of Acr in a 3:1 mixture of DMF:H2O was     singlet "
+        },
+        {
+          "id": "S7",
+          "start": 1305,
+          "end": 1526,
+          "text": "Acr•−with electron transfer to the dye from the\nexcited at 480 nm for Acr on a HITACHI F-7000 ﬂuorometer with a     sacriﬁcial reductant TEOA.\nphotomultiplier tube detector.                                                "
+        },
+        {
+          "id": "S8",
+          "start": 1526,
+          "end": 1747,
+          "text": "In order to discriminate these two routes of electron transfer\n                                                              quenching in photocatalysis following  light absorption, UV–vis\n2.2.3. Photocatalytic Reactions "
+        }
+      ]
+    },
+    {
+      "evidence_id": "EV004",
+      "decision": "include",
+      "span_ids": [
+        "S5",
+        "S7",
+        "S8"
+      ],
+      "role": "transferable characterization methodology for stability and operando state tracking",
+      "claim": "Operando XAS and in situ Raman were used to evaluate catalyst stability during CO2 reduction and to track intermediate binding before and during reaction as a function of applied conditions.",
+      "transfer_limit": "The demonstrated platform is Ag-incorporated MOFs under electrochemical CO2 reduction, not molecular Co photocatalysis; specific spectral assignments and potentials are not directly transferable.",
+      "reason": "Although not a direct match to the target system, this snippet gives strong, source-grounded evidence that operando/ in situ methods can distinguish structural stability from reaction-state intermediate binding. That is useful for designing discriminating characterization in the primary photocatalytic system, with explicit limits on direct transfer.",
+      "scores": {
+        "research_relevance": 1,
+        "direct_evidence": 3,
+        "discriminatory_value": 2,
+        "transferability": 2
+      },
+      "paper_id": "P_33479b1ef2485f42c9f0fb10c4871c09384a46a9c246b7062a26635237be5aae",
+      "chunk_id": "P_33479b1ef2485f42c9f0fb10c4871c09384a46a9c246b7062a26635237be5aae:p5:c1",
+      "page": 5,
+      "title": "Intermediate Binding Control Using Metal–Organic Frameworks Enhances Electrochemical CO2 Reduction",
+      "doi_candidates": "[\"10.1021/jacs.0c10774\"]",
+      "quotes": [
+        {
+          "id": "S5",
+          "start": 877,
+          "end": 1097,
+          "text": "work are\nreduction process (Figure 2g). Additionally, the formation of       stable during CO2RR.\nAg nanoparticles and the MOF stability during the fabrication       Intermediates Binding Control by MOF. To identify the\n"
+        },
+        {
+          "id": "S7",
+          "start": 1317,
+          "end": 1537,
+          "text": "time, the binding of\n MOF  Stability during CO2RR. We  investigated  the      intermediates on the catalyst surface (Figure 4). Raman spectra\nstability of Ag-incorporated MOFs during CO2RR by operando     were collected "
+        },
+        {
+          "id": "S8",
+          "start": 1537,
+          "end": 1753,
+          "text": "before and during the reaction according to a\nXAS at an applied potential of −2.0 versus Ag/AgCl (Figure 3)       series  of applied  potentials. As the  reference, the Raman\nin 0.5 M KHCO3. We tracked the oxidation "
+        }
+      ]
+    },
+    {
+      "evidence_id": "EV052",
+      "decision": "include",
+      "span_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "role": "transferable method evidence for operando catalyst-state characterization",
+      "claim": "This review states that determining the true catalyst configuration during CO2 reduction is challenging and that linear-combination fitting in operando XAFS/XAS is valuable for real-time monitoring of catalyst components and extracting the dynamic chemical state of the active site.",
+      "transfer_limit": "Discussed for CO2RR broadly and largely electrocatalysts; transfer to photocatalytic Co(II)–bipyridine requires adaptation and validation under photochemical conditions.",
+      "reason": "Relevant because the research brief emphasizes verifying active-species identity and state under operating conditions; this snippet supports operando XAS as a discriminating characterization strategy even though not in the exact system.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 1,
+        "discriminatory_value": 2,
+        "transferability": 2
+      },
+      "paper_id": "P_cb6ade3ec2b86ed8675030ef87da3adde9cefcebea4d8f876f4ff56f511b20b0",
+      "chunk_id": "P_cb6ade3ec2b86ed8675030ef87da3adde9cefcebea4d8f876f4ff56f511b20b0:p2:c5",
+      "page": 2,
+      "title": "Advanced X-ray absorption spectroscopy for probing dynamics in CO2 reduction reaction electrocatalysts",
+      "doi_candidates": "[\"10.1038/s43246-025-00779-2\"]",
+      "quotes": [
+        {
+          "id": "S1",
+          "start": 0,
+          "end": 219,
+          "text": "tion   factors that govern the CO2RR and determining the true conﬁguration of\nprocesses, reaction intermediates, and underlying reaction mechanisms   the catalyst during this dynamic process pose signiﬁcant challenges. "
+        },
+        {
+          "id": "S2",
+          "start": 219,
+          "end": 436,
+          "text": "Linear\nunder operando conditions28,29. Figure 1 showcases the advancements and   combination ﬁtting (LCF) proves invaluable for real-time monitoring of\nsigniﬁcant research discoveries stemming from the application of "
+        },
+        {
+          "id": "S3",
+          "start": 436,
+          "end": 652,
+          "text": "XAFS in    catalyst components under varying potential, facilitating the extraction of\nCO2RR recently. For instance, in 2020, Chen et al. introduced an operando   the dynamic chemical state of the active site during "
+        }
+      ]
+    },
+    {
+      "evidence_id": "EV076",
+      "decision": "include",
+      "span_ids": [
+        "S2",
+        "S7",
+        "S8"
+      ],
+      "role": "transferable characterization method evidence",
+      "claim": "XAS is described as element-specific, operable in situ/operando, and EXAFS can provide coordination numbers and interatomic distances, while XPS can identify surface composition and valence-state variations.",
+      "transfer_limit": "Method guidance is from single-atom catalyst context, not specifically a homogeneous Co(II)–bipyridine photocatalytic solution; adaptation to the target system requires validation of sample state and sensitivity.",
+      "reason": "Relevant as transferable characterization evidence for testing changes in cobalt coordination or valence under reaction conditions, which could discriminate donor-dependent speciation hypotheses in the target system.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 1,
+        "discriminatory_value": 2,
+        "transferability": 2
+      },
+      "paper_id": "P_978836ff36bf54a91167e8f577c3610ba182b6d5c7149e0b6945e408e8a23af8",
+      "chunk_id": "P_978836ff36bf54a91167e8f577c3610ba182b6d5c7149e0b6945e408e8a23af8:p11:c1",
+      "page": 11,
+      "title": "",
+      "doi_candidates": "[\"10.1039/d2ta09776a\"]",
+      "quotes": [
+        {
+          "id": "S2",
+          "start": 216,
+          "end": 432,
+          "text": "short   X-ray Absorption Spectroscopy (XAS)  is an element-specic\n         wavelength (0.01–1 nm), are the most suitable source for atomic   technique for probing the local coordination environment by\nPM.\n          "
+        },
+        {
+          "id": "S7",
+          "start": 1292,
+          "end": 1508,
+          "text": "operando char-  EXAFS spectra. EXAFS analysis of SAC provides essential infor-\n          acterisations are enabled in XAS as  it can operate without  mation regarding the coordination number of single atom\n          "
+        },
+        {
+          "id": "S8",
+          "start": 1508,
+          "end": 1728,
+          "text": "ultrahigh vacuum requirements. Similarly, X-ray photoelectron   site(s) and  its interatomic distance with backscatter atoms\n         spectroscopy (XPS) measurements can identify the variations in   within its vicinity, "
+        }
+      ]
+    },
+    {
+      "evidence_id": "EV085",
+      "decision": "include",
+      "span_ids": [
+        "S2",
+        "S5",
+        "S6"
+      ],
+      "role": "transferable cautionary evidence on donor-derived products and active-species uncertainty",
+      "claim": "In Ru-based CO2 photoreduction in TEOA/DMF, one suggested active photocatalyst was a decomposition-derived Ru carbonyl species, and formate formation in a [Ru(bpy)3]2+/MV2+/TEOA/DMF system was suggested to originate from decomposition of TEOA used as the electron donor.",
+      "transfer_limit": "The system is Ru-based, focused on formate rather than CO/H2, and the statements include suggested interpretations rather than fully controlled proof; transfer is as a caution that donor chemistry and catalyst speciation can confound product assignments.",
+      "reason": "Relevant because it directly raises two competing explanations highly pertinent to the target question: donor-derived products and in situ formation of a different active species. Although not about Co or TEA/TEOA comparison, it motivates controlled origin tests and catalyst-state verification.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 1,
+        "discriminatory_value": 2,
+        "transferability": 2
+      },
+      "paper_id": "P_12b84a7fb31a19d4793bc99256979526831b8a47131ec95049850aea7ee7c002",
+      "chunk_id": "P_12b84a7fb31a19d4793bc99256979526831b8a47131ec95049850aea7ee7c002:p1:c1",
+      "page": 1,
+      "title": "",
+      "doi_candidates": "[]",
+      "quotes": [
+        {
+          "id": "S2",
+          "start": 221,
+          "end": 442,
+          "text": "        (MV2+)    in   a  mixture       triethanolamine\n\n (TEOA)/N,N-dimethylformamide                (DMF)   under     the     irradiation           of    light      (λ>320\n\n nm).1)      Even    in    the    absence     "
+        },
+        {
+          "id": "S5",
+          "start": 884,
+          "end": 1101,
+          "text": "generated     by  the\n\n dissociation        of  bpy  has   been   suggested      to   function      as  a  photocatalyst          to  produce\n\n HCOO-  efficiently.2)            Moreover,      the   formation      of  "
+        },
+        {
+          "id": "S6",
+          "start": 1101,
+          "end": 1314,
+          "text": "HCOO-  in   the   [Ru(bpy)3]2+/MV2+\n\n /TEOA/DMF     system    has  been   suggested       to  come  from   the   decomposition         of  TEOA used\n\n as  an  electron       donor.3)     We have    recently       "
+        }
+      ]
+    },
+    {
+      "evidence_id": "EV051",
+      "decision": "include",
+      "span_ids": [
+        "S3",
+        "S4"
+      ],
+      "role": "background suggesting TEA/TEOA can affect photocatalyst stability",
+      "claim": "A review states that 'Triethanolamine (TEA/TEOA) sacriﬁcial reagent could improve its stability by reversal of electron deﬁciency'.",
+      "transfer_limit": "Secondary review-level statement without a directly described Co(II)–bipyridine CO2 photoreduction experiment; TEA and TEOA are conflated and mechanism/conditions are unspecified.",
+      "reason": "Although indirect, it is relevant because it raises a plausible competing explanation for donor-dependent product distributions via catalyst or photosensitizer stability rather than intrinsic selectivity.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 1,
+        "discriminatory_value": 2,
+        "transferability": 1
+      },
+      "paper_id": "P_76597231fd2185335f5dc57eefcd2622b5e0f7c5d4606584d531c3b74b0b59ce",
+      "chunk_id": "P_76597231fd2185335f5dc57eefcd2622b5e0f7c5d4606584d531c3b74b0b59ce:p15:c13",
+      "page": 15,
+      "title": "Recent trends in photocatalytic materials for reduction of carbon dioxide to methanol",
+      "doi_candidates": "[\"10.1016/j.rser.2019.109389\"]",
+      "quotes": [
+        {
+          "id": "S3",
+          "start": 429,
+          "end": 647,
+          "text": "HHMSs)                                         N–InTaO4                          and hydrothermal stability. Triethanolamine (TEA/TEOA) sacriﬁcial\n                                                                       "
+        },
+        {
+          "id": "S4",
+          "start": 647,
+          "end": 868,
+          "text": "reagent could improve its stability by reversal of electron deﬁciency                                                                                                                                                        "
+        }
+      ]
+    },
+    {
+      "evidence_id": "EV068",
+      "decision": "include",
+      "span_ids": [
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "role": "transferable method guidance for operando characterization",
+      "claim": "The source argues that operando techniques such as in situ FTIR, in situ Raman, and in situ EPR are needed to track catalyst-reactant/intermediate interactions and identify real active species and ROS evolution under working conditions.",
+      "transfer_limit": "This is high-level review-style methodological guidance, not direct evidence from the target Co molecular system; applicability depends on whether the primary system supports these measurements and whether ROS concepts are relevant.",
+      "reason": "Included because the research brief explicitly needs characterization candidates that distinguish active species and intermediates under operating conditions. The snippet does not establish any mechanism, but it supports the value of operando measurements over ex situ inference.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 1,
+        "discriminatory_value": 1,
+        "transferability": 2
+      },
+      "paper_id": "P_aaad47a4e0b6c94cb4cdb1fb4671b51804889b559f78d81f570442d8fbb0dee1",
+      "chunk_id": "P_aaad47a4e0b6c94cb4cdb1fb4671b51804889b559f78d81f570442d8fbb0dee1:p21:c1",
+      "page": 21,
+      "title": "",
+      "doi_candidates": "[\"10.1002/ange.202101667\", \"10.1002/anie.202101667\"]",
+      "quotes": [
+        {
+          "id": "S2",
+          "start": 214,
+          "end": 430,
+          "text": "pathways.  It  is of   (2017J07002 and 2019J0106), Key Laboratory  of Hubei\n        remarkable necessity to employ operando techniques such   Province for Coal Conversion and New Carbon Materials\n         as in situ "
+        },
+        {
+          "id": "S3",
+          "start": 430,
+          "end": 649,
+          "text": "FTIR, in situ Raman, and in situ EPR to track the   (Wuhan University of Science and Technology), and Natural\n         interactions between the binding reactants/intermediates and   Science Foundation of Hubei Province "
+        },
+        {
+          "id": "S4",
+          "start": 649,
+          "end": 870,
+          "text": "(2020CFB124).\n        the catalyst surface, and to identify the generation/evolution\n         of various ROSs and the real active species, which can be                                                                      "
+        }
+      ]
+    },
+    {
+      "evidence_id": "EV088",
+      "decision": "include",
+      "span_ids": [
+        "S5",
+        "S8",
+        "S9"
+      ],
+      "role": "transferable operando-characterization methodology",
+      "claim": "An electrocatalytic CO2RR study performed operando XAS under operating conditions in flowing CO2 and paired this with durability/product quantification, illustrating a way to track catalyst state during reaction rather than only before/after.",
+      "transfer_limit": "Electrocatalytic Cu system in KHCO3 is not directly comparable to molecular photocatalytic Co(II)–bipyridine systems with TEA/TEOA; transfer is methodological and may require adaptation for photochemical cells and concentration limits.",
+      "reason": "Included because the research brief prioritizes state characterization and warns that recovered-sample measurements may not reflect the operating state. This snippet provides direct evidence that operando characterization can be implemented during CO2 reduction, though adaptation to the target system is nontrivial.",
+      "scores": {
+        "research_relevance": 1,
+        "direct_evidence": 2,
+        "discriminatory_value": 2,
+        "transferability": 1
+      },
+      "paper_id": "P_a831be599d946977576af463dbbc3f7da43dccd2f6ca71574935a057f57f6ee7",
+      "chunk_id": "P_a831be599d946977576af463dbbc3f7da43dccd2f6ca71574935a057f57f6ee7:p8:c1",
+      "page": 8,
+      "title": "Highly selective electrocatalytic CO2 reduction to ethanol by metallic clusters dynamically formed from atomically dispersed copper",
+      "doi_candidates": "[\"10.1038/s41560-020-0666-x\"]",
+      "quotes": [
+        {
+          "id": "S5",
+          "start": 867,
+          "end": 1084,
+          "text": "overall run.\nOperando XAS characterization of Cu SA catalyst. To investigate the electronic\nconfiguration and coordination structure of the Cu SA catalysts under operating       Chronoamperometry measurements. FE and "
+        },
+        {
+          "id": "S8",
+          "start": 1518,
+          "end": 1737,
+          "text": "electrode. The     at 1,600 r.p.m. under a continuous flow of CO2 at 30 standard cubic centimetres\nelectrochemical cell contained 0.1 M KHCO3 solution as the electrolyte, constantly       per minute (sccm) for 4,000 s. "
+        },
+        {
+          "id": "S9",
+          "start": 1737,
+          "end": 1956,
+          "text": "For durability analysis of the CO2RR process, the\npurged by a flowing CO2. All XAS data were collected at the Cu k edge in fluorescence    electrolyte was taken out of the electrochemical cell every 2 h to quantify the\n"
+        }
+      ]
+    },
+    {
+      "evidence_id": "GX016",
+      "decision": "include",
+      "span_ids": [
+        "S7",
+        "S8",
+        "S9"
+      ],
+      "role": "supporting comparative-system evidence that cobalt identity can support selective CO formation under TEOA photocatalysis",
+      "claim": "In a COF-based visible-light system using Ru(bpy)3Cl2 and triethanolamine, the Co-coordinated material reduced CO2 to CO, while changing the coordinated metal to Zn changed the reduction product to formate.",
+      "transfer_limit": "Framework-supported catalyst with Ru photosensitizer, not the target Co(II)-bipyridine complex; transfer is limited to showing that metal-center identity can strongly affect product selectivity under TEOA photocatalytic conditions, so catalyst-state controls remain essential in any TEA/TEOA comparison.",
+      "reason": "Useful because it preserves an alternative explanation: observed product changes may arise from catalyst identity/state changes rather than donor-specific chemistry alone. However, it does not compare TEA with TEOA and is not a direct analogue.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 2,
+        "discriminatory_value": 2,
+        "transferability": 2
+      },
+      "paper_id": "P_3955b549dcd77240721befde85c06d244448079b55867e72af3cb6f427878fbf",
+      "chunk_id": "P_3955b549dcd77240721befde85c06d244448079b55867e72af3cb6f427878fbf:p6:c0",
+      "page": 6,
+      "title": "",
+      "doi_candidates": "[\"10.26599/NRE.2024.9120149\"]",
+      "quotes": [
+        {
+          "id": "S7",
+          "start": 1286,
+          "end": 1499,
+          "text": "   420 nm) irradiation, and has high selectivity (98%) and persistence     Ru(bpy)3Cl2 as a photosensitizer and triethanolamine as a hole\n   (> 20 h), with better activity than homogeneous Re catalyst. More       "
+        },
+        {
+          "id": "S8",
+          "start": 1499,
+          "end": 1708,
+          "text": "sacrificial  agent, CO2 was reduced under  visible  light. The\n   importantly, this work combines in-situ testing and time-resolved     reduction product of DQTP COF-Co was CO, and the reaction\n   absorption  "
+        },
+        {
+          "id": "S9",
+          "start": 1708,
+          "end": 1924,
+          "text": "spectroscopy  to  reveal  key  intermediate  species      rate was 1020  μmol·g−1·h−1. When the coordinated metal ion\n   involved in CO2 reduction.                                        changes to Zn, the reduction "
+        }
+      ]
+    },
+    {
+      "evidence_id": "GX008",
+      "decision": "include",
+      "span_ids": [
+        "S1",
+        "S4",
+        "S8"
+      ],
+      "role": "transferable methodological guidance for controls and characterization",
+      "claim": "The review states that photocatalytic CO2-reduction studies should include negative controls omitting key components and reproducible 13CO2 labeling, and that for homogeneous systems UV–Vis, XAS, TAS, IR, and Raman can help reveal system behavior.",
+      "transfer_limit": "This is general methods guidance rather than a specific Co(II)-bipyridine/TEA/TEOA experiment. Applicability depends on the actual formulation, concentrations, and detectable intermediates.",
+      "reason": "Included because it directly supports rigorous experimental design and characterization choices for the target comparison, especially origin controls and suitable spectroscopies for homogeneous photocatalytic CO2 reduction.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 1,
+        "discriminatory_value": 3,
+        "transferability": 3
+      },
+      "paper_id": "P_d45644df03a32ddcacbcd0eb6914abbe188ef23fc5a8582f26689f066de7259b",
+      "chunk_id": "P_d45644df03a32ddcacbcd0eb6914abbe188ef23fc5a8582f26689f066de7259b:p7:c4",
+      "page": 7,
+      "title": "",
+      "doi_candidates": "[\"10.1038/s43586-023-00243-wnature\"]",
+      "quotes": [
+        {
+          "id": "S1",
+          "start": 0,
+          "end": 216,
+          "text": "of light irradiation (at the same        In situ XPS and XAS can detect the change in the chemical environ-\ntemperature), CO2 (using argon instead), reductant, catalyst (leaving  ment of catalyst elements induced by "
+        },
+        {
+          "id": "S4",
+          "start": 656,
+          "end": 873,
+          "text": "can be performed\nwhen the amount of products is small, a complete and reproducible   alongside XPS and XAS37,138,139. Furthermore, the coupling of oper-\n13CO2 labelling experiment is required.                         "
+        },
+        {
+          "id": "S8",
+          "start": 1524,
+          "end": 1745,
+          "text": "by   tion, UV–Vis, XAS, TAS, IR and Raman spectroscopies help to reveal\n\nNature Reviews Methods Primers |     (2023) 3:61                                                                       7\n\n                          "
+        }
+      ]
+    },
+    {
+      "evidence_id": "GX001",
+      "decision": "include",
+      "span_ids": [
+        "S6",
+        "S8",
+        "S9"
+      ],
+      "role": "direct comparative evidence on donor/catalyst coordination competition",
+      "claim": "In a CoPc photocatalytic CO2-reduction system, BIH showed no visible 1H NMR titration shift with CoPc, while the authors explicitly note that competitive binding from TEA should be considered; this supports testing whether amine donor coordination at cobalt can change catalytic behavior.",
+      "transfer_limit": "System is CoPc with IrQPY photosensitizer and BIH donor, not a Co(II)-bipyridine complex and not a TEA vs TEOA comparison. TEA competition is proposed rather than directly measured here, so transfer is limited to the hypothesis that donor coordination may matter.",
+      "reason": "Relevant because it directly concerns cobalt-site coordination and explicitly raises TEA competition in photocatalysis. Included despite mismatch because it gives a source-grounded rationale for donor-coordination experiments, but only the BIH non-coordination observation is directly shown.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 2,
+        "discriminatory_value": 2,
+        "transferability": 1
+      },
+      "paper_id": "P_5a7518ab0e95a586c665c202ff34d18b2c3f48c0f6687a2deac26aac28e05eb8",
+      "chunk_id": "P_5a7518ab0e95a586c665c202ff34d18b2c3f48c0f6687a2deac26aac28e05eb8:p4:c2",
+      "page": 4,
+      "title": "Rapid electron transfer via dynamic coordinative interaction boosts quantum efficiency for photocatalytic CO2 reduction",
+      "doi_candidates": "[\"10.1038/s41467-021-24647-y\"]",
+      "quotes": [
+        {
+          "id": "S6",
+          "start": 1087,
+          "end": 1303,
+          "text": "coordinative interaction in the\nsumably, the low-spin d7 CoII center in CoPc molecules owns a                                                                  present system, the competitive binding from TEA and BIH\n"
+        },
+        {
+          "id": "S8",
+          "start": 1520,
+          "end": 1740,
+          "text": "shift of the proton signals of BIH\nequatorial coordination. In addition, the relatively labile axial                                                            (Supplementary  Fig.  10),  which  indicates  the  absence  "
+        },
+        {
+          "id": "S9",
+          "start": 1740,
+          "end": 1961,
+          "text": "of\ncoordinate bond can be partially attributed to the cationic nature                                                                coordination of BIH at CoPc. In contrast, 1H NMR titration is\nof IrQPY, which makes the "
+        }
+      ]
+    },
+    {
+      "evidence_id": "GX005",
+      "decision": "include",
+      "span_ids": [
+        "S1",
+        "S2"
+      ],
+      "role": "direct evidence that solvents can axially coordinate cobalt porphyrins",
+      "claim": "For CoTPP, different solvents including pyridine, DMF, and THF were investigated by spectrophotometric titration for axial coordination numbers and equilibrium constants, and axial coordination was linked to enhanced catalytic activity.",
+      "transfer_limit": "Cobalt porphyrin electroreduction in aqueous solution is not the target Co(II)-bipyridine photocatalytic system. Evidence supports the general plausibility of donor coordination at cobalt but not the specific effect of TEA versus TEOA.",
+      "reason": "Included because it provides actual measurements of donor coordination to a cobalt macrocycle and motivates direct binding studies with amines in the target system. Structural and catalytic context differ, so transfer is bounded.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 2,
+        "discriminatory_value": 2,
+        "transferability": 1
+      },
+      "paper_id": "P_33183d8d601d5e2bb43de6af197639782fb21e173199fd029d1b8584ec3d70c4",
+      "chunk_id": "P_33183d8d601d5e2bb43de6af197639782fb21e173199fd029d1b8584ec3d70c4:p17:c1",
+      "page": 17,
+      "title": "Cobalt porphyrin immobilized on the TiO2 nanotube electrode for CO2 electroreduction in aqueous solution",
+      "doi_candidates": "[\"10.1016/j.jechem.2020.06.067\"]",
+      "quotes": [
+        {
+          "id": "S1",
+          "start": 0,
+          "end": 214,
+          "text": "anar cobalt\n\ncentre of CoTPP and the axial coordination is responsible for the enhanced catalytic activity\n\n[50]. Herein, we endeavoured to study the process of different solvents coordination to\n\nCoTPP. The axial "
+        },
+        {
+          "id": "S2",
+          "start": 214,
+          "end": 430,
+          "text": "coordination numbers and equilibrium constants of pyridine, DMF, and\n\nTHF were investigated by means of spectrophotometric titration method as described in the\n\nexperimental section according to the literature [40]. "
+        }
+      ]
+    },
+    {
+      "evidence_id": "GX011",
+      "decision": "include",
+      "span_ids": [
+        "S2",
+        "S6",
+        "S8"
+      ],
+      "role": "cross-system evidence that TEOA can form catalyst adducts and medium-dependent species",
+      "claim": "In Re-bipyridine carbonyl CO2 photoreduction, TEOA use is associated with a TEOA adduct in DMF, CO2 insertion into that adduct to form a carbonate species, and a proposed active-form role whose details remain unclear.",
+      "transfer_limit": "Rhenium system, not cobalt; CO here denotes carbon monoxide in carbonyl ligands and product chemistry, not cobalt. Transfer is limited to the idea that TEOA can do more than donate electrons and may alter catalyst speciation in a solvent-dependent way.",
+      "reason": "Relevant because the target comparison is TEA versus TEOA in a bipyridine-based CO2-reduction setting; this snippet specifically warns that TEOA can create adduct chemistry and active-species ambiguity, but direct transfer to Co(II)-bipyridine is uncertain.",
+      "scores": {
+        "research_relevance": 2,
+        "direct_evidence": 2,
+        "discriminatory_value": 2,
+        "transferability": 1
+      },
+      "paper_id": "P_8689ac208ca47243d76c5c5b1c86e3ff6f3aa79b8a2e8b964677b9aeb334000f",
+      "chunk_id": "P_8689ac208ca47243d76c5c5b1c86e3ff6f3aa79b8a2e8b964677b9aeb334000f:p5:c0",
+      "page": 5,
+      "title": "",
+      "doi_candidates": "[\"10.1021/acscatal.6b01208\"]",
+      "quotes": [
+        {
+          "id": "S2",
+          "start": 217,
+          "end": 437,
+          "text": "less likely when TEOA is used as the sacrificial electron donor. After\n7\n8             binding, CO2 is reduced to CO and H2O with multiple protonation steps.\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n"
+        },
+        {
+          "id": "S6",
+          "start": 1065,
+          "end": 1269,
+          "text": "of CO2 into the TEOA adduct,\n45\n46           [Re(bpy)(CO)3(TEOA)]+, when the solvent is DMF, whereas the latter is the product of the\n47\n48\n             attack of TEOA on the acetonitrile (ACN) ligand in "
+        },
+        {
+          "id": "S8",
+          "start": 1486,
+          "end": 1707,
+          "text": "presence of TEOA in DMF. However, the chemical54\n55\n56            details of this conversion have yet to be clarified.\n57\n58\n59\n60                                                                                      4\n   "
+        }
+      ]
+    }
+  ],
+  "previous_review": {
+    "decisions": [
+      {
+        "candidate_id": "E19",
+        "decision": "revise",
+        "major_issues": [
+          "No-cobalt background is included only for the TEOA matrix, so donor-specific non-cobalt background or spectral interference from TEA is not bounded.",
+          "Primary operando assignments remain potentially confounded by unresolved active-species identity and decomposition-derived cobalt species; the card appropriately warns about this but still needs stricter assignment limits.",
+          "Dark comparisons change both illumination and sampling/elapsed-state handling, so those contrasts are descriptive rather than clean causal controls."
+        ],
+        "rationale": "This is a strong candidate because it directly tests the stated H04 prediction in the primary P01 context with single-variable donor substitution and paired cobalt-state/product tracking. The proposed evidence chain is mostly appropriate: EV059 directly anchors the target formulation family, while EV052/EV076/EV088/GX008/EV068 support operando or near-operando state characterization as a method class. However, the mechanistic interpretation depends heavily on transferred precedents from other cobalt or bipyridine-related systems, and the current control set does not fully exclude donor-specific background differences because only TEOA has a no-cobalt matrix. As written, the experiment is defensible as a descriptive discriminating screen, but conclusions should be limited to donor-dependent cobalt-linked observables rather than named species or causation. With addition of a TEA no-cobalt background and explicit claims limits, value is high.",
+        "evidence_support": "transfer_with_limits",
+        "inference_validity": "needs_revision",
+        "candidate_value": "conditional",
+        "implementation_readiness": "details_needed",
+        "resource_level": "specialist",
+        "prior_issue_resolution": "No prior review provided."
+      },
+      {
+        "candidate_id": "E20",
+        "decision": "shortlist",
+        "major_issues": [],
+        "rationale": "This candidate asks a narrower, pre-irradiation question that is well matched to the available evidence and avoids overclaiming. It uses the direct system anchor EV059 and cautiously transfers GX005, GX001, and EV048 only to test whether TEA and TEOA produce different pre-turnover observables, not to claim active-species identity. The group structure is coherent: donor-free baseline, TEA and TEOA titrations in the supported precursor mixture, plus a simpler homogeneous analogue for cleaner assignment. The card explicitly recognizes scattering, instability, and medium-property confounding, and it limits conclusions to detectable association-like differences. Because the hypothesis here is only whether donor substitution changes pre-irradiation observables, the inferential scope is appropriate and valuable even if results remain descriptive.",
+        "evidence_support": "transfer_with_limits",
+        "inference_validity": "adequate_for_stated_question",
+        "candidate_value": "retain",
+        "implementation_readiness": "ready_for_researcher_planning",
+        "resource_level": "moderate",
+        "prior_issue_resolution": "No prior review provided."
+      },
+      {
+        "candidate_id": "E21",
+        "decision": "shortlist",
+        "major_issues": [],
+        "rationale": "This is a defensible and useful candidate focused on time dependence, persistence, and deactivation in the primary P01 platform rather than on unique species assignment. EV059 directly anchors the system, while EV085 and EV051 justify considering donor-linked stability/decomposition effects; EV004 and GX008 support paired time-course characterization and controls. The design includes both TEA and TEOA no-cobalt controls, which is an important strength relative to other cards. Its inference is appropriately bounded: donor-dependent differences in decay profile and cobalt-state trajectory would support a cobalt-state/deactivation contribution, but not uniquely prove mechanism. Because the card emphasizes descriptive trajectories and background exclusion instead of claiming structural identity, it is well aligned with the evidence limits and is worthwhile for researcher consideration.",
+        "evidence_support": "transfer_with_limits",
+        "inference_validity": "adequate_for_stated_question",
+        "candidate_value": "retain",
+        "implementation_readiness": "ready_for_researcher_planning",
+        "resource_level": "moderate",
+        "prior_issue_resolution": "No prior review provided."
+      },
+      {
+        "candidate_id": "E22",
+        "decision": "revise",
+        "major_issues": [
+          "Control set is asymmetric: no-cobalt and dark controls are specified for TEOA but not equivalently for TEA, weakening donor-specific interpretation of IR/EPR differences.",
+          "Spectral assignment risk is high because IR/EPR features may reflect donor radicals, viscosity/line-shape effects, decomposition products, or support backgrounds rather than cobalt adducts or catalytic intermediates.",
+          "The proposal combines multiple transferred ideas from non-cobalt or non-target systems, so claims about donor-adduct chemistry in P01 require very conservative interpretation."
+        ],
+        "rationale": "This candidate has potential as a descriptive screen because EV016, EV068, GX011, and EV085 together justify looking for donor-dependent radical or adduct-like signatures and caution strongly against overassignment. However, the current design does not fully support donor-specific inference: TEA lacks matched dark and no-cobalt controls despite known physical-property and donor-decomposition differences that can alter EPR/IR baselines. The transferred evidence is useful methodologically but not direct for Co-bpy/g-C3N4. Therefore, the experiment could be valuable if reframed as a bounded screen for donor-dependent cobalt-requiring and light-dependent signatures, with symmetric controls for both donors and explicit prohibition on naming intermediates without orthogonal confirmation.",
+        "evidence_support": "transfer_with_limits",
+        "inference_validity": "needs_revision",
+        "candidate_value": "conditional",
+        "implementation_readiness": "details_needed",
+        "resource_level": "specialist",
+        "prior_issue_resolution": "No prior review provided."
+      },
+      {
+        "candidate_id": "E23",
+        "decision": "shortlist",
+        "major_issues": [],
+        "rationale": "This supplementary bridge experiment is appropriately framed as transfer rather than direct proof about P01. EV065 directly supports a defined homogeneous cobalt photocatalytic platform with TEOA and quenching readouts, and EV053 supports using fluorescence/UV-vis to discriminate donor versus catalyst quenching pathways. The card also clearly limits conclusions to qualitative donor-linked trends and uses donor-specific cobalt-free blanks to bound upstream donor/photosensitizer effects. Because it does not claim that P02 reproduces P01 chemistry, disagreement would still be informative rather than fatal. As a cleaner auxiliary platform for trend-level donor effects on cobalt-state-sensitive observables or quenching behavior, it is a reasonable shortlist candidate.",
+        "evidence_support": "transfer_with_limits",
+        "inference_validity": "adequate_for_stated_question",
+        "candidate_value": "retain",
+        "implementation_readiness": "ready_for_researcher_planning",
+        "resource_level": "moderate",
+        "prior_issue_resolution": "No prior review provided."
+      },
+      {
+        "candidate_id": "E24",
+        "decision": "revise",
+        "major_issues": [
+          "Support-omission condition is structurally underspecified because TEOA and TEA are bundled into one group as separate subruns, preventing fully explicit group-level comparisons within the card schema.",
+          "The E24G01 versus E24G05 comparison is acknowledged as multi-factor and therefore cannot cleanly localize support effects unless the support-free TEA and TEOA runs are split into separate matched groups.",
+          "Omission of bpy or g-C3N4 may generate qualitatively different cobalt chemistry, so without tighter comparison structure the card risks overinterpreting omission results as mechanistic continuity rather than dependence tests."
+        ],
+        "rationale": "The overall scientific aim is valuable: omission studies can test whether donor-linked differences depend on ligand or support context. The baseline full-assembly and ligand-omission pairs are conceptually sound, and EV059/GX008/EV081/GX016 justify the need for omission controls and caution about background products. The main problem is implementation structure, especially the support-omission arm, which is not encoded as explicit TEA and TEOA groups and therefore weakens direct donor-comparison logic. This does not justify rejection because the card could become informative with a cleaner factorial layout and carefully bounded interpretation as necessity testing rather than mechanistic identity testing.",
+        "evidence_support": "transfer_with_limits",
+        "inference_validity": "needs_revision",
+        "candidate_value": "conditional",
+        "implementation_readiness": "details_needed",
+        "resource_level": "moderate",
+        "prior_issue_resolution": "No prior review provided."
+      }
+    ],
+    "overall": "Among E19-E24, the strongest direct candidates for researcher consideration are E20, E21, and E23 because each asks a bounded question that matches the available evidence and avoids overclaiming active-species identity. E19 is scientifically central and potentially high value, but it needs symmetric donor-specific background controls and stricter assignment limits before shortlisting. E22 is plausible only as a conservative descriptive screen and needs matched TEA controls to separate donor physical effects, decomposition, and true cobalt-linked signals. E24 addresses an important dependence question but requires a cleaner explicit group structure, especially for support omission. Across all cards, evidence for H04 is mostly transfer-based with one direct system anchor (EV059), so donor-dependent differences can support cobalt-state involvement only descriptively unless corroborated by symmetric controls and multiple observables."
+  }
+}

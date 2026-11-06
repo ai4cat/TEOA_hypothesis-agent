@@ -1,0 +1,926 @@
+{
+  "candidates": [
+    {
+      "id": "E26",
+      "hypothesis_id": "H05",
+      "title": "Operando isotope-sensitive IR for TEA versus TEOA",
+      "purpose": "Test whether donor identity changes reaction-state IR features consistent with CO2-associated or hydrogen-involving species in the P01 Co-bpy context, using symmetric isotope and negative controls so any TEA-versus-TEOA difference is bounded in both donor conditions rather than inferred from products alone.",
+      "evidence_ids": [
+        "EV080",
+        "EV031",
+        "EV029",
+        "GX008"
+      ],
+      "source_to_proposal": "EV080 and GX008 support operando IR with isotope and negative controls as a transferable strategy. EV031 and EV029 motivate the narrower proposal that donor identity can alter intermediate populations or CO2-associated adduct chemistry, but they do not establish the same species in Co-bpy. This revised card therefore compares TEA and TEOA under matched conditions and applies parallel assignment controls on both donor sides where feasible.",
+      "groups": [
+        {
+          "id": "E26G01",
+          "description": "Baseline operando run with TEOA under CO2 and light in the selected P01 formulation.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy photocatalytic formulation"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "gas_isotope",
+              "value": "CO2"
+            },
+            {
+              "name": "solvent_isotope",
+              "value": "H2O-containing baseline medium"
+            },
+            {
+              "name": "light",
+              "value": "on"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            }
+          ]
+        },
+        {
+          "id": "E26G02",
+          "description": "Matched operando run with TEA substituted as the only intended formulation change.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy photocatalytic formulation"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "gas_isotope",
+              "value": "CO2"
+            },
+            {
+              "name": "solvent_isotope",
+              "value": "H2O-containing baseline medium"
+            },
+            {
+              "name": "light",
+              "value": "on"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            }
+          ]
+        },
+        {
+          "id": "E26G03",
+          "description": "TEOA run with 13CO2 to test whether selected bands are CO2-derived.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy photocatalytic formulation"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "gas_isotope",
+              "value": "13CO2"
+            },
+            {
+              "name": "solvent_isotope",
+              "value": "H2O-containing baseline medium"
+            },
+            {
+              "name": "light",
+              "value": "on"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            }
+          ]
+        },
+        {
+          "id": "E26G04",
+          "description": "TEA run with 13CO2 to test whether selected bands are CO2-derived under the TEA condition.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy photocatalytic formulation"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "gas_isotope",
+              "value": "13CO2"
+            },
+            {
+              "name": "solvent_isotope",
+              "value": "H2O-containing baseline medium"
+            },
+            {
+              "name": "light",
+              "value": "on"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            }
+          ]
+        },
+        {
+          "id": "E26G05",
+          "description": "TEOA run with D2O substitution of the aqueous component where feasible to test hydrogen involvement in selected bands.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy photocatalytic formulation"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "gas_isotope",
+              "value": "CO2"
+            },
+            {
+              "name": "solvent_isotope",
+              "value": "D2O-substituted aqueous component where feasible"
+            },
+            {
+              "name": "light",
+              "value": "on"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            }
+          ]
+        },
+        {
+          "id": "E26G06",
+          "description": "TEA run with D2O substitution of the aqueous component where feasible to test hydrogen involvement in selected bands under the TEA condition.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy photocatalytic formulation"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "gas_isotope",
+              "value": "CO2"
+            },
+            {
+              "name": "solvent_isotope",
+              "value": "D2O-substituted aqueous component where feasible"
+            },
+            {
+              "name": "light",
+              "value": "on"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            }
+          ]
+        },
+        {
+          "id": "E26G07",
+          "description": "Negative reference lacking cobalt under otherwise matched TEOA conditions.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy photocatalytic formulation"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "gas_isotope",
+              "value": "CO2"
+            },
+            {
+              "name": "solvent_isotope",
+              "value": "H2O-containing baseline medium"
+            },
+            {
+              "name": "light",
+              "value": "on"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "absent"
+            }
+          ]
+        },
+        {
+          "id": "E26G08",
+          "description": "Negative reference lacking cobalt under otherwise matched TEA conditions.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy photocatalytic formulation"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "gas_isotope",
+              "value": "CO2"
+            },
+            {
+              "name": "solvent_isotope",
+              "value": "H2O-containing baseline medium"
+            },
+            {
+              "name": "light",
+              "value": "on"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "absent"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E26G01",
+          "group_b": "E26G02",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Reproducible donor-dependent differences in reaction-state bands under matched conditions support a donor-linked change in the reacting ensemble, but alone do not separate CO2 adduct effects from altered cobalt state or other medium effects."
+        },
+        {
+          "group_a": "E26G01",
+          "group_b": "E26G03",
+          "changed_factors": [
+            "gas_isotope"
+          ],
+          "inference": "Band shifts that track 13CO2 under TEOA support assignment of those bands to CO2-derived species in that donor condition; absence of shift argues against that assignment for those specific bands."
+        },
+        {
+          "group_a": "E26G02",
+          "group_b": "E26G04",
+          "changed_factors": [
+            "gas_isotope"
+          ],
+          "inference": "Band shifts that track 13CO2 under TEA support assignment of those bands to CO2-derived species in that donor condition; absence of shift argues against that assignment for those specific bands."
+        },
+        {
+          "group_a": "E26G01",
+          "group_b": "E26G05",
+          "changed_factors": [
+            "solvent_isotope"
+          ],
+          "inference": "Band shifts upon H2O to D2O substitution under TEOA support involvement of exchangeable hydrogen in the assigned feature; no shift argues against that specific hydrogen-involving assignment."
+        },
+        {
+          "group_a": "E26G02",
+          "group_b": "E26G06",
+          "changed_factors": [
+            "solvent_isotope"
+          ],
+          "inference": "Band shifts upon H2O to D2O substitution under TEA support involvement of exchangeable hydrogen in the assigned feature; no shift argues against that specific hydrogen-involving assignment."
+        },
+        {
+          "group_a": "E26G01",
+          "group_b": "E26G07",
+          "changed_factors": [
+            "cobalt_component"
+          ],
+          "inference": "Features present only when cobalt is included under TEOA are more consistent with cobalt-associated reaction-state species; shared features indicate donor or background contributions and limit assignment."
+        },
+        {
+          "group_a": "E26G02",
+          "group_b": "E26G08",
+          "changed_factors": [
+            "cobalt_component"
+          ],
+          "inference": "Features present only when cobalt is included under TEA are more consistent with cobalt-associated reaction-state species; shared features indicate donor or background contributions and limit assignment."
+        }
+      ],
+      "procedure": [
+        "Verify an IR-compatible reaction cell and establish stable pre-illumination baselines for the complete P01 medium with TEA and with TEOA, using the same optical path and gas handling across all groups.",
+        "Run matched illuminated operando or near-operando CO2 experiments for TEA and TEOA, including corresponding cobalt-absent references, with identical acquisition timing and reactor configuration.",
+        "After donor-comparison reproducibility is confirmed, repeat each donor condition with 13CO2 and, where spectral quality and formulation stability remain acceptable, with D2O substitution of the aqueous component.",
+        "Process spectra against pre-illumination and component-matched references, then compare donor-dependent band emergence, isotope shifts, persistence, and decay across the paired TEA and TEOA datasets.",
+        "Relate any donor-dependent spectral differences to separately measured matched catalytic outputs only descriptively, avoiding unique structural or pathway claims unless isotope and control behavior are internally consistent on both donor sides."
+      ],
+      "measurements": [
+        "Time-resolved IR spectra under illumination for all groups.",
+        "Wavenumber positions, isotope shifts, and temporal evolution of donor-dependent bands under TEA and TEOA.",
+        "Presence or absence of candidate bands in cobalt-present versus cobalt-absent references for each donor.",
+        "Symmetry of 13CO2 and D2O assignment behavior across TEA and TEOA conditions.",
+        "Signal-to-noise, baseline stability, repeatability across replicate runs, and degree of band overlap."
+      ],
+      "supports": "Support for H05 would be a reproducible TEA-versus-TEOA difference in reaction-state IR features under otherwise matched conditions, with at least one donor-dependent feature showing internally consistent isotope behavior and cobalt dependence on the relevant donor side. The strongest support is when analogous assignment controls bound TEA and TEOA features differently, consistent with donor-specific CO2-associated or hydrogen-involving chemistry rather than simple background differences.",
+      "refutes": "Evidence against H05 would be that TEA and TEOA show no reproducible donor-dependent reaction-state IR differences beyond baseline noise or generic medium changes, or that apparent differences disappear once symmetric isotope and cobalt-absent controls are applied. That outcome would favor explanations centered elsewhere, such as quenching kinetics, cobalt-state changes not resolved here, or uncontrolled catalytic variability.",
+      "inconclusive": "Results are inconclusive if spectra are dominated by overlap, weak signals, or baseline drift; if D2O or 13CO2 causes broad perturbation without interpretable assignment value; if only one donor condition yields usable isotope-control data; or if donor-dependent bands cannot be separated from cobalt-free backgrounds. In that case the experiment remains descriptive and cannot cleanly discriminate H05 from competing explanations.",
+      "parameter_selection": "Do not invent literature conditions. Use the source-verified P01 formulation where available; otherwise first pilot each donor condition separately to find the highest concentration, path length, and collection time that preserve unsaturated absorbance and stable baselines. Keep reactor geometry, illumination, gas handling, and acquisition timing identical across TEA and TEOA. Apply 13CO2 and D2O only after the corresponding unlabeled donor condition gives reproducible transient bands. If D2O destabilizes one donor formulation or causes severe rate collapse, retain that arm as a bounded assignment aid and narrow inference accordingly rather than treating TEA and TEOA as fully matched.",
+      "limitations": "Evidence is transferred from non-Co systems and general methods. Band assignment may remain ambiguous because donor, solvent, bicarbonate or carbonate, products, and cobalt-ligand features can overlap. Isotope substitution can alter kinetics as well as frequencies. Near-operando spectra may miss the true operating state, and operando IR alone cannot prove the primary quenching route, exact adduct identity, or whether a detected species is on-path rather than spectator. Cobalt-absent controls bound background contributions but do not separately isolate all non-cobalt components.",
+      "feasibility": "specialist"
+    },
+    {
+      "id": "E28",
+      "hypothesis_id": "H05",
+      "title": "TEA/TEOA matched catalytic readout with built-in negative controls and optional isotope follow-up",
+      "purpose": "Test whether any TEA-versus-TEOA difference in CO/H2 distribution persists after stricter matching and core negative controls, while narrowing the claim to a bounded comparison unless a validated adduct-sensitive signal is first established.",
+      "evidence_ids": [
+        "EV029",
+        "GX011",
+        "EV011",
+        "GX008"
+      ],
+      "source_to_proposal": "EV011 supports the competing explanation that both TEA and TEOA can act through reductive quenching and donor-radical formation. EV029 and GX011 provide transferable but non-Co evidence that TEOA can participate in catalyst/CO2-associated adduct chemistry beyond simple donation. GX008 supports adding negative controls and 13CO2 checks in homogeneous photocatalytic CO2-reduction studies. Proposed transfer: in the stated Co-bpy comparison platform, first confirm whether a TEA/TEOA catalytic difference is reproducible under tightly matched conditions and core controls, then only integrate any adduct-sensitive observable if a pilot shows that the method is detectable and comparable in this platform. This is a proposal, not a reported Co-bpy result.",
+      "groups": [
+        {
+          "id": "E28G01",
+          "description": "Matched Co-bpy baseline with TEOA under CO2 and illumination",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "researcher-stated Co(II)-bipyridine photocatalysis baseline"
+            },
+            {
+              "name": "donor_additive",
+              "value": "TEOA"
+            },
+            {
+              "name": "atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "spectroscopic_module",
+              "value": "product analysis plus quenching assay; adduct-sensitive signal only if pilot-qualified"
+            },
+            {
+              "name": "origin_control",
+              "value": "natural abundance CO2"
+            }
+          ]
+        },
+        {
+          "id": "E28G02",
+          "description": "Matched comparator with TEA substituted only in donor/additive role",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "researcher-stated Co(II)-bipyridine photocatalysis baseline"
+            },
+            {
+              "name": "donor_additive",
+              "value": "TEA"
+            },
+            {
+              "name": "atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "spectroscopic_module",
+              "value": "product analysis plus quenching assay; adduct-sensitive signal only if pilot-qualified"
+            },
+            {
+              "name": "origin_control",
+              "value": "natural abundance CO2"
+            }
+          ]
+        },
+        {
+          "id": "E28G03",
+          "description": "TEOA negative control without cobalt under otherwise matched CO2 and illumination",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "researcher-stated Co(II)-bipyridine photocatalysis baseline"
+            },
+            {
+              "name": "donor_additive",
+              "value": "TEOA"
+            },
+            {
+              "name": "atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "absent"
+            },
+            {
+              "name": "spectroscopic_module",
+              "value": "product analysis plus quenching assay; adduct-sensitive signal only if pilot-qualified"
+            },
+            {
+              "name": "origin_control",
+              "value": "natural abundance CO2"
+            }
+          ]
+        },
+        {
+          "id": "E28G04",
+          "description": "TEOA dark control with cobalt present under CO2",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "researcher-stated Co(II)-bipyridine photocatalysis baseline"
+            },
+            {
+              "name": "donor_additive",
+              "value": "TEOA"
+            },
+            {
+              "name": "atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "off"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "spectroscopic_module",
+              "value": "product analysis plus quenching assay; adduct-sensitive signal only if pilot-qualified"
+            },
+            {
+              "name": "origin_control",
+              "value": "natural abundance CO2"
+            }
+          ]
+        },
+        {
+          "id": "E28G05",
+          "description": "Optional 13CO2 repeat for the TEOA catalytic group if product levels and analytics are adequate",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "researcher-stated Co(II)-bipyridine photocatalysis baseline"
+            },
+            {
+              "name": "donor_additive",
+              "value": "TEOA"
+            },
+            {
+              "name": "atmosphere",
+              "value": "13CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "spectroscopic_module",
+              "value": "product analysis plus quenching assay; adduct-sensitive signal only if pilot-qualified"
+            },
+            {
+              "name": "origin_control",
+              "value": "13CO2"
+            }
+          ]
+        },
+        {
+          "id": "E28G06",
+          "description": "Optional 13CO2 repeat for the TEA catalytic group if product levels and analytics are adequate",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "researcher-stated Co(II)-bipyridine photocatalysis baseline"
+            },
+            {
+              "name": "donor_additive",
+              "value": "TEA"
+            },
+            {
+              "name": "atmosphere",
+              "value": "13CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            },
+            {
+              "name": "cobalt_component",
+              "value": "present"
+            },
+            {
+              "name": "spectroscopic_module",
+              "value": "product analysis plus quenching assay; adduct-sensitive signal only if pilot-qualified"
+            },
+            {
+              "name": "origin_control",
+              "value": "13CO2"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E28G01",
+          "group_b": "E28G02",
+          "changed_factors": [
+            "donor_additive"
+          ],
+          "inference": "Primary single-factor comparison for reproducibility of TEA versus TEOA effects on CO/H2 and on any pilot-qualified observables. If quenching observables are similar within pre-set repeatability bounds yet catalytic outputs differ, H05 remains viable but not proven; if both catalytic and quenching observables are similar, the reported donor difference weakens."
+        },
+        {
+          "group_a": "E28G01",
+          "group_b": "E28G03",
+          "changed_factors": [
+            "cobalt_component"
+          ],
+          "inference": "Necessity control for cobalt-dependent catalysis or cobalt-linked signal assignment under the TEOA condition; it does not isolate donor effects."
+        },
+        {
+          "group_a": "E28G01",
+          "group_b": "E28G04",
+          "changed_factors": [
+            "illumination"
+          ],
+          "inference": "Necessity control for light-driven behavior under the TEOA condition; it helps bound background product formation or donor decomposition."
+        },
+        {
+          "group_a": "E28G01",
+          "group_b": "E28G05",
+          "changed_factors": [
+            "atmosphere",
+            "origin_control"
+          ],
+          "inference": "Origin-bounded follow-up for the TEOA condition if products are detectable; useful for excluding obvious non-CO2 product-origin artifacts but not sufficient to prove a specific adduct mechanism."
+        },
+        {
+          "group_a": "E28G02",
+          "group_b": "E28G06",
+          "changed_factors": [
+            "atmosphere",
+            "origin_control"
+          ],
+          "inference": "Origin-bounded follow-up for the TEA condition if products are detectable; useful for the same bounded purpose and not itself a TEA versus TEOA causal test."
+        }
+      ],
+      "procedure": [
+        "Prepare matched TEA and TEOA formulations by changing only donor identity, and verify identical reactor geometry, gas handling, illumination setup, sampling schedule, and product-analysis workflow before catalysis.",
+        "Run the two catalytic groups together with no-cobalt and dark controls; measure CO and H2 for all groups and acquire the same quenching readout for TEA and TEOA with identical references and blanks.",
+        "Only if a pilot demonstrates a detectable, reproducible adduct-sensitive or intermediate-sensitive signal in this platform, collect that signal for both donors under the same sample state and timing window.",
+        "If catalytic products exceed the laboratory detection threshold with acceptable repeatability, repeat the two catalytic groups under 13CO2 as an origin-bounded follow-up using the same analytical workflow."
+      ],
+      "measurements": [
+        "CO and H2 quantified together by one unchanged analytical method across all groups",
+        "Predefined quenching observable for the platform, such as emission quenching or excited-state decay of the light-absorbing component",
+        "If pilot-qualified, one adduct-sensitive or intermediate-sensitive spectral feature collected with matched blanks and backgrounds",
+        "For optional 13CO2 groups, isotopic product assignment if detectable",
+        "Covariates affecting comparability, including pH or apparent basicity proxy, optical density, visible precipitation, and color change",
+        "Replicate-to-replicate variability and practical detection limits for each readout"
+      ],
+      "supports": "Support for H05 would be a reproducible TEA-versus-TEOA difference in CO/H2 distribution under the matched catalytic comparison that remains after cobalt and dark controls validate the assay, together with similar quenching observables within a pre-specified repeatability window and, if available, a donor-dependent adduct-sensitive or intermediate-sensitive signal. Consistent 13CO2 product origin would strengthen interpretation but would still not by itself establish a specific adduct structure.",
+      "refutes": "Evidence against H05 would be that the TEA/TEOA catalytic difference disappears under stricter matching, or that any remaining catalytic difference is accompanied by clearly different quenching behavior large enough to account for it, or that the observed products/signals are reproduced in no-cobalt or dark controls in ways that undermine a cobalt-linked donor-specific interpretation.",
+      "inconclusive": "Inconclusive if quenching and downstream-sensitive observables both change together, if the adduct-sensitive method cannot be qualified in this platform, if products are near detection limits, if isotope follow-up is below sensitivity, or if donor substitution changes bulk medium properties enough that multiple latent factors vary despite nominal matching.",
+      "parameter_selection": "Do not invent concentrations or irradiation settings. Use the researcher-stated Co-bpy baseline values only if explicitly verified in the supplied material; otherwise perform a pilot to set a workable window where both donors give measurable but not overloaded product signals and where the chosen quenching assay is above background. Define in advance what counts as 'similar quenching' using the assay repeatability from replicate baseline measurements, not a literature threshold. Add the adduct-sensitive module only if the pilot shows a reproducible signal in both donors with the same references and no uncontrolled precipitation.",
+      "limitations": "This revision narrows the claim from a strong mechanistic discriminator to a staged comparison with controls because the supplied record does not establish a validated adduct-sensitive method in the target platform. TEA and TEOA can change several medium properties beyond donor identity, so even the primary contrast may combine donor, base, proton-management, and solvation effects. Negative controls improve assignment but do not identify the exact active intermediate. 13CO2 constrains origin claims but does not prove a productive donor-catalyst adduct.",
+      "feasibility": "moderate"
+    },
+    {
+      "id": "E30",
+      "hypothesis_id": "H05",
+      "title": "Cobalt-linked adduct screen",
+      "purpose": "Screen whether TEA versus TEOA under matched P01 conditions gives donor-specific CO2-derived or substrate-associated operando signals that are cobalt-dependent, while limiting inference to descriptive cobalt-linked differences unless assignment controls succeed.",
+      "evidence_ids": [
+        "GX011",
+        "EV004",
+        "EV068",
+        "EV085",
+        "EV080",
+        "GX008"
+      ],
+      "source_to_proposal": "GX011 motivates a transferable possibility that TEOA can participate in catalyst-associated adduct chemistry, but only in a Re system. EV004 and EV068 support operando state-sensitive measurements to separate catalyst-state changes from intermediate-related signals. EV085 warns that donor decomposition and altered active species can mimic catalyst-linked behavior, so no-cobalt and dark references are necessary. EV080 and GX008 support adding isotopic/orthogonal assignment controls rather than relying on a single spectral feature. This proposal transfers control logic and measurement strategy, not a proven Co mechanism.",
+      "groups": [
+        {
+          "id": "E30G01",
+          "description": "Matched P01 baseline with TEOA under CO2 and illumination for operando screening.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy/g-C3N4 baseline"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "cobalt_presence",
+              "value": "present"
+            },
+            {
+              "name": "isotopic_label",
+              "value": "natural abundance CO2"
+            },
+            {
+              "name": "sample_timing",
+              "value": "during reaction"
+            },
+            {
+              "name": "measurement_set",
+              "value": "cobalt-sensitive spectroscopy plus IR and if feasible EPR"
+            }
+          ]
+        },
+        {
+          "id": "E30G02",
+          "description": "Matched donor comparator with TEA substituted only in the donor role.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy/g-C3N4 baseline"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "cobalt_presence",
+              "value": "present"
+            },
+            {
+              "name": "isotopic_label",
+              "value": "natural abundance CO2"
+            },
+            {
+              "name": "sample_timing",
+              "value": "during reaction"
+            },
+            {
+              "name": "measurement_set",
+              "value": "cobalt-sensitive spectroscopy plus IR and if feasible EPR"
+            }
+          ]
+        },
+        {
+          "id": "E30G03",
+          "description": "No-cobalt reference with TEOA to test whether TEOA-associated features require cobalt.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy/g-C3N4 baseline"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "cobalt_presence",
+              "value": "absent"
+            },
+            {
+              "name": "isotopic_label",
+              "value": "natural abundance CO2"
+            },
+            {
+              "name": "sample_timing",
+              "value": "during reaction"
+            },
+            {
+              "name": "measurement_set",
+              "value": "cobalt-sensitive spectroscopy plus IR and if feasible EPR"
+            }
+          ]
+        },
+        {
+          "id": "E30G04",
+          "description": "No-cobalt reference with TEA under otherwise matched conditions.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy/g-C3N4 baseline"
+            },
+            {
+              "name": "donor",
+              "value": "TEA"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "cobalt_presence",
+              "value": "absent"
+            },
+            {
+              "name": "isotopic_label",
+              "value": "natural abundance CO2"
+            },
+            {
+              "name": "sample_timing",
+              "value": "during reaction"
+            },
+            {
+              "name": "measurement_set",
+              "value": "cobalt-sensitive spectroscopy plus IR and if feasible EPR"
+            }
+          ]
+        },
+        {
+          "id": "E30G05",
+          "description": "Dark TEOA control with cobalt present to distinguish light-driven features from dark pre-equilibria.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy/g-C3N4 baseline"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "dark"
+            },
+            {
+              "name": "cobalt_presence",
+              "value": "present"
+            },
+            {
+              "name": "isotopic_label",
+              "value": "natural abundance CO2"
+            },
+            {
+              "name": "sample_timing",
+              "value": "during reaction"
+            },
+            {
+              "name": "measurement_set",
+              "value": "cobalt-sensitive spectroscopy plus IR and if feasible EPR"
+            }
+          ]
+        },
+        {
+          "id": "E30G06",
+          "description": "Isotopic assignment control for the TEOA cobalt-present illuminated condition.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 Co-bpy/g-C3N4 baseline"
+            },
+            {
+              "name": "donor",
+              "value": "TEOA"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "cobalt_presence",
+              "value": "present"
+            },
+            {
+              "name": "isotopic_label",
+              "value": "13CO2-enriched"
+            },
+            {
+              "name": "sample_timing",
+              "value": "during reaction"
+            },
+            {
+              "name": "measurement_set",
+              "value": "cobalt-sensitive spectroscopy plus IR and if feasible EPR"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E30G01",
+          "group_b": "E30G02",
+          "changed_factors": [
+            "donor"
+          ],
+          "inference": "Primary donor comparison. If substrate-associated observables differ while cobalt-sensitive observables remain similar, that supports donor-specific substrate/intermediate chemistry without requiring a distinct cobalt state. If cobalt-sensitive observables also differ, donor effects may include cobalt coordination or speciation changes."
+        },
+        {
+          "group_a": "E30G01",
+          "group_b": "E30G03",
+          "changed_factors": [
+            "cobalt_presence"
+          ],
+          "inference": "Tests whether TEOA-associated features require cobalt. A feature seen only with cobalt supports a catalyst-linked interpretation but does not by itself prove a discrete cobalt-CO2 adduct."
+        },
+        {
+          "group_a": "E30G02",
+          "group_b": "E30G04",
+          "changed_factors": [
+            "cobalt_presence"
+          ],
+          "inference": "TEA analogue of the cobalt-dependence test. Comparison with the TEOA pair helps judge whether cobalt dependence is donor-specific or a general background effect."
+        },
+        {
+          "group_a": "E30G01",
+          "group_b": "E30G05",
+          "changed_factors": [
+            "illumination"
+          ],
+          "inference": "Tests whether observed TEOA features are operating-state light-dependent signals or dark pre-equilibrium species. This is not a donor-identity test."
+        },
+        {
+          "group_a": "E30G01",
+          "group_b": "E30G06",
+          "changed_factors": [
+            "isotopic_label"
+          ],
+          "inference": "Assignment control. A reproducible isotope-sensitive shift in a donor-specific feature supports CO2-derived character; absence of a shift weakens a CO2-derived assignment for that feature."
+        }
+      ],
+      "procedure": [
+        "Prepare source-verified matched P01 samples and controls, varying only the listed factors and documenting reactor, gas handling, and optical cell geometry.",
+        "Run a pilot to choose observable windows and acquisition settings that give reproducible donor-to-donor baselines above solvent and g-C3N4 background; drop methods that fail this check.",
+        "Collect during-reaction cobalt-sensitive and IR measurements for all groups, with matched backgrounds; add EPR only if the pilot shows resolvable signals under the same sampling configuration.",
+        "Use the isotopic group only to test assignment of selected donor-specific bands or features; require agreement with cobalt-dependence or light-dependence before calling a feature catalyst-linked.",
+        "Report bounded conclusions separately for cobalt dependence, light dependence, and isotope sensitivity; do not infer a unique intermediate identity from one method alone."
+      ],
+      "measurements": [
+        "Operando cobalt-sensitive observables indicating donor-correlated changes in cobalt oxidation state or coordination environment; useful for state comparison but not sufficient alone to assign an intermediate.",
+        "Operando IR features in regions plausibly associated with CO2-derived, carbonate-like, bicarbonate-like, or metal-associated species, interpreted only against matched no-cobalt, dark, and isotope controls.",
+        "If pilot-feasible, operando EPR signals tracking paramagnetic cobalt or radical populations; useful for donor-dependent electronic-state differences but not for full structural assignment.",
+        "Feature persistence or loss in no-cobalt and dark controls, and isotope-sensitive shifts in selected features, to distinguish catalyst-linked and CO2-derived behavior from donor/background bands."
+      ],
+      "supports": "Support for H05 would be a reproducible TEA/TEOA difference in operando substrate-associated observables under matched conditions, where the key feature is cobalt-dependent and/or tracks donor-specific cobalt-state change, and at least one donor-specific feature also shows isotope behavior consistent with CO2-derived origin.",
+      "refutes": "Evidence against H05 would be no reproducible donor-specific operando difference after matched controls, or donor-specific signals fully reproduced without cobalt and lacking isotope support or cobalt-state correlation, making cobalt-linked substrate-adduct chemistry unnecessary.",
+      "inconclusive": "Inconclusive outcomes include unresolved overlap, donor-dependent background absorption, absent cobalt-sensitive resolution, or isotope tests that fail because the relevant feature is too weak. Such outcomes can still justify descriptive reporting of similarities or differences without mechanistic assignment.",
+      "parameter_selection": "Do not assume spectral windows, concentrations, or irradiation settings from unrelated systems. Use source-verified P01 settings if available; otherwise pilot identical cell geometry, gas flow, and background subtraction across all groups. Advance a method only if donor comparisons can be collected under the same sampling configuration and with reproducible baseline correction.",
+      "limitations": "Direct Co-bpy evidence for TEA/TEOA adduct chemistry is absent in the supplied record. Heterogeneous background from g-C3N4 and mixed media may obscure weak bands. Isotope sensitivity supports CO2-derived character but may not distinguish amine-linked from cobalt-linked structures. No-cobalt controls change the coordination environment and therefore support but do not prove catalyst-linked assignment.",
+      "feasibility": "specialist"
+    }
+  ]
+}

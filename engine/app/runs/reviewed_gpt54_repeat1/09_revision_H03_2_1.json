@@ -1,0 +1,406 @@
+{
+  "candidates": [
+    {
+      "id": "E14",
+      "hypothesis_id": "H03",
+      "title": "Isotope-sensitive operando signatures in TEA vs TEOA Co-bpy photocatalysis",
+      "purpose": "Test whether TEA and TEOA produce different H/D-sensitive spectroscopic observables under one matched P01 configuration, consistent with different proton-coupled environments or hydrogen-containing states, while avoiding overclaim that isotope effects identify a unique intermediate.",
+      "evidence_ids": [
+        "EV080",
+        "GX010",
+        "GX015",
+        "EV031"
+      ],
+      "source_to_proposal": "EV080 supports isotope substitution as a transferable assignment aid in operando FTIR-type measurements, not species identity in this Co-bpy system. GX010 and GX015 support proton-inventory and isotope logic as transferable discriminators of proton-delivery environments in cobalt CO2-reduction chemistry, but not direct proof for this photocatalyst. EV031 supports the transferable idea that donor or solvent environment can change detectable intermediate populations and selectivity in bipyridine-based CO2 reduction. Proposed transfer: use one preselected operando or near-operando spectroscopic mode for matched TEA and TEOA samples, compare H2O-containing and D2O-containing media within each donor, and interpret any isotope-sensitive donor difference only as evidence for differing hydrogen-coupled observables under these conditions.",
+      "groups": [
+        {
+          "id": "E14G01",
+          "description": "P01 baseline with TEOA in H2O-containing medium under illuminated CO2 conditions",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 in MeCN/H2O-family medium"
+            },
+            {
+              "name": "additive",
+              "value": "TEOA"
+            },
+            {
+              "name": "isotopic_medium",
+              "value": "H2O-containing"
+            },
+            {
+              "name": "gas",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "spectroscopy_mode",
+              "value": "single predefined operando or near-operando mode"
+            }
+          ]
+        },
+        {
+          "id": "E14G02",
+          "description": "Matched TEOA sample with D2O substituted for the aqueous component",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 in MeCN/H2O-family medium"
+            },
+            {
+              "name": "additive",
+              "value": "TEOA"
+            },
+            {
+              "name": "isotopic_medium",
+              "value": "D2O-containing"
+            },
+            {
+              "name": "gas",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "spectroscopy_mode",
+              "value": "single predefined operando or near-operando mode"
+            }
+          ]
+        },
+        {
+          "id": "E14G03",
+          "description": "P01 comparator with TEA in H2O-containing medium under illuminated CO2 conditions",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 in MeCN/H2O-family medium"
+            },
+            {
+              "name": "additive",
+              "value": "TEA"
+            },
+            {
+              "name": "isotopic_medium",
+              "value": "H2O-containing"
+            },
+            {
+              "name": "gas",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "spectroscopy_mode",
+              "value": "single predefined operando or near-operando mode"
+            }
+          ]
+        },
+        {
+          "id": "E14G04",
+          "description": "Matched TEA sample with D2O substituted for the aqueous component",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 in MeCN/H2O-family medium"
+            },
+            {
+              "name": "additive",
+              "value": "TEA"
+            },
+            {
+              "name": "isotopic_medium",
+              "value": "D2O-containing"
+            },
+            {
+              "name": "gas",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "spectroscopy_mode",
+              "value": "single predefined operando or near-operando mode"
+            }
+          ]
+        },
+        {
+          "id": "E14G05",
+          "description": "Donor-free reference under otherwise matched illuminated CO2 conditions for background assignment",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2+bpy with g-C3N4 in MeCN/H2O-family medium"
+            },
+            {
+              "name": "additive",
+              "value": "none"
+            },
+            {
+              "name": "isotopic_medium",
+              "value": "H2O-containing"
+            },
+            {
+              "name": "gas",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "light"
+            },
+            {
+              "name": "spectroscopy_mode",
+              "value": "single predefined operando or near-operando mode"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E14G01",
+          "group_b": "E14G02",
+          "changed_factors": [
+            "isotopic_medium"
+          ],
+          "inference": "Within TEOA, isotope-dependent shifts or time-course changes identify hydrogen-coupled observables worth tracking, but do not uniquely assign structure or catalytic relevance."
+        },
+        {
+          "group_a": "E14G03",
+          "group_b": "E14G04",
+          "changed_factors": [
+            "isotopic_medium"
+          ],
+          "inference": "Within TEA, isotope-sensitive features provide the matched comparator for whether TEA accesses similar or different hydrogen-coupled observables."
+        },
+        {
+          "group_a": "E14G01",
+          "group_b": "E14G03",
+          "changed_factors": [
+            "additive"
+          ],
+          "inference": "Under H2O-containing conditions, donor-dependent spectral differences are descriptive only; if absent, a strong proton-management explanation is weakened but not excluded."
+        },
+        {
+          "group_a": "E14G02",
+          "group_b": "E14G04",
+          "changed_factors": [
+            "additive"
+          ],
+          "inference": "Under D2O-containing conditions, persistence or loss of donor-dependent signatures helps bound whether TEA and TEOA differences track hydrogen-coupled observables or remain compatible with cobalt-state and donor-redox alternatives."
+        },
+        {
+          "group_a": "E14G01",
+          "group_b": "E14G05",
+          "changed_factors": [
+            "additive"
+          ],
+          "inference": "This descriptive contrast helps identify donor-derived or donor-enabled features, but it is not a causal test of donor function because donor omission also changes reaction competence and solution chemistry."
+        }
+      ],
+      "procedure": [
+        "Select one exact spectroscopic mode in pilot and keep it fixed for every group; if sensitivity is inadequate, move the whole card to a common fixed-delay near-operando transfer protocol rather than mixing modes.",
+        "Prepare matched TEA and TEOA P01 samples from the same cobalt source, bpy source, g-C3N4 batch, solvent family, gas handling, and optical geometry; include donor-free background if signal quality remains acceptable.",
+        "Pilot path length, catalyst loading, aqueous fraction, and acquisition timing using prespecified criteria of unsaturated spectra, repeatable baseline, and acceptable suspension scattering; reject settings that differentially degrade TEA versus TEOA baseline quality.",
+        "Acquire time-resolved spectra for all H2O-containing and D2O-containing groups under matched CO2 and illumination conditions with matched dark or pre-illumination references.",
+        "Compare reproducible band positions, intensities, and temporal profiles across groups, and relate them to parallel CO and H2 measurements only as correlation rather than mechanistic proof."
+      ],
+      "measurements": [
+        "Time-resolved spectra in predefined windows classified only as candidate hydrogen-coupled, CO2-derived, ligand-associated, support-associated, or background-sensitive features",
+        "Isotope-induced shifts, attenuation, or altered temporal evolution after H2O-to-D2O substitution within each donor condition",
+        "Difference spectra against dark, pre-illumination, and donor-free references to identify background or support-derived contributions",
+        "Replicate agreement of donor-dependent isotope responses across independently prepared samples",
+        "Parallel CO and H2 product amounts from matched runs to test co-occurrence with selectivity differences without equating correlation to cause"
+      ],
+      "supports": "Support for H03 would be a reproducible donor-dependent isotope response under matched acquisition: TEA and TEOA differ in H/D-sensitive band positions, magnitudes, or time behavior beyond donor-free or baseline changes. Stronger but still non-decisive support occurs if donor-dependent CO and H2 divergence also changes in pattern under the same isotopic substitution.",
+      "refutes": "Evidence against H03 would be that TEA and TEOA show no reproducible difference in isotope-sensitive observables under matched conditions, while spectra are dominated by shared or non-isotope-sensitive changes. If catalytic TEA and TEOA differences remain substantial in matched runs despite indistinguishable H/D-sensitive signatures, a proton-management-centered explanation is weakened relative to alternatives.",
+      "inconclusive": "Inconclusive if suspension scattering or baseline drift obscures donor comparisons, if overlapping support or solvent features dominate assignment, if D2O substitution changes bulk medium properties enough that spectral differences cannot be bounded to hydrogen-coupled observables, or if donor-dependent changes are present but not isotope-sensitive.",
+      "parameter_selection": "Use the literature-anchored P01 formulation family only after verifying the exact baseline composition from supplied source records. Calibrate path length, catalyst loading, aqueous fraction, and acquisition interval by pilot criteria of stable baseline, detectable catalyst-region signal, and repeatable spectra across replicate preparations. Predefine acceptable baseline-drift and scattering thresholds before comparing donors. Keep preparation order and nominal component identities matched between H2O-containing and D2O-containing groups. If pH or pD matching is attempted, document one convention and use it consistently without claiming exact equivalence.",
+      "limitations": "This card can test whether TEA and TEOA differ in isotope-sensitive observables under matched conditions, but it cannot uniquely identify intermediates, prove rate-determining roles, or isolate proton management from all donor-dependent medium changes. D2O substitution is itself a multi-property perturbation, and near-operando measurements may miss the true operating state.",
+      "feasibility": "specialist"
+    },
+    {
+      "id": "E16",
+      "hypothesis_id": "H03",
+      "title": "Amine omission and bounded inert-base replacement",
+      "purpose": "Test whether amine presence is necessary in the P01 TEA/TEOA comparison and whether a tightly screened non-donor base can produce only limited medium-related shifts, without treating it as an amine surrogate or proof of proton-management causality.",
+      "evidence_ids": [
+        "EV013",
+        "EV024",
+        "GX010",
+        "GX015",
+        "GX008"
+      ],
+      "source_to_proposal": "EV013 supports treating TEA and TEOA as multifunctional additives that can act as H+ source and hole scavenger, so omission is required before interpreting additive identity effects. EV024, GX010, and GX015 support the narrower transferable idea that proton-delivery environment can alter CO2-reduction behavior, which justifies a bounded non-donor-base probe. GX008 supports matched negative controls and broad product analysis. Transfer remains limited because no supplied evidence shows that a non-donor base reproduces the sacrificial-donor role in the target Co-bpy photocatalysis; therefore any shift with base addition is only descriptive evidence for medium contribution.",
+      "groups": [
+        {
+          "id": "E16G01",
+          "description": "Primary TEOA baseline in the stated P01 Co-bpy/g-C3N4 assay.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2 + 2,2'-bipyridine + g-C3N4 in MeCN/H2O under CO2 and light"
+            },
+            {
+              "name": "amine_condition",
+              "value": "TEOA present"
+            },
+            {
+              "name": "base_condition",
+              "value": "none"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            }
+          ]
+        },
+        {
+          "id": "E16G02",
+          "description": "Amine omission control with baseline otherwise retained.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2 + 2,2'-bipyridine + g-C3N4 in MeCN/H2O under CO2 and light"
+            },
+            {
+              "name": "amine_condition",
+              "value": "none"
+            },
+            {
+              "name": "base_condition",
+              "value": "none"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            }
+          ]
+        },
+        {
+          "id": "E16G03",
+          "description": "No amine plus one pre-screened non-donor base chosen only if it shows low blank reactivity and acceptable mixture compatibility.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2 + 2,2'-bipyridine + g-C3N4 in MeCN/H2O under CO2 and light"
+            },
+            {
+              "name": "amine_condition",
+              "value": "none"
+            },
+            {
+              "name": "base_condition",
+              "value": "pre-screened non-donor base present"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            }
+          ]
+        },
+        {
+          "id": "E16G04",
+          "description": "TEA comparator under the same platform.",
+          "factors": [
+            {
+              "name": "platform",
+              "value": "P01 CoCl2 + 2,2'-bipyridine + g-C3N4 in MeCN/H2O under CO2 and light"
+            },
+            {
+              "name": "amine_condition",
+              "value": "TEA present"
+            },
+            {
+              "name": "base_condition",
+              "value": "none"
+            },
+            {
+              "name": "gas_atmosphere",
+              "value": "CO2"
+            },
+            {
+              "name": "illumination",
+              "value": "on"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "group_a": "E16G01",
+          "group_b": "E16G02",
+          "changed_factors": [
+            "amine_condition"
+          ],
+          "inference": "Omission test for whether an amine is required under the TEOA baseline; it does not separate donor redox, proton-management, and solvation roles."
+        },
+        {
+          "group_a": "E16G02",
+          "group_b": "E16G03",
+          "changed_factors": [
+            "base_condition"
+          ],
+          "inference": "Tests whether a carefully screened non-donor base causes any reproducible shift relative to no amine; any rescue is bounded evidence for medium contribution only, not amine equivalence."
+        },
+        {
+          "group_a": "E16G01",
+          "group_b": "E16G04",
+          "changed_factors": [
+            "amine_condition"
+          ],
+          "inference": "Direct TEA versus TEOA comparison within one platform; remains a multifunctional additive identity contrast rather than a single-mechanism causal test."
+        },
+        {
+          "group_a": "E16G03",
+          "group_b": "E16G04",
+          "changed_factors": [
+            "amine_condition",
+            "base_condition"
+          ],
+          "inference": "Confounded descriptive contrast only; do not use it to rank mechanisms beyond bounding whether some behavior can be approached without an amine donor."
+        }
+      ],
+      "procedure": [
+        "Verify the P01 baseline composition from the supplied scope, then perform a short pilot screen of candidate non-donor bases in the same solvent matrix using blank-reactivity and compatibility checks before selecting at most one replacement condition.",
+        "Prepare the listed groups with identical catalyst, ligand, g-C3N4, solvent ratio, reactor geometry, CO2 handling, irradiation schedule, and analytical workflow; vary only the stated factors.",
+        "Run photocatalysis under CO2 with matched sampling and quantify both CO and H2 for every group using one calibrated gas-analysis workflow.",
+        "Record a bulk acid-base descriptor in the chosen medium if measurable, and note visible precipitation, turbidity, color change, or phase instability as comparability flags.",
+        "If no non-donor base passes pilot criteria, execute only the omission and TEA/TEOA arms and report the replacement arm as blocked rather than forcing interpretation."
+      ],
+      "measurements": [
+        "CO amount or rate by the common gas-analysis workflow",
+        "H2 amount or rate by the same workflow",
+        "CO/H2 ratio or selectivity metric derived from paired CO and H2 data",
+        "Bulk acid-base descriptor before and after reaction if measurable in the chosen medium",
+        "Qualitative observations of precipitation, turbidity, color change, or phase separation as comparability checks"
+      ],
+      "supports": "H03 is supported only in a limited sense if amine omission strongly suppresses or shifts the baseline behavior and the pre-screened non-donor base causes a reproducible partial movement in activity or CO/H2 distribution relative to no amine, while TEA and TEOA still differ under matched conditions.",
+      "refutes": "H03 is weakened if the non-donor base produces no reproducible shift relative to no amine and TEA versus TEOA differences remain large under otherwise matched conditions, especially if omission mainly removes activity in a manner consistent with loss of sacrificial-donor function alone.",
+      "inconclusive": "Inconclusive if the selected base introduces background reactivity, coordination changes, instability, or phase changes; if bulk acid-base comparison is not meaningful in the medium; or if CO and H2 signals are near detection limits.",
+      "parameter_selection": "Do not invent concentrations. Use the verified P01 baseline for TEA and TEOA conditions. For the replacement arm, screen candidate non-donor bases in the same solvent matrix and select one only if it satisfies all pilot criteria: negligible CO and H2 in catalyst-free or no-light blanks, no obvious decomposition or precipitation before irradiation, and a measurable change in a bulk acid-base descriptor relative to E16G02. If no candidate satisfies these criteria, retain only E16G01, E16G02, and E16G04.",
+      "limitations": "The replacement arm remains intrinsically limited because a non-donor base cannot reproduce sacrificial electron donation. Any observed rescue can also arise from coordination, ionic-strength, viscosity, or solvation changes. Failure to rescue does not exclude proton-management contributions. Bulk acid-base descriptors in MeCN/H2O may not represent local proton delivery. This card therefore tests necessity plus bounded medium sensitivity, not full causal separation.",
+      "feasibility": "low_cost"
+    }
+  ]
+}
